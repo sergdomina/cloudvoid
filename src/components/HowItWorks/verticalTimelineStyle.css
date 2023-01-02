@@ -1,0 +1,12 @@
+.vertical-timeline-element:not(:last-child)
+  .vertical-timeline-element-icon::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 9px;
+  height: 270%;
+  background-color: #cbcddc;
+}
