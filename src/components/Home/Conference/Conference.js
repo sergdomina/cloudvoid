@@ -2,6 +2,7 @@ import {
   Section,
   HiddenTitle,
   SubTitle,
+  SubTitle2,
   SubTitleSolo,
   Discription,
   DiscriptionCenter,
@@ -12,8 +13,11 @@ import {
   TitleDes,
   ConferenceItemCenter,
   ConferenceItemSolo,
+  ConferenceColumn,
+  RowBox,
   BackEvo,
   BackCustom,
+  BackCustomDef,
   Len,
   LenTitle,
   LenDis,
@@ -21,7 +25,13 @@ import {
   DivLen,
   DivBecome,
   CentralDiv,
-  GlobalBoxTwo
+  GlobalBoxTwo,
+  LeftLine,
+  CentrLine,
+  LeftHow,
+  RightHow,
+  LinkCustom,
+  Arrow  
 } from './Conference.styled';
 
 import { Image} from '@chakra-ui/react';
@@ -30,20 +40,35 @@ import Container from '../../Container';
 import GlobalBox from '../../GlobalBox';
 import GlobalImage from '../../GlobalImage';
 import Build from 'image/conference/build.svg';
+import arrow from 'image/conference/arrow.svg';
 import Evo from 'image/conference/Rectangle 177.svg';
 import Custom from 'image/conference/Group 291.svg';
+import CustomDef from 'image/conference/customDef.svg';
 import Lenovo from 'image/conference/lenovo.svg';
+import leftLine from 'image/BGlines/leftLineWhat.svg';
+import centrLine from 'image/BGlines/centrLine.svg';
+import leftHow from 'image/BGlines/leftHow.svg';
+import rightHow from 'image/BGlines/rightHow.svg';
+import MediaQuery from 'components/MediaQuery';
+
+
+
+
 const Conference = () => {
   return (
-    <Section>
-      <Container>
-        <HiddenTitle>Conference </HiddenTitle>
+    <Section >
+      <Container style={{position:'relative'}}>
+        <LeftLine src={leftLine} alt="build" />
+        <CentrLine src={centrLine} alt="build" />
+        <LeftHow src={leftHow} alt="build" />
+        <RightHow src={rightHow} alt="build" />
         <ul>
           <ConferenceItem>
             <GlobalImage>
-            <Image src={Build} style={{marginLeft:'15%'}} alt="build" />
+            <Image src={Build} style={{marginLeft:'10%', width: '80%'}} alt="build" />
             </GlobalImage>
             <GlobalBox>
+              <div style={{display: 'block', margin:'0 auto'}}>
               <SubTitle> Build an Ever-Ready Cloud </SubTitle>
               <Discription>
               The Cloud offers immense potential, 
@@ -55,6 +80,7 @@ const Conference = () => {
               <DiscriptionBold>
               That is why we built Cloud Evolve.
               </DiscriptionBold>
+              </div>
             </GlobalBox>
           </ConferenceItem>
 
@@ -74,8 +100,8 @@ const Conference = () => {
             <GlobalBox>
               <BackEvo src={Evo}  alt="evo"></BackEvo>
               <DivEvo>
-              <SubTitle>What is Cloud Evolve?</SubTitle>
-              <Discription>
+              <SubTitle2>What is Cloud Evolve?</SubTitle2>
+              <Discription style={{width:'75%'}}>
               It's a spectrum of services, solutions, 
               frameworks, principles, and technologies crafted to help 
               businesses derive value from the cloud. We guide you through the entire cloud journey.
@@ -84,60 +110,78 @@ const Conference = () => {
             </GlobalBox>
           </ConferenceItem>
 
-
+{/*ACCORDION*/}
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
             <Title> The Cloud Evolve Suite </Title>
             <DiscriptionCenter>
             Whether you are just starting your cloud journey or already have a mature IT environment, Cloud Evolve guides you on increasing your ROI and getting faster business results.
               </DiscriptionCenter>
-              <Acord/>
+              <MediaQuery device={'tablet'}>
+                <Acord/>
+              </MediaQuery>
+              <MediaQuery device={'mobile'}>
+                <Acord/>
+              </MediaQuery>
           </ConferenceItemCenter>
 
-          <ConferenceItemSolo >
-            <SubTitleSolo>How Do We Make Cloud <br/> Evolve Possible?</SubTitleSolo>
-          </ConferenceItemSolo>
-
-
-          <ConferenceItem>
-            <GlobalBox>
+          <ConferenceColumn>
+          <SubTitleSolo>How Do We Make Cloud <br/> Evolve Possible?</SubTitleSolo>
+            <RowBox>
+            <CentralDiv>
+              <TitleDes> Experienced & Dedicated Teams</TitleDes>
+              <DiscriptionWithMargin>
+              Our team draws years of industry experience, a rare combination of skill sets, and a burning passion for technology.
+              </DiscriptionWithMargin>
+              </CentralDiv>
               <CentralDiv>
               <TitleDes> Diverse Technology Stack</TitleDes>
               <DiscriptionWithMargin>
               Cloud Evolve covers all cloud technologies, services, and solutions. We utilize industry best practices to ensure your business operations run efficiently.
               </DiscriptionWithMargin>
-              <TitleDes>Proven Track Record</TitleDes>
-              <DiscriptionWithMargin>
-              We have collaborated with numerous businesses across all industries, which validates our standing as subject matter experts.
-              </DiscriptionWithMargin>
               </CentralDiv>
-            </GlobalBox>
-            <GlobalBox>
+            </RowBox>
+            <RowBox>
               <CentralDiv>
-              <TitleDes> Experienced & Dedicated Teams</TitleDes>
-              <DiscriptionWithMargin>
-              Our team draws years of industry experience, a rare combination of skill sets, and a burning passion for technology.
-              </DiscriptionWithMargin>
               <TitleDes> Powerful Ecosystem Partners</TitleDes>
               <DiscriptionWithMargin>
               Partnering with the world's most innovative leaders, such as Microsoft, Google, and Amazon, enables us to find solutions for the toughest challenges.
               </DiscriptionWithMargin>
               </CentralDiv>
-            </GlobalBox>
-          </ConferenceItem>
+              <CentralDiv>
+              <TitleDes>Proven Track Record</TitleDes>
+              <DiscriptionWithMargin>
+              We have collaborated with numerous businesses across all industries, which validates our standing as subject matter experts.
+              </DiscriptionWithMargin>
+              </CentralDiv>
+            </RowBox>
+          </ConferenceColumn>
 
 
           <ConferenceItem>
-            <GlobalBoxTwo>
+            <GlobalBoxTwo style={{alignItems: 'center'}}>
               <div>
               <SubTitle>Customer Success Stories And Case Studies</SubTitle>
               <Discription style={{ width:'auto'}}>
               See how Cloudvoid is helping businesses solve real-world problems in the advent of Industry 4.0.
               </Discription>
+              <LinkCustom style={{display: 'flex', alignItem: 'baseline'}} >
+                <DiscriptionBold >
+                  Read Cases
+                </DiscriptionBold>
+                <Arrow  src={arrow} alt='arrow'/>
+              </LinkCustom>
               </div>
             </GlobalBoxTwo>
             <GlobalBox>
+              <MediaQuery device={'desktop'}>
               <BackCustom src={Custom} alt="evo"></BackCustom>
+              </MediaQuery>
+              <MediaQuery device={'default'}>
+              <BackCustomDef src={CustomDef} alt="evo"></BackCustomDef>
+              </MediaQuery>
               
+
+{/*PARNERS*/}
               <DivLen>
               <Len src={Lenovo} alt="evo"></Len>
               <div style={{display:'flex'}}>
@@ -154,10 +198,9 @@ const Conference = () => {
                 </LenDis>
                 </div>
               </div>
-
-              <Discription>
+              <DiscriptionWithMargin style={{margin:'0'}}>
               Our team draws years of industry experience, a rare combination of skill sets, and a burning passion for technology.
-              </Discription>
+              </DiscriptionWithMargin>
               </DivLen>
             </GlobalBox>
           </ConferenceItem>

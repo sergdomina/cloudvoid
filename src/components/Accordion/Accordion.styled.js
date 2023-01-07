@@ -15,16 +15,17 @@ export const Section = styled.section`
 
 export const DivAcord = styled.div`
 margin: 0 auto;
+width: auto;
 ${({ theme }) => theme.device.tablet} {
-  transform: rotate(-90deg);
+  width: 508px;
 }
 ${({ theme }) => theme.device.default} {
 
 }
 ${({ theme }) => theme.device.desktop} {
-  width: 420px;
+  
 }
-`
+`;
 
 
 export const Questions = styled.p`
@@ -52,26 +53,29 @@ export const Questions = styled.p`
     font-size: 22px;
   }
 `;
+
+
 export const Answer = styled.p`
   font-family: ${({ theme }) => theme.fonts.descr.regular};
-  font-size: 14px;
+  font-size: 12px;
   line-height: 27px;
   text-align: left;
   color: ${({ theme }) => theme.colors.placeholder};
   ${({ theme }) => theme.device.tablet} {
-    font-size: 16px;
-    transform: rotate(90deg);
+    font-size: 12px;
   }
   ${({ theme }) => theme.device.default} {
     padding-top: 2px;
     padding-bottom: 12px;
     padding-left: 10px;
-    font-size: 16px;
+    font-size: 14px;
   }
   ${({ theme }) => theme.device.desktop} {
     font-size: 14px;
   }
 `;
+
+
 export const PartnersDiv = styled.div`
   padding-top: 20px;
   width: 333px;

@@ -15,10 +15,7 @@ import Container from '../Container';
 
 import GlobalImage from '../GlobalImage';
 import GlobalBox from '../GlobalBox';
-import Founders from 'image/about/founders.svg';
-import CoFounders from 'image/about/team.svg';
-import Share from 'image/about/shareholders.svg';
-import Ukraine from 'image/about/ukraine.svg';
+
 
 const AboutHero = () => {
   return (
@@ -40,7 +37,7 @@ const AboutHero = () => {
               </ConferenceDiscription>
             </GlobalBox>
             <GlobalImage>
-            <Image src={Founders}  alt="founders" />
+            
             </GlobalImage>
           </ConferenceItem>
           <ConferenceItem>
@@ -54,7 +51,7 @@ const AboutHero = () => {
               </ConferenceDiscription>
             </GlobalBox>
             <GlobalImage>
-            <Image src={CoFounders}  alt="co-founders" />
+            
             </GlobalImage>
           </ConferenceItem>
           <ConferenceItem>
@@ -71,7 +68,7 @@ const AboutHero = () => {
               </ConferenceDiscriptionSub>
             </GlobalBox>
             <GlobalImage>
-            <Image src={Share}  alt="Founders" />
+            
             </GlobalImage>
           </ConferenceItem>
           <ConferenceItem>
@@ -83,7 +80,7 @@ const AboutHero = () => {
             </GlobalBox>
             <GlobalImage>
               <DivImg>
-                <Image src={Ukraine} alt="Founders" />
+                
               </DivImg>
             </GlobalImage>
           </ConferenceItem>

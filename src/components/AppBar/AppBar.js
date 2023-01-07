@@ -15,8 +15,8 @@ import {
 } from './AppBar.styled';
 // import { Container } from '../Container/Container.styled';
 import Burger from '../Burger';
-import LogoSeeYouMobile from '../../image/Cloudvoid_LO_FF-03.svg';
-import LogoSeeYou from '../../image/Cloudvoid_LO_FF-03.svg';
+import LogoMobile from '../../image/Cloudvoid_LO_FF-03.svg';
+import Logo from '../../image/Cloudvoid_LO_FF-03.svg';
 import { useOnClickOutside } from '../../hooks/OnClickOutside';
 import MediaQuery from '../MediaQuery';
 // import DownloadLink from '../DownloadLink';
@@ -54,17 +54,17 @@ const AppBar = () => {
             </MediaQuery>
             <MediaQuery device={'mobile'}>
               <LogoLink onClick={() => setIsOpenMobileMenu(false)} to="/">
-                <LogoImg src={LogoSeeYouMobile} alt={'Logo SeeYou'} />
+                <LogoImg src={LogoMobile} alt={'Cloudvoid'} />
               </LogoLink>
             </MediaQuery>
             <MediaQuery device={'tablet'}>
               <LogoLink onClick={() => setIsOpenMobileMenu(false)} to="/">
-                <LogoImg src={LogoSeeYou} alt={'Logo SeeYou'} />
+                <LogoImg src={Logo} alt={'Cloudvoid'} />
               </LogoLink>
             </MediaQuery>
             <MediaQuery device={'default'}>
               <LogoLink onClick={() => setIsOpenMobileMenu(false)} to="/">
-                <LogoImg src={LogoSeeYou} alt={'Logo SeeYou'} />
+                <LogoImg src={Logo} alt={'Cloudvoid'} />
               </LogoLink>
             </MediaQuery>
           </HeaderBox>
@@ -97,32 +97,6 @@ const AppBar = () => {
             </NavList>
           </Nav>
 
-          {/* {isDownloadPage && (
-            <MediaQuery device={'mobile'}>
-              <DownloadMobileFooter>
-                <LinkDown to="/downloads" onClick={toggleMenu}>
-                  <DownloadLink>Download</DownloadLink>
-                </LinkDown>
-              </DownloadMobileFooter>
-            </MediaQuery>
-          )}
-          {isDownloadPage && (
-            <MediaQuery device={'tablet'}>
-              <DownloadMobileFooter>
-                <LinkDown to="/downloads" onClick={toggleMenu}>
-                  <DownloadLink>Download</DownloadLink>
-                </LinkDown>
-              </DownloadMobileFooter>
-            </MediaQuery>
-          )} */}
-
-          {/* <DownHeadDiv> */}
-          {/*<MediaQuery device={'default'}>
-            <LinkDown to="/downloads" onClick={toggleMenu}>
-              <DownloadLink>Download</DownloadLink>
-            </LinkDown>
-          </MediaQuery>*/}
-          {/* </DownHeadDiv> */}
         </HeaderContainer>
         {/*{showModal && <ModalForMail toggleModal={toggleModal} />}*/}
       </Header>

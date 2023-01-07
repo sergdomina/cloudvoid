@@ -13,7 +13,7 @@ const Container = styled.div`
 
   ${device.tablet} {
     padding: 0 0px;
-    width: 622px;
+    width: 748px;
   }
 
   ${device.default} {

@@ -10,11 +10,11 @@ width: 290px;
     padding-left: 10px;
 }
 ${({ theme }) => theme.device.default} {
-width: 416px;
+width: 312px;
 padding-right: 20px;
 }
 ${({ theme }) => theme.device.desktop} {
-width: 682px;
+width: 430px;
 padding-right: 30px;
 } ;
 `

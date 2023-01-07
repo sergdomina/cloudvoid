@@ -1,8 +1,7 @@
 import Hero from 'components/Home/Hero';
 import Conference from 'components/Home/Conference';
-import Read from 'components/Home/Ready';
-import Support from 'components/Home/Support';
-import Accordion from 'components/Accordion';
+import Ready from 'components/Home/Ready';
+import Footer from 'components/Footer'
 import { ScrollToTop } from 'hooks/ScrollToTop';
 
 const Home = () => {
@@ -19,7 +18,8 @@ const Home = () => {
         </MediaQuery> */}
 
         <Conference/>
-        <Read/>
+        <Ready/>
+        <Footer/>
         {/* <MediaQuery device={'mobile'}>
           <DownloadMobileFooter />
         </MediaQuery> */}

@@ -20,7 +20,7 @@ function Acord() {
       <ChakraProvider>
         <Box >
           <DivAcord>
-          <Accordion allowMultiple paddingBottom="16px">
+          <Accordion allowMultiple>
             <AccordionItem border={'none'}
               borderTop="1px solid #3E3D4A"
               backgroundColor="transparent">
@@ -53,7 +53,7 @@ function Acord() {
           </Accordion>
 
 
-          <Accordion allowMultiple paddingBottom="16px">
+          <Accordion allowMultiple >
             <AccordionItem border={'none'}
               borderTop="1px solid #3E3D4A"
               backgroundColor="transparent">
@@ -83,7 +83,7 @@ function Acord() {
             </AccordionItem>
           </Accordion>
 
-          <Accordion allowMultiple paddingBottom="16px">
+          <Accordion allowMultiple >
             <AccordionItem border={'none'}
               borderTop="1px solid #3E3D4A"
               backgroundColor="transparent">
@@ -113,7 +113,7 @@ function Acord() {
             </AccordionItem>
           </Accordion>
 
-          <Accordion allowMultiple paddingBottom="16px">
+          <Accordion allowMultiple >
             <AccordionItem border={'none'}
               borderTop="1px solid #3E3D4A"
               backgroundColor="transparent">
@@ -143,7 +143,7 @@ function Acord() {
             </AccordionItem>
           </Accordion>
 
-          <Accordion allowMultiple paddingBottom="16px">
+          <Accordion allowMultiple >
             <AccordionItem border={'none'}
             borderTop="1px solid #3E3D4A"
               backgroundColor="transparent">
@@ -173,7 +173,7 @@ function Acord() {
             </AccordionItem>
           </Accordion>
 
-          <Accordion allowMultiple paddingBottom="16px">
+          <Accordion allowMultiple >
             <AccordionItem border={'none'}
             borderTop="1px solid #3E3D4A"
             borderBottom="1px solid #3E3D4A"

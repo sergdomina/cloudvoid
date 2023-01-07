@@ -79,29 +79,17 @@ export const NavList = styled.ul`
 
 export const Link = styled(NavLink)`
   font-family: ${({ theme }) => theme.fonts.descr.regular};
-  color: ${({ theme }) => theme.colors.dark};
+  color: ${({ theme }) => theme.colors.text};
   font-size: 14px;
   line-height: 1.5;
-
+  padding: 10px;
   &.active {
-    font-family: ${({ theme }) => theme.fonts.descr.bold};
+    background: #D6D7DB;
 
     position: relative;
-    /* border: 3px solid #303030; */
     &:after {
-      content: '';
       display: block;
-      position: absolute;
-      left: 0;
-      bottom: -6px;
-      width: 100%;
-      height: 3px;
-      background-color: ${({ theme }) => theme.colors.black_btn};
-      opacity: 1;
-      transform: translateY(1px);
-      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
       ${({ theme }) => theme.device.desktop} {
-        bottom: -10px;
       }
     }
   }
@@ -149,12 +137,11 @@ export const LogoImg = styled.img`
     height: 34px;
   }
   ${({ theme }) => theme.device.default} {
-    width: 121px;
-    height: 34px;
+    width: 182px;
+    height: 25px;
   }
   ${({ theme }) => theme.device.desktop} {
-    width: 167px;
-    height: 46px;
+
   }
 `;
 export const HeaderContainer = styled(ContainerHeader)`
@@ -165,7 +152,7 @@ export const HeaderContainer = styled(ContainerHeader)`
     align-items: center;
   }
   ${({ theme }) => theme.device.default} {
-    width: 960px;
+    width: 800px;
     display: flex;
     align-items: center;
   }

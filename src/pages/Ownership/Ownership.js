@@ -1,5 +1,4 @@
-import OwnershipHero from 'components/OwnershipHero';
-import Support from 'components/Home/Support/Support';
+
 import { ScrollToTop } from 'hooks/ScrollToTop';
 // import DownloadMobileFooter from '../../components/DownloadMobileFooter';
 // import MediaQuery from '../../components/MediaQuery';
@@ -8,7 +7,7 @@ const Ownership = () => {
   return (
     <>
       <main>
-        <OwnershipHero />
+
 
         {/*<HowItWorks />
         <MoreDetails />
@@ -17,7 +16,6 @@ const Ownership = () => {
           <DownloadMobileFooter />
         </MediaQuery> */}
       </main>
-      <Support />
     </>
   );
 };

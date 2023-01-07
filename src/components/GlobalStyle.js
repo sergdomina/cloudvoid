@@ -47,9 +47,14 @@ export const GlobalStyle = createGlobalStyle`
   p {
     margin: 0;
   }
+
   a{
+    font-family: ${({ theme }) => theme.fonts.descr.regular};
+  color: ${({ theme }) => theme.colors.text};
       text-decoration:none;
+      font-size: 14px;
   }
+
   .visually-hidden {
   position: absolute;
   width: 1px;

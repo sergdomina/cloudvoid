@@ -8,8 +8,11 @@ export const Box = styled.div`
   padding-left: 8px;
   
   ${({ theme }) => theme.device.tablet} {
+    display: block;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
-    width: 310px;
+    width: 331px;
     padding-right: 10px;
     padding-left: 10px;
   }

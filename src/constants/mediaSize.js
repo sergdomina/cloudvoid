@@ -2,7 +2,7 @@ export const size = {
   mobile: '375px',
   tablet: '768px',
   default: '960px',
-  desktop: '1306px',
+  desktop: '1440px',
 };
 export const device = {
   // mobile: `min-width: ${size.mobile}`,
