@@ -50,11 +50,46 @@ import centrLine from 'image/BGlines/centrLine.svg';
 import leftHow from 'image/BGlines/leftHow.svg';
 import rightHow from 'image/BGlines/rightHow.svg';
 import MediaQuery from 'components/MediaQuery';
+import Accordion from "../../Accordion/Accordion";
 
 
 
 
 const Conference = () => {
+
+  const accordionItems = [
+    {
+      title: 'Cloud Ops',
+      number: '01',
+      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+    },
+    {
+      title: 'SecOps',
+      number: '02',
+      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+    },
+    {
+      title: 'FinOps',
+      number: '03',
+      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+    },
+    {
+      title: 'Smart DevOps',
+      number: '04',
+      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+    },
+    {
+      title: 'Cloud Solutions Architecture',
+      number: '05',
+      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+    },
+    {
+      title: 'SysOps',
+      number: '06',
+      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+    }
+  ];
+
   return (
     <Section >
       <Container style={{position:'relative'}}>
@@ -110,34 +145,29 @@ const Conference = () => {
             </GlobalBox>
           </ConferenceItem>
 
-{/*ACCORDION*/}
+          {/*ACCORDION*/}
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
             <Title> The Cloud Evolve Suite </Title>
             <DiscriptionCenter>
-            Whether you are just starting your cloud journey or already have a mature IT environment, Cloud Evolve guides you on increasing your ROI and getting faster business results.
-              </DiscriptionCenter>
-              <MediaQuery device={'tablet'}>
-                <Acord/>
-              </MediaQuery>
-              <MediaQuery device={'mobile'}>
-                <Acord/>
-              </MediaQuery>
+              Whether you are just starting your cloud journey or already have a mature IT environment, Cloud Evolve guides you on increasing your ROI and getting faster business results.
+            </DiscriptionCenter>
+            <Accordion items={accordionItems} />
           </ConferenceItemCenter>
 
           <ConferenceColumn>
-          <SubTitleSolo>How Do We Make Cloud <br/> Evolve Possible?</SubTitleSolo>
+            <SubTitleSolo>How Do We Make Cloud <br/> Evolve Possible?</SubTitleSolo>
             <RowBox>
-            <CentralDiv>
-              <TitleDes> Experienced & Dedicated Teams</TitleDes>
-              <DiscriptionWithMargin>
-              Our team draws years of industry experience, a rare combination of skill sets, and a burning passion for technology.
-              </DiscriptionWithMargin>
+              <CentralDiv>
+                <TitleDes> Experienced & Dedicated Teams</TitleDes>
+                <DiscriptionWithMargin>
+                  Our team draws years of industry experience, a rare combination of skill sets, and a burning passion for technology.
+                </DiscriptionWithMargin>
               </CentralDiv>
               <CentralDiv>
-              <TitleDes> Diverse Technology Stack</TitleDes>
-              <DiscriptionWithMargin>
-              Cloud Evolve covers all cloud technologies, services, and solutions. We utilize industry best practices to ensure your business operations run efficiently.
-              </DiscriptionWithMargin>
+                <TitleDes> Diverse Technology Stack</TitleDes>
+                <DiscriptionWithMargin>
+                  Cloud Evolve covers all cloud technologies, services, and solutions. We utilize industry best practices to ensure your business operations run efficiently.
+                </DiscriptionWithMargin>
               </CentralDiv>
             </RowBox>
             <RowBox>

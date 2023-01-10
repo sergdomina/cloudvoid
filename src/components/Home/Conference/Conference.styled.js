@@ -349,7 +349,7 @@ export const ConferenceItemCenter = styled.li`
     margin-bottom: 100px;
   }
   ${({ theme }) => theme.device.desktop} {
-      padding: 80px 0;
+      padding: 80px 30px;
       margin-bottom: 200px;
   }
 `;
