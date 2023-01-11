@@ -145,7 +145,7 @@ const Conference = () => {
             </GlobalBox>
           </ConferenceItem>
 
-          {/*ACCORDION*/}
+{/*ACCORDION*/}
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
             <Title> The Cloud Evolve Suite </Title>
             <DiscriptionCenter>
