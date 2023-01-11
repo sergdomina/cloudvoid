@@ -15,7 +15,7 @@ export const AccordionStyled = styled.ul`
     font-size: 24px;
   }
   
-  @media screen and (max-width: ${({ theme }) => theme.size.tablet}){
+  @media screen and (max-width: ${({ theme }) => theme.size.default}){
     flex-direction: column;
     height: auto;
   }
@@ -138,7 +138,7 @@ export const AccordionItemStyled = styled.li`
     }
   }
   
-  @media screen and (max-width: ${({ theme }) => theme.size.tablet}){
+  @media screen and (max-width: ${({ theme }) => theme.size.default}){
     flex-direction:column;
     border-right: 0;
     border-bottom: 1px solid black;
