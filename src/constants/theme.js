@@ -31,7 +31,9 @@ export const theme = Object.freeze({
     mobile: `@media screen and (min-width:375px)`,
     mobileMax: `@media screen and (max-width:767px)`,
     tablet: `@media screen and (min-width: 768px)`,
+    tabletOnly: `@media screen and (min-width: 768px) and (max-width: 959px)`,
     default: `@media screen and (min-width: 960px)`,
+    defaultonly: `@media only screen and (min-width: 960px) and (max-width: 1439px)`,
     desktop: `@media screen and (min-width: 1440px)`,
   },
   fonts: {

@@ -111,7 +111,7 @@ export const SubTitleSolo = styled.h3`
   font-size: 22px;
   line-height: 1.2;
   text-align: left;
-  color: ${({ theme }) => theme.colors.black_btn};
+  color: ${({ theme }) => theme.colors.dark_grey};
   ${({ theme }) => theme.device.tablet} {
     font-size: 22px;
     
@@ -137,7 +137,7 @@ export const TitleDes = styled.h3`
   margin-bottom: 32px;
   margin-top: 32px;
   text-align: left;
-  color: ${({ theme }) => theme.colors.black_btn};
+  color: ${({ theme }) => theme.colors.dark_grey};
   ${({ theme }) => theme.device.tablet} {
     font-size: 16px;
     
@@ -158,7 +158,7 @@ export const Title = styled.h3`
   line-height: 1.2;
   margin-bottom: 32px;
   text-align: center;
-  color: ${({ theme }) => theme.colors.black_btn};
+  color: ${({ theme }) => theme.colors.dark_grey};
   ${({ theme }) => theme.device.tablet} {
 
   }
@@ -178,7 +178,7 @@ export const Discription = styled.p`
 font-family: ${({ theme }) => theme.fonts.descr.regular};
 font-size: 12px;
 line-height: 1.35;
-color: ${({ theme }) => theme.colors.primaryText};
+color: ${({ theme }) => theme.colors.dark_grey};
 margin-bottom: 24px;
 ${({ theme }) => theme.device.tablet} {
   font-size: 12px;
@@ -197,7 +197,7 @@ export const DiscriptionSub = styled.h3`
   line-height: 1.4;
 
   margin-bottom: 16px;
-  color: ${({ theme }) => theme.colors.black_btn};
+  color: ${({ theme }) => theme.colors.dark_grey};
 `;
 
 
@@ -206,7 +206,7 @@ font-family: ${({ theme }) => theme.fonts.descr.regular};
 font-size: 12px;
 line-height: 1.35;
 width: 79px;
-color: ${({ theme }) => theme.colors.primaryText};
+color: ${({ theme }) => theme.colors.dark_grey};
 margin-bottom: 24px;
 ${({ theme }) => theme.device.tablet} {
   font-size: 12px;
@@ -227,7 +227,7 @@ export const DiscriptionCenter = styled.p`
 font-family: ${({ theme }) => theme.fonts.descr.regular};
 font-size: 12px;
 line-height: 1.35;
-color: ${({ theme }) => theme.colors.primaryText};
+color: ${({ theme }) => theme.colors.dark_grey};
 margin-bottom: 24px;
 text-align: center;
 width: 311px;
@@ -253,7 +253,7 @@ font-family: ${({ theme }) => theme.fonts.descr.bold};
 font-size: 12px;
 line-height: 1.35;
 margin-right: 18px;
-color: ${({ theme }) => theme.colors.primaryText};
+color: ${({ theme }) => theme.colors.dark_grey};
 
 ${({ theme }) => theme.device.tablet} {
   font-size: 12px;
@@ -287,6 +287,7 @@ export const DiscriptionWithMargin = styled(Discription)`
 
 export const ConferenceItem = styled.li`
   align-items: center;
+  padding: 0 32px;
   &:not(:last-child) {
     margin-bottom: 80px;
   }
@@ -319,6 +320,7 @@ export const ConferenceItem = styled.li`
 `;
 
 export const ConferenceColumn = styled.li`
+  padding: 0 32px;
   align-items: center;
     margin-bottom: 80px;
 
@@ -349,7 +351,7 @@ export const ConferenceItemCenter = styled.li`
     margin-bottom: 100px;
   }
   ${({ theme }) => theme.device.desktop} {
-      padding: 80px 0;
+      padding: 80px 30px;
       margin-bottom: 200px;
   }
 `;
@@ -460,7 +462,7 @@ export const BackCustomDef = styled.img`
     width: 363px;
 }
   ${({ theme }) => theme.device.desktop} {
-   
+   display: none;
 };
 `
 
@@ -590,8 +592,8 @@ export const LeftLine=styled.img`
       
   }
     ${({ theme }) => theme.device.desktop} {
-     top: -100px;
-     left: 50px;
+     top: -750px;
+     left: -20px;
   };
 `
 
@@ -605,8 +607,8 @@ export const CentrLine=styled.img`
       
   }
     ${({ theme }) => theme.device.desktop} {
-     top: 280px;
-     left: 750px;
+     top: -390px;
+     left: -20px;
   };
 `
 
@@ -617,11 +619,12 @@ export const LeftHow =styled.img`
       
   }
     ${({ theme }) => theme.device.default} {
-      
+      top: -570px;
+     left: -20px;
   }
     ${({ theme }) => theme.device.desktop} {
-     top: 1970px;
-     left: 160px;
+      top: -380px;
+     left: -20px;
   };
 `
  
@@ -633,11 +636,12 @@ export const RightHow =styled.img`
       
   }
     ${({ theme }) => theme.device.default} {
-      
+      top: -570px;
+      left: 500px;
   }
     ${({ theme }) => theme.device.desktop} {
-     top: 1970px;
-     left: 875px;
+      top: -380px;
+     left: -20px;
   };
 `
  

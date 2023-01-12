@@ -50,18 +50,51 @@ import centrLine from 'image/BGlines/centrLine.svg';
 import leftHow from 'image/BGlines/leftHow.svg';
 import rightHow from 'image/BGlines/rightHow.svg';
 import MediaQuery from 'components/MediaQuery';
+import Accordion from "../../Accordion/Accordion";
 
 
 
 
 const Conference = () => {
+
+  const accordionItems = [
+    {
+      title: 'Cloud Ops',
+      number: '01',
+      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+    },
+    {
+      title: 'SecOps',
+      number: '02',
+      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+    },
+    {
+      title: 'FinOps',
+      number: '03',
+      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+    },
+    {
+      title: 'Smart DevOps',
+      number: '04',
+      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+    },
+    {
+      title: 'Cloud Solutions Architecture',
+      number: '05',
+      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+    },
+    {
+      title: 'SysOps',
+      number: '06',
+      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+    }
+  ];
+
   return (
     <Section >
       <Container style={{position:'relative'}}>
-        <LeftLine src={leftLine} alt="build" />
-        <CentrLine src={centrLine} alt="build" />
-        <LeftHow src={leftHow} alt="build" />
-        <RightHow src={rightHow} alt="build" />
+
+        
         <ul>
           <ConferenceItem>
             <GlobalImage>
@@ -86,10 +119,24 @@ const Conference = () => {
 
 
           <ConferenceItem>
+            <MediaQuery device={'mobile'}>
+                <GlobalBox>
+                    <BackEvo src={Evo}  alt="evo"></BackEvo>
+                    <DivEvo>
+                    <SubTitle2>What is Cloud Evolve?</SubTitle2>
+                    <Discription style={{width:'75%'}}>
+                    It's a spectrum of services, solutions, 
+                    frameworks, principles, and technologies crafted to help 
+                    businesses derive value from the cloud. We guide you through the entire cloud journey.
+                    </Discription>
+                    </DivEvo>
+                  </GlobalBox>
+            </MediaQuery>
             <GlobalBox>
               <DivBecome>
               <SubTitle></SubTitle>
-              <Discription>
+              <Discription style={{position: 'relative'}}>
+              <CentrLine src={centrLine} alt="build" />
               Cloudvoid becomes an extension of your team. Prefer to use chat? That is how we engage. Have your own Project Management software? We integrate with that. 
               </Discription>
               <Discription>
@@ -97,52 +144,77 @@ const Conference = () => {
               </Discription>
               </DivBecome>
             </GlobalBox>
-            <GlobalBox>
-              <BackEvo src={Evo}  alt="evo"></BackEvo>
-              <DivEvo>
-              <SubTitle2>What is Cloud Evolve?</SubTitle2>
-              <Discription style={{width:'75%'}}>
-              It's a spectrum of services, solutions, 
-              frameworks, principles, and technologies crafted to help 
-              businesses derive value from the cloud. We guide you through the entire cloud journey.
-              </Discription>
-              </DivEvo>
-            </GlobalBox>
+            <MediaQuery device={'tablet'}>
+              <GlobalBox>
+                <BackEvo src={Evo}  alt="evo"></BackEvo>
+                <DivEvo>
+                <SubTitle2>What is Cloud Evolve?</SubTitle2>
+                <Discription style={{width:'75%'}}>
+                It's a spectrum of services, solutions, 
+                frameworks, principles, and technologies crafted to help 
+                businesses derive value from the cloud. We guide you through the entire cloud journey.
+                </Discription>
+                </DivEvo>
+              </GlobalBox>
+            </MediaQuery>
+            <MediaQuery device={'default'}>
+              <GlobalBox>
+                <BackEvo src={Evo}  alt="evo"></BackEvo>
+                <DivEvo>
+                <SubTitle2  style={{position:'relative'}}>
+                <LeftLine src={leftLine} alt="build" />
+                  What is Cloud Evolve?
+                  </SubTitle2>
+                <Discription style={{width:'75%'}}>
+                  
+                It's a spectrum of services, solutions, 
+                frameworks, principles, and technologies crafted to help 
+                businesses derive value from the cloud. We guide you through the entire cloud journey.
+                </Discription>
+                </DivEvo>
+              </GlobalBox>
+            </MediaQuery>
           </ConferenceItem>
 
 {/*ACCORDION*/}
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
+
             <Title> The Cloud Evolve Suite </Title>
             <DiscriptionCenter>
-            Whether you are just starting your cloud journey or already have a mature IT environment, Cloud Evolve guides you on increasing your ROI and getting faster business results.
-              </DiscriptionCenter>
-              <MediaQuery device={'tablet'}>
-                <Acord/>
-              </MediaQuery>
-              <MediaQuery device={'mobile'}>
-                <Acord/>
-              </MediaQuery>
+              Whether you are just starting your cloud journey or already have a mature IT environment, Cloud Evolve guides you on increasing your ROI and getting faster business results.
+            </DiscriptionCenter>
+            <Accordion items={accordionItems} />
           </ConferenceItemCenter>
 
+
+
           <ConferenceColumn>
-          <SubTitleSolo>How Do We Make Cloud <br/> Evolve Possible?</SubTitleSolo>
+            <SubTitleSolo>How Do We Make Cloud <br/> Evolve Possible?</SubTitleSolo>
             <RowBox>
-            <CentralDiv>
-              <TitleDes> Experienced & Dedicated Teams</TitleDes>
-              <DiscriptionWithMargin>
-              Our team draws years of industry experience, a rare combination of skill sets, and a burning passion for technology.
-              </DiscriptionWithMargin>
+              <CentralDiv>
+                <TitleDes style={{position: 'relative'}}>
+                <LeftHow src={leftHow} alt="build" /> 
+                  Experienced & Dedicated Teams
+                  </TitleDes>
+                <DiscriptionWithMargin>
+                  Our team draws years of industry experience, a rare combination of skill sets, and a burning passion for technology.
+                </DiscriptionWithMargin>
               </CentralDiv>
               <CentralDiv>
-              <TitleDes> Diverse Technology Stack</TitleDes>
-              <DiscriptionWithMargin>
-              Cloud Evolve covers all cloud technologies, services, and solutions. We utilize industry best practices to ensure your business operations run efficiently.
-              </DiscriptionWithMargin>
+                <TitleDes style={{position: 'relative'}}>
+                <RightHow src={rightHow} alt="build" />
+                  Diverse Technology Stack
+                  </TitleDes>
+                <DiscriptionWithMargin>
+                  Cloud Evolve covers all cloud technologies, services, and solutions. We utilize industry best practices to ensure your business operations run efficiently.
+                </DiscriptionWithMargin>
               </CentralDiv>
             </RowBox>
             <RowBox>
-              <CentralDiv>
-              <TitleDes> Powerful Ecosystem Partners</TitleDes>
+              <CentralDiv >
+              <TitleDes>
+                 Powerful Ecosystem Partners
+                 </TitleDes>
               <DiscriptionWithMargin>
               Partnering with the world's most innovative leaders, such as Microsoft, Google, and Amazon, enables us to find solutions for the toughest challenges.
               </DiscriptionWithMargin>
