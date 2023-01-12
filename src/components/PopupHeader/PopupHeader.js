@@ -2,23 +2,17 @@ import { PopLink, Link, PopButton, PopupBox } from './PopupHeader.styled';
 import { Popup } from 'semantic-ui-react';
 
 const PopupHeader = () => (
-  <Popup
+  <Popup 
     content={
-      <PopupBox>
-        <PopLink  target="_blank">
-          Terms of service
-        </PopLink>
-        <PopLink  target="_blank">
-          Privacy Policy
-        </PopLink>
-        <Link to="/providers-zoom"> Providers Zoom</Link>
-        <Link to="/providers"> Webex by Cisco</Link>
-        <Link to="/request-access"> Request Access</Link>
-        <Link to="/delete-account"> Delete Account</Link>
-        <Link to="/end-to-end-encryption"> End Encryption</Link>
-        <Link to="/problem2">Report a Problem</Link>
-        <Link to="/problem">Report Form</Link>
-        <Link to="/feature">Request Form</Link>
+      <PopupBox >
+        <Link to="/providers-zoom"><p>Back</p></Link>
+        <Link to="/providers-zoom"><p>Cloud Evolve</p></Link>
+        <Link to="/providers"><p>Cloud Migration</p></Link>
+        <Link to="/request-access"><p>Cloud Solutions Architecture</p></Link>
+        <Link to="/delete-account"><p>Cloud AI & Analytics</p></Link>
+        <Link to="/end-to-end-encryption"><p>Smart DevOps</p></Link>
+        <Link to="/problem2"><p>Smart Infrastructure</p></Link>
+        <Link to="/problem"><p>Master MSP</p></Link>
       </PopupBox>
     }
     on={['focus', 'hover']}
@@ -26,7 +20,7 @@ const PopupHeader = () => (
     pinned
     hoverable
     style={{ zIndex: '2' }}
-    trigger={<PopButton>More</PopButton>}
+    trigger={<PopButton>Services</PopButton>}
   />
 );
 

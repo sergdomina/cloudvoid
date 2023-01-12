@@ -121,6 +121,19 @@ const Conference = () => {
 
 
           <ConferenceItem>
+            <MediaQuery device={'mobile'}>
+                <GlobalBox>
+                    <BackEvo src={Evo}  alt="evo"></BackEvo>
+                    <DivEvo>
+                    <SubTitle2>What is Cloud Evolve?</SubTitle2>
+                    <Discription style={{width:'75%'}}>
+                    It's a spectrum of services, solutions, 
+                    frameworks, principles, and technologies crafted to help 
+                    businesses derive value from the cloud. We guide you through the entire cloud journey.
+                    </Discription>
+                    </DivEvo>
+                  </GlobalBox>
+            </MediaQuery>
             <GlobalBox>
               <DivBecome>
               <SubTitle></SubTitle>
@@ -132,27 +145,45 @@ const Conference = () => {
               </Discription>
               </DivBecome>
             </GlobalBox>
-            <GlobalBox>
-              <BackEvo src={Evo}  alt="evo"></BackEvo>
-              <DivEvo>
-              <SubTitle2>What is Cloud Evolve?</SubTitle2>
-              <Discription style={{width:'75%'}}>
-              It's a spectrum of services, solutions, 
-              frameworks, principles, and technologies crafted to help 
-              businesses derive value from the cloud. We guide you through the entire cloud journey.
-              </Discription>
-              </DivEvo>
-            </GlobalBox>
+            <MediaQuery device={'tablet'}>
+              <GlobalBox>
+                <BackEvo src={Evo}  alt="evo"></BackEvo>
+                <DivEvo>
+                <SubTitle2>What is Cloud Evolve?</SubTitle2>
+                <Discription style={{width:'75%'}}>
+                It's a spectrum of services, solutions, 
+                frameworks, principles, and technologies crafted to help 
+                businesses derive value from the cloud. We guide you through the entire cloud journey.
+                </Discription>
+                </DivEvo>
+              </GlobalBox>
+            </MediaQuery>
+            <MediaQuery device={'default'}>
+              <GlobalBox>
+                <BackEvo src={Evo}  alt="evo"></BackEvo>
+                <DivEvo>
+                <SubTitle2>What is Cloud Evolve?</SubTitle2>
+                <Discription style={{width:'75%'}}>
+                It's a spectrum of services, solutions, 
+                frameworks, principles, and technologies crafted to help 
+                businesses derive value from the cloud. We guide you through the entire cloud journey.
+                </Discription>
+                </DivEvo>
+              </GlobalBox>
+            </MediaQuery>
           </ConferenceItem>
 
 {/*ACCORDION*/}
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
+
             <Title> The Cloud Evolve Suite </Title>
             <DiscriptionCenter>
               Whether you are just starting your cloud journey or already have a mature IT environment, Cloud Evolve guides you on increasing your ROI and getting faster business results.
             </DiscriptionCenter>
             <Accordion items={accordionItems} />
           </ConferenceItemCenter>
+
+
 
           <ConferenceColumn>
             <SubTitleSolo>How Do We Make Cloud <br/> Evolve Possible?</SubTitleSolo>

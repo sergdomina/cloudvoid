@@ -7,7 +7,7 @@ export const Header = styled.header`
   top: 0;
   padding-top: 12px;
   padding-bottom: 12px;
-  margin: 0 auto;
+  margin: 0 auto; 
   width: 100%;
   z-index: 2;
   background: transporant;
@@ -23,11 +23,11 @@ export const Header = styled.header`
 `;
 
 export const Nav = styled.nav`
-  font-family: 'Lato_Regular';
+ 
   font-size: 18px;
   line-height: 1.5;
   ${({ theme }) => theme.device.mobileMax} {
-    padding: 32px;
+    
     position: absolute;
     top: 100%;
     right: 0;
@@ -82,37 +82,52 @@ export const Link = styled(NavLink)`
   color: ${({ theme }) => theme.colors.text};
   font-size: 14px;
   line-height: 1.5;
-  padding: 10px;
+  margin-left: 32px;
   &.active {
-    background: #D6D7DB;
-
+    
     position: relative;
     &:after {
       display: block;
-      ${({ theme }) => theme.device.desktop} {
+    }
+  }
+  ${({ theme }) => theme.device.tablet} {
+    margin-left: 0px;
+    padding: 10px;
+    &.active {
+      background: #D6D7DB;
+  
+      position: relative;
+      &:after {
+        display: block;
+        ${({ theme }) => theme.device.desktop} {
+        }
       }
     }
   }
+  ${({ theme }) => theme.device.default} {
+    
+  }
   ${({ theme }) => theme.device.desktop} {
-    font-size: 18px;
+    
   }
 `;
 export const LinkDown = styled(NavLink)``;
 
 export const LogoLink = styled(NavLink)`
   ${({ theme }) => theme.device.mobileMax} {
-    margin: 0 auto;
+
   }
 `;
 
 export const NavItem = styled.li`
   position: relative;
   ${({ theme }) => theme.device.mobileMax} {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
+    padding: 15px 0;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.dark_grey}; 
+
   }
   ${({ theme }) => theme.device.tablet} {
+    padding: 0;
     &:not(:last-child) {
       margin-right: 24px;
     }
@@ -130,7 +145,7 @@ export const NavItem = styled.li`
 `;
 
 export const LogoImg = styled.img`
-  width: 82px;
+  width: 113px;
   height: 16px;
   ${({ theme }) => theme.device.tablet} {
     width: 121px;
@@ -145,7 +160,8 @@ export const LogoImg = styled.img`
   }
 `;
 export const HeaderContainer = styled(ContainerHeader)`
-
+    padding: 0px 32px;
+    width: 100%;
   ${({ theme }) => theme.device.tablet} {
     width: 688px;
     display: flex;

@@ -77,19 +77,17 @@ const AppBar = () => {
               </NavItem>
 
               <NavItem>
-                <a>
-                  Services
-                  </a>
+                <PopupHeader /> 
               </NavItem>
               <NavItem>
-              <a>
+              <Link to="/" onClick={toggleMenu}>
                   About
-                  </a>
+                  </Link>
               </NavItem>
               <NavItem>
-              <a>
+              <Link to="/" onClick={toggleMenu}>
                   Contact
-                  </a>
+                  </Link>
               </NavItem>
               {/*<NavItem>
                 <PopupHeader />

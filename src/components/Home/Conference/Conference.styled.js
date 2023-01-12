@@ -111,7 +111,7 @@ export const SubTitleSolo = styled.h3`
   font-size: 22px;
   line-height: 1.2;
   text-align: left;
-  color: ${({ theme }) => theme.colors.black_btn};
+  color: ${({ theme }) => theme.colors.dark_grey};
   ${({ theme }) => theme.device.tablet} {
     font-size: 22px;
     
@@ -137,7 +137,7 @@ export const TitleDes = styled.h3`
   margin-bottom: 32px;
   margin-top: 32px;
   text-align: left;
-  color: ${({ theme }) => theme.colors.black_btn};
+  color: ${({ theme }) => theme.colors.dark_grey};
   ${({ theme }) => theme.device.tablet} {
     font-size: 16px;
     
@@ -158,7 +158,7 @@ export const Title = styled.h3`
   line-height: 1.2;
   margin-bottom: 32px;
   text-align: center;
-  color: ${({ theme }) => theme.colors.black_btn};
+  color: ${({ theme }) => theme.colors.dark_grey};
   ${({ theme }) => theme.device.tablet} {
 
   }
@@ -178,7 +178,7 @@ export const Discription = styled.p`
 font-family: ${({ theme }) => theme.fonts.descr.regular};
 font-size: 12px;
 line-height: 1.35;
-color: ${({ theme }) => theme.colors.primaryText};
+color: ${({ theme }) => theme.colors.dark_grey};
 margin-bottom: 24px;
 ${({ theme }) => theme.device.tablet} {
   font-size: 12px;
@@ -197,7 +197,7 @@ export const DiscriptionSub = styled.h3`
   line-height: 1.4;
 
   margin-bottom: 16px;
-  color: ${({ theme }) => theme.colors.black_btn};
+  color: ${({ theme }) => theme.colors.dark_grey};
 `;
 
 
@@ -206,7 +206,7 @@ font-family: ${({ theme }) => theme.fonts.descr.regular};
 font-size: 12px;
 line-height: 1.35;
 width: 79px;
-color: ${({ theme }) => theme.colors.primaryText};
+color: ${({ theme }) => theme.colors.dark_grey};
 margin-bottom: 24px;
 ${({ theme }) => theme.device.tablet} {
   font-size: 12px;
@@ -227,7 +227,7 @@ export const DiscriptionCenter = styled.p`
 font-family: ${({ theme }) => theme.fonts.descr.regular};
 font-size: 12px;
 line-height: 1.35;
-color: ${({ theme }) => theme.colors.primaryText};
+color: ${({ theme }) => theme.colors.dark_grey};
 margin-bottom: 24px;
 text-align: center;
 width: 311px;
@@ -253,7 +253,7 @@ font-family: ${({ theme }) => theme.fonts.descr.bold};
 font-size: 12px;
 line-height: 1.35;
 margin-right: 18px;
-color: ${({ theme }) => theme.colors.primaryText};
+color: ${({ theme }) => theme.colors.dark_grey};
 
 ${({ theme }) => theme.device.tablet} {
   font-size: 12px;
@@ -287,6 +287,7 @@ export const DiscriptionWithMargin = styled(Discription)`
 
 export const ConferenceItem = styled.li`
   align-items: center;
+  padding: 0 32px;
   &:not(:last-child) {
     margin-bottom: 80px;
   }
@@ -319,6 +320,7 @@ export const ConferenceItem = styled.li`
 `;
 
 export const ConferenceColumn = styled.li`
+  padding: 0 32px;
   align-items: center;
     margin-bottom: 80px;
 

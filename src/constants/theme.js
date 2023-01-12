@@ -1,7 +1,7 @@
 export const theme = Object.freeze({
   colors: {
     white: '#ffffff',
-    black: '#333333',
+    dark_grey: '#3E3D4A',
     dark: '#000000',
     black_btn: '#303030',
     red: '#f44336',

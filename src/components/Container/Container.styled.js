@@ -8,7 +8,8 @@ const Container = styled.div`
 
   ${device.mobile} {
     /* width: 343px; */
-    width: 373px;
+    padding: 0;
+    width: 100%;
   }
 
   ${device.tablet} {
@@ -21,11 +22,11 @@ const Container = styled.div`
     width: 880px;
   }
   ${device.desktop} {
-    width: 1440px;
+    width: 1320px;
   }
 `;
 const ContainerHeader = styled.div`
-  padding: 0px 24px;
+  padding: 0px 32px;
   margin: 0 auto;
   width: 100%;
   ${device.tablet} {

@@ -160,8 +160,8 @@ export const FooterLineLeft =styled.img`
      left: 330px;
   }
     ${({ theme }) => theme.device.desktop} {
-     top: 0;
-     left: 690px;
+     top: -37px;
+     left: 560px;
   };
 `
 export const FooterLineRight =styled.img`
@@ -175,8 +175,8 @@ export const FooterLineRight =styled.img`
      left: 470px;
   }
     ${({ theme }) => theme.device.desktop} {
-     top: 0;
-     left: 925px;
+     top: -37px;
+     left: 750px;
   };
 `
 

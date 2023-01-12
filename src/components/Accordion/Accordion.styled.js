@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 
+
+
 export const AccordionStyled = styled.ul`
   display: flex;
   min-height: 100%;
   max-height: 100%;
-  margin: 0;
+  width: 80%;
+  margin: 0 auto;
   padding: 0;
   overflow: hidden;
   list-style-type: none;
@@ -108,8 +111,8 @@ export const AccordionItemStyled = styled.li`
   }
 
   .accordion__number{
+    font-family: ${({ theme }) => theme.fonts.title.bold};
     font-size: 32px;
-    font-weight: 700;
     top: 10%;
     position: absolute;
     left: 50%;
@@ -123,7 +126,7 @@ export const AccordionItemStyled = styled.li`
     margin: 0;
     padding: 0;
     opacity: 0;
-    transition: all .25s .1s ease-out;
+    transition: all .5s .1s ease-out;
     width: 0px;
     flex-direction:column;
     align-items: start;
@@ -134,7 +137,7 @@ export const AccordionItemStyled = styled.li`
 
     h2{
       transform: translateX(200%);
-      transition: all .5s ease;
+      transition: all .7s ease;
     }
   }
   
