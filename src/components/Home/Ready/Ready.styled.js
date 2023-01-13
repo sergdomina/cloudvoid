@@ -25,7 +25,17 @@ export const ReadyLink = styled.a`
   background-color: white;
   display: block;
   text-align: center;
-  margin: 0 auto;
+  
+  ${({ theme }) => theme.device.tablet} {
+    text-align: center;
+    margin: 0 auto;
+  }
+  ${({ theme }) => theme.device.default} {
+
+  }
+  ${({ theme }) => theme.device.desktop} {
+
+  }
 `;
 
 export const Bg = styled.div`
@@ -34,6 +44,7 @@ export const Bg = styled.div`
     height: 317px;
     width: auto;
     background-color: #EFEFF0;
+    padding: 10% 10%;
     ${({ theme }) => theme.device.tablet} {
         height: 383px;
         width: 638px;
@@ -56,12 +67,12 @@ font-family: ${({ theme }) => theme.fonts.descr.regular};
 font-size: 12px;
 line-height: 1.35;
 color: ${({ theme }) => theme.colors.text};
-margin-bottom: 16px;
-text-align: center;
-margin: 0 auto;
+margin-bottom: 32px;
+text-align: left;
 ${({ theme }) => theme.device.tablet} {
   font-size: 12px;
   margin-bottom: 32px;
+  text-align: center;
 }
 ${({ theme }) => theme.device.default} {
   font-size: 14px;
@@ -79,10 +90,11 @@ export const Title = styled.h3`
   font-size: 25px;
   line-height: 1.2;
   margin-bottom: 16px;
-  text-align: center;
+  text-align: left;
   color: ${({ theme }) => theme.colors.black_btn};
   ${({ theme }) => theme.device.tablet} {
     font-size: 25px;
+    text-align: center;
   } 
   ${({ theme }) => theme.device.default} {
    

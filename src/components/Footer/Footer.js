@@ -144,6 +144,7 @@ const Footer =() =>{
                         <div>
                         ©Cloudvoid 2023 All rights reserved
                         </div>
+                        <MediaQuery device={'tablet'}>
                         <div>
                             <ul style={{display:'flex'}}>
                                 <Terms>Cookie Policy</Terms>
@@ -155,6 +156,20 @@ const Footer =() =>{
                                 </Terms>
                             </ul>
                         </div>
+                        </MediaQuery>
+                        <MediaQuery device={'default'}>
+                        <div>
+                            <ul style={{display:'flex'}}>
+                                <Terms>Cookie Policy</Terms>
+                                <Terms>
+                                    <a>Terms Of Service</a>
+                                </Terms>
+                                <Terms>
+                                    <a>Privacy Policy </a>
+                                </Terms>
+                            </ul>
+                        </div>
+                        </MediaQuery>
                       
                      </div>   
                 </Container>

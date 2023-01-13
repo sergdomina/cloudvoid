@@ -248,9 +248,9 @@ const Conference = () => {
               <MediaQuery device={'desktop'}>
               <BackCustom src={Custom} alt="evo"></BackCustom>
               </MediaQuery>
-              <MediaQuery device={'default'}>
+              
               <BackCustomDef src={CustomDef} alt="evo"></BackCustomDef>
-              </MediaQuery>
+              
               
 
 {/*PARNERS*/}

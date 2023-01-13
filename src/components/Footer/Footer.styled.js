@@ -70,7 +70,9 @@ export const Items = styled.li`
 export const Terms = styled.li`
 
     ${({ theme }) => theme.device.tablet} {
-            
+      &:not(:last-child){
+        margin-right: 24px;
+    } 
     }
     ${({ theme }) => theme.device.default} {
         &:not(:last-child){

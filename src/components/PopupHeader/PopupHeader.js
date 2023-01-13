@@ -7,10 +7,10 @@ const PopupHeader = () => (
     content={
       <PopupBox >
         <MediaQuery device={'mobile'}>
-        <Link to="/providers-zoom"><p>Back</p></Link>
+        <Link to="/cloud-evolve"><p>Back</p></Link>
         </MediaQuery>
-        <Link to="/providers-zoom"><p>Cloud Evolve</p></Link>
-        <Link to="/providers"><p>Cloud Migration</p></Link>
+        <Link to="/cloud-evolve"><p>Cloud Evolve</p></Link>
+        <Link to="/cloud-migration"><p>Cloud Migration</p></Link>
         <Link to="/request-access"><p>Cloud Solutions Architecture</p></Link>
         <Link to="/delete-account"><p>Cloud AI & Analytics</p></Link>
         <Link to="/end-to-end-encryption"><p>Smart DevOps</p></Link>

@@ -17,11 +17,10 @@ const Hero = () => {
       <HeroContainer style={{position:"relative"}}>
       <GlobalBox style={{zIndex:"1"}}>
           <HeroTitle>
-          Robust Cloud Solutions for Businesses Ready <br/><span style={{ color: "#CE1700"}}>To Grow Fast</span>
+          Cloud Migration Services 
           </HeroTitle>
           <HeroDiscription>
-          Experience unparalleled business value with Cloud Evolve.
-We offer end-to-end IT solutions to grow your business from Migration services, IaaS, PaaS, and SaaS to security.
+          Transform your business by moving your infrastructure and apps to the cloud. Our proven migration approach ensures faster time-to-cloud with improved accessibility, business operations, and high availability.
           </HeroDiscription>
           <HeroLink>
             Contact Us
@@ -31,22 +30,23 @@ We offer end-to-end IT solutions to grow your business from Migration services, 
         <Spline style={{position:"absolute", 
         margin:"0",
         top: "0",
+        left: '20%',
         right: "0",}}
-        scene="https://prod.spline.design/lUGj8dpxa67fDxUq/scene.splinecode"  />
+        scene="https://prod.spline.design/sg4VOs698eINp0UO/scene.splinecode"  />
       </MediaQuery>
       <MediaQuery device={'tablet'}>
         <Spline style={{position:"absolute", 
         margin:"0",
         top: "0",
         right: "0",}}
-        scene="https://prod.spline.design/IWkQEH-SvToMD941/scene.splinecode"  />
+        scene="https://prod.spline.design/yTttbAhLNMjD9c3s/scene.splinecode"  />
       </MediaQuery>
       <MediaQuery device={'default'}>
         <Spline style={{position:"absolute", 
         margin:"0",
         top: "0",
         right: "0",}} 
-        scene="https://prod.spline.design/ZRrXk8Lf9LemIbND/scene.splinecode" />
+        scene="https://prod.spline.design/lWL3kQRvl2jrLTTW/scene.splinecode" />
       </MediaQuery>
       <MediaQuery device={'desktop'}>
       <Spline style={{position:"absolute", 

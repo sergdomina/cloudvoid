@@ -35,10 +35,9 @@ import {
 } from './Conference.styled';
 
 import { Image} from '@chakra-ui/react';
-import Acord from '../../Accordion/AcordionElement'
-import Container from '../../Container';
-import GlobalBox from '../../GlobalBox';
-import GlobalImage from '../../GlobalImage';
+import Container from '../../../Container';
+import GlobalBox from '../../../GlobalBox';
+import GlobalImage from '../../../GlobalImage';
 import Build from 'image/conference/build.svg';
 import arrow from 'image/conference/arrow.svg';
 import Evo from 'image/conference/Rectangle 177.svg';
@@ -50,7 +49,7 @@ import centrLine from 'image/BGlines/centrLine.svg';
 import leftHow from 'image/BGlines/leftHow.svg';
 import rightHow from 'image/BGlines/rightHow.svg';
 import MediaQuery from 'components/MediaQuery';
-import Accordion from "../../Accordion/Accordion";
+import Accordion from "../../../Accordion/Accordion";
 
 
 
@@ -102,7 +101,7 @@ const Conference = () => {
             </GlobalImage>
             <GlobalBox>
               <div style={{display: 'block', margin:'0 auto'}}>
-              <SubTitle> Build an Ever-Ready Cloud </SubTitle>
+              <SubTitle> Realize More Business Value In The Cloud </SubTitle>
               <Discription>
               The Cloud offers immense potential, 
               but only a few businesses get value from it. 
@@ -248,9 +247,9 @@ const Conference = () => {
               <MediaQuery device={'desktop'}>
               <BackCustom src={Custom} alt="evo"></BackCustom>
               </MediaQuery>
-              <MediaQuery device={'default'}>
+              
               <BackCustomDef src={CustomDef} alt="evo"></BackCustomDef>
-              </MediaQuery>
+              
               
 
 {/*PARNERS*/}
