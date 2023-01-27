@@ -17,6 +17,7 @@ export const DivItem = styled.div`
   ${({ theme }) => theme.device.tablet} {
     display: flex;
     justify-content: space-between;
+    padding: 44px 32px 18px;
   }
   ${({ theme }) => theme.device.default} {
 
@@ -47,12 +48,14 @@ export const DivTwo = styled.div`{
 export const LogoImg = styled.img`
   width: 123px;
   height: 17px;
+  margin-bottom: 12px;
   ${({ theme }) => theme.device.tablet} {
-    
+    margin-bottom: 0px;
   }
   ${({ theme }) => theme.device.default} {
     width: 182px;
     height: 25px;
+    margin-bottom: 9px;
   }
   ${({ theme }) => theme.device.desktop} {
     margin-bottom: 11px;
@@ -159,11 +162,11 @@ export const FooterLineLeft =styled.img`
   }
     ${({ theme }) => theme.device.default} {
       top: -45px;
-     left: 330px;
+     left: 370px;
   }
     ${({ theme }) => theme.device.desktop} {
      top: -37px;
-     left: 560px;
+     left: 590px;
   };
 `
 export const FooterLineRight =styled.img`
@@ -174,7 +177,7 @@ export const FooterLineRight =styled.img`
   }
     ${({ theme }) => theme.device.default} {
       top: -45px;
-     left: 470px;
+     left: 500px;
   }
     ${({ theme }) => theme.device.desktop} {
      top: -37px;

@@ -45,7 +45,7 @@ import Evo from 'image/conference/Rectangle 177.svg';
 import Custom from 'image/conference/Group 291.svg';
 import CustomDef from 'image/conference/customDef.svg';
 import Lenovo from 'image/conference/lenovo.svg';
-import leftLine from 'image/BGlines/leftLineWhat.svg';
+import leftLine from 'image/BGlines/leftLine.svg';
 import centrLine from 'image/BGlines/centrLine.svg';
 import leftHow from 'image/BGlines/leftHow.svg';
 import rightHow from 'image/BGlines/rightHow.svg';

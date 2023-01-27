@@ -41,7 +41,7 @@ const Hero = () => {
         right: "0",}}
         scene="https://prod.spline.design/yTttbAhLNMjD9c3s/scene.splinecode"  />
       </MediaQuery>
-      <MediaQuery device={'default'}>
+      <MediaQuery device={'defaultOnly'}>
         <Spline style={{position:"absolute", 
         margin:"0",
         top: "0",

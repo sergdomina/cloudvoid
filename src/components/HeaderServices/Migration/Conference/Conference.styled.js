@@ -111,8 +111,10 @@ export const SubTitleSolo = styled.h3`
   font-size: 22px;
   line-height: 1.2;
   text-align: left;
+  padding-bottom: 50px;
   color: ${({ theme }) => theme.colors.dark_grey};
   ${({ theme }) => theme.device.tablet} {
+    padding-bottom: 50px;
     font-size: 22px;
     
   }
@@ -162,7 +164,7 @@ export const Title = styled.h3`
   color: ${({ theme }) => theme.colors.dark_grey};
   ${({ theme }) => theme.device.tablet} {
     text-align: center;
-
+    margin-left: 0;
   }
   ${({ theme }) => theme.device.default} {
 
@@ -275,6 +277,9 @@ ${({ theme }) => theme.device.desktop} {
 export const DiscriptionWithMargin = styled(Discription)`
   margin-bottom: 27px;
   width: 304px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 75px;
   ${({ theme }) => theme.device.tablet} {
       width: 248px;
       margin-bottom: 25px;
@@ -367,7 +372,9 @@ export const RowBox = styled.div`
   text-align: left;
   padding-right: 8px;
   padding-left: 8px;
-
+  &:not(:last-child) {
+    margin-bottom: 104px;
+  }
   ${({ theme }) => theme.device.tablet} {
     margin: 0 auto;
     display: flex;
@@ -624,38 +631,62 @@ export const CentrLine=styled.img`
   };
 `
 
-export const LeftHow =styled.img`
-  position: absolute;
-  z-index: 1;
+export const LeftAdv =styled.img`
+    margin: 0 auto;
+    margin-bottom: 24px;
   ${({ theme }) => theme.device.tablet} {
       
   }
     ${({ theme }) => theme.device.default} {
-      top: -380px;
-     left: -20px;
+    
   }
     ${({ theme }) => theme.device.desktop} {
-      top: -380px;
-     left: -20px;
+     
   };
 `
  
 
-export const RightHow =styled.img`
-  position: absolute;
-  z-index: 1;
+export const CentrAdv =styled.img`
+margin: 0 auto;
+margin-bottom: 24px;
   ${({ theme }) => theme.device.tablet} {
       
   }
     ${({ theme }) => theme.device.default} {
      
-      top: -380px;
-     left: -20px;
+    
   }
     ${({ theme }) => theme.device.desktop} {
-      height: 1058px;
-      top: -380px;
-     left: -20px;
+     
+  };
+`
+export const RightAdv =styled.img`
+margin: 0 auto;
+margin-bottom: 24px;
+  ${({ theme }) => theme.device.tablet} {
+      
+  }
+    ${({ theme }) => theme.device.default} {
+     
+    
+  }
+    ${({ theme }) => theme.device.desktop} {
+   
+  };
+`
+ 
+export const OurProcess =styled.img`
+margin: 0 auto;
+margin-bottom: 24px;
+  ${({ theme }) => theme.device.tablet} {
+    width: 663px;
+  }
+    ${({ theme }) => theme.device.default} {
+     width: 758px;
+    
+  }
+    ${({ theme }) => theme.device.desktop} {
+      width: 1047px;
   };
 `
  

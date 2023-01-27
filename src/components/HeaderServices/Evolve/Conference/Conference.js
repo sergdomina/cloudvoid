@@ -1,5 +1,6 @@
 import {
   Section,
+  ContainerTwo,
   HiddenTitle,
   SubTitle,
   SubTitle2,
@@ -16,6 +17,7 @@ import {
   ConferenceColumn,
   RowBox,
   BackEvo,
+  BackEvoM,
   BackCustom,
   BackCustomDef,
   Len,
@@ -27,7 +29,9 @@ import {
   CentralDiv,
   GlobalBoxTwo,
   LeftLine,
+  LeftLinePart,
   CentrLine,
+  CentrLinePart,
   LeftHow,
   RightHow,
   LinkCustom,
@@ -43,11 +47,14 @@ import arrow from 'image/conference/arrow.svg';
 import Evo from 'image/conference/Rectangle 177.svg';
 import Custom from 'image/conference/Group 291.svg';
 import CustomDef from 'image/conference/customDef.svg';
+import CustomMobile from 'image/conference/CustomMobile.svg';
 import Lenovo from 'image/conference/lenovo.svg';
-import leftLine from 'image/BGlines/leftLineWhat.svg';
+import leftLine from 'image/BGlines/leftLine.svg';
+import leftLinePart from 'image/BGlines/leftLinePart.svg';
 import centrLine from 'image/BGlines/centrLine.svg';
-import leftHow from 'image/BGlines/leftHow.svg';
-import rightHow from 'image/BGlines/rightHow.svg';
+import centrLinePart from 'image/BGlines/centerLinePart.svg';
+import leftHow from 'image/BGlines/leftLineHow.svg';
+import rightHow from 'image/BGlines/rightLineHow.svg';
 import MediaQuery from 'components/MediaQuery';
 import Accordion from "../../../Accordion/Accordion";
 
@@ -91,11 +98,14 @@ const Conference = () => {
 
   return (
     <Section >
-      <Container style={{position:'relative'}}>
+      <BackEvoM src={Evo}  alt="evo" />
+      
 
         
         <ul>
+        <Container style={{position:'relative'}}>
           <ConferenceItem>
+            
             <GlobalImage>
             <Image src={Build} style={{marginLeft:'10%', width: '80%'}} alt="build" />
             </GlobalImage>
@@ -120,9 +130,12 @@ const Conference = () => {
           <ConferenceItem>
             <MediaQuery device={'mobile'}>
                 <GlobalBox>
-                    <BackEvo src={Evo}  alt="evo"></BackEvo>
                     <DivEvo>
-                    <SubTitle2>What is Cloud Evolve?</SubTitle2>
+                    <SubTitle2 style={{position: 'relative'}}>
+                    <LeftLine preserveAspectRatio="none" src={leftLine} alt="build" />
+                    <LeftLinePart preserveAspectRatio="none" src={leftLinePart} alt="build" />
+                      What is Cloud Evolve?
+                      </SubTitle2>
                     <Discription style={{width:'75%'}}>
                     It's a spectrum of services, solutions, 
                     frameworks, principles, and technologies crafted to help 
@@ -135,7 +148,8 @@ const Conference = () => {
               <DivBecome>
               <SubTitle></SubTitle>
               <Discription style={{position: 'relative'}}>
-              <CentrLine src={centrLine} alt="build" />
+              <CentrLine preserveAspectRatio="none" src={centrLine} alt="build" />
+              <CentrLinePart preserveAspectRatio="none" src={centrLinePart} alt="build" />
               Cloudvoid becomes an extension of your team. Prefer to use chat? That is how we engage. Have your own Project Management software? We integrate with that. 
               </Discription>
               <Discription>
@@ -143,29 +157,16 @@ const Conference = () => {
               </Discription>
               </DivBecome>
             </GlobalBox>
-            <MediaQuery device={'tablet'}>
+            <MediaQuery device={'tabletUp'}>
               <GlobalBox>
                 <BackEvo src={Evo}  alt="evo"></BackEvo>
                 <DivEvo>
-                <SubTitle2>What is Cloud Evolve?</SubTitle2>
-                <Discription style={{width:'75%'}}>
-                It's a spectrum of services, solutions, 
-                frameworks, principles, and technologies crafted to help 
-                businesses derive value from the cloud. We guide you through the entire cloud journey.
-                </Discription>
-                </DivEvo>
-              </GlobalBox>
-            </MediaQuery>
-            <MediaQuery device={'default'}>
-              <GlobalBox>
-                <BackEvo src={Evo}  alt="evo"></BackEvo>
-                <DivEvo>
-                <SubTitle2  style={{position:'relative'}}>
-                <LeftLine src={leftLine} alt="build" />
+                <SubTitle2 style={{position: 'relative'}}>
+                <LeftLine preserveAspectRatio="none" src={leftLine} alt="build" />
+                <LeftLinePart preserveAspectRatio="none" src={leftLinePart} alt="build" />
                   What is Cloud Evolve?
-                  </SubTitle2>
+                </SubTitle2>
                 <Discription style={{width:'75%'}}>
-                  
                 It's a spectrum of services, solutions, 
                 frameworks, principles, and technologies crafted to help 
                 businesses derive value from the cloud. We guide you through the entire cloud journey.
@@ -174,25 +175,40 @@ const Conference = () => {
               </GlobalBox>
             </MediaQuery>
           </ConferenceItem>
-
-{/*ACCORDION*/}
+          <MediaQuery device={'tabletUp'}>
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
-
             <Title> The Cloud Evolve Suite </Title>
             <DiscriptionCenter>
               Whether you are just starting your cloud journey or already have a mature IT environment, Cloud Evolve guides you on increasing your ROI and getting faster business results.
             </DiscriptionCenter>
             <Accordion items={accordionItems} />
           </ConferenceItemCenter>
+          </MediaQuery>
+      </Container>
 
 
 
+
+{/*ACCORDION*/}
+          <MediaQuery device={'mobile'}>
+          <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
+            <Title> The Cloud Evolve Suite </Title>
+            <DiscriptionCenter>
+              Whether you are just starting your cloud journey or already have a mature IT environment, Cloud Evolve guides you on increasing your ROI and getting faster business results.
+            </DiscriptionCenter>
+            <Accordion items={accordionItems} />
+          </ConferenceItemCenter>
+          </MediaQuery>
+
+
+          <ContainerTwo style={{position:'relative'}}>
           <ConferenceColumn>
             <SubTitleSolo>How Do We Make Cloud <br/> Evolve Possible?</SubTitleSolo>
             <RowBox>
               <CentralDiv>
                 <TitleDes style={{position: 'relative'}}>
-                <LeftHow src={leftHow} alt="build" /> 
+                <LeftHow preserveAspectRatio="none" src={leftHow} alt="build" /> 
+                <LeftLinePart preserveAspectRatio="none" src={leftLinePart} alt="build" />
                   Experienced & Dedicated Teams
                   </TitleDes>
                 <DiscriptionWithMargin>
@@ -202,6 +218,7 @@ const Conference = () => {
               <CentralDiv>
                 <TitleDes style={{position: 'relative'}}>
                 <RightHow src={rightHow} alt="build" />
+                <LeftLinePart preserveAspectRatio="none" src={leftLinePart} alt="build" />
                   Diverse Technology Stack
                   </TitleDes>
                 <DiscriptionWithMargin>
@@ -211,7 +228,8 @@ const Conference = () => {
             </RowBox>
             <RowBox>
               <CentralDiv >
-              <TitleDes>
+              <TitleDes style={{position: 'relative'}}>
+              <LeftLinePart preserveAspectRatio="none" src={leftLinePart} alt="build" />
                  Powerful Ecosystem Partners
                  </TitleDes>
               <DiscriptionWithMargin>
@@ -219,7 +237,10 @@ const Conference = () => {
               </DiscriptionWithMargin>
               </CentralDiv>
               <CentralDiv>
-              <TitleDes>Proven Track Record</TitleDes>
+              <TitleDes style={{position: 'relative'}}>
+              <LeftLinePart preserveAspectRatio="none" src={leftLinePart} alt="build" />
+                Proven Track Record
+                </TitleDes>
               <DiscriptionWithMargin>
               We have collaborated with numerous businesses across all industries, which validates our standing as subject matter experts.
               </DiscriptionWithMargin>
@@ -228,7 +249,7 @@ const Conference = () => {
           </ConferenceColumn>
 
 
-          <ConferenceItem>
+          <ConferenceItem style={{position: 'relative'}}>
             <GlobalBoxTwo style={{alignItems: 'center'}}>
               <div>
               <SubTitle>Customer Success Stories And Case Studies</SubTitle>
@@ -243,12 +264,19 @@ const Conference = () => {
               </LinkCustom>
               </div>
             </GlobalBoxTwo>
-            <GlobalBox>
+            <GlobalBox style={{position: 'relative'}}>
               <MediaQuery device={'desktop'}>
               <BackCustom src={Custom} alt="evo"></BackCustom>
               </MediaQuery>
-              
+              <MediaQuery device={'mobile'}>
+              <BackCustomDef src={CustomMobile} alt="evo"></BackCustomDef>
+              </MediaQuery>
+              <MediaQuery device={'tablet'}>
               <BackCustomDef src={CustomDef} alt="evo"></BackCustomDef>
+              </MediaQuery>
+              <MediaQuery device={'defaultOnly'}>
+              <BackCustomDef src={CustomDef} alt="evo"></BackCustomDef>
+              </MediaQuery>
               
               
 
@@ -273,11 +301,13 @@ const Conference = () => {
               Our team draws years of industry experience, a rare combination of skill sets, and a burning passion for technology.
               </DiscriptionWithMargin>
               </DivLen>
+
+
             </GlobalBox>
           </ConferenceItem>
-
+          </ContainerTwo>
         </ul>
-      </Container>
+      
     </Section>
   )
 };

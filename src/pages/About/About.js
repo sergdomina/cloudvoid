@@ -1,17 +1,30 @@
-import AboutHero from 'components/AboutHero';
+import Hero from 'components/HeaderServices/Evolve/Hero/Hero';
+import Conference from 'components/HeaderServices/Evolve/Conference/Conference';
+import Ready from 'components/HeaderServices/Evolve/Ready';
+import Footer from 'components/Footer'
 import { ScrollToTop } from 'hooks/ScrollToTop';
-// import DownloadMobileFooter from '../../components/DownloadMobileFooter';
-// import MediaQuery from '../../components/MediaQuery';
+
 const About = () => {
   ScrollToTop();
   return (
     <>
-      <AboutHero />
-      {/* <MediaQuery device={'mobile'}>
-        <DownloadMobileFooter />
-      </MediaQuery> */}
+      <main>
+        <Hero />
+        {/* <MediaQuery device={'mobile'}>
+          <FeaturesAccordion />
+        </MediaQuery>
+        <MediaQuery device={'tablet'}>
+          <FeaturesTabs />
+        </MediaQuery> */}
+
+        <Conference/>
+        <Ready/>
+        <Footer/>
+        {/* <MediaQuery device={'mobile'}>
+          <DownloadMobileFooter />
+        </MediaQuery> */}
+      </main>
     </>
   );
 };
-
-export default About;
+export default About

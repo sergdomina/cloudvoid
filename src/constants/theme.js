@@ -10,7 +10,7 @@ export const theme = Object.freeze({
     secondaryText: '#757575',
     body_bg: '#FAFAFA',
     tomato: 'tomato',
-    footer_bg: '#464648',
+    grey_1: '#EFEFF0',
     link: '#007aff',
     input_bg: '#f1f1f5',
     placeholder: '#6E7191',
@@ -28,7 +28,7 @@ export const theme = Object.freeze({
     desktop: '1440px',
   },
   device: {
-    mobile: `@media screen and (min-width:375px)`,
+    mobile: `@media screen and (min-width:340px)`,
     mobileMax: `@media screen and (max-width:767px)`,
     tablet: `@media screen and (min-width: 768px)`,
     tabletOnly: `@media screen and (min-width: 768px) and (max-width: 959px)`,

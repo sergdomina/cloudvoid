@@ -9,7 +9,7 @@ const Container = styled.div`
   ${device.mobile} {
     /* width: 343px; */
     padding: 0;
-    width: 100%;
+    width: 375px;
   }
 
   ${device.tablet} {

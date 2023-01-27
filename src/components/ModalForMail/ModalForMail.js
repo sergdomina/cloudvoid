@@ -38,16 +38,12 @@ const ModalForMail = ({ toggleModal }) => {
         <ModaButtonClose type="button" onClick={toggleModal}>
           <CloseIcon />
         </ModaButtonClose>
-        <ModalTitle>SEEYOU Limited Release Version 1.0.1</ModalTitle>
+        <ModalTitle></ModalTitle>
         <ModalSubTitle>
-          will be available for download and in the App Store and on Google
-          Play, the <AccentDescr>first week of May</AccentDescr>. Open release
-          is on July 1st
+          <AccentDescr>first week of May</AccentDescr>
         </ModalSubTitle>
         <ModalDescr>
-          Please enter your email below to be the first to get the limited
-          release download links when SEEYOU is available in the App Store and
-          Google Play
+         
         </ModalDescr>
         <form>
           <ModalInput placeholder="Email Address" type="text" />

@@ -80,12 +80,12 @@ const AppBar = () => {
                 <PopupHeader /> 
               </NavItem>
               <NavItem>
-              <Link to="/" onClick={toggleMenu}>
+              <Link to="/about" onClick={toggleMenu}>
                   About
                   </Link>
               </NavItem>
               <NavItem>
-              <Link to="/" onClick={toggleMenu}>
+              <Link to="/about" onClick={toggleMenu}>
                   Contact
                   </Link>
               </NavItem>

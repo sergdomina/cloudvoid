@@ -31,13 +31,12 @@ const Ready = () => {
                     <Ready5 src={ready5} alt="build" />
                     <Ready6 src={ready6} alt="build" />
                     <Title>
-                    Ready To Access The Untapped Value In Your Cloud?
+                    Ready To Start Your Cloud Migration Journey Today?
                     </Title>
                     <DiscriptionCenter>
-                    Get a free 15-minute consultation with our Cloud Evolve experts on how our solution will help you transform your business.
-                    </DiscriptionCenter>
+                    Book a 15-minute consultation with our cloud migration SMEs on how our services will help you achieve your business goals.                    </DiscriptionCenter>
                     <ReadyLink>
-                    Contact Us
+                    Talk To Us
                     </ReadyLink>
                 </Bg>
                 

@@ -10,12 +10,13 @@ const PopupHeader = () => (
         <Link to="/cloud-evolve"><p>Back</p></Link>
         </MediaQuery>
         <Link to="/cloud-evolve"><p>Cloud Evolve</p></Link>
+        <Link to="/cloud-governance"><p>Governance</p></Link>
         <Link to="/cloud-migration"><p>Cloud Migration</p></Link>
-        <Link to="/request-access"><p>Cloud Solutions Architecture</p></Link>
+        <Link to="/cloud-solutions-architecture"><p>Cloud Solutions Architecture</p></Link>
         <Link to="/delete-account"><p>Cloud AI & Analytics</p></Link>
-        <Link to="/end-to-end-encryption"><p>Smart DevOps</p></Link>
-        <Link to="/problem2"><p>Smart Infrastructure</p></Link>
-        <Link to="/problem"><p>Master MSP</p></Link>
+        <Link to="/smart-devops"><p>Smart DevOps</p></Link>
+        <Link to="/smart-infractructure"><p>Smart Infrastructure</p></Link>
+        <Link to="/"><p>Master MSP</p></Link>
       </PopupBox>
     }
     on={['focus', 'hover']}

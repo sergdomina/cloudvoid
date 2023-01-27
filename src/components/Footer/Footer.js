@@ -16,8 +16,12 @@ import {Section,
         FooterLineRight,
 
 } from './Footer.styled'
-import LogoSeeYou from '../../image/Cloudvoid_LO_FF-03.svg';
+import Logo from '../../image/Cloudvoid_LO_FF-03.svg';
 import lineLeft from '../../image/BGlines/footerLeft.svg';
+import mail from '../../image/Footer/mail.svg';
+import location from '../../image/Footer/location.svg';
+import linkedin from '../../image/Footer/linkedin.svg';
+import { Image } from 'semantic-ui-react';
 
 const Footer =() =>{
     return(
@@ -33,21 +37,30 @@ const Footer =() =>{
                         <InfoDiv>
                             <ItemsUl>
                                 <Items>
-                                    <LogoImg src={LogoSeeYou} alt={'Logo SeeYou'} />
+                                    <LogoImg src={Logo} alt={'Logo'} />
                                 </Items>
-                                <Items>
-                                    <a>
-                                        info@cloudvoid.com
+                                <Items >
+                                    <a style={{display: 'flex', alignItems: 'center'}}>
+                                        <div style={{width: '17px', marginRight: '13px'}}>
+                                            <Image src={mail} />
+                                        </div>
+                                        <p>info@cloudvoid.com</p>
                                     </a>
                                 </Items>
                                 <Items>
-                                    <a>
-                                        165 Broadway, New York, NY 10006, USA
+                                    <a style={{display: 'flex', alignItems: 'center'}}>
+                                        <div style={{width: '17px', marginRight: '13px'}}>
+                                            <Image src={location} />
+                                        </div>
+                                        <p>165 Broadway, New York, NY 10006, USA</p>
                                     </a>
                                 </Items>
                                 <Items>
-                                    <a>
-                                        Contact us LinkedIn
+                                    <a style={{display: 'flex', alignItems: 'center'}}>
+                                        <div style={{width: '17px', marginRight: '13px'}}>
+                                            <Image src={linkedin} />
+                                        </div>
+                                        <p>Contact us LinkedIn</p>
                                     </a>
                                 </Items>
                             </ItemsUl>
@@ -121,13 +134,28 @@ const Footer =() =>{
                         <CloudDiv> 
                             <ItemsUl>
                                 <Items>
-                                    <a>Cookie Policy</a>
+                                    <a style={{display: 'flex', alignItems: 'center'}}>
+                                        <div style={{width: '17px', marginRight: '13px'}}>
+                                            
+                                        </div>
+                                        <p>Cookie Policy</p>
+                                    </a>
                                 </Items>
                                 <Items>
-                                    <a>Terms Of Service</a>
+                                    <a style={{display: 'flex', alignItems: 'center'}}>
+                                        <div style={{width: '17px', marginRight: '13px'}}>
+                                            
+                                        </div>
+                                        <p>Terms Of Service</p>
+                                    </a>
                                 </Items>
                                 <Items>
-                                    <a>Privacy Policy</a>
+                                    <a style={{display: 'flex', alignItems: 'center'}}>
+                                        <div style={{width: '17px', marginRight: '13px'}}>
+                                            
+                                        </div>
+                                        <p>Privacy Policy</p>
+                                    </a>
                                 </Items>
                             </ItemsUl>
                         </CloudDiv>
