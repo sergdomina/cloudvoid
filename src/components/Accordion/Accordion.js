@@ -1,12 +1,11 @@
 import React, {useState} from 'react';
-import { AccordionStyled, AccordionItemStyled } from './Accordion.styled'
+import { AccordionStyled, AccordionItemStyled, AccordionHorizontalStyled } from './Accordion.styled'
 
-const Accordion = (props) => {
+const AccordionItems = (props) => {
 
     const [activeItem, setActiveItem] = useState(props.items[0]);
 
-    let accordionItems = props.items.map((item, i)  => {
-        console.log(i)
+    return props.items.map((item, i)  => {
         return (
             <AccordionItemStyled onClick={() => setActiveItem(item)} className={activeItem === item && "active"} key={i}>
                 <div className="accordion__header">
@@ -14,6 +13,7 @@ const Accordion = (props) => {
                     <h2>{item.title}</h2>
                 </div>
                 <div className="accordion__content">
+                    <span className="accordion__number">{item.number}</span>
                     <h2>{item.title}</h2>
                     <p>
                         {item.content}
@@ -22,13 +22,22 @@ const Accordion = (props) => {
             </AccordionItemStyled>
         );
     });
+};
 
-
+const Accordion = (props) => {
     return (
         <AccordionStyled>
-            { accordionItems }
+            <AccordionItems items={props.items}></AccordionItems>
         </AccordionStyled>
     );
 };
+
+export const AccordionHorizontal = (props) => {
+    return (
+        <AccordionHorizontalStyled>
+            <AccordionItems items={props.items}></AccordionItems>
+        </AccordionHorizontalStyled>
+    );
+}
 
 export default Accordion;
