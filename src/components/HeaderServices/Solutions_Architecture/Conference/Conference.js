@@ -28,6 +28,7 @@ import {
   LenDis,
   DivEvo,
   DivLen,
+  DivHalf,
   DivBecome,
   CentralDiv,
   CentralDivLogo,
@@ -67,17 +68,18 @@ import Clock from 'image/Smart_Infrastructure/clock_Smart.svg';
 import Cloud from 'image/Solutions_Architecture/cloud.svg';
 
 import Evo from 'image/conference/Rectangle 177.svg';
-import Tools from 'image/Smart_DevOps/DevOpsTools.svg';
+
+import McLane from 'image/AI&Analytics/McLane.png';
+import Gemean from 'image/AI&Analytics/Gemean.png';
+
 import Custom from 'image/conference/Group 291.svg';
 import CustomDef from 'image/conference/customDef.svg';
 import CustomMobile from 'image/conference/CustomMobile.svg';
-import Lenovo from 'image/conference/lenovo.svg';
 import leftLine from 'image/BGlines/leftLine.svg';
 import leftLinePart from 'image/BGlines/leftLinePart.svg';
 import centrLine from 'image/BGlines/centrLine.svg';
 import centrLinePart from 'image/BGlines/centerLinePart.svg';
-import leftHow from 'image/BGlines/leftLineHow.svg';
-import rightHow from 'image/BGlines/rightLineHow.svg';
+
 import MediaQuery from 'components/MediaQuery';
 import Accordion from "../../../Accordion/Accordion";
 
@@ -303,9 +305,22 @@ const Conference = () => {
           </ConferenceColumn>
 
 
-          <ConferenceItem style={{position: 'relative'}}>
-            <GlobalBoxTwo style={{alignItems: 'center'}}>
-              <div>
+{/*PARNERS*/}
+<ConferenceItem style={{position: 'relative'}}>
+            <GlobalBox style={{alignItems: 'center', position: 'relative'}}>
+              <DivHalf style={{}}>
+              <MediaQuery device={'desktop'}>
+              <BackCustom src={Custom} alt="evo"/>
+              </MediaQuery>
+              <MediaQuery device={'mobile'}>
+              <BackCustom src={CustomMobile} alt="evo"/>
+              </MediaQuery>
+              <MediaQuery device={'tablet'}>
+              <BackCustom src={CustomDef} alt="evo"/>
+              </MediaQuery>
+              <MediaQuery device={'defaultOnly'}>
+              <BackCustom src={CustomDef} alt="evo"/>
+              </MediaQuery>
               <SubTitle>Customer Success Stories And Case Studies</SubTitle>
               <Discription style={{ width:'auto'}}>
               See how Cloudvoid is helping businesses solve real-world problems in the advent of Industry 4.0.
@@ -316,47 +331,18 @@ const Conference = () => {
                 </DiscriptionBold>
                 <Arrow  src={arrow} alt='arrow'/>
               </LinkCustom>
-              </div>
-            </GlobalBoxTwo>
+              </DivHalf>
+            </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
-              <MediaQuery device={'desktop'}>
-              <BackCustom src={Custom} alt="evo"></BackCustom>
-              </MediaQuery>
-              <MediaQuery device={'mobile'}>
-              <BackCustomDef src={CustomMobile} alt="evo"></BackCustomDef>
-              </MediaQuery>
-              <MediaQuery device={'tablet'}>
-              <BackCustomDef src={CustomDef} alt="evo"></BackCustomDef>
-              </MediaQuery>
-              <MediaQuery device={'defaultOnly'}>
-              <BackCustomDef src={CustomDef} alt="evo"></BackCustomDef>
-              </MediaQuery>
-
-        {/*PARNERS*/}
               <DivLen>
-              <Len src={Lenovo} alt="evo"></Len>
-              <div style={{display:'flex'}}>
-                <div style={{marginRight:'10%'}}>
-                <LenTitle >+12%</LenTitle>
-                <LenDis>
-                Lorem ipsum stat to show
-                </LenDis>
-                </div>
-                <div>
-                <LenTitle>X2</LenTitle>
-                <LenDis>
-                Lorem ipsum stat to show
-                </LenDis>
-                </div>
-              </div>
-              <DiscriptionWithMargin style={{margin:'0'}}>
-              Our team draws years of industry experience, a rare combination of skill sets, and a burning passion for technology.
-              </DiscriptionWithMargin>
+              <Image src={McLane} alt="evo"/>
               </DivLen>
-
-
+              <DivLen>
+              <Image src={Gemean} alt="evo"/>
+              </DivLen>
             </GlobalBox>
           </ConferenceItem>
+
           </ContainerTwo>
         </ul>
       

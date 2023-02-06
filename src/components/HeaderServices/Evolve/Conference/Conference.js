@@ -25,6 +25,7 @@ import {
   LenDis,
   DivEvo,
   DivLen,
+  DivHalf,
   DivBecome,
   CentralDiv,
   GlobalBoxTwo,
@@ -48,9 +49,13 @@ import Evo from 'image/conference/Rectangle 177.svg';
 import Custom from 'image/conference/Group 291.svg';
 import CustomDef from 'image/conference/customDef.svg';
 import CustomMobile from 'image/conference/CustomMobile.svg';
-import Lenovo from 'image/conference/lenovo.svg';
+
+import McLane from 'image/AI&Analytics/McLane.png';
+import Gemean from 'image/AI&Analytics/Gemean.png';
+
 import leftLine from 'image/BGlines/leftLine.svg';
 import leftLinePart from 'image/BGlines/leftLinePart.svg';
+
 import centrLine from 'image/BGlines/centrLine.svg';
 import centrLinePart from 'image/BGlines/centerLinePart.svg';
 import leftHow from 'image/BGlines/leftLineHow.svg';
@@ -72,27 +77,27 @@ const Conference = () => {
     {
       title: 'SecOps',
       number: '02',
-      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+      content: 'We create and maintain a safe environment for you to do business. We protect your critical data, monitor threats, and react to events. We guide the team to operate safely. Does compliance drive your behavior? We will build the structure that ensures your technology and operations are compliant.'
     },
     {
       title: 'FinOps',
       number: '03',
-      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+      content: 'We help you align finance and technology to create a culture of financial accountability. Cloudvoid helps you improve resource planning and take back control of your cloud spending.'
     },
     {
       title: 'Smart DevOps',
       number: '04',
-      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+      content: 'Embrace CI/CD with smart DevOps and accelerate your software development lifecycle. We help you create the cultural and technological environment required to rapidly build, test, and release your software products.'
     },
     {
       title: 'Cloud Solutions Architecture',
       number: '05',
-      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+      content: ' Cloudvoid becomes your trusted advisor for translating complex business requirements into practical solutions. We design, develop, and integrate high-performance, secure, scalable, and reliable cloud solutions with minimum risk.'
     },
     {
       title: 'SysOps',
       number: '06',
-      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+      content: 'Cloudvoid`s professionals help you adopt hybrid solutions to improve infrastructure efficiency and resiliency. We are experts at administering classic server environments based on UNIX/Linux and Microsoft Server Technologies.'
     }
   ];
 
@@ -166,7 +171,7 @@ const Conference = () => {
                 <LeftLinePart preserveAspectRatio="none" src={leftLinePart} alt="build" />
                   What is Cloud Evolve?
                 </SubTitle2>
-                <Discription style={{width:'75%'}}>
+                <Discription style={{width:'85%'}}>
                 It's a spectrum of services, solutions, 
                 frameworks, principles, and technologies crafted to help 
                 businesses derive value from the cloud. We guide you through the entire cloud journey.
@@ -192,13 +197,15 @@ const Conference = () => {
 {/*ACCORDION*/}
           <MediaQuery device={'mobile'}>
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
-            <Title> The Cloud Evolve Suite </Title>
+            <Title style={{ marginLeft: '10%'}}> The Cloud Evolve Suite </Title>
             <DiscriptionCenter>
               Whether you are just starting your cloud journey or already have a mature IT environment, Cloud Evolve guides you on increasing your ROI and getting faster business results.
             </DiscriptionCenter>
             <Accordion items={accordionItems} />
           </ConferenceItemCenter>
           </MediaQuery>
+{/*ACCORDION*/}
+
 
 
           <ContainerTwo style={{position:'relative'}}>
@@ -249,9 +256,22 @@ const Conference = () => {
           </ConferenceColumn>
 
 
+{/*PARNERS*/}
           <ConferenceItem style={{position: 'relative'}}>
-            <GlobalBoxTwo style={{alignItems: 'center'}}>
-              <div>
+            <GlobalBox style={{alignItems: 'center', position: 'relative'}}>
+              <DivHalf style={{}}>
+              <MediaQuery device={'desktop'}>
+              <BackCustom src={Custom} alt="evo"/>
+              </MediaQuery>
+              <MediaQuery device={'mobile'}>
+              <BackCustom src={CustomMobile} alt="evo"/>
+              </MediaQuery>
+              <MediaQuery device={'tablet'}>
+              <BackCustom src={CustomDef} alt="evo"/>
+              </MediaQuery>
+              <MediaQuery device={'defaultOnly'}>
+              <BackCustom src={CustomDef} alt="evo"/>
+              </MediaQuery>
               <SubTitle>Customer Success Stories And Case Studies</SubTitle>
               <Discription style={{ width:'auto'}}>
               See how Cloudvoid is helping businesses solve real-world problems in the advent of Industry 4.0.
@@ -262,49 +282,18 @@ const Conference = () => {
                 </DiscriptionBold>
                 <Arrow  src={arrow} alt='arrow'/>
               </LinkCustom>
-              </div>
-            </GlobalBoxTwo>
+              </DivHalf>
+            </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
-              <MediaQuery device={'desktop'}>
-              <BackCustom src={Custom} alt="evo"></BackCustom>
-              </MediaQuery>
-              <MediaQuery device={'mobile'}>
-              <BackCustomDef src={CustomMobile} alt="evo"></BackCustomDef>
-              </MediaQuery>
-              <MediaQuery device={'tablet'}>
-              <BackCustomDef src={CustomDef} alt="evo"></BackCustomDef>
-              </MediaQuery>
-              <MediaQuery device={'defaultOnly'}>
-              <BackCustomDef src={CustomDef} alt="evo"></BackCustomDef>
-              </MediaQuery>
-              
-              
-
-{/*PARNERS*/}
               <DivLen>
-              <Len src={Lenovo} alt="evo"></Len>
-              <div style={{display:'flex'}}>
-                <div style={{marginRight:'10%'}}>
-                <LenTitle >+12%</LenTitle>
-                <LenDis>
-                Lorem ipsum stat to show
-                </LenDis>
-                </div>
-                <div>
-                <LenTitle>X2</LenTitle>
-                <LenDis>
-                Lorem ipsum stat to show
-                </LenDis>
-                </div>
-              </div>
-              <DiscriptionWithMargin style={{margin:'0'}}>
-              Our team draws years of industry experience, a rare combination of skill sets, and a burning passion for technology.
-              </DiscriptionWithMargin>
+              <Image src={McLane} alt="evo"/>
               </DivLen>
-
-
+              <DivLen>
+              <Image src={Gemean} alt="evo"/>
+              </DivLen>
             </GlobalBox>
           </ConferenceItem>
+
           </ContainerTwo>
         </ul>
       

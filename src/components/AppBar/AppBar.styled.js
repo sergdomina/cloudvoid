@@ -11,7 +11,7 @@ export const Header = styled.header`
   width: 100%;
   z-index: 2;
   background: transporant;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
   ${({ theme }) => theme.device.default} {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -36,7 +36,8 @@ export const Nav = styled.nav`
     opacity: 0;
     pointer-events: none;
     transform: translateX(-100%);
-    background-color: ${({ theme }) => theme.colors.white};
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(50px);
     transition: transform 0.3s ease-out, opacity 0.3s ease-out,
       visibility 0.3s ease-out;
     &.active {
@@ -57,6 +58,7 @@ export const NavList = styled.ul`
     align-items: center;
   }
   /* ${({ theme }) => theme.device.mobileMax} {
+    width: 100%;
     padding: 32px;
     position: absolute;
     top: 100%;
@@ -94,8 +96,8 @@ export const Link = styled(NavLink)`
     margin-left: 0px;
     padding: 10px;
     &.active {
-      background: #D6D7DB;
-  
+      background: ${({ theme }) => theme.colors.red};
+      color: ${({ theme }) => theme.colors.white};
       position: relative;
       &:after {
         display: block;
@@ -123,7 +125,7 @@ export const NavItem = styled.li`
   position: relative;
   ${({ theme }) => theme.device.mobileMax} {
     padding: 15px 0;
-    border-bottom: 1px solid ${({ theme }) => theme.colors.dark_grey}; 
+    border-bottom: 1px solid ${({ theme }) => theme.colors.grey_1}; 
 
   }
   ${({ theme }) => theme.device.tablet} {

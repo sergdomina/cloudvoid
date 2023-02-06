@@ -471,14 +471,23 @@ export const BoxBeforEnd = styled.div`
 export const BackCustom = styled.img`
   position: absolute;
   z-index: -1;
+  width: 347px;
+  margin-left: -30px;
+  margin-top: -110px;
   ${({ theme }) => theme.device.tablet} {
-    
+    width: 351px;
+    margin-left: -50px;
+    margin-top: -60px;
 }
   ${({ theme }) => theme.device.default} {
-    
+    width: 420px;
+   margin-left: -50px;
+   margin-top: -90px;
 }
   ${({ theme }) => theme.device.desktop} {
    width: 670px;
+   margin-left: -100px;
+   margin-top: -100px;
 };
 `
 
@@ -533,22 +542,48 @@ export const DivEvo = styled.div`
 };
 `
 
+export const DivHalf = styled.div`
+  width: 311px;
+  
+
+  ${({ theme }) => theme.device.tablet} {
+    margin: 0 auto;
+    width: 250px;
+  }
+  ${({ theme }) => theme.device.default} {
+    width: 318px;
+
+  }
+  ${({ theme }) => theme.device.desktop} {
+    width: 433px;
+  } ;
+`;
+
 
 export const DivLen = styled.div`
-    position: relative;
-    margin-left: 30px;
-     margin-top: 60px;
+    width: 169px;
+    margin: 0 auto;
+    &:first-child{
+      margin-top:130px;
+    }
+    &:not(:last-child){
+      margin-bottom: 52px; 
+    }
   ${({ theme }) => theme.device.tablet} {
-    margin-left: 35px;
-    margin-top: 50px;
-}
+    &:first-child{
+      margin-top: 0px;
+    }
+    &:not(:last-child){
+      margin-bottom: 52px; 
+    }
   ${({ theme }) => theme.device.default} {
-    margin-left: 40px;
-    margin-top: 50px;
+   width: 253px;
+   &:not(:last-child){
+    margin-bottom: 82px; 
+  }
 }
   ${({ theme }) => theme.device.desktop} {
-    margin-left: 50px;
-    margin-top: 60px;
+    
 };
 `
 

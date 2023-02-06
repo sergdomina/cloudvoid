@@ -23,7 +23,6 @@ const Accordion = (props) => {
         );
     });
 
-
     return (
         <AccordionStyled>
             { accordionItems }
