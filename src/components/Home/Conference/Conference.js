@@ -35,6 +35,7 @@ import {
 } from './Conference.styled';
 
 import { Image} from '@chakra-ui/react';
+import Acord from '../../Accordion/AcordionElement'
 import Container from '../../Container';
 import GlobalBox from '../../GlobalBox';
 import GlobalImage from '../../GlobalImage';

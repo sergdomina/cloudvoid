@@ -25,7 +25,6 @@ import {
   LenDis,
   DivEvo,
   DivLen,
-  DivHalf,
   DivBecome,
   CentralDiv,
   GlobalBoxTwo,
@@ -47,11 +46,14 @@ import Person from 'image/Governance/person.svg';
 import Dollar from 'image/Governance/dollar.svg';
 import Config from 'image/Governance/config.svg';
 import Evo from 'image/conference/Rectangle 177.svg';
+<<<<<<< Updated upstream
 
 import Insfocus from 'image/Customer_Section/insfocus.svg';
 import Bestex from 'image/Customer_Section/BestEx.png';
 import Doc from 'image/Customer_Section/docStribute.svg';
 
+=======
+>>>>>>> Stashed changes
 import Gain from 'image/Governance/gain.svg';
 import Custom from 'image/conference/Group 291.svg';
 import CustomDef from 'image/conference/customDef.svg';
@@ -59,6 +61,8 @@ import CustomMobile from 'image/conference/CustomMobile.svg';
 import Lenovo from 'image/conference/lenovo.svg';
 import leftLine from 'image/BGlines/leftLine.svg';
 import leftLinePart from 'image/BGlines/leftLinePart.svg';
+import leftHow from 'image/BGlines/leftLineHow.svg';
+import rightHow from 'image/BGlines/rightLineHow.svg';
 import MediaQuery from 'components/MediaQuery';
 import Accordion, { AccordionHorizontal } from "../../../Accordion/Accordion";
 
@@ -244,6 +248,7 @@ const Conference = () => {
 
 
           <ContainerTwo style={{position:'relative'}}>
+<<<<<<< Updated upstream
 
 {/*PARNERS*/}
           <ConferenceItem style={{position: 'relative'}}>  
@@ -280,6 +285,11 @@ const Conference = () => {
               <MediaQuery device={'defaultOnly'}>
               <BackCustom src={CustomDef} alt="evo"/>
               </MediaQuery>
+=======
+          <ConferenceItem style={{position: 'relative'}}>
+            <GlobalBoxTwo style={{alignItems: 'center'}}>
+              <div>
+>>>>>>> Stashed changes
               <SubTitle>Customer Success Stories And Case Studies</SubTitle>
               <Discription style={{ width:'auto'}}>
               See how Cloudvoid is helping businesses solve real-world problems in the advent of Industry 4.0.
@@ -290,6 +300,7 @@ const Conference = () => {
                 </DiscriptionBold>
                 <Arrow  src={arrow} alt='arrow'/>
               </LinkCustom>
+<<<<<<< Updated upstream
               </DivHalf>
             </GlobalBox>
             <MediaQuery device={'mobile'}>
@@ -311,8 +322,49 @@ const Conference = () => {
                 </DivLen>
               </GlobalBox>
             </MediaQuery >
-          </ConferenceItem>
+=======
+              </div>
+            </GlobalBoxTwo>
+            <GlobalBox style={{position: 'relative'}}>
+              <MediaQuery device={'desktop'}>
+              <BackCustom src={Custom} alt="evo"></BackCustom>
+              </MediaQuery>
+              <MediaQuery device={'mobile'}>
+              <BackCustomDef src={CustomMobile} alt="evo"></BackCustomDef>
+              </MediaQuery>
+              <MediaQuery device={'tablet'}>
+              <BackCustomDef src={CustomDef} alt="evo"></BackCustomDef>
+              </MediaQuery>
+              <MediaQuery device={'defaultOnly'}>
+              <BackCustomDef src={CustomDef} alt="evo"></BackCustomDef>
+              </MediaQuery>
 
+        {/*PARNERS*/}
+              <DivLen>
+              <Len src={Lenovo} alt="evo"></Len>
+              <div style={{display:'flex'}}>
+                <div style={{marginRight:'10%'}}>
+                <LenTitle >+12%</LenTitle>
+                <LenDis>
+                Lorem ipsum stat to show
+                </LenDis>
+                </div>
+                <div>
+                <LenTitle>X2</LenTitle>
+                <LenDis>
+                Lorem ipsum stat to show
+                </LenDis>
+                </div>
+              </div>
+              <DiscriptionWithMargin style={{margin:'0'}}>
+              Our team draws years of industry experience, a rare combination of skill sets, and a burning passion for technology.
+              </DiscriptionWithMargin>
+              </DivLen>
+
+
+            </GlobalBox>
+>>>>>>> Stashed changes
+          </ConferenceItem>
           </ContainerTwo>
         </ul>
       

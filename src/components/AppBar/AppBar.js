@@ -57,7 +57,12 @@ const AppBar = () => {
                 <LogoImg src={LogoMobile} alt={'Cloudvoid'} />
               </LogoLink>
             </MediaQuery>
-            <MediaQuery device={'tabletUp'}>
+            <MediaQuery device={'tablet'}>
+              <LogoLink onClick={() => setIsOpenMobileMenu(false)} to="/">
+                <LogoImg src={Logo} alt={'Cloudvoid'} />
+              </LogoLink>
+            </MediaQuery>
+            <MediaQuery device={'default'}>
               <LogoLink onClick={() => setIsOpenMobileMenu(false)} to="/">
                 <LogoImg src={Logo} alt={'Cloudvoid'} />
               </LogoLink>
@@ -84,6 +89,9 @@ const AppBar = () => {
                   Contact
                   </Link>
               </NavItem>
+              {/*<NavItem>
+                <PopupHeader />
+              </NavItem> */}
             </NavList>
           </Nav>
 

@@ -1,11 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.c3d5249d.css",
+<<<<<<< Updated upstream
     "main.js": "/static/js/main.8c5c98f7.js",
+=======
+    "main.js": "/static/js/main.50fddef1.js",
+>>>>>>> Stashed changes
     "static/js/227.f6d42006.chunk.js": "/static/js/227.f6d42006.chunk.js",
     "static/js/526.28027829.chunk.js": "/static/js/526.28027829.chunk.js",
     "static/js/232.0a864325.chunk.js": "/static/js/232.0a864325.chunk.js",
     "static/js/237.28b3e524.chunk.js": "/static/js/237.28b3e524.chunk.js",
+<<<<<<< Updated upstream
     "static/media/tech.svg": "/static/media/tech.63b73a05f7db848979e07542de5baf47.svg",
     "static/media/ProductMobile.svg": "/static/media/ProductMobile.8d67ab8d7266f56a4c03610df1b40ba3.svg",
     "static/media/Product.svg": "/static/media/Product.fa92698060f8995256ad3af8949a6dd1.svg",
@@ -32,9 +37,21 @@
     "static/media/Poppins-SemiBold.woff2": "/static/media/Poppins-SemiBold.810728e0001e1f7c0a71.woff2",
     "static/media/Modern.svg": "/static/media/Modern.42946f1381d65b6dd1e8c4f99243f6ad.svg",
     "static/media/365.svg": "/static/media/365.c65bb8da03eb4b74a4dea6a84a194b31.svg",
+=======
+    "static/media/ProductMobile.svg": "/static/media/ProductMobile.8d67ab8d7266f56a4c03610df1b40ba3.svg",
+    "static/media/Product.svg": "/static/media/Product.fa92698060f8995256ad3af8949a6dd1.svg",
+    "static/media/DevOpsTools.svg": "/static/media/DevOpsTools.fdf5c2a15120854d08576cd299292a85.svg",
+    "static/media/Montserrat-Bold.woff": "/static/media/Montserrat-Bold.180ba33d8de7dcfe80a0.woff",
+    "static/media/Montserrat-Bold.woff2": "/static/media/Montserrat-Bold.cfceaf4e74789fc9df24.woff2",
+    "static/media/OpenSans-SemiBold.woff": "/static/media/OpenSans-SemiBold.6292cd663e71d2dbef7a.woff",
+    "static/media/Poppins-Regular.woff": "/static/media/Poppins-Regular.9b9d9585fc27c8fff554.woff",
+    "static/media/Poppins-Bold.woff": "/static/media/Poppins-Bold.c4e77e991e26d17e68c5.woff",
+    "static/media/OpenSans-SemiBold.woff2": "/static/media/OpenSans-SemiBold.6f673076978c909711e8.woff2",
+    "static/media/Poppins-Regular.woff2": "/static/media/Poppins-Regular.5a6c15af2151cfa27e76.woff2",
+    "static/media/Poppins-Bold.woff2": "/static/media/Poppins-Bold.b138d0279be06a607215.woff2",
+>>>>>>> Stashed changes
     "static/media/OurProcessM.svg": "/static/media/OurProcessM.57865b59ade543c80694012472b6e3b9.svg",
     "static/media/OurProcess.svg": "/static/media/OurProcess.be85fdfefe0e075ab375025bef4801bc.svg",
-    "static/media/Lerner.png": "/static/media/Lerner.2098b3364dbc45f7a693.png",
     "static/media/doc.svg": "/static/media/doc.a481eee7f2e9e5d0952a479ed64e6dd6.svg",
     "static/media/docStribute.svg": "/static/media/docStribute.a2bbe90323f7e0f9b45975816f3b813b.svg",
     "static/media/AWS.png": "/static/media/AWS.a052c8aced2135a6e3d5.png",
@@ -48,7 +65,10 @@
     "static/media/Lyon.svg": "/static/media/Lyon.dd9c5904b2d78362f63f9f9a93650922.svg",
     "static/media/Cloudvoid_LO_FF-03.svg": "/static/media/Cloudvoid_LO_FF-03.2f99bc7e3a37f09cd86efb72d113e661.svg",
     "static/media/gain.svg": "/static/media/gain.36ed6d86b6ec50ac75ee67e687366686.svg",
+<<<<<<< Updated upstream
     "static/media/AI_Brain.svg": "/static/media/AI_Brain.452f1a8facb90a2413e2d6688c7455f1.svg",
+=======
+>>>>>>> Stashed changes
     "static/media/insfocus.svg": "/static/media/insfocus.15685711ac7e2a9a1cb0220cb9cc53f1.svg",
     "static/media/realize.svg": "/static/media/realize.aa93d038f690b68ba4dce3261866ec0a.svg",
     "static/media/build.svg": "/static/media/build.e0af94966ea31b399323952b0e037226.svg",
@@ -63,7 +83,10 @@
     "static/media/future.svg": "/static/media/future.9b9ae43de294066624858001ccf0383e.svg",
     "static/media/server.svg": "/static/media/server.314cdf90e436598f71d1471839e9568a.svg",
     "index.html": "/index.html",
+<<<<<<< Updated upstream
     "static/media/team.svg": "/static/media/team.b7fff50971d4c8ab87992d55070a7450.svg",
+=======
+>>>>>>> Stashed changes
     "static/media/readyMob.svg": "/static/media/readyMob.8c85d57b0e223853a04aaebca3201714.svg",
     "static/media/person.svg": "/static/media/person.2e1aa8dafb33233c225f574786b044e6.svg",
     "static/media/dollar.svg": "/static/media/dollar.5b2b97c20be61baebb814c69cd8fc6f0.svg",
@@ -97,7 +120,11 @@
     "static/media/Rectangle 177.svg": "/static/media/Rectangle 177.e0b3f50a4221eebc7be20ff4ab0acf5f.svg",
     "static/media/RedQuad.svg": "/static/media/RedQuad.81572515aed08895d905131e4251efb8.svg",
     "main.c3d5249d.css.map": "/static/css/main.c3d5249d.css.map",
+<<<<<<< Updated upstream
     "main.8c5c98f7.js.map": "/static/js/main.8c5c98f7.js.map",
+=======
+    "main.50fddef1.js.map": "/static/js/main.50fddef1.js.map",
+>>>>>>> Stashed changes
     "227.f6d42006.chunk.js.map": "/static/js/227.f6d42006.chunk.js.map",
     "526.28027829.chunk.js.map": "/static/js/526.28027829.chunk.js.map",
     "232.0a864325.chunk.js.map": "/static/js/232.0a864325.chunk.js.map",
@@ -105,6 +132,10 @@
   },
   "entrypoints": [
     "static/css/main.c3d5249d.css",
+<<<<<<< Updated upstream
     "static/js/main.8c5c98f7.js"
+=======
+    "static/js/main.50fddef1.js"
+>>>>>>> Stashed changes
   ]
 }

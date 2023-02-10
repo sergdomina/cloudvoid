@@ -433,26 +433,37 @@ export const BoxBeforEnd = styled.div`
   margin-bottom: 102px;
 `;
 
+export const BackEvo = styled.img`
+  width: 80%;
+  position: absolute;
+  z-index: -1;
+  margin-top: -20px;
+  margin-left: -20px;
+  ${({ theme }) => theme.device.tablet} {
+    width: 321px;
+    margin-left: -30px;
+}
+  ${({ theme }) => theme.device.default} {
+    width: 321px;
+    margin-left: -30px;
+}
+  ${({ theme }) => theme.device.desktop} {
+   width: 652px;
+   margin-left: -50px;
+};
+`
+
 export const BackCustom = styled.img`
   position: absolute;
   z-index: -1;
-  width: 347px;
-  margin-left: -30px;
-  margin-top: -110px;
   ${({ theme }) => theme.device.tablet} {
-    width: 351px;
-    margin-left: -50px;
-    margin-top: -60px;
+    
 }
   ${({ theme }) => theme.device.default} {
-    width: 420px;
-   margin-left: -50px;
-   margin-top: -90px;
+    
 }
   ${({ theme }) => theme.device.desktop} {
    width: 670px;
-   margin-left: -100px;
-   margin-top: -100px;
 };
 `
 
@@ -502,50 +513,24 @@ export const DivEvo = styled.div`
 };
 `
 
-export const DivHalf = styled.div`
-  width: 311px;
-  
-
-  ${({ theme }) => theme.device.tablet} {
-    margin: 0 auto;
-    width: 250px;
-  }
-  ${({ theme }) => theme.device.default} {
-    width: 318px;
-
-  }
-  ${({ theme }) => theme.device.desktop} {
-    width: 433px;
-  } ;
-`;
-
 
 export const DivLen = styled.div`
-    width: 169px;
-    margin: 0 auto;
-    &:first-child{
-      margin-top:130px;
-    }
-    &:not(:last-child){
-      margin-bottom: 52px; 
-    }
+    margin-left: 50px;
+     margin-top: 60px;
   ${({ theme }) => theme.device.tablet} {
-    &:first-child{
-      margin-top: 0px;
-    }
-    &:not(:last-child){
-      margin-bottom: 52px; 
-    }
+    margin-left: 35px;
+    margin-top: 50px;
+}
   ${({ theme }) => theme.device.default} {
-   width: 253px;
-   &:not(:last-child){
-    margin-bottom: 82px; 
-  }
+    margin-left: 40px;
+    margin-top: 50px;
 }
   ${({ theme }) => theme.device.desktop} {
-    
+    margin-left: 50px;
+    margin-top: 60px;
 };
 `
+
 
 export const DivBecome = styled.div`
 
@@ -613,135 +598,37 @@ color: #3E3D4A;
 //
 //backgrounds
 //
-
-export const BackEvo = styled.img`
-  display: none;
-  width: 80%;
-  position: absolute;
-  z-index: -1;
-  margin-top: -70px;
-  margin-left: -20px;
-  ${({ theme }) => theme.device.tablet} {
-    display: block;
-    width: 365px;
-    margin-top: -7px;
-    margin-left: -49px;
-}
-  ${({ theme }) => theme.device.default} {
-    width: 408px;
-    margin-top: -22px;
-    margin-left: -44px;
-}
-  ${({ theme }) => theme.device.desktop} {
-   width: 652px;
-   margin-left: -50px;
-};
-`
-export const BackEvoM = styled.img`
-  width: 375px;
-  position: absolute;
-  z-index: -1;
-  top: 1160px;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-  
-
-  ${({ theme }) => theme.device.tablet} {
-    display: none;
-   
-}
-  ${({ theme }) => theme.device.default} {
-   
-}
-  ${({ theme }) => theme.device.desktop} {
-  
-};
-`
-
 export const LeftLine=styled.img`
   position: absolute;
   z-index: 1;
-  height: 305px;
-    top: -80px;
-    left: -13px;
   ${({ theme }) => theme.device.tablet} {
-    height: 305px;
-    top: -180px;
-    left: -13px;
+      
   }
     ${({ theme }) => theme.device.default} {
-      height: 305px;
-      top: -180px;
-      left: -18px;
-  }
-    ${({ theme }) => theme.device.desktop} {
-      height: 365px;
-     top: -240px;
-     left: -18px;
-  };
-`
-export const LeftLinePart =styled.img`
-  position: absolute;
-  z-index: 1;
-  top: 0px;
-    left: -15px;
-  ${({ theme }) => theme.device.tablet} {
-    
-  }
-    ${({ theme }) => theme.device.default} {
-      top: 0px;
+      top: -750px;
       left: -20px;
   }
     ${({ theme }) => theme.device.desktop} {
-     top: 0px;
+     top: -750px;
      left: -20px;
   };
 `
-
 
 export const CentrLine=styled.img`
   position: absolute;
   z-index: 1;
-  display: none;
   ${({ theme }) => theme.device.tablet} {
-    display: block;
-    height: 351px;
-    top: -80px;
-   left: -13px;
-  }
-    ${({ theme }) => theme.device.default} { 
-      height: 434px;
-      top: -180px;
-     left: -18px;
-  }
-    ${({ theme }) => theme.device.desktop} {
-      height: 599px;
-     top: -370px;
-     left: -20px;
-  };
-`
-export const CentrLinePart=styled.img`
-  position: absolute;
-  z-index: 1;
-  height: 60px;
-  top: 0px;
-    left: -15px;
-  ${({ theme }) => theme.device.tablet} {
-
-  }
-    ${({ theme }) => theme.device.default} { 
       
-      top: 0px;
+  }
+    ${({ theme }) => theme.device.default} {
+      top: -390px;
      left: -20px;
   }
     ${({ theme }) => theme.device.desktop} {
-      height: 60px;
-     top: 0px;
-     left: -22px;
+     top: -390px;
+     left: -20px;
   };
 `
-
 
 export const LeftAdv =styled.img`
     margin: 0 auto;

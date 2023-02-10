@@ -4,7 +4,7 @@ export const theme = Object.freeze({
     dark_grey: '#3E3D4A',
     dark: '#000000',
     black_btn: '#303030',
-    red: '#CE1700',
+    red: '#f44336',
     blue: '#D9DBE9',
     text: '#3E3D4A',
     secondaryText: '#757575',
@@ -38,13 +38,13 @@ export const theme = Object.freeze({
   },
   fonts: {
     title: {
-      semiBold: 'Montserrat_SemiBold',
-      bold: 'Montserrat_Bold',
+      semiBold: 'Jost_SemiBold',
+      bold: 'Jost_Bold',
     },
     descr: {
-      regular: 'Poppins_Regular',
-      semiBold: 'Poppins_SemiBold',
-      bold: 'Poppins_Bold',
+      regular: 'OpenSans_Regular',
+      semiBold: 'OpenSans_SemiBold',
+      bold: 'OpenSans_Bold',
     },
   },
   spacing: value => `${4 * value}px`,

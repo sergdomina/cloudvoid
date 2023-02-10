@@ -10,13 +10,13 @@ const PopupHeader = () => (
         <Link to="/cloud-evolve"><p>Back</p></Link>
         </MediaQuery>
         <Link to="/cloud-evolve"><p>Cloud Evolve</p></Link>
-        <Link to="/cloud-governance"><p>Cloud Governance</p></Link>
+        <Link to="/cloud-governance"><p>Governance</p></Link>
         <Link to="/cloud-migration"><p>Cloud Migration</p></Link>
         <Link to="/cloud-solutions-architecture"><p>Cloud Solutions Architecture</p></Link>
-        <Link to="/cloud-ai-and-analytics"><p>Cloud AI & Analytics</p></Link>
+        <Link to="/delete-account"><p>Cloud AI & Analytics</p></Link>
         <Link to="/smart-devops"><p>Smart DevOps</p></Link>
         <Link to="/smart-infractructure"><p>Smart Infrastructure</p></Link>
-        <Link to="/master-msp"><p>Master MSP</p></Link>
+        <Link to="/"><p>Master MSP</p></Link>
       </PopupBox>
     }
     on={['focus', 'hover']}
@@ -29,3 +29,4 @@ const PopupHeader = () => (
 );
 
 export default PopupHeader;
+

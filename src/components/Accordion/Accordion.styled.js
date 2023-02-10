@@ -1,5 +1,29 @@
 import styled from 'styled-components';
 
+
+
+export const AccordionStyled = styled.ul`
+  display: flex;
+  min-height: 100%;
+  max-height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  height: 700px;
+  
+  h2{
+    font-weight: 700;
+    font-size: 24px;
+  }
+  
+  @media screen and (max-width: ${({ theme }) => theme.size.default}){
+    flex-direction: column;
+    height: auto;
+  }
+`;
+
 export const AccordionItemStyled = styled.li`
   flex: 1;
   display: flex;
@@ -203,6 +227,7 @@ export const AccordionItemStyled = styled.li`
   }
 `;
 
+<<<<<<< Updated upstream
 export const AccordionStyled = styled.ul`
   display: flex;
   min-height: 100%;
@@ -323,37 +348,12 @@ export const AccordionHorizontalStyled = styled.ul`
         }
       }
     }
+=======
+>>>>>>> Stashed changes
 
-    .accordion__header {
-      flex: 1;
-      display: flex;
-      width: 100%;
-      padding: 27px 0;
-      color: #3E3D4B;
-      position: relative;
-      border-bottom: 1px solid #3E3D4C;
-      border-right: 1px solid #3E3D4C;
-      transition: border-right .5s ease;
-      background-color: #EFEFF0;
-      z-index: 2;
 
-      h2 {
-        position: initial;
-        transform: initial;
-        width: 100%;
-        margin-left: 30px;
-      }
-      .accordion__number{
-        display: none;
-      }
-    }
 
-    .accordion__number{
-      position: initial;
-      left: initial;
-      top: initial;
-    }
-
+<<<<<<< Updated upstream
     .accordion__content {
       flex-direction:column;
       align-items: start;
@@ -502,3 +502,5 @@ export const Section = styled.section`
   }
 `;
 
+=======
+>>>>>>> Stashed changes
