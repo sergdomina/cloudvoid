@@ -48,8 +48,9 @@ import { Image} from '@chakra-ui/react';
 import Container from '../../../Container';
 import GlobalBox from '../../../GlobalBox';
 
-import McLane from 'image/AI&Analytics/McLane.png';
-import Gemean from 'image/AI&Analytics/Gemean.png';
+import BestEx from 'image/Customer_Section/BestEx.png';
+import Lyon from 'image/Customer_Section/Lyon.svg';
+import Israel from 'image/Customer_Section/Israel_electric_co.png';
 
 import arrow from 'image/conference/arrow.svg';
 import Evo from 'image/conference/Rectangle 177.svg';
@@ -318,7 +319,7 @@ const Conference = () => {
 
           
 {/*PARNERS*/}
-<ConferenceItem style={{position: 'relative'}}>
+<ConferenceItem style={{position: 'relative', zIndex: '-1'}}>
             <GlobalBox style={{alignItems: 'center', position: 'relative'}}>
               <DivHalf style={{}}>
               <MediaQuery device={'desktop'}>
@@ -346,12 +347,24 @@ const Conference = () => {
               </DivHalf>
             </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
-              <DivLen>
-              <Image src={McLane} alt="evo"/>
-              </DivLen>
-              <DivLen>
-              <Image src={Gemean} alt="evo"/>
-              </DivLen>
+                <DivLen>
+                <a href='https://bestexresearch.com' >
+                  <Image src={BestEx} style={{margin:'0 auto'}} alt=" "/>
+                  </a>
+                </DivLen>
+              
+              
+                <DivLen>
+                <a href='https://lyonstahl.com/' >
+                  <Image src={Lyon} style={{margin:'0 auto'}} alt=" "/>
+                  </a>
+                </DivLen>
+
+                <DivLen>
+                <a href='https://www.iec.co.il/en/home' >
+                  <Image src={Israel} style={{margin:'0 auto'}} alt=" "/>
+                  </a>
+                </DivLen>
             </GlobalBox>
           </ConferenceItem>
 

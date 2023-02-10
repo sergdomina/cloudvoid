@@ -64,7 +64,7 @@ import Lenovo from 'image/conference/lenovo.svg';
 import leftLine from 'image/BGlines/leftLine.svg';
 import leftLinePart from 'image/BGlines/leftLinePart.svg';
 import MediaQuery from 'components/MediaQuery';
-import Accordion from "../../../Accordion/Accordion";
+import Accordion, { AccordionHorizontal } from "../../../Accordion/Accordion";
 
 
 
@@ -177,7 +177,7 @@ const Conference = () => {
           <MediaQuery device={'tabletUp'}>
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
             <Title> Cloud Analytics & AI Services </Title>
-            <Accordion items={accordionItems} />
+            <AccordionHorizontal items={accordionItems} />
           </ConferenceItemCenter>
           </MediaQuery>
 
@@ -239,7 +239,7 @@ const Conference = () => {
           </ConferenceItemCenter>
 
 {/*PARNERS*/}
-          <ConferenceItem style={{position: 'relative'}}>
+          <ConferenceItem style={{position: 'relative', zIndex: '-1'}}>
             <GlobalBox style={{alignItems: 'center', position: 'relative'}}>
               <DivHalf style={{}}>
               <MediaQuery device={'desktop'}>
@@ -267,12 +267,18 @@ const Conference = () => {
               </DivHalf>
             </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
+
               <DivLen>
-              <Image src={McLane} alt="evo"/>
+                <a href='https://mclaneintel.com/'>
+                <Image src={McLane} style={{margin:'0 auto'}}  alt="evo"/>
+                </a>
               </DivLen>
               <DivLen>
-              <Image src={Gemean} alt="evo"/>
+                <a href='https://gemean.com/'>
+                <Image src={Gemean} style={{margin:'0 auto'}}  alt="evo"/>
+                </a>
               </DivLen>
+              
             </GlobalBox>
           </ConferenceItem>
 

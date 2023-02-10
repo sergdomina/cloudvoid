@@ -22,9 +22,6 @@ const Hero = () => {
           <HeroDiscription>
           Keep up with fast-paced customer demands and shorten Time-To-Market by simplifying and automating software development with continuous integration and delivery.
           </HeroDiscription>
-          <HeroLink>
-            Contact Us
-          </HeroLink>
         </GlobalBox>
       <MediaQuery device={'mobile'}>
         <Spline style={{position:"absolute", 

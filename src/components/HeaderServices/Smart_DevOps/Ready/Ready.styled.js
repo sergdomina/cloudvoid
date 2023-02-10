@@ -208,9 +208,9 @@ export const Ready6 =styled.img`
 `
 export const ReadyM =styled.img`
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   bottom: 0;
-  right: 20px;
+  right: 10px;
   ${({ theme }) => theme.device.tablet} {
     display: none;
   }

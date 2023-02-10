@@ -67,5 +67,34 @@ export const GlobalStyle = createGlobalStyle`
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+};
+
+p{
+  font-family: ${({ theme }) => theme.fonts.descr.regular};
+  color: ${({ theme }) => theme.colors.text};
+  font-size: 12px;
+  ${({ theme }) => theme.device.tablet} {
+   
+  }
+    ${({ theme }) => theme.device.default} {
+      font-size: 14px;
+  }
+    ${({ theme }) => theme.device.desktop} {
+     
+  };
+
+label{
+  font-family: ${({ theme }) => theme.fonts.descr.regular};
+  color: ${({ theme }) => theme.colors.text};
+  font-size: 12px;
+  ${({ theme }) => theme.device.tablet} {
+   
+  }
+    ${({ theme }) => theme.device.default} {
+      font-size: 14px;
+  }
+    ${({ theme }) => theme.device.desktop} {
+     
+  };
 `;
+

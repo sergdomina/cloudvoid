@@ -353,7 +353,7 @@ export const ConferenceItem = styled.li`
 export const ConferenceColumn = styled.li`
   padding: 0 32px;
   align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 280px;
 
   ${({ theme }) => theme.device.tablet} {
     display: block;
@@ -547,26 +547,27 @@ export const DivHalf = styled.div`
 `;
 
 export const DivLen = styled.div`
+
     width: 169px;
     margin: 0 auto;
     &:first-child{
       margin-top:130px;
-    }
+    };
     &:not(:last-child){
       margin-bottom: 52px; 
-    }
+    };
   ${({ theme }) => theme.device.tablet} {
     &:first-child{
       margin-top: 0px;
-    }
+    };
     &:not(:last-child){
       margin-bottom: 52px; 
-    }
+    };
   ${({ theme }) => theme.device.default} {
    width: 253px;
    &:not(:last-child){
-    margin-bottom: 82px; 
-  }
+    margin-bottom: 62px; 
+  };
 }
   ${({ theme }) => theme.device.desktop} {
     

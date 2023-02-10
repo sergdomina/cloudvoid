@@ -22,9 +22,6 @@ const Hero = () => {
           <HeroDiscription>
           We help you build, optimize, and manage your entire IT infrastructure so you can focus on what makes your business matter.
           </HeroDiscription>
-          <HeroLink>
-            Contact Us
-          </HeroLink>
         </GlobalBox>
       <MediaQuery device={'mobile'}>
         <Spline style={{position:"absolute", 

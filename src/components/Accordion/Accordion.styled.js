@@ -88,12 +88,21 @@ export const AccordionItemStyled = styled.li`
 
   .accordion__number{
     font-family: ${({ theme }) => theme.fonts.title.bold};
-    font-size: 32px;
+    font-size: 16px;
     top: 10%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     transition: all .5s ease;
+    ${({ theme }) => theme.device.tablet} {
+      font-size: 16px;
+    }
+      ${({ theme }) => theme.device.default} {
+        font-size: 18px;
+    }
+      ${({ theme }) => theme.device.desktop} {
+        font-size: 24px;
+    };
   }
 
   .accordion__content {
@@ -207,7 +216,28 @@ export const AccordionStyled = styled.ul`
   
   h2{
     font-weight: 700;
-    font-size: 24px;
+    font-size: 16px;
+    ${({ theme }) => theme.device.tablet} {
+      font-size: 16px;
+    }
+      ${({ theme }) => theme.device.default} {
+        font-size: 18px;
+    }
+      ${({ theme }) => theme.device.desktop} {
+        font-size: 24px;
+    };
+  }
+  p{
+    font-size: 12px;
+    ${({ theme }) => theme.device.tablet} {
+     
+    }
+      ${({ theme }) => theme.device.default} {
+        font-size: 14px;
+    }
+      ${({ theme }) => theme.device.desktop} {
+       
+    };
   }
   
   ${AccordionItemStyled} {
@@ -231,7 +261,7 @@ export const AccordionHorizontalStyled = styled.ul`
   height: auto;
   position: relative;
   border-right: 1px solid #3E3D4C;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 
   &:after{
@@ -247,8 +277,18 @@ export const AccordionHorizontalStyled = styled.ul`
   
   h2{
     font-weight: 700;
-    font-size: 24px;
+    font-size: 16px;
+    ${({ theme }) => theme.device.tablet} {
+      font-size: 16px;
+    }
+      ${({ theme }) => theme.device.default} {
+        font-size: 18px;
+    }
+      ${({ theme }) => theme.device.desktop} {
+        font-size: 24px;
+    };
   }
+  
 
   ${AccordionItemStyled} {
     display: grid;
@@ -462,108 +502,3 @@ export const Section = styled.section`
   }
 `;
 
-
-export const DivAcord = styled.div`
-margin: 0 auto;
-width: auto;
-${({ theme }) => theme.device.tablet} {
-  width: 508px;
-}
-${({ theme }) => theme.device.default} {
-
-}
-${({ theme }) => theme.device.desktop} {
-  
-}
-`;
-
-
-export const Questions = styled.p`
-  font-family: ${({ theme }) => theme.fonts.descr.bold};
-  font-size: 14px;
-  line-height: 1.35;
-  text-align: left;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  /* margin-bottom: 16px; */
-  color: ${({ theme }) => theme.colors.black};
-  ${({ theme }) => theme.device.tablet} {
-    font-size: 16px;
-  }
-  ${({ theme }) => theme.device.default} {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 30px;
-    font-size: 16px;
-    /* &:hover {
-      padding-bottom: 2px;
-    } */
-  }
-  ${({ theme }) => theme.device.desktop} {
-    font-size: 22px;
-  }
-`;
-
-
-export const Answer = styled.p`
-  font-family: ${({ theme }) => theme.fonts.descr.regular};
-  font-size: 12px;
-  line-height: 27px;
-  text-align: left;
-  color: ${({ theme }) => theme.colors.placeholder};
-  ${({ theme }) => theme.device.tablet} {
-    font-size: 12px;
-  }
-  ${({ theme }) => theme.device.default} {
-    padding-top: 2px;
-    padding-bottom: 12px;
-    padding-left: 10px;
-    font-size: 14px;
-  }
-  ${({ theme }) => theme.device.desktop} {
-    font-size: 14px;
-  }
-`;
-
-
-export const PartnersDiv = styled.div`
-  padding-top: 20px;
-  width: 333px;
-  ${({ theme }) => theme.device.tablet} {
-    width: 700px;
-    margin-left: 20px;
-  }
-  ${({ theme }) => theme.device.default} {
-  }
-  ${({ theme }) => theme.device.desktop} {
-  }
-`;
-export const PartnersUl = styled.ul`
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  ${({ theme }) => theme.device.tablet} {
-  }
-  ${({ theme }) => theme.device.default} {
-  }
-  ${({ theme }) => theme.device.desktop} {
-  }
-`;
-export const PartnersLi = styled.li`
-  padding: 0;
-  margin-bottom: 24px;
-  margin-right: 12px;
-  
-  transform: scale(80%);
-  ${({ theme }) => theme.device.tablet} {
-    transform: scale(100%);
-    margin-bottom: 32px;
-    &:not(:last-child) {
-      margin-right: 24px;
-    }
-  }
-  ${({ theme }) => theme.device.default} {
-  }
-  ${({ theme }) => theme.device.desktop} {
-  }
-`;

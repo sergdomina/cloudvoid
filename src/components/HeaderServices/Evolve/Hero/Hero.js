@@ -23,9 +23,7 @@ const Hero = () => {
           Experience unparalleled business value with Cloud Evolve.
 We offer end-to-end IT solutions to grow your business from Migration services, IaaS, PaaS, and SaaS to security.
           </HeroDiscription>
-          <HeroLink>
-            Contact Us
-          </HeroLink>
+
         </GlobalBox>
       <MediaQuery device={'mobile'}>
         <Spline style={{position:"absolute", 

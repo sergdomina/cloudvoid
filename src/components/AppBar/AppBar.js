@@ -80,7 +80,7 @@ const AppBar = () => {
                   </Link>
               </NavItem>
               <NavItem>
-              <Link to="/about" onClick={toggleMenu}>
+              <Link to="/contact" onClick={toggleMenu}>
                   Contact
                   </Link>
               </NavItem>

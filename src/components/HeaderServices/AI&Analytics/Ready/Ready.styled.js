@@ -110,6 +110,12 @@ export const Title = styled.h3`
   }
 `;
 
+
+
+
+
+
+
 export const Ready1 =styled.img`
   position: absolute;
   z-index: 2;
@@ -210,7 +216,7 @@ export const ReadyM =styled.img`
   position: absolute;
   z-index: 2;
   bottom: 0;
-  right: 20px;
+  right: 10px;
   ${({ theme }) => theme.device.tablet} {
     display: none;
   }

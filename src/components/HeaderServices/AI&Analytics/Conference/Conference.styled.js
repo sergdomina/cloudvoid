@@ -731,7 +731,7 @@ export const BackEvoM = styled.img`
   width: 375px;
   position: absolute;
   z-index: 0;
-  top: 650px;
+  top: 640px;
   right: 0;
   left: 0;
   margin: 0 auto;

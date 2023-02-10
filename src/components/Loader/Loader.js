@@ -3,7 +3,7 @@ import {} from './Loader.styled'
 
 const Loader =()=> {
     return(
-        <div>
+        <div id='ld'>
             <Title>HELLO.</Title>
         </div>
     )

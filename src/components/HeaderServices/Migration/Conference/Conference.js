@@ -54,6 +54,11 @@ import CustomMobile from 'image/conference/CustomMobile.svg';
 import leftLine from 'image/BGlines/leftLine.svg';
 import leftLinePart from 'image/BGlines/leftLinePart.svg';
 
+//Customer
+import USA from 'image/Customer_Section/USA.png';
+import Acteno from 'image/Customer_Section/acteno.png';
+import Aspiris from 'image/Customer_Section/aspiris.png';
+
 import centrLine from 'image/BGlines/centrLine.svg';
 import centrLinePart from 'image/BGlines/centerLinePart.svg';
 
@@ -65,9 +70,6 @@ import Cloud from 'image/Migration/cloud.svg';
 import MediaQuery from 'components/MediaQuery';
 import Accordion from "../../../Accordion/Accordion";
 
-import McLane from 'image/AI&Analytics/McLane.png';
-import Lenovo from 'image/MSP/Lenovo.png';
-import Lerner from 'image/MSP/Lerner.png';
 
 
 
@@ -252,14 +254,20 @@ const Conference = () => {
               </DivHalf>
             </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
-              <DivLen>
-              <Image src={Lenovo} style={{ width: '50%', margin:'0 auto'}}  alt="evo"/>
+            <DivLen>
+                <a href='http://www.unitedstatesseafoods.com/'>
+                <Image src={USA} alt="evo"/>
+                </a>
               </DivLen>
               <DivLen>
-              <Image src={Lerner} alt="evo"/>
+                <a href='https://www.acteno.de/ecms/de/'>
+                <Image src={Acteno} alt="evo"/>
+                </a>
               </DivLen>
               <DivLen>
-              <Image src={McLane} alt="evo"/>
+                <a href='https://aspiris.com/'>
+                <Image src={Aspiris} alt="evo"/>
+                </a>
               </DivLen>
             </GlobalBox>
           </ConferenceItem>

@@ -48,8 +48,9 @@ import Dollar from 'image/Governance/dollar.svg';
 import Config from 'image/Governance/config.svg';
 import Evo from 'image/conference/Rectangle 177.svg';
 
-import McLane from 'image/AI&Analytics/McLane.png';
-import Gemean from 'image/AI&Analytics/Gemean.png';
+import Insfocus from 'image/Customer_Section/insfocus.svg';
+import Bestex from 'image/Customer_Section/BestEx.png';
+import Doc from 'image/Customer_Section/docStribute.svg';
 
 import Gain from 'image/Governance/gain.svg';
 import Custom from 'image/conference/Group 291.svg';
@@ -59,7 +60,7 @@ import Lenovo from 'image/conference/lenovo.svg';
 import leftLine from 'image/BGlines/leftLine.svg';
 import leftLinePart from 'image/BGlines/leftLinePart.svg';
 import MediaQuery from 'components/MediaQuery';
-import Accordion from "../../../Accordion/Accordion";
+import Accordion, { AccordionHorizontal } from "../../../Accordion/Accordion";
 
 
 
@@ -70,12 +71,12 @@ const Conference = () => {
     {
       title: 'Assess Cloud Environment',
       number: '01',
-      content: 'This stage involves implementing the suggested framework. We will closely work with all relevant teams and members to bring your organizational vision to fruition.'
+      content: 'We assess and document the state of your cloud environment, discuss pain points, and organizational vision, and perform an in-depth analysis of the company to understand its operation mechanism.'
     },
     {
       title: 'Define Requirements',
       number: '02',
-      content: 'This stage involves implementing the suggested framework. We will closely work with all relevant teams and members to bring your organizational vision to fruition.'
+      content: 'Once we have relevant insights, we align people, technology, and processes to create a theoretical framework for your future cloud. This is the phase where we architect the blueprints and policies to be implemented.'
     },
     {
       title: 'Implement',
@@ -85,7 +86,7 @@ const Conference = () => {
     {
       title: 'Measure & Assess',
       number: '04',
-      content: 'This stage involves implementing the suggested framework. We will closely work with all relevant teams and members to bring your organizational vision to fruition.'
+      content: 'We monitor and optimize the implemented cloud governance framework to ensure that everyone in your organization is empowered to succeed.'
     },
   ];
 
@@ -223,7 +224,7 @@ const Conference = () => {
           <MediaQuery device={'tabletUp'}>
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
             <Title> Cloudvoid's Governance Approach </Title>
-            <Accordion items={accordionItems} />
+            <AccordionHorizontal items={accordionItems} />
           </ConferenceItemCenter>
           </MediaQuery>
       </Container>
@@ -245,7 +246,26 @@ const Conference = () => {
           <ContainerTwo style={{position:'relative'}}>
 
 {/*PARNERS*/}
-          <ConferenceItem style={{position: 'relative'}}>
+          <ConferenceItem style={{position: 'relative'}}>  
+            <MediaQuery device={'tabletUp'}>
+              <GlobalBox style={{position: 'relative'}}>
+                <DivLen>
+                  <a href='https://www.insfocus.com'>
+                  <Image src={Insfocus} alt="evo"/>
+                  </a>
+                </DivLen>
+                <DivLen>
+                  <a href='https://bestexresearch.com'>
+                  <Image src={Bestex} alt="evo"/>
+                  </a>
+                </DivLen>
+                <DivLen>
+                  <a href='https://www.docstribute.com'>
+                  <Image src={Doc} alt="evo"/>
+                  </a>
+                </DivLen>
+              </GlobalBox>
+            </MediaQuery >
             <GlobalBox style={{alignItems: 'center', position: 'relative'}}>
               <DivHalf style={{}}>
               <MediaQuery device={'desktop'}>
@@ -272,14 +292,25 @@ const Conference = () => {
               </LinkCustom>
               </DivHalf>
             </GlobalBox>
-            <GlobalBox style={{position: 'relative'}}>
-              <DivLen>
-              <Image src={McLane} alt="evo"/>
-              </DivLen>
-              <DivLen>
-              <Image src={Gemean} alt="evo"/>
-              </DivLen>
-            </GlobalBox>
+            <MediaQuery device={'mobile'}>
+              <GlobalBox style={{position: 'relative', paddingTop: '100px'}}>
+                <DivLen>
+                  <a href='https://www.insfocus.com'>
+                  <Image src={Insfocus} alt="evo"/>
+                  </a>
+                </DivLen>
+                <DivLen>
+                  <a href='https://bestexresearch.com'>
+                  <Image src={Bestex} alt="evo"/>
+                  </a>
+                </DivLen>
+                <DivLen>
+                  <a href='https://www.docstribute.com'>
+                  <Image src={Doc} alt="evo"/>
+                  </a>
+                </DivLen>
+              </GlobalBox>
+            </MediaQuery >
           </ConferenceItem>
 
           </ContainerTwo>

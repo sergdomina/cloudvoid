@@ -12,22 +12,18 @@ import AI from '../../pages/AI&Analytics';
 import MSP from '../../pages/MSP';
 import About from '../../pages/About/About';
 import Migration from 'pages/Cloud-migration/Migration';
-import Loader from '../Loader/Loader'
+import Contact from 'pages/Contact/Contact';
+
 // import Privacy from '../../pages/Privacy';
 // import Terms from '../../pages/Terms';
 
 
 function App() {
 
-  const [loading, setLoading] = useState(true);
-  const spinner = document.getElementsByName(Loader);
-  if(spinner) {
-    setTimeout(()=>{
-      spinner.style.display = "none";
-      setLoading(false);
-    }, 2000);
-  }
+  
+  
   return (
+
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
@@ -41,9 +37,11 @@ function App() {
         <Route path="cloud-ai-and-analytics" element={<AI />} />
         <Route path="master-msp" element={<MSP />} />
         <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
       </Route>
       <Route path="*" element={<h1>NotFound</h1>} />
     </Routes>
+    
   );
 }
 

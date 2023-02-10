@@ -177,11 +177,11 @@ export const FooterLineRight =styled.img`
   }
     ${({ theme }) => theme.device.default} {
       top: -45px;
-     left: 500px;
+     left: 490px;
   }
     ${({ theme }) => theme.device.desktop} {
      top: -37px;
-     left: 750px;
+     left: 745px;
   };
 `
 

@@ -41,7 +41,10 @@ import {
   LeftHow,
   RightHow,
   LinkCustom,
-  Arrow  
+  Arrow,  
+  Arrow2,
+  LinkWeDo, 
+  TitleWeDo
 } from './Conference.styled';
 
 import { Image} from '@chakra-ui/react';
@@ -69,8 +72,9 @@ import Cloud from 'image/Solutions_Architecture/cloud.svg';
 
 import Evo from 'image/conference/Rectangle 177.svg';
 
-import McLane from 'image/AI&Analytics/McLane.png';
-import Gemean from 'image/AI&Analytics/Gemean.png';
+import McLane from 'image/Customer_Section/McLane.png';
+import Elementor from 'image/Customer_Section/Elementor.png';
+import Amnis from 'image/Customer_Section/Amnis.png';
 
 import Custom from 'image/conference/Group 291.svg';
 import CustomDef from 'image/conference/customDef.svg';
@@ -81,7 +85,7 @@ import centrLine from 'image/BGlines/centrLine.svg';
 import centrLinePart from 'image/BGlines/centerLinePart.svg';
 
 import MediaQuery from 'components/MediaQuery';
-import Accordion from "../../../Accordion/Accordion";
+import Accordion, { AccordionHorizontal } from "../../../Accordion/Accordion";
 
 
 
@@ -97,17 +101,17 @@ const Conference = () => {
     {
       title: 'Cloud Architecture Design',
       number: '02',
-      content: 'Maximize the value of your cloud technology and support your business growth with our tailored cloud architecture strategy service. We`ll help you create a cloud blueprint that aligns your technology roadmap with your current and future business needs and identifies opportunities for modernization and innovation.'
+      content: 'Our team of cloud veterans has designed and implemented high-performance cloud architectures for various enterprises. We will help you design architectures built upon robust technologies and optimized to reduce operating costs, improve application performance and resiliency, and elevate security.'
     },
     {
       title: 'Cloud Resiliency Architecture',
       number: '03',
-      content: 'Maximize the value of your cloud technology and support your business growth with our tailored cloud architecture strategy service. We`ll help you create a cloud blueprint that aligns your technology roadmap with your current and future business needs and identifies opportunities for modernization and innovation.'
+      content: 'Stay ahead of potential downtime and security issues with our cloud resiliency architecture. We`ll design your architecture to ensure peak availability and alignment with your business objectives on a regional and global scale.'
     },
     {
       title: 'Cloud Cost Architecture',
       number: '04',
-      content: 'Maximize the value of your cloud technology and support your business growth with our tailored cloud architecture strategy service. We`ll help you create a cloud blueprint that aligns your technology roadmap with your current and future business needs and identifies opportunities for modernization and innovation.'
+      content: 'We help your organization take control of its cloud computing costs and drive operational efficiency with a tailored design for resource utilization and data residency.'
     },
   ];
 
@@ -170,7 +174,7 @@ const Conference = () => {
             <DiscriptionCenter>
             Cloudvoid provides enterprise-grade cloud architecture solutions that help you realize the value of your investments while minimizing business disruption. Our experts develop tailored solutions to meet your needs.
             </DiscriptionCenter>
-            <Accordion items={accordionItems} />
+            <AccordionHorizontal items={accordionItems} />
           </ConferenceItemCenter>
           </MediaQuery>
       </Container>
@@ -304,9 +308,11 @@ const Conference = () => {
             </RowBox>
           </ConferenceColumn>
 
+          
+
 
 {/*PARNERS*/}
-<ConferenceItem style={{position: 'relative'}}>
+          <ConferenceItem style={{position: 'relative', zIndex: '0'}}>
             <GlobalBox style={{alignItems: 'center', position: 'relative'}}>
               <DivHalf style={{}}>
               <MediaQuery device={'desktop'}>
@@ -321,7 +327,7 @@ const Conference = () => {
               <MediaQuery device={'defaultOnly'}>
               <BackCustom src={CustomDef} alt="evo"/>
               </MediaQuery>
-              <SubTitle>Customer Success Stories And Case Studies</SubTitle>
+              <SubTitle style={{ marginBottom: '7%'}} >Customer Success Stories And Case Studies</SubTitle>
               <Discription style={{ width:'auto'}}>
               See how Cloudvoid is helping businesses solve real-world problems in the advent of Industry 4.0.
               </Discription>
@@ -334,14 +340,107 @@ const Conference = () => {
               </DivHalf>
             </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
+
               <DivLen>
-              <Image src={McLane} alt="evo"/>
+                <a href='https://elementor.com/'>
+                <Image  src={Elementor} style={{margin:'0 auto'}}  alt="evo"/>
+                </a>
               </DivLen>
               <DivLen>
-              <Image src={Gemean} alt="evo"/>
+                <a href='https://amnistreasury.com'>
+                <Image src={Amnis} style={{margin:'0 auto'}}  alt="evo"/>
+                </a>
               </DivLen>
+              <DivLen>
+                <a href='https://mclaneintel.com/'>
+                <Image src={McLane} style={{margin:'0 auto'}}  alt="evo"/>
+                </a>
+              </DivLen>
+
             </GlobalBox>
           </ConferenceItem>
+
+          <ConferenceColumn>
+            <SubTitle2 style={{marginBottom: '40px'}}>We Don't Just Architect it; <br/>We Also Build It.</SubTitle2>
+            <MediaQuery device={'mobile'}>
+            <RowBox style={{justifyContent:'center',
+             display: 'flex',
+              flexWrap: 'wrap'}}>
+    
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <LinkWeDo style={{ }}>
+                      <TitleWeDo style={{padding: '0'}}>Cloud Evolve</TitleWeDo>
+                      <Arrow2  src={arrow} alt='arrow'/>
+                      </LinkWeDo>
+                    </td>
+                  </tr>
+                  <tr>
+                  <td> <LinkWeDo style={{ }}>
+                      <TitleWeDo style={{padding: '0'}}>Smart DevOps</TitleWeDo>
+                      <Arrow2  src={arrow} alt='arrow'/>
+                      </LinkWeDo>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td> 
+                      <LinkWeDo style={{ }}>
+                      <TitleWeDo style={{padding: '0'}}>Cloud AI & Analytics</TitleWeDo>
+                      <Arrow2  src={arrow} alt='arrow'/>
+                      </LinkWeDo>
+                    </td>                   
+                  </tr>
+                  
+                  <tr>
+                    <td><LinkWeDo style={{ }}>
+                        <TitleWeDo style={{padding: '0'}}>Cloud Migration</TitleWeDo>
+                        <Arrow2  src={arrow} alt='arrow'/>
+                        </LinkWeDo>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </RowBox>
+            </MediaQuery>
+            <MediaQuery device={'tabletUp'}>
+            <RowBox style={{justifyContent:'center',
+             display: 'flex',
+              flexWrap: 'wrap'}}>
+    
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <LinkWeDo style={{ }}>
+                      <TitleWeDo style={{padding: '0'}}>Cloud Evolve</TitleWeDo>
+                      <Arrow2  src={arrow} alt='arrow'/>
+                      </LinkWeDo>
+                    </td>
+                    <td> <LinkWeDo style={{ }}>
+                      <TitleWeDo style={{padding: '0'}}>Smart DevOps</TitleWeDo>
+                      <Arrow2  src={arrow} alt='arrow'/>
+                      </LinkWeDo>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td> 
+                      <LinkWeDo style={{ }}>
+                      <TitleWeDo style={{padding: '0'}}>Cloud AI & Analytics</TitleWeDo>
+                      <Arrow2  src={arrow} alt='arrow'/>
+                      </LinkWeDo>
+                    </td>
+                    <td><LinkWeDo style={{ }}>
+                        <TitleWeDo style={{padding: '0'}}>Cloud Migration</TitleWeDo>
+                        <Arrow2  src={arrow} alt='arrow'/>
+                        </LinkWeDo></td>
+                  </tr>
+                </tbody>
+              </table>
+            </RowBox>
+            </MediaQuery>
+          </ConferenceColumn>
 
           </ContainerTwo>
         </ul>

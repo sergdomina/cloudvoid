@@ -75,7 +75,7 @@ export const GlobalBoxTwo = styled.div`
 export const ConferenceItem = styled.li`
   align-items: center;
   padding: 0 32px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   z-index: 2;
   ${({ theme }) => theme.device.tablet} {
     display: flex;
@@ -106,9 +106,11 @@ export const ConferenceItem = styled.li`
 `;
 
 export const ConferenceColumn = styled.li`
-  padding: 0 32px;
+  padding: 0 16px;
   align-items: center;
-    margin-bottom: 100px;
+  &:not(:last-child) {
+    margin-bottom: 200px;
+  }
 
   ${({ theme }) => theme.device.tablet} {
     display: block;
@@ -120,7 +122,7 @@ export const ConferenceColumn = styled.li`
 
   }
   ${({ theme }) => theme.device.desktop} {
-    margin-bottom: 235px;
+
   }
 `;
 
@@ -149,6 +151,19 @@ export const RowBox = styled.div`
   padding-right: 8px;
   padding-left: 8px;
 
+
+  table{
+    table-layout: fixed;
+  width: 420px;
+  border-collapse: collapse;
+  border: 1px solid  ${({ theme }) => theme.colors.dark_grey};
+  ${({ theme }) => theme.device.tablet} {
+    width: 100%;
+  }
+  };
+  td{
+    border: 1px solid  ${({ theme }) => theme.colors.dark_grey}; 
+  };
   ${({ theme }) => theme.device.tablet} {
     margin: 0 auto;
     display: flex;
@@ -218,6 +233,7 @@ export const SubTitle = styled.h3`
   color: ${({ theme }) => theme.colors.black_btn};
   ${({ theme }) => theme.device.tablet} {
     font-size: 22px;
+    padding-bottom: 0;
   }
   ${({ theme }) => theme.device.default} {
    
@@ -229,6 +245,8 @@ export const SubTitle = styled.h3`
  
   }
 `;
+
+
 export const SubTitle2 = styled.h3`
   font-family: ${({ theme }) => theme.fonts.title.bold};
   font-size: 22px;
@@ -323,7 +341,9 @@ export const TitleDes = styled.h3`
     font-size: 18px;
   }
 `;
-export const Title = styled.h3`
+
+
+export const Title = styled.h1`
   font-family: ${({ theme }) => theme.fonts.title.bold};
   font-size: 22px;
   line-height: 1.2;
@@ -492,10 +512,10 @@ export const BoxBeforEnd = styled.div`
 
 export const BackCustom = styled.img`
   position: absolute;
-  z-index: -1;
+  z-index: -2;
   width: 347px;
   margin-left: -30px;
-  margin-top: -110px;
+  margin-top: -90px;
   ${({ theme }) => theme.device.tablet} {
     width: 351px;
     margin-left: -50px;
@@ -510,26 +530,6 @@ export const BackCustom = styled.img`
    width: 670px;
    margin-left: -100px;
    margin-top: -100px;
-};
-`
-
-export const BackCustomDef = styled.img`
-  position: absolute;
-  z-index: -1;
-  width: 341px;
-  left: 20px;
-  right: 0;
-  top: 170px;
-  ${({ theme }) => theme.device.tablet} {
-    width: 363px;
-    top: 0px;
-    left: 72px;
-}
-  ${({ theme }) => theme.device.default} {
-    width: 420px;
-}
-  ${({ theme }) => theme.device.desktop} {
-   display: none;
 };
 `
 
@@ -692,7 +692,65 @@ color: #3E3D4A;
      
   };
 `
+export const Arrow2 = styled.img`
+color: #3E3D4A;
+& :hover{
+  color: #CE1700;
+}
+width: 16px;
 
+  ${({ theme }) => theme.device.tablet} {
+      width: 16px;
+  }
+    ${({ theme }) => theme.device.default} {
+      width: 20px;
+     
+  }
+    ${({ theme }) => theme.device.desktop} {
+     width: 27px;
+     
+  };
+`
+export const LinkWeDo = styled.a`
+display: flex;
+width: 320px;
+align-items: center;
+justify-content: space-between; 
+padding: 22px 27px;
+
+${({ theme }) => theme.device.tablet} {
+  width: 320px;
+}
+${({ theme }) => theme.device.default} {
+  width: 400px;
+  padding: 27px 36px;
+}
+${({ theme }) => theme.device.desktop} {
+ width: 547px;
+ padding: 39px 48px;
+};
+`
+
+export const TitleWeDo = styled.h3`
+  font-family: ${({ theme }) => theme.fonts.title.bold};
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: left;
+  color: ${({ theme }) => theme.colors.black_btn};
+  ${({ theme }) => theme.device.tablet} {
+    font-size: 14px;
+    padding-bottom: 0;
+  }
+  ${({ theme }) => theme.device.default} {
+   
+    font-size: 18px;
+    
+  }
+  ${({ theme }) => theme.device.desktop} {
+    font-size: 24px;
+ 
+  }
+`;
 
 
 //
@@ -706,12 +764,12 @@ export const BackEvo = styled.img`
   
   ${({ theme }) => theme.device.tablet} {
     display: block;
-    width: 321px;
+    width: 350px;
     margin-top: -75px;
     margin-left: -30px;
 }
   ${({ theme }) => theme.device.default} {
-    width: 408px;
+    width: 425px;
     margin-top: -45px;
     margin-left: -50px;
 }

@@ -91,6 +91,9 @@ const Footer =() =>{
                                     <a>Cloud Evolve</a>
                                 </Items>
                                 <Items>
+                                    <a>Cloud Governance</a>
+                                </Items>
+                                <Items>
                                     <a>Cloud Migration</a>
                                 </Items>
                                 <Items>

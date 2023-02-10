@@ -11,6 +11,7 @@ export const PopupBox = styled.div`
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(12.5px);
   ${({ theme }) => theme.device.tablet} {
+    box-shadow: 0px 4px 20px rgba(206, 23, 0, 0.25);
     width: 280px;
   }
 `;

@@ -50,8 +50,9 @@ import Custom from 'image/conference/Group 291.svg';
 import CustomDef from 'image/conference/customDef.svg';
 import CustomMobile from 'image/conference/CustomMobile.svg';
 
-import McLane from 'image/AI&Analytics/McLane.png';
-import Gemean from 'image/AI&Analytics/Gemean.png';
+import Amnis from 'image/Customer_Section/Amnis.png';
+import BestEx from 'image/Customer_Section/BestEx.png';
+import Metalink from 'image/Customer_Section/metalink.png';
 
 import leftLine from 'image/BGlines/leftLine.svg';
 import leftLinePart from 'image/BGlines/leftLinePart.svg';
@@ -285,12 +286,26 @@ const Conference = () => {
               </DivHalf>
             </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
-              <DivLen>
-              <Image src={McLane} alt="evo"/>
-              </DivLen>
-              <DivLen>
-              <Image src={Gemean} alt="evo"/>
-              </DivLen>
+              
+                <DivLen>
+                <a href='https://amnistreasury.com' >
+                  <Image src={Amnis} style={{margin:'0 auto'}} alt=" "/>
+                  </a>
+                </DivLen>
+              
+              
+                <DivLen>
+                <a href='https://bestexresearch.com' >
+                  <Image src={BestEx} style={{margin:'0 auto'}} alt=" "/>
+                  </a>
+                </DivLen>
+
+                <DivLen>
+                <a href='https://metalink.com' >
+                  <Image src={Metalink} style={{margin:'0 auto'}} alt=" "/>
+                  </a>
+                </DivLen>
+              
             </GlobalBox>
           </ConferenceItem>
 

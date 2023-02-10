@@ -2,10 +2,13 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-      padding: 80px 0;
-
+      padding: 0px 0;
+      margin-bottom: 80px;
+      background: ${({ theme }) => theme.colors.grey_1};
     ${({ theme }) => theme.device.tablet} {
-      padding: 100px 0;
+      margin-bottom: 0px;
+      background: none;
+      padding: 30px 0 50px ;
     }
     ${({ theme }) => theme.device.default} {
       padding: 100px 0;
@@ -201,5 +204,20 @@ export const Ready6 =styled.img`
     ${({ theme }) => theme.device.desktop} {
      bottom: 0;
      left: 1223px;
+  };
+`
+export const ReadyM =styled.img`
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: 20px;
+  ${({ theme }) => theme.device.tablet} {
+    display: none;
+  }
+    ${({ theme }) => theme.device.default} {
+   
+  }
+    ${({ theme }) => theme.device.desktop} {
+
   };
 `

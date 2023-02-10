@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import gradient from '../../../../image/conference/gradient.svg'
 
 export const Section = styled.section`
-  padding: 100px 0px 100px;
+  padding: 200px 0px 100px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -12,7 +12,7 @@ export const Section = styled.section`
   
   ${({ theme }) => theme.device.tablet} {
     margin-bottom: 0px;
-    padding: 180px 0px 40px;
+    padding: 180px 0px 120px;
   }
   ${({ theme }) => theme.device.default} {
     padding: 250px 0px 180px;
@@ -686,7 +686,7 @@ export const BackEvo = styled.img`
 export const BackEvoM = styled.img`
   width: 375px;
   position: absolute;
-  top: 630px;
+  top: 740px;
   right: 0;
   left: 0;
   margin: 0 auto;

@@ -372,13 +372,13 @@ export const ConferenceColumn = styled.li`
     display: block;
     align-items: center;
     justify-content: space-around;
-
+    margin-bottom: 100px;
   }
   ${({ theme }) => theme.device.default} {
-
+    margin-bottom: 100px;
   }
   ${({ theme }) => theme.device.desktop} {
-    margin-bottom: 235px;
+    margin-bottom: 100px;
   }
 `;
 

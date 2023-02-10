@@ -332,8 +332,7 @@ export const ConferenceItem = styled.li`
 export const ConferenceColumn = styled.li`
   padding: 0 32px;
   align-items: center;
-    margin-bottom: 80px;
-
+    margin-bottom: 200px;
   ${({ theme }) => theme.device.tablet} {
     display: block;
     align-items: center;
@@ -344,7 +343,7 @@ export const ConferenceColumn = styled.li`
 
   }
   ${({ theme }) => theme.device.desktop} {
-    margin-bottom: 235px;
+    
   }
 `;
 

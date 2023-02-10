@@ -56,7 +56,7 @@ export const GlobalBox = styled.div`
   text-align: left;
   width: 290px;
   right: 50%;
-  left: 20%;
+  left: 10%;
   top: 271px;
   ${({ theme }) => theme.device.tablet} {
     padding-right: 0px;

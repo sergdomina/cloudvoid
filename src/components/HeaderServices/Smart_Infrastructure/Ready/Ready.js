@@ -9,6 +9,7 @@ import { ReadyLink,
     Ready4,
     Ready5,
     Ready6,
+    ReadyM,
   } from './Ready.styled';
 import Container from '../../../Container';
 import ready1 from 'image/BGlines/ready1.svg';
@@ -17,6 +18,7 @@ import ready3 from 'image/BGlines/ready3.svg';
 import ready4 from 'image/BGlines/ready4.svg';
 import ready5 from 'image/BGlines/ready5.svg';
 import ready6 from 'image/BGlines/ready6.svg';
+import readyM from 'image/BGlines/readyMob.svg';
 import MediaQuery from 'components/MediaQuery';
 
 const Ready = () => {
@@ -33,6 +35,9 @@ const Ready = () => {
                       <Ready5 src={ready5} alt="build" />
                       <Ready6 src={ready6} alt="build" />
                     </MediaQuery>
+                    <MediaQuery device={'mobile'}>
+                      <ReadyM src={readyM} alt="build" />
+                    </MediaQuery>
                     <Title>
                     Make Your IT Infrastructure Smarter
                     </Title>
@@ -40,7 +45,7 @@ const Ready = () => {
                     Talk to our SMEs and find out how our smart infrastructure services help you transform your business to drive growth, improve operational efficiency, and improve resiliency.
                     </DiscriptionCenter>
                     <ReadyLink>
-                    Talk To Us
+                    Talk To Us      
                     </ReadyLink>
                 </Bg>
                 

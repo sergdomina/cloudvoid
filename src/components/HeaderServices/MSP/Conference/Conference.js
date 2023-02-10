@@ -249,7 +249,7 @@ const Conference = () => {
           </ConferenceColumn>
 
 {/*PARNERS*/}
-            <ConferenceItem style={{position: 'relative'}}>
+            <ConferenceItem style={{position: 'relative', zIndex: '-1'}}>
             <GlobalBox style={{alignItems: 'center', position: 'relative'}}>
               <DivHalf style={{}}>
               <MediaQuery device={'desktop'}>
@@ -278,13 +278,15 @@ const Conference = () => {
             </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
               <DivLen>
-              <Image src={Lenovo} style={{ width: '50%', margin:'0 auto'}}  alt="evo"/>
+              <a href='https://www.lenovo.com'>
+                <Image src={Lenovo} style={{ width: '50%', margin:'0 auto'}}  alt="evo"/>
+                </a>
               </DivLen>
               <DivLen>
-              <Image src={Lerner} alt="evo"/>
+             <a href='https://www.lernersolutions.com/'> <Image src={Lerner} style={{ margin:'0 auto'}} alt="evo"/></a>
               </DivLen>
               <DivLen>
-              <Image src={McLane} alt="evo"/>
+              <a href='https://mclaneintel.com/'><Image src={McLane} style={{ margin:'0 auto'}} alt="evo"/></a>
               </DivLen>
             </GlobalBox>
           </ConferenceItem>

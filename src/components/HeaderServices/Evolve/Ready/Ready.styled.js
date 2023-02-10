@@ -206,3 +206,18 @@ export const Ready6 =styled.img`
      left: 1223px;
   };
 `
+export const ReadyM =styled.img`
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: 20px;
+  ${({ theme }) => theme.device.tablet} {
+    display: none;
+  }
+    ${({ theme }) => theme.device.default} {
+   
+  }
+    ${({ theme }) => theme.device.desktop} {
+
+  };
+`

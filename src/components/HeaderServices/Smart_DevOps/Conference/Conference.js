@@ -46,8 +46,10 @@ import Container from '../../../Container';
 import GlobalBox from '../../../GlobalBox';
 import arrow from 'image/conference/arrow.svg';
 
-import McLane from 'image/AI&Analytics/McLane.png';
-import Gemean from 'image/AI&Analytics/Gemean.png';
+//Customer
+import Elementor from 'image/Customer_Section/Elementor.png';
+
+
 
 import Insfocus from 'image/Smart_DevOps/insfocus.svg';
 import Metalink from 'image/Smart_DevOps/metalink.png';
@@ -248,7 +250,7 @@ const Conference = () => {
           </ConferenceItemCenter>
 
 {/*PARNERS*/}
-            <ConferenceItem style={{position: 'relative'}}>
+            <ConferenceItem style={{position: 'relative', zIndex: '-1'}}>
             <GlobalBox style={{alignItems: 'center', position: 'relative'}}>
               <DivHalf style={{}}>
               <MediaQuery device={'desktop'}>
@@ -277,10 +279,19 @@ const Conference = () => {
             </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
               <DivLen>
-              <Image src={McLane} alt="evo"/>
+                <a href='https://elementor.com/'>
+                <Image  src={Elementor} style={{margin:'0 auto'}}  alt="evo"/>
+                </a>
               </DivLen>
               <DivLen>
-              <Image src={Gemean} alt="evo"/>
+                <a href='https://amnistreasury.com'>
+                <Image src={Amnis} style={{margin:'0 auto'}}  alt="evo"/>
+                </a>
+              </DivLen>
+              <DivLen>
+                <a href='https://metalink.com'>
+                <Image src={Metalink} style={{margin:'0 auto'}}  alt="evo"/>
+                </a>
               </DivLen>
             </GlobalBox>
           </ConferenceItem>
