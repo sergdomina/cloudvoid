@@ -9,22 +9,11 @@ import Dev from '../../pages/Smart_DevOps';
 import Solution from '../../pages/Solutions_Architecture';
 import About from '../../pages/About/About';
 import Migration from 'pages/Cloud-migration/Migration';
-<<<<<<< Updated upstream
-import Contact from 'pages/Contact/Contact';
-
-=======
->>>>>>> Stashed changes
 // import Privacy from '../../pages/Privacy';
 // import Terms from '../../pages/Terms';
 
 
 function App() {
-<<<<<<< Updated upstream
-
-  
-  
-=======
->>>>>>> Stashed changes
   return (
 
     <Routes>
