@@ -11,7 +11,7 @@ import About from '../../pages/About/About';
 import Migration from 'pages/Cloud-migration/Migration';
 // import Privacy from '../../pages/Privacy';
 // import Terms from '../../pages/Terms';
-
+//////
 
 function App() {
   return (
