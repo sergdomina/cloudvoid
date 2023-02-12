@@ -16,6 +16,7 @@ import {
   ConferenceColumn,
   RowBox,
   BackEvo,
+  BackEvoM,
   BackCustom,
   BackCustomDef,
   Len,
@@ -23,11 +24,14 @@ import {
   LenDis,
   DivEvo,
   DivLen,
+  DivHalf,
   DivBecome,
   CentralDiv,
   GlobalBoxTwo,
   LeftLine,
+  LeftLinePart,
   CentrLine,
+  CentrLinePart,
   LeftAdv,
   CentrAdv,
   RightAdv,
@@ -45,7 +49,6 @@ import arrow from 'image/conference/arrow.svg';
 import Evo from 'image/conference/Rectangle 177.svg';
 import Custom from 'image/conference/Group 291.svg';
 import CustomDef from 'image/conference/customDef.svg';
-<<<<<<< Updated upstream
 import CustomMobile from 'image/conference/CustomMobile.svg';
 
 import leftLine from 'image/BGlines/leftLine.svg';
@@ -56,10 +59,9 @@ import USA from 'image/Customer_Section/USA.png';
 import Acteno from 'image/Customer_Section/acteno.png';
 import Aspiris from 'image/Customer_Section/aspiris.png';
 
-=======
-import Lenovo from 'image/conference/lenovo.svg';
->>>>>>> Stashed changes
 import centrLine from 'image/BGlines/centrLine.svg';
+import centrLinePart from 'image/BGlines/centerLinePart.svg';
+
 import Procces from 'image/Migration/OurProcess.svg';
 import ProccesM from 'image/Migration/OurProcessM.svg';
 import Clock from 'image/Migration/clock.svg';
@@ -68,11 +70,8 @@ import Cloud from 'image/Migration/cloud.svg';
 import MediaQuery from 'components/MediaQuery';
 import Accordion from "../../../Accordion/Accordion";
 
-<<<<<<< Updated upstream
 
 
-=======
->>>>>>> Stashed changes
 
 
 
@@ -108,9 +107,8 @@ const Conference = () => {
 
   return (
     <Section >
+      <BackEvoM src={Evo}  alt="evo"/>
       <Container style={{position:'relative'}}>
-
-        
         <ul>
           <ConferenceItem>
             <GlobalImage>
@@ -134,9 +132,13 @@ const Conference = () => {
           <ConferenceItem>
             <MediaQuery device={'mobile'}>
                 <GlobalBox>
-                    <BackEvo src={Evo}  alt="evo"></BackEvo>
+                    
                     <DivEvo>
-                    <SubTitle2>$100 billion will be lost in migration spending.</SubTitle2>
+                    <SubTitle2 style={{position: 'relative'}}>
+                    <LeftLine preserveAspectRatio="none" src={leftLine} alt="build" />
+                    <LeftLinePart preserveAspectRatio="none" src={leftLinePart} alt="build" />
+                      $100 billion will be lost in migration spending.
+                      </SubTitle2>
                     <Discription style={{width:'75%'}}>
                     Unfortunately, most companies are losing money because of flawed cloud migration frameworks. In fact, over the next three years, approximately $100 billion will be lost in migration spending. 
                     </Discription>
@@ -147,7 +149,8 @@ const Conference = () => {
               <DivBecome>
               <SubTitle></SubTitle>
               <Discription style={{position: 'relative'}}>
-              <CentrLine src={centrLine} alt="build" />
+              <CentrLine preserveAspectRatio="none" src={centrLine} alt="build" />
+              <CentrLinePart preserveAspectRatio="none" src={centrLinePart} alt="build" />
               Migration requirements such as security, compliance risks, and legacy infrastructure make the process seem complex! Are you stuck in this cloud migration journey and looking to accelerate the process? Don't worry; we've got you!
               </Discription>
               <Discription>
@@ -155,22 +158,15 @@ const Conference = () => {
               </Discription>
               </DivBecome>
             </GlobalBox>
-            <MediaQuery device={'tablet'}>
+            <MediaQuery device={'tabletUp'}>
               <GlobalBox>
                     <BackEvo src={Evo}  alt="evo"></BackEvo>
                     <DivEvo>
-                    <SubTitle2>$100 billion will be lost in migration spending.</SubTitle2>
-                    <Discription style={{width:'75%'}}>
-                    Unfortunately, most companies are losing money because of flawed cloud migration frameworks. In fact, over the next three years, approximately $100 billion will be lost in migration spending. 
-                    </Discription>
-                    </DivEvo>
-              </GlobalBox>
-            </MediaQuery>
-            <MediaQuery device={'default'}>
-              <GlobalBox>
-              <BackEvo src={Evo}  alt="evo"></BackEvo>
-                    <DivEvo>
-                    <SubTitle2>$100 billion will be lost in migration spending.</SubTitle2>
+                    <SubTitle2 style={{position: 'relative'}}>
+                    <LeftLine preserveAspectRatio="none" src={leftLine} alt="build" />
+                    <LeftLinePart preserveAspectRatio="none" src={leftLinePart} alt="build" />
+                      $100 billion will be lost in migration spending.
+                      </SubTitle2>
                     <Discription style={{width:'75%'}}>
                     Unfortunately, most companies are losing money because of flawed cloud migration frameworks. In fact, over the next three years, approximately $100 billion will be lost in migration spending. 
                     </Discription>
@@ -181,7 +177,6 @@ const Conference = () => {
 
 {/*ACCORDION*/}
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
-
             <Title> Cloud Migration Services </Title>
             <DiscriptionCenter>
             Our End-To-End cloud migration services ensure a seamless experience. Our proven approach guides you in every phase of your journey.
@@ -231,9 +226,21 @@ const Conference = () => {
 
 
 {/*PARNERS*/}
-          <ConferenceItem>
-            <GlobalBoxTwo style={{alignItems: 'center'}}>
-              <div>
+         <ConferenceItem style={{position: 'relative'}}>
+            <GlobalBox style={{alignItems: 'center', position: 'relative'}}>
+              <DivHalf style={{}}>
+              <MediaQuery device={'desktop'}>
+              <BackCustom src={Custom} alt="evo"/>
+              </MediaQuery>
+              <MediaQuery device={'mobile'}>
+              <BackCustom src={CustomMobile} alt="evo"/>
+              </MediaQuery>
+              <MediaQuery device={'tablet'}>
+              <BackCustom src={CustomDef} alt="evo"/>
+              </MediaQuery>
+              <MediaQuery device={'defaultOnly'}>
+              <BackCustom src={CustomDef} alt="evo"/>
+              </MediaQuery>
               <SubTitle>Customer Success Stories And Case Studies</SubTitle>
               <Discription style={{ width:'auto'}}>
               See how Cloudvoid is helping businesses solve real-world problems in the advent of Industry 4.0.
@@ -244,7 +251,6 @@ const Conference = () => {
                 </DiscriptionBold>
                 <Arrow  src={arrow} alt='arrow'/>
               </LinkCustom>
-<<<<<<< Updated upstream
               </DivHalf>
             </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
@@ -262,36 +268,6 @@ const Conference = () => {
                 <a href='https://aspiris.com/'>
                 <Image src={Aspiris} alt="evo"/>
                 </a>
-=======
-              </div>
-            </GlobalBoxTwo>
-            <GlobalBox>
-              <MediaQuery device={'desktop'}>
-              <BackCustom src={Custom} alt="evo"></BackCustom>
-              </MediaQuery>
-              <BackCustomDef src={CustomDef} alt="evo"></BackCustomDef>
-              
-              
-              <DivLen>
-              <Len src={Lenovo} alt="evo"></Len>
-              <div style={{display:'flex'}}>
-                <div style={{marginRight:'10%'}}>
-                <LenTitle >+12%</LenTitle>
-                <LenDis>
-                Lorem ipsum stat to show
-                </LenDis>
-                </div>
-                <div>
-                <LenTitle>X2</LenTitle>
-                <LenDis>
-                Lorem ipsum stat to show
-                </LenDis>
-                </div>
-              </div>
-              <DiscriptionWithMargin style={{margin:'0'}}>
-              Our team draws years of industry experience, a rare combination of skill sets, and a burning passion for technology.
-              </DiscriptionWithMargin>
->>>>>>> Stashed changes
               </DivLen>
             </GlobalBox>
           </ConferenceItem>

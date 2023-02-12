@@ -28,6 +28,7 @@ import {
   LenDis,
   DivEvo,
   DivLen,
+  DivHalf,
   DivBecome,
   CentralDiv,
   CentralDivLogo,
@@ -70,25 +71,19 @@ import Clock from 'image/Smart_Infrastructure/clock_Smart.svg';
 import Cloud from 'image/Solutions_Architecture/cloud.svg';
 
 import Evo from 'image/conference/Rectangle 177.svg';
-<<<<<<< Updated upstream
 
 import McLane from 'image/Customer_Section/McLane.png';
 import Elementor from 'image/Customer_Section/Elementor.png';
 import Amnis from 'image/Customer_Section/Amnis.png';
 
-=======
-import Tools from 'image/Smart_DevOps/DevOpsTools.svg';
->>>>>>> Stashed changes
 import Custom from 'image/conference/Group 291.svg';
 import CustomDef from 'image/conference/customDef.svg';
 import CustomMobile from 'image/conference/CustomMobile.svg';
-import Lenovo from 'image/conference/lenovo.svg';
 import leftLine from 'image/BGlines/leftLine.svg';
 import leftLinePart from 'image/BGlines/leftLinePart.svg';
 import centrLine from 'image/BGlines/centrLine.svg';
 import centrLinePart from 'image/BGlines/centerLinePart.svg';
-import leftHow from 'image/BGlines/leftLineHow.svg';
-import rightHow from 'image/BGlines/rightLineHow.svg';
+
 import MediaQuery from 'components/MediaQuery';
 import Accordion, { AccordionHorizontal } from "../../../Accordion/Accordion";
 
@@ -316,7 +311,6 @@ const Conference = () => {
           
 
 
-<<<<<<< Updated upstream
 {/*PARNERS*/}
           <ConferenceItem style={{position: 'relative', zIndex: '0'}}>
             <GlobalBox style={{alignItems: 'center', position: 'relative'}}>
@@ -334,12 +328,6 @@ const Conference = () => {
               <BackCustom src={CustomDef} alt="evo"/>
               </MediaQuery>
               <SubTitle style={{ marginBottom: '7%'}} >Customer Success Stories And Case Studies</SubTitle>
-=======
-          <ConferenceItem style={{position: 'relative'}}>
-            <GlobalBoxTwo style={{alignItems: 'center'}}>
-              <div>
-              <SubTitle>Customer Success Stories And Case Studies</SubTitle>
->>>>>>> Stashed changes
               <Discription style={{ width:'auto'}}>
               See how Cloudvoid is helping businesses solve real-world problems in the advent of Industry 4.0.
               </Discription>
@@ -349,10 +337,9 @@ const Conference = () => {
                 </DiscriptionBold>
                 <Arrow  src={arrow} alt='arrow'/>
               </LinkCustom>
-              </div>
-            </GlobalBoxTwo>
+              </DivHalf>
+            </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
-<<<<<<< Updated upstream
 
               <DivLen>
                 <a href='https://elementor.com/'>
@@ -455,46 +442,6 @@ const Conference = () => {
             </MediaQuery>
           </ConferenceColumn>
 
-=======
-              <MediaQuery device={'desktop'}>
-              <BackCustom src={Custom} alt="evo"></BackCustom>
-              </MediaQuery>
-              <MediaQuery device={'mobile'}>
-              <BackCustomDef src={CustomMobile} alt="evo"></BackCustomDef>
-              </MediaQuery>
-              <MediaQuery device={'tablet'}>
-              <BackCustomDef src={CustomDef} alt="evo"></BackCustomDef>
-              </MediaQuery>
-              <MediaQuery device={'defaultOnly'}>
-              <BackCustomDef src={CustomDef} alt="evo"></BackCustomDef>
-              </MediaQuery>
-
-        {/*PARNERS*/}
-              <DivLen>
-              <Len src={Lenovo} alt="evo"></Len>
-              <div style={{display:'flex'}}>
-                <div style={{marginRight:'10%'}}>
-                <LenTitle >+12%</LenTitle>
-                <LenDis>
-                Lorem ipsum stat to show
-                </LenDis>
-                </div>
-                <div>
-                <LenTitle>X2</LenTitle>
-                <LenDis>
-                Lorem ipsum stat to show
-                </LenDis>
-                </div>
-              </div>
-              <DiscriptionWithMargin style={{margin:'0'}}>
-              Our team draws years of industry experience, a rare combination of skill sets, and a burning passion for technology.
-              </DiscriptionWithMargin>
-              </DivLen>
-
-
-            </GlobalBox>
-          </ConferenceItem>
->>>>>>> Stashed changes
           </ContainerTwo>
         </ul>
       

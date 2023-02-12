@@ -25,6 +25,7 @@ import {
   LenDis,
   DivEvo,
   DivLen,
+  DivHalf,
   DivBecome,
   CentralDiv,
   GlobalBoxTwo,
@@ -46,22 +47,16 @@ import {
 import { Image} from '@chakra-ui/react';
 import Container from '../../../Container';
 import GlobalBox from '../../../GlobalBox';
-<<<<<<< Updated upstream
 
 import BestEx from 'image/Customer_Section/BestEx.png';
 import Lyon from 'image/Customer_Section/Lyon.svg';
 import Israel from 'image/Customer_Section/Israel_electric_co.png';
 
-=======
-import GlobalImage from '../../../GlobalImage';
-import Build from 'image/conference/build.svg';
->>>>>>> Stashed changes
 import arrow from 'image/conference/arrow.svg';
 import Evo from 'image/conference/Rectangle 177.svg';
 import Custom from 'image/conference/Group 291.svg';
 import CustomDef from 'image/conference/customDef.svg';
 import CustomMobile from 'image/conference/CustomMobile.svg';
-import Lenovo from 'image/conference/lenovo.svg';
 import leftLine from 'image/BGlines/leftLine.svg';
 import leftLinePart from 'image/BGlines/leftLinePart.svg';
 import centrLine from 'image/BGlines/centrLine.svg';
@@ -167,7 +162,7 @@ const Conference = () => {
                 <LeftLinePart preserveAspectRatio="none" src={leftLinePart} alt="build" />
                 Overview
                 </SubTitle2>
-                <Discription style={{width:'75%'}}>
+                <Discription style={{width:'85%'}}>
                 Today's business landscape requires systems that can evolve rapidly to meet technology requirements. Increased customer expectations demand your services be available 24/7/365, secure, and have omnichannel support.
                 </Discription>
                 </DivEvo>
@@ -198,6 +193,7 @@ const Conference = () => {
             <Accordion items={accordionItems} />
           </ConferenceItemCenter>
           </MediaQuery>
+
       </Container>
 
 
@@ -217,7 +213,7 @@ const Conference = () => {
 
 
 
-          <ContainerTwo style={{position:'relative'}}>
+        <ContainerTwo style={{position:'relative'}}>
           <ConferenceColumn>
             <SubTitleSolo>Smart Infrastructure Benefits</SubTitleSolo>
             <RowBox>
@@ -234,6 +230,7 @@ const Conference = () => {
               <CentralDiv>
                 <TitleDes style={{position: 'relative'}}>
                 <RightHow src={rightHow} alt="build" />
+                <LeftHow preserveAspectRatio="none" src={leftHow} alt="build" /> 
                 <LeftLinePart preserveAspectRatio="none" src={leftLinePart} alt="build" />
                 Boost Productivity
                   </TitleDes>
@@ -320,7 +317,6 @@ const Conference = () => {
 
 
 
-<<<<<<< Updated upstream
           
 {/*PARNERS*/}
 <ConferenceItem style={{position: 'relative', zIndex: '-1'}}>
@@ -338,11 +334,6 @@ const Conference = () => {
               <MediaQuery device={'defaultOnly'}>
               <BackCustom src={CustomDef} alt="evo"/>
               </MediaQuery>
-=======
-          <ConferenceItem style={{position: 'relative'}}>
-            <GlobalBoxTwo style={{alignItems: 'center'}}>
-              <div>
->>>>>>> Stashed changes
               <SubTitle>Customer Success Stories And Case Studies</SubTitle>
               <Discription style={{ width:'auto'}}>
               See how Cloudvoid is helping businesses solve real-world problems in the advent of Industry 4.0.
@@ -353,10 +344,9 @@ const Conference = () => {
                 </DiscriptionBold>
                 <Arrow  src={arrow} alt='arrow'/>
               </LinkCustom>
-              </div>
-            </GlobalBoxTwo>
+              </DivHalf>
+            </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
-<<<<<<< Updated upstream
                 <DivLen>
                 <a href='https://bestexresearch.com' >
                   <Image src={BestEx} style={{margin:'0 auto'}} alt=" "/>
@@ -377,48 +367,8 @@ const Conference = () => {
                 </DivLen>
             </GlobalBox>
           </ConferenceItem>
-=======
-              <MediaQuery device={'desktop'}>
-              <BackCustom src={Custom} alt="evo"></BackCustom>
-              </MediaQuery>
-              <MediaQuery device={'mobile'}>
-              <BackCustomDef src={CustomMobile} alt="evo"></BackCustomDef>
-              </MediaQuery>
-              <MediaQuery device={'tablet'}>
-              <BackCustomDef src={CustomDef} alt="evo"></BackCustomDef>
-              </MediaQuery>
-              <MediaQuery device={'defaultOnly'}>
-              <BackCustomDef src={CustomDef} alt="evo"></BackCustomDef>
-              </MediaQuery>
-              
-              
-
-{/*PARNERS*/}
-              <DivLen>
-              <Len src={Lenovo} alt="evo"></Len>
-              <div style={{display:'flex'}}>
-                <div style={{marginRight:'10%'}}>
-                <LenTitle >+12%</LenTitle>
-                <LenDis>
-                Lorem ipsum stat to show
-                </LenDis>
-                </div>
-                <div>
-                <LenTitle>X2</LenTitle>
-                <LenDis>
-                Lorem ipsum stat to show
-                </LenDis>
-                </div>
-              </div>
-              <DiscriptionWithMargin style={{margin:'0'}}>
-              Our team draws years of industry experience, a rare combination of skill sets, and a burning passion for technology.
-              </DiscriptionWithMargin>
-              </DivLen>
->>>>>>> Stashed changes
 
 
-            </GlobalBox>
-          </ConferenceItem>
           </ContainerTwo>
         </ul>
       

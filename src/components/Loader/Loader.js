@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 import { Title } from 'components/Home/Conference/Conference.styled'
 import {} from './Loader.styled'
 
@@ -11,5 +10,3 @@ const Loader =()=> {
 }
 
 export default Loader;
-=======
->>>>>>> Stashed changes

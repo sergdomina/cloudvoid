@@ -46,7 +46,6 @@ export const ContainerTwo = styled.div`
   }
 `;
 
-<<<<<<< Updated upstream
 
 export const ConferenceItem = styled.li`
 position: relative;
@@ -154,8 +153,6 @@ export const RowBox = styled.div`
   } ;
 `;
 
-=======
->>>>>>> Stashed changes
 export const GlobalBoxTwo = styled.div`
 
   width: auto;
@@ -315,11 +312,13 @@ export const Title = styled.h3`
 `;
 
 export const Discription = styled.p`
+position: relative;
 font-family: ${({ theme }) => theme.fonts.descr.regular};
 font-size: 12px;
 line-height: 1.35;
 color: ${({ theme }) => theme.colors.dark_grey};
 margin-bottom: 24px;
+z-index: 1;
 ${({ theme }) => theme.device.tablet} {
   font-size: 12px;
 }
@@ -331,6 +330,8 @@ ${({ theme }) => theme.device.desktop} {
   width: 541px;
 }
 `;
+
+
 export const DiscriptionSub = styled.h3`
   font-family: ${({ theme }) => theme.fonts.descr.regular};
   font-size: 12px;
@@ -432,109 +433,6 @@ export const DiscriptionWithMargin = styled(Discription)`
 `;
 
 
-export const ConferenceItem = styled.li`
-  align-items: center;
-  padding: 0 32px;
-    margin-bottom: 100px;
-  
-  ${({ theme }) => theme.device.tablet} {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    &:nth-child(1n + 2) {
-      flex-direction: row-reverse;
-    }
-    &:not(:last-child) {
-      margin-bottom: 80px;
-    }
-  }
-  ${({ theme }) => theme.device.default} {
-    &:not(:last-child) {
-      margin-bottom: 150px;
-    }
-   
-  }
-  }
-  ${({ theme }) => theme.device.desktop} {
-    &:not(:last-child) {
-      margin-bottom: 170px;
-    }
-
-  }
-`;
-
-export const ConferenceColumn = styled.li`
-  padding: 0 32px;
-  align-items: center;
-    margin-bottom: 80px;
-
-  ${({ theme }) => theme.device.tablet} {
-    display: block;
-    align-items: center;
-    justify-content: space-around;
-
-  }
-  ${({ theme }) => theme.device.default} {
-
-  }
-  ${({ theme }) => theme.device.desktop} {
-    margin-bottom: 235px;
-  }
-`;
-
-export const ConferenceItemCenter = styled.li`
-  padding: 60px 15px;
-  align-items: center;
-  margin-bottom: 60px;
-  ${({ theme }) => theme.device.tablet} {
-    padding: 60px 0;
-    align-items: center;
-    margin-bottom: 100px;
-  }
-  ${({ theme }) => theme.device.default} {
-    padding: 80px 0;
-    margin-bottom: 100px;
-  }
-  ${({ theme }) => theme.device.desktop} {
-      padding: 80px 30px;
-      margin-bottom: 200px;
-  }
-`;
-
-export const RowBox = styled.div`
-  width: auto;
-  text-align: left;
-  padding-right: 8px;
-  padding-left: 8px;
-
-  ${({ theme }) => theme.device.tablet} {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 42px;
-  }
-  ${({ theme }) => theme.device.default} {
-
-
-  }
-  ${({ theme }) => theme.device.desktop} {
-    
-  } ;
-`;
-
-export const ConferenceItemSolo = styled.li`
-  align-items: center;
-  ${({ theme }) => theme.device.tablet} {
-
-  ${({ theme }) => theme.device.default} {
-
-  }
-  ${({ theme }) => theme.device.desktop} {
-
-  }
-`;
 
 export const BrandsLogos = styled.img`
 
@@ -570,18 +468,26 @@ export const BoxBeforEnd = styled.div`
 `;
 
 
-
 export const BackCustom = styled.img`
   position: absolute;
   z-index: -1;
+  width: 347px;
+  margin-left: -30px;
+  margin-top: -110px;
   ${({ theme }) => theme.device.tablet} {
-    
+    width: 351px;
+    margin-left: -50px;
+    margin-top: -60px;
 }
   ${({ theme }) => theme.device.default} {
-    
+    width: 420px;
+   margin-left: -50px;
+   margin-top: -90px;
 }
   ${({ theme }) => theme.device.desktop} {
    width: 670px;
+   margin-left: -100px;
+   margin-top: -100px;
 };
 `
 
@@ -637,21 +543,48 @@ export const DivEvo = styled.div`
 `
 
 
-export const DivLen = styled.div`
-    position: relative;
-    margin-left: 30px;
-     margin-top: 60px;
+export const DivHalf = styled.div`
+  width: 311px;
+  
+
   ${({ theme }) => theme.device.tablet} {
-    margin-left: 35px;
-    margin-top: 50px;
-}
+    margin: 0 auto;
+    width: 250px;
+  }
   ${({ theme }) => theme.device.default} {
-    margin-left: 40px;
-    margin-top: 50px;
+    width: 318px;
+
+  }
+  ${({ theme }) => theme.device.desktop} {
+    width: 433px;
+  } ;
+`;
+
+
+export const DivLen = styled.div`
+    width: 169px;
+    margin: 0 auto;
+    &:first-child{
+      margin-top:130px;
+    }
+    &:not(:last-child){
+      margin-bottom: 52px; 
+    }
+  ${({ theme }) => theme.device.tablet} {
+    &:first-child{
+      margin-top: 0px;
+    }
+    &:not(:last-child){
+      margin-bottom: 52px; 
+    }
+  ${({ theme }) => theme.device.default} {
+   width: 253px;
+   &:not(:last-child){
+    margin-bottom: 82px; 
+  }
 }
   ${({ theme }) => theme.device.desktop} {
-    margin-left: 50px;
-    margin-top: 60px;
+    
 };
 `
 
@@ -727,9 +660,9 @@ export const BackEvo = styled.img`
   display: none;
   width: 80%;
   position: absolute;
-  z-index: -1;
   margin-top: -70px;
   margin-left: -20px;
+  z-index: 0;
   ${({ theme }) => theme.device.tablet} {
     display: block;
     width: 321px;
@@ -747,12 +680,11 @@ export const BackEvo = styled.img`
 export const BackEvoM = styled.img`
   width: 375px;
   position: absolute;
-  z-index: -1;
-  top: 1200px;
+  top: 650px;
   right: 0;
   left: 0;
   margin: 0 auto;
-  
+  z-index:0;
 
   ${({ theme }) => theme.device.tablet} {
     display: none;
@@ -852,7 +784,7 @@ export const CentrLinePart=styled.img`
 
 export const LeftHow =styled.img`
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   left: -13px;
   top: -150px;
   height: 681px;

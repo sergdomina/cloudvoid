@@ -5,7 +5,7 @@ import {
   HeroContainer,
   GlobalBox,
   HeroLink
-} from './Hero.styled';
+} from '../../Hero.styled';
 import Spline from '@splinetool/react-spline';
 import MediaQuery from 'components/MediaQuery';
 

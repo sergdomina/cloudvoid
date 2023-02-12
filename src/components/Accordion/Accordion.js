@@ -22,7 +22,8 @@ const AccordionItems = (props) => {
             </AccordionItemStyled>
         );
     });
-    
+};
+
 const Accordion = (props) => {
     return (
         <AccordionStyled>
