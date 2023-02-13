@@ -13,7 +13,7 @@ import MSP from '../../pages/MSP';
 import About from '../../pages/About/About';
 import Migration from 'pages/Cloud-migration/Migration';
 import Contact from 'pages/Contact/Contact';
-
+import Loader from '../Loader/Loader'
 // import Privacy from '../../pages/Privacy';
 // import Terms from '../../pages/Terms';
 
@@ -21,9 +21,10 @@ import Contact from 'pages/Contact/Contact';
 function App() {
 
   
-  
-  return (
 
+  return (
+    <>
+    <Loader/>
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
@@ -41,6 +42,7 @@ function App() {
       </Route>
       <Route path="*" element={<h1>NotFound</h1>} />
     </Routes>
+    </>
     
   );
 }

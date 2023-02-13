@@ -1,11 +1,17 @@
-import { Title } from 'components/Home/Conference/Conference.styled'
-import {} from './Loader.styled'
+import { DivLoad } from './Loader.styled'
+import { preLoaderAnim } from '../Animation/index';
+import React, {useEffect} from 'react';
 
 const Loader =()=> {
+
+    useEffect(()=>{
+        console.log('hello')
+      }, []);
+
     return(
-        <div id='ld'>
-            <Title>HELLO.</Title>
-        </div>
+        <DivLoad className='divload'>
+            <span className='title'>HELLO.</span>
+        </DivLoad>
     )
 }
 
