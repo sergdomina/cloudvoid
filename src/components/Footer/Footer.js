@@ -14,7 +14,7 @@ import {Section,
         Terms,
         FooterLineLeft,
         FooterLineRight,
-
+        Sink
 } from './Footer.styled'
 import Logo from '../../image/Cloudvoid_LO_FF-03.svg';
 import lineLeft from '../../image/BGlines/footerLeft.svg';
@@ -22,6 +22,7 @@ import mail from '../../image/Footer/mail.svg';
 import location from '../../image/Footer/location.svg';
 import linkedin from '../../image/Footer/linkedin.svg';
 import { Image } from 'semantic-ui-react';
+import { NavLink } from 'react-router-dom';
 
 const Footer =() =>{
     return(
@@ -40,28 +41,28 @@ const Footer =() =>{
                                     <LogoImg src={Logo} alt={'Logo'} />
                                 </Items>
                                 <Items >
-                                    <a style={{display: 'flex', alignItems: 'center'}}>
+                                    <Sink style={{display: 'flex', alignItems: 'center'}}>
                                         <div style={{width: '17px', marginRight: '13px'}}>
                                             <Image src={mail} />
                                         </div>
                                         <p>info@cloudvoid.com</p>
-                                    </a>
+                                    </Sink>
                                 </Items>
                                 <Items>
-                                    <a style={{display: 'flex', alignItems: 'center'}}>
+                                    <Sink style={{display: 'flex', alignItems: 'center'}}>
                                         <div style={{width: '17px', marginRight: '13px'}}>
                                             <Image src={location} />
                                         </div>
                                         <p>165 Broadway, New York, NY 10006, USA</p>
-                                    </a>
+                                    </Sink>
                                 </Items>
                                 <Items>
-                                    <a style={{display: 'flex', alignItems: 'center'}}>
+                                    <Sink style={{display: 'flex', alignItems: 'center'}}>
                                         <div style={{width: '17px', marginRight: '13px'}}>
                                             <Image src={linkedin} />
                                         </div>
                                         <p>Contact us LinkedIn</p>
-                                    </a>
+                                    </Sink>
                                 </Items>
                             </ItemsUl>
                         </InfoDiv>
@@ -72,13 +73,13 @@ const Footer =() =>{
                                     <TitleDes>Main</TitleDes>
                                 </Items>
                                 <Items>
-                                    <a>Home</a>
+                                    <Sink>Home</Sink>
                                 </Items>
                                 <Items>
-                                    <a>About</a>
+                                    <Sink>About</Sink>
                                 </Items>
                                 <Items>
-                                    <a>Contact</a>
+                                    <Sink>Contact</Sink>
                                 </Items>
                             </ItemsUl>
                         </MainDiv>
@@ -88,32 +89,32 @@ const Footer =() =>{
                                     <TitleDes>Services</TitleDes>
                                 </Items>
                                 <Items>
-                                    <a>Cloud Evolve</a>
+                                    <Sink href='/cloud-evolve' >Cloud Evolve</Sink>
                                 </Items>
                                 <Items>
-                                    <a>Cloud Governance</a>
+                                    <Sink>Cloud Governance</Sink>
                                 </Items>
                                 <Items>
-                                    <a>Cloud Migration</a>
+                                    <Sink>Cloud Migration</Sink>
                                 </Items>
                                 <Items>
-                                    <a>Cloud Solutions <br/> Architecture</a>
+                                    <Sink>Cloud Solutions <br/> Architecture</Sink>
                                 </Items>
                             </ItemsUl>
                         </MainDiv>
                         <CloudDiv> 
                             <ItemsUl>
                                 <Items>
-                                    <a>Cloud Al & Analytics</a>
+                                    <Sink>Cloud Al & Analytics</Sink>
                                 </Items>
                                 <Items>
-                                    <a>Smart DevOps</a>
+                                    <Sink>Smart DevOps</Sink>
                                 </Items>
                                 <Items>
-                                    <a>Smart Infrastructure</a>
+                                    <Sink>Smart Infrastructure</Sink>
                                 </Items>
                                 <Items>
-                                    <a>Master MSP</a>
+                                    <Sink>Master MSP</Sink>
                                 </Items>
                             </ItemsUl>
                         </CloudDiv>
@@ -122,13 +123,13 @@ const Footer =() =>{
                         <CloudDiv> 
                             <ItemsUl>
                                 <Items>
-                                    <a>Cookie Policy</a>
+                                    <Sink>Cookie Policy</Sink>
                                 </Items>
                                 <Items>
-                                    <a>Terms Of Service</a>
+                                    <Sink>Terms Of Service</Sink>
                                 </Items>
                                 <Items>
-                                    <a>Privacy Policy</a>
+                                    <Sink>Privacy Policy</Sink>
                                 </Items>
                             </ItemsUl>
                         </CloudDiv>
@@ -137,28 +138,28 @@ const Footer =() =>{
                         <CloudDiv> 
                             <ItemsUl>
                                 <Items>
-                                    <a style={{display: 'flex', alignItems: 'center'}}>
+                                    <Sink style={{display: 'flex', alignItems: 'center'}}>
                                         <div style={{width: '17px', marginRight: '13px'}}>
                                             
                                         </div>
                                         <p>Cookie Policy</p>
-                                    </a>
+                                    </Sink>
                                 </Items>
                                 <Items>
-                                    <a style={{display: 'flex', alignItems: 'center'}}>
+                                    <Sink style={{display: 'flex', alignItems: 'center'}}>
                                         <div style={{width: '17px', marginRight: '13px'}}>
                                             
                                         </div>
                                         <p>Terms Of Service</p>
-                                    </a>
+                                    </Sink>
                                 </Items>
                                 <Items>
-                                    <a style={{display: 'flex', alignItems: 'center'}}>
+                                    <Sink style={{display: 'flex', alignItems: 'center'}}>
                                         <div style={{width: '17px', marginRight: '13px'}}>
                                             
                                         </div>
                                         <p>Privacy Policy</p>
-                                    </a>
+                                    </Sink>
                                 </Items>
                             </ItemsUl>
                         </CloudDiv>
@@ -180,10 +181,10 @@ const Footer =() =>{
                             <ul style={{display:'flex'}}>
                                 <Terms>Cookie Policy</Terms>
                                 <Terms>
-                                    <a>Terms Of Service</a>
+                                    <Sink>Terms Of Service</Sink>
                                 </Terms>
                                 <Terms>
-                                    <a>Privacy Policy </a>
+                                    <Sink>Privacy Policy </Sink>
                                 </Terms>
                             </ul>
                         </div>
@@ -193,10 +194,10 @@ const Footer =() =>{
                             <ul style={{display:'flex'}}>
                                 <Terms>Cookie Policy</Terms>
                                 <Terms>
-                                    <a>Terms Of Service</a>
+                                    <Sink>Terms Of Service</Sink>
                                 </Terms>
                                 <Terms>
-                                    <a>Privacy Policy </a>
+                                    <Sink>Privacy Policy </Sink>
                                 </Terms>
                             </ul>
                         </div>

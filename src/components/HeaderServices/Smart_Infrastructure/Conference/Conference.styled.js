@@ -1,6 +1,6 @@
 
 import styled from 'styled-components';
-import gradient from '../../../../image/conference/gradient.svg'
+import gradient from '../../../../image/Smart_Infrastructure/bgInfrastrucrure.svg'
 
 export const Section = styled.section`
   padding: 100px 0px 100px;

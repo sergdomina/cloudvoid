@@ -12,7 +12,7 @@ import MediaQuery from 'components/MediaQuery';
 
 const Hero = () => {
   return (
-    <HeroSection>
+    <HeroSection style={{ backgroundColor: '#F9FCFF'}}>
        
       <HeroContainer style={{position:"relative"}}>
       <GlobalBox style={{zIndex:"1"}}>
@@ -50,7 +50,7 @@ const Hero = () => {
         margin:"0",
         top: "0",
         right: "0",
-       }}  scene="https://prod.spline.design/I9YR96HNIXKQm7h8/scene.splinecode" />
+       }}  scene="https://prod.spline.design/eNI7oQPH-fs32yal/scene.splinecode" />
        </MediaQuery>
         
       </HeroContainer>

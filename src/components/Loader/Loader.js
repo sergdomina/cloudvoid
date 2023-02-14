@@ -10,7 +10,9 @@ const Loader =()=> {
 
     return(
         <DivLoad className='divload'>
+
             <span className='title'>HELLO.</span>
+
         </DivLoad>
     )
 }

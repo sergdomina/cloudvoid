@@ -1,3 +1,4 @@
+import { NavLink, Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Section = styled.section`
@@ -26,6 +27,20 @@ export const DivItem = styled.div`
 
   }
 `;
+
+export const Sink = styled.a`
+font-family: ${({ theme }) => theme.fonts.descr.regular};
+  color: ${({ theme }) => theme.colors.dark};
+  font-size: 14px;
+  line-height: 1.5;
+  ${({ theme }) => theme.device.tablet} {
+
+    
+  }
+
+`
+
+
 export const DivOne = styled.div`
 
   ${({ theme }) => theme.device.tablet} {

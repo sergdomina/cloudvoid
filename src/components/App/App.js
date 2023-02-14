@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Layout from '../../components/Layout';
 // import Products from '../../pages/Products';
 import Home from '../../pages/Home/Home';
@@ -20,12 +20,16 @@ import Loader from '../Loader/Loader'
 
 function App() {
 
-  
+  const [showLoader, setShowLoader] = useState(true)
+  useEffect(()=>{
+  setTimeout(()=>{
+  setShowLoader(false)
+  }, 4000)
+  }, [])
 
   return (
     <>
-    <Loader/>
-    <Routes>
+    {showLoader ? <Loader/> : <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="home" element={<Home />} />
@@ -41,7 +45,9 @@ function App() {
         <Route path="contact" element={<Contact />} />
       </Route>
       <Route path="*" element={<h1>NotFound</h1>} />
-    </Routes>
+    </Routes>}
+    
+    
     </>
     
   );

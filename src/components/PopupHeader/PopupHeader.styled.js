@@ -44,7 +44,7 @@ export const Link = styled(NavLink)`
     margin-left: 32px;
   }
   ${({ theme }) => theme.device.tablet} {
-    font-size: 14px;
+
     
   }
 `;
