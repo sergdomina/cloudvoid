@@ -10,7 +10,7 @@ import { ReadyLink,
     Ready5,
     Ready6,
     ReadyM,
-  } from './Ready.styled';
+  } from '../../Ready.styled';
 import Container from '../../../Container';
 import ready1 from 'image/BGlines/ready1.svg';
 import ready2 from 'image/BGlines/ready2.svg';

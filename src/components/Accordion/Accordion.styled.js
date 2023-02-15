@@ -27,7 +27,7 @@ export const AccordionItemStyled = styled.li`
     left: 0;
     top: 100%;
     transform: translateY(0%);
-    transition: all .5s ease;
+    transition: all .2s ease;
   }
   &.active {
     flex: 5;
@@ -43,7 +43,8 @@ export const AccordionItemStyled = styled.li`
     .accordion__number{
       left: 100%;
       transform: translateX(0%);
-      transition: all .5s ease;
+      transition: all .2s ease;
+      margin-bottom: 24px;
     }
 
     .accordion__content {
@@ -73,16 +74,19 @@ export const AccordionItemStyled = styled.li`
     position: relative;
     
     h2 {
+
+      font-family: ${({ theme }) => theme.fonts.title.bold};
       bottom: 6%;
       margin: 0;
       transform: rotate(-90deg) translateX(0%);
       //white-space: nowrap;
-      transition: all .5s ease;
+      transition: all .2s ease;
       position: absolute;
       left: 50%;
       transform-origin: left center;
       width: 300px;
       text-align: left;
+      margin-bottom: 24px;
     }
   }
 
@@ -93,7 +97,7 @@ export const AccordionItemStyled = styled.li`
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    transition: all .5s ease;
+    transition: all .2s ease;
     ${({ theme }) => theme.device.tablet} {
       font-size: 16px;
     }
@@ -111,7 +115,7 @@ export const AccordionItemStyled = styled.li`
     margin: 0;
     padding: 0;
     opacity: 0;
-    transition: all .5s .1s ease-out;
+    transition: all .2s .1s ease-out;
     width: 0;
     flex-direction:column;
     align-items: start;
@@ -122,7 +126,7 @@ export const AccordionItemStyled = styled.li`
 
     h2{
       transform: translateX(200%);
-      transition: all .7s ease;
+      transition: all .2s ease;
     }
   }
   
@@ -212,11 +216,13 @@ export const AccordionStyled = styled.ul`
   padding: 0;
   overflow: hidden;
   list-style-type: none;
-  height: 500px;
+  height: 800px;
   
   h2{
+    font-family: ${({ theme }) => theme.fonts.title.bold};
     font-weight: 700;
     font-size: 16px;
+    margin-bottom: 32px;
     ${({ theme }) => theme.device.tablet} {
       font-size: 16px;
     }
@@ -276,7 +282,7 @@ export const AccordionHorizontalStyled = styled.ul`
   }
   
   h2{
-    font-weight: 700;
+    font-family: ${({ theme }) => theme.fonts.title.bold};
     font-size: 16px;
     ${({ theme }) => theme.device.tablet} {
       font-size: 16px;
@@ -333,7 +339,7 @@ export const AccordionHorizontalStyled = styled.ul`
       position: relative;
       border-bottom: 1px solid #3E3D4C;
       border-right: 1px solid #3E3D4C;
-      transition: border-right .5s ease;
+      transition: border-right .2s ease;
       background-color: #EFEFF0;
       z-index: 2;
 
@@ -372,7 +378,7 @@ export const AccordionHorizontalStyled = styled.ul`
       }
       h2{
         transform: translateX(200%);
-        transition: all .5s ease;
+        transition: all .2s ease;
         margin-bottom: 30px;
       }
     }
@@ -471,7 +477,7 @@ export const AccordionHorizontalStyled = styled.ul`
       .accordion__content{
         max-height: 0;
         padding: 0;
-        transition: all .5s .1s ease-out;
+        transition: all .2s .1s ease-out;
         transform: translateX(-50%);
         width: 100%;
         display: block;
@@ -479,7 +485,7 @@ export const AccordionHorizontalStyled = styled.ul`
         h2{
           display: none;
           transform: translateX(200%);
-          transition: all .7s ease;
+          transition: all .2s ease;
         }
         .accordion__number{
           display: none;

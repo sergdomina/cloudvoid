@@ -5,7 +5,7 @@ import Footer from 'components/Footer'
 import { ScrollToTop } from 'hooks/ScrollToTop';
 
 const Governance = () => {
-  ScrollToTop();
+  window.scrollTo( 0, 0);
   return (
     <>
       <main>

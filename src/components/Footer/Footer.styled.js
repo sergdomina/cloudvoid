@@ -28,6 +28,10 @@ export const DivItem = styled.div`
   }
 `;
 
+export const StyledLink = styled(Link)`
+
+`
+
 export const Sink = styled.a`
 font-family: ${({ theme }) => theme.fonts.descr.regular};
   color: ${({ theme }) => theme.colors.dark};
@@ -37,7 +41,6 @@ font-family: ${({ theme }) => theme.fonts.descr.regular};
 
     
   }
-
 `
 
 

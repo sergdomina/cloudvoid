@@ -4,7 +4,7 @@ import { ScrollToTop } from 'hooks/ScrollToTop';
 import Acord from 'components/Accordion'
 
 const Help = () => {
-  ScrollToTop();
+  window.scrollTo( 0, 0);
   return (
     <>
       <main>

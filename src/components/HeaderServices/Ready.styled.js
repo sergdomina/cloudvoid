@@ -2,9 +2,12 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
+
       padding: 0px 0;
       margin-bottom: 80px;
       background: ${({ theme }) => theme.colors.grey_1};
+      z-index: -1;
+
     ${({ theme }) => theme.device.tablet} {
       margin-bottom: 0px;
       background: none;
@@ -112,7 +115,7 @@ export const Title = styled.h3`
 
 export const Ready1 =styled.img`
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   ${({ theme }) => theme.device.tablet} {
     bottom: 0;
     left: 30px;
@@ -128,7 +131,7 @@ export const Ready1 =styled.img`
 `
 export const Ready2 =styled.img`
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   ${({ theme }) => theme.device.tablet} {
     top: 0;
     left: 76px;
@@ -144,7 +147,7 @@ export const Ready2 =styled.img`
 `
 export const Ready3 =styled.img`
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   ${({ theme }) => theme.device.tablet} {
     bottom: 0;
     left: 118px;
@@ -160,7 +163,7 @@ export const Ready3 =styled.img`
 `
 export const Ready4 =styled.img`
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   ${({ theme }) => theme.device.tablet} {
     bottom: 0;
     left: 520px;
@@ -176,7 +179,7 @@ export const Ready4 =styled.img`
 `
 export const Ready5 =styled.img`
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   ${({ theme }) => theme.device.tablet} {
     top: 0;
     left: 564px;
@@ -192,7 +195,7 @@ export const Ready5 =styled.img`
 `
 export const Ready6 =styled.img`
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   ${({ theme }) => theme.device.tablet} {
     bottom: 0;
     left: 606px;
@@ -208,7 +211,7 @@ export const Ready6 =styled.img`
 `
 export const ReadyM =styled.img`
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   bottom: 0;
   right: 20px;
   ${({ theme }) => theme.device.tablet} {

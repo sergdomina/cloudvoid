@@ -25,6 +25,7 @@ export const DivLoad= styled.div`
     opacity: 1;
     justify-content: center;
     animation: out 4s;
+    
 
     @keyframes out{
         0% {

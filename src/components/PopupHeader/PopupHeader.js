@@ -1,4 +1,4 @@
-import { PopLink, Link, PopButton, PopupBox } from './PopupHeader.styled';
+import { Link, PopButton, PopupBox } from './PopupHeader.styled';
 import { Popup } from 'semantic-ui-react';
 import MediaQuery from 'components/MediaQuery';
 
@@ -7,7 +7,7 @@ const PopupHeader = () => (
     content={
       <PopupBox >
         <MediaQuery device={'mobile'}>
-        <Link to="/cloud-evolve"><p>Back</p></Link>
+        <Link to="/"><p>Back</p></Link>
         </MediaQuery>
         <Link to="/cloud-evolve"><p>Cloud Evolve</p></Link>
         <Link to="/cloud-governance"><p>Cloud Governance</p></Link>
