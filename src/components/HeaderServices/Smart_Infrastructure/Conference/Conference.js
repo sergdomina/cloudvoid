@@ -321,7 +321,7 @@ const Conference = () => {
 
           
 {/*PARNERS*/}
-<ConferenceItem style={{position: 'relative', zIndex: '-1'}}>
+<ConferenceItem style={{position: 'relative', zIndex: '1'}}>
             <GlobalBox style={{alignItems: 'center', position: 'relative'}}>
               <DivHalf style={{}}>
               <MediaQuery device={'desktop'}>
@@ -350,10 +350,10 @@ const Conference = () => {
             </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
                 <DivSlide >
-                  <a className='first' href='https://bestexresearch.com' >
+                  <a className='first' href='https://bestexresearch.com/1' >
                     <Image src={BestEx} style={{margin:'0 auto'}} alt=" "/>
                   </a>
-                  <a className='second' href='https://bestexresearch.com' >
+                  <a className='second' href='https://bestexresearch.com/2' >
                     <Image src={Gear} style={{margin:'0 auto'}} alt=" "/>
                   </a>
                 </DivSlide>

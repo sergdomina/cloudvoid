@@ -12,8 +12,8 @@ export const DivSlide = styled.div`
     &:not(:last-child){
       margin-bottom: 52px; 
     }
+  
     display: flex;
-
 
     .first{
         position: absolute;
@@ -21,35 +21,8 @@ export const DivSlide = styled.div`
         height: 70px;
         z-index:1;
       opacity: 1;
-      animation: slide1 8s infinite;
+      animation: 8s slide 4s infinite;
     };
-    @keyframes slide1{
-        0% {
-            z-index: -1;
-            opacity: 0;
-        }
-    
-        5% {
-            z-index: 1;
-            opacity: 1;
-        }
-    
-        45% {
-
-            z-index: 1;
-            opacity: 1;
-        55% {
-
-            z-index: -1;
-            opacity: 0;
-        }
-        100% {
-
-            z-index: -1;
-            opacity: 0;
-        }
-    };
-
 
     .second{
         position: absolute;
@@ -57,46 +30,30 @@ export const DivSlide = styled.div`
         height: 70px;
         z-index:1;
       opacity: 1;
-      animation: slide2 8s infinite;
+      animation: slide 8s infinite;
     }
-    @keyframes slide2{
-        0% {
-            z-index: 1;
-            opacity: 1;
-        }
-    
-        5% {
-            z-index: -1;
-            opacity: 0;
-        }
-    
-        55% {
+  
+    @keyframes slide {
+      0% {
+        z-index: 1;
+        opacity: 1;
+      }
 
-            z-index: -1;
-            opacity: 0;
-        }
-        100% {
+      5% {
+        z-index: -1;
+        opacity: 0;
+      }
 
-            z-index: 1;
-            opacity: 1;
-            
-        }
-    
+      55% {
 
-    
-  ${({ theme }) => theme.device.tablet} {
-    &:first-child{
-      margin-top: 0px;
+        z-index: -1;
+        opacity: 0;
+      }
+      100% {
+
+        z-index: 1;
+        opacity: 1;
+
+      }
     }
-    &:not(:last-child){
-      margin-bottom: 52px; 
-    }
-  ${({ theme }) => theme.device.default} {
-   &:not(:last-child){
-    margin-bottom: 82px; 
-  }
-}
-  ${({ theme }) => theme.device.desktop} {
-    
-};
 `
