@@ -562,7 +562,7 @@ export const DivHalf = styled.div`
 
 
 export const DivLen = styled.div`
-    width: 169px;
+    width: 315px;
     margin: 0 auto;
     &:first-child{
       margin-top:130px;
@@ -570,6 +570,8 @@ export const DivLen = styled.div`
     &:not(:last-child){
       margin-bottom: 52px; 
     }
+
+    
   ${({ theme }) => theme.device.tablet} {
     &:first-child{
       margin-top: 0px;
@@ -578,7 +580,7 @@ export const DivLen = styled.div`
       margin-bottom: 52px; 
     }
   ${({ theme }) => theme.device.default} {
-   width: 253px;
+   width: 315px;
    &:not(:last-child){
     margin-bottom: 82px; 
   }
@@ -649,7 +651,6 @@ color: #3E3D4A;
      
   };
 `
-
 
 
 //

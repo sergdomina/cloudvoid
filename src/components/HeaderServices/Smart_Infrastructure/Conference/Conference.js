@@ -44,11 +44,13 @@ import {
   Arrow  
 } from './Conference.styled';
 
+import { DivSlide } from '../../Slide.style';
 import { Image} from '@chakra-ui/react';
 import Container from '../../../Container';
 import GlobalBox from '../../../GlobalBox';
 
 import BestEx from 'image/Customer_Section/BestEx.png';
+import Gear from 'image/Customer_Section/GearHost.png';
 import Lyon from 'image/Customer_Section/Lyon.svg';
 import Israel from 'image/Customer_Section/Israel_electric_co.png';
 
@@ -347,11 +349,14 @@ const Conference = () => {
               </DivHalf>
             </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
-                <DivLen>
-                <a href='https://bestexresearch.com' >
-                  <Image src={BestEx} style={{margin:'0 auto'}} alt=" "/>
+                <DivSlide >
+                  <a className='first' href='https://bestexresearch.com' >
+                    <Image src={BestEx} style={{margin:'0 auto'}} alt=" "/>
                   </a>
-                </DivLen>
+                  <a className='second' href='https://bestexresearch.com' >
+                    <Image src={Gear} style={{margin:'0 auto'}} alt=" "/>
+                  </a>
+                </DivSlide>
               
               
                 <DivLen>
