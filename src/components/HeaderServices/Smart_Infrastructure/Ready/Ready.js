@@ -21,6 +21,7 @@ import ready6 from 'image/BGlines/ready6.svg';
 import readyM from 'image/BGlines/readyMob.svg';
 import MediaQuery from 'components/MediaQuery';
 import { StyledLink } from 'components/Footer/Footer.styled';
+import { Link } from 'react-router-dom';
 
 const Ready = () => {
     return (
@@ -45,10 +46,10 @@ const Ready = () => {
                     <DiscriptionCenter>
                     Talk to our SMEs and find out how our smart infrastructure services help you transform your business to drive growth, improve operational efficiency, and improve resiliency.
                     </DiscriptionCenter>
-                    
-                    <ReadyLink>
+                    <ReadyLink to='/contact'>
                     Talk To Us      
                     </ReadyLink>
+      
                     
                 </Bg>
                 

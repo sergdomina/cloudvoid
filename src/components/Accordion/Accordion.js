@@ -7,7 +7,7 @@ const AccordionItems = (props) => {
 
     return props.items.map((item, i)  => {
         return (
-            <AccordionItemStyled onClick={() => setActiveItem(item)} className={activeItem === item && "active"} key={i}>
+            <AccordionItemStyled key={ item.title} onClick={() => setActiveItem(item)} className={activeItem === item && "active"} key={i}>
                 <div className="accordion__header">
                     <span className="accordion__number">{item.number}</span>
                     <h2>{item.title}</h2>

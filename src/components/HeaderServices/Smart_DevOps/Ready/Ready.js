@@ -20,6 +20,7 @@ import ready5 from 'image/BGlines/ready5.svg';
 import ready6 from 'image/BGlines/ready6.svg';
 import readyM from 'image/BGlines/readyMob.svg';
 import MediaQuery from 'components/MediaQuery';
+import { Link } from 'react-router-dom';
 
 const Ready = () => {
     return (
@@ -44,9 +45,11 @@ const Ready = () => {
                     <DiscriptionCenter>
                     Talk to our Smart DevOps experts and find out how our services and solutions give you a competitive edge through high-velocity and minimum-risk software development.
                     </DiscriptionCenter>
-                    <ReadyLink>
+                    
+                    <ReadyLink to='/contact'>
                     Book Consultation
                     </ReadyLink>
+                
                 </Bg>
                 
         </Container>

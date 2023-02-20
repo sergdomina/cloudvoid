@@ -20,6 +20,7 @@ import ready5 from 'image/BGlines/ready5.svg';
 import ready6 from 'image/BGlines/ready6.svg';
 import readyM from 'image/BGlines/readyMob.svg';
 import MediaQuery from 'components/MediaQuery';
+import { Link } from 'react-router-dom';
 
 const Ready = () => {
     return (
@@ -44,7 +45,7 @@ const Ready = () => {
                     <DiscriptionCenter>
                     Book an appointment with our Cloud Governance experts and discover how our services will help you save costs, secure your IT assets, and scale your business.
                     </DiscriptionCenter>
-                    <ReadyLink>
+                    <ReadyLink to='/contact'>
                     Talk To Us
                     </ReadyLink>
                 </Bg>

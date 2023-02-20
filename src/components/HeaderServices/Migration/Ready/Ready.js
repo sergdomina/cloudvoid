@@ -20,6 +20,7 @@ import ready5 from 'image/BGlines/ready5.svg';
 import ready6 from 'image/BGlines/ready6.svg';
 import readyM from 'image/BGlines/readyMob.svg';
 import MediaQuery from 'components/MediaQuery';
+import { Link } from 'react-router-dom';
 
 const Ready = () => {
     return (
@@ -44,9 +45,11 @@ const Ready = () => {
                     <DiscriptionCenter>
                     Book a 15-minute consultation with our cloud migration SMEs on how our services will help you achieve your business goals.
                     </DiscriptionCenter>
-                    <ReadyLink>
+                    
+                    <ReadyLink to='/contact'>
                     Talk To Us
                     </ReadyLink>
+                    
                 </Bg>
                 
         </Container>
