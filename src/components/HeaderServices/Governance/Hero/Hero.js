@@ -22,9 +22,7 @@ const Hero = () => {
           <HeroDiscription>
           What is Cloud Governance? Cloud governance is a framework adopted by companies operating in the cloud with large distributed teams, where policymaking, financial accountability, and resource configuration control become critical components. 
           </HeroDiscription>
-          <HeroLink>
-            Contact Us
-          </HeroLink>
+  
         </GlobalBox>
       <MediaQuery device={'mobile'}>
         <Spline style={{position:"absolute", 

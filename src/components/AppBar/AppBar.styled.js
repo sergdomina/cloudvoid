@@ -8,8 +8,8 @@ export const Header = styled.header`
   padding-top: 12px;
   padding-bottom: 12px;
   margin: 0 auto; 
+  z-index: 5;
   width: 100%;
-  z-index: 2;
   background: transporant;
   backdrop-filter: blur(8px);
   ${({ theme }) => theme.device.default} {

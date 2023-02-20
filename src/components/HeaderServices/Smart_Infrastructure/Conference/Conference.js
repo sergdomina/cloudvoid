@@ -44,15 +44,17 @@ import {
   Arrow  
 } from './Conference.styled';
 
-import { DivSlide } from '../../Slide.style';
+import { DivSlide, DivSlideB, DivSlideC } from '../../Slide.style';
 import { Image} from '@chakra-ui/react';
 import Container from '../../../Container';
 import GlobalBox from '../../../GlobalBox';
 
 import BestEx from 'image/Customer_Section/BestEx.png';
 import Gear from 'image/Customer_Section/GearHost.png';
-import Lyon from 'image/Customer_Section/Lyon.svg';
+import Lyon from 'image/Customer_Section/Lyon.png';
+import Acteno from 'image/Customer_Section/acteno.png';
 import Israel from 'image/Customer_Section/Israel_electric_co.png';
+import SKD from 'image/Customer_Section/SK.png';
 
 import arrow from 'image/conference/arrow.svg';
 import Evo from 'image/conference/Rectangle 177.svg';
@@ -350,26 +352,30 @@ const Conference = () => {
             </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
                 <DivSlide >
-                  <a className='first' href='https://bestexresearch.com/1' >
+                  <a className='first' target="_blank" href='https://bestexresearch.com/1' >
                     <Image src={BestEx} style={{margin:'0 auto'}} alt=" "/>
                   </a>
-                  <a className='second' href='https://bestexresearch.com/2' >
+                  <a className='second' target="_blank" href='https://www.gearhost.com/' >
                     <Image src={Gear} style={{margin:'0 auto'}} alt=" "/>
                   </a>
                 </DivSlide>
-              
-              
-                <DivLen>
-                <a href='https://lyonstahl.com/' >
+                <DivSlideB>
+                <a  className='first' target="_blank" href='https://lyonstahl.com/' >
                   <Image src={Lyon} style={{margin:'0 auto'}} alt=" "/>
                   </a>
-                </DivLen>
+                <a  className='second' target="_blank" href='https://www.acteno.de/ecms/de/' >
+                  <Image src={Acteno} style={{margin:'0 auto'}} alt=" "/>
+                  </a>
+                </DivSlideB>
 
-                <DivLen>
-                <a href='https://www.iec.co.il/en/home' >
+                <DivSlideC>
+                <a className='first' target="_blank" href='https://www.iec.co.il/en/home' >
                   <Image src={Israel} style={{margin:'0 auto'}} alt=" "/>
                   </a>
-                </DivLen>
+                <a className='second' target="_blank" href='https://www.skdiamonds.com/' >
+                  <Image src={SKD} style={{margin:'0 auto'}} alt=" "/>
+                  </a>
+                </DivSlideC>
             </GlobalBox>
           </ConferenceItem>
 

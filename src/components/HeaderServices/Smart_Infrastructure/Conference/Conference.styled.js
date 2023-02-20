@@ -420,7 +420,7 @@ export const DiscriptionWithMargin = styled(Discription)`
   ${({ theme }) => theme.device.tablet} {
       width: 248px;
       margin-bottom: 25px;
-
+      text-align: left;
   }
   ${({ theme }) => theme.device.default} {
       width: 300px;

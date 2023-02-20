@@ -74,9 +74,18 @@ import MDM from "../../../../image/MSP/MDM.svg";
 import MSP from "../../../../image/MSP/MSP.svg";
 import Network from "../../../../image/MSP/Network.svg";
 
-import McLane from 'image/AI&Analytics/McLane.png';
 import Lenovo from 'image/MSP/Lenovo.png';
-import Lerner from 'image/MSP/Lerner.png';
+import Squared from 'image/Customer_Section/c-squared.png';
+import Aspiris from 'image/Customer_Section/aspiris.png'
+
+import Lerner from 'image/Customer_Section/Lerner.png';
+import SCS from 'image/Customer_Section/SCS.png';
+import Tech from 'image/Customer_Section/TechNet.png';
+import McLane from 'image/AI&Analytics/McLane.png';
+import AKBN from 'image/Customer_Section/AKBN.png';
+import { DivSlideTree, DivSlide, DivSlideTreeB } from 'components/HeaderServices/Slide.style';
+
+
 
 
 
@@ -277,17 +286,36 @@ const Conference = () => {
               </DivHalf>
             </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
-              <DivLen>
-              <a href='https://www.lenovo.com'>
+              <DivSlideTree>
+              <a className='first' target="_blank" href='https://www.lenovo.com'>
                 <Image src={Lenovo} style={{ width: '50%', margin:'0 auto'}}  alt="evo"/>
                 </a>
-              </DivLen>
-              <DivLen>
-             <a href='https://www.lernersolutions.com/'> <Image src={Lerner} style={{ margin:'0 auto'}} alt="evo"/></a>
-              </DivLen>
-              <DivLen>
-              <a href='https://mclaneintel.com/'><Image src={McLane} style={{ margin:'0 auto'}} alt="evo"/></a>
-              </DivLen>
+              <a className='second' target="_blank" href='https://www.csquarednetworks.com/'>
+                <Image src={Squared} style={{ width: '50%', margin:'0 auto'}}  alt="evo"/>
+                </a>
+              <a className='third' target="_blank" href='https://aspiris.com/'>
+                <Image src={Aspiris} style={{ width: '50%', margin:'0 auto'}}  alt="evo"/>
+                </a>
+              </DivSlideTree>
+              <DivSlideTreeB>
+             <a className='first' target="_blank" href='https://www.lernersolutions.com/'> 
+             <Image src={Lerner} style={{ margin:'0 auto'}} alt="evo"/>
+             </a>
+             <a className='second' target="_blank" href='https://www.considerscs.com/'> 
+             <Image src={SCS} style={{ margin:'0 auto'}} alt="evo"/>
+             </a>
+             <a className='third' target="_blank" href='https://technet.co.im/'> 
+             <Image src={Tech} style={{ margin:'0 auto'}} alt="evo"/>
+             </a>
+              </DivSlideTreeB>
+              <DivSlide>
+              <a className='first' target="_blank" href='https://mclaneintel.com/'>
+                <Image src={McLane} style={{ margin:'0 auto'}} alt="evo"/>
+                </a>
+              <a className='second' target="_blank" href=' '>
+                <Image src={AKBN} style={{ margin:'0 auto'}} alt="evo"/>
+                </a>
+              </DivSlide>
             </GlobalBox>
           </ConferenceItem>
  

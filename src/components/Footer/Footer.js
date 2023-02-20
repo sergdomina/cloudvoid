@@ -72,7 +72,7 @@ const Footer =() =>{
                         <MainDiv>
                         <ItemsUl>
                                 <Items>
-                                    <TitleDes><p>Main</p></TitleDes>
+                                    <TitleDes>Main</TitleDes>
                                 </Items>
                                 <Items>
                                     <StyledLink to='/cloud-evolve'>Home</StyledLink>
@@ -177,12 +177,14 @@ const Footer =() =>{
                                 padding: '24px 0'
                                 }}>
                         <div>
-                        ©Cloudvoid 2023 All rights reserved
+                        <p>©Cloudvoid 2023 All rights reserved</p>
                         </div>
                         <MediaQuery device={'tablet'}>
                         <div>
                             <ul style={{display:'flex'}}>
-                                <Terms><p>Cookie Policy</p></Terms>
+                                <Terms>
+                                    <p>Cookie Policy</p>
+                                    </Terms>
                                 <Terms>
                                     <a><p>Terms Of Service</p></a>
                                 </Terms>
@@ -195,7 +197,9 @@ const Footer =() =>{
                         <MediaQuery device={'default'}>
                         <div>
                             <ul style={{display:'flex'}}>
-                                <Terms><a><p>Cookie Policy</p></a></Terms>
+                                <Terms>
+                                    <a><p>Cookie Policy</p></a>
+                                    </Terms>
                                 <Terms>
                                     <a><p>Terms Of Service</p></a>
                                 </Terms>

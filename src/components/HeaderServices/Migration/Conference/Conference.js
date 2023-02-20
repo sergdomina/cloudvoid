@@ -255,17 +255,17 @@ const Conference = () => {
             </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
             <DivLen>
-                <a href='http://www.unitedstatesseafoods.com/'>
+                <a target="_blank" href='http://www.unitedstatesseafoods.com/'>
                 <Image src={USA} alt="evo"/>
                 </a>
               </DivLen>
               <DivLen>
-                <a href='https://www.acteno.de/ecms/de/'>
+                <a target="_blank" href='https://www.acteno.de/ecms/de/'>
                 <Image src={Acteno} alt="evo"/>
                 </a>
               </DivLen>
               <DivLen>
-                <a href='https://aspiris.com/'>
+                <a target="_blank" href='https://aspiris.com/'>
                 <Image src={Aspiris} alt="evo"/>
                 </a>
               </DivLen>

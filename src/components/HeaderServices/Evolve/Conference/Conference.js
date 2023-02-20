@@ -39,6 +39,7 @@ import {
   Arrow  
 } from './Conference.styled';
 
+import { DivSlide, DivSlideC, DivSlideB } from 'components/HeaderServices/Slide.style';
 import { Image} from '@chakra-ui/react';
 import Container from '../../../Container';
 import GlobalBox from '../../../GlobalBox';
@@ -51,8 +52,11 @@ import CustomDef from 'image/conference/customDef.svg';
 import CustomMobile from 'image/conference/CustomMobile.svg';
 
 import Amnis from 'image/Customer_Section/Amnis.png';
+import Lyon from 'image/Customer_Section/Lyon.png';
 import BestEx from 'image/Customer_Section/BestEx.png';
+import Doc from 'image/Customer_Section/docStribute.svg';
 import Metalink from 'image/Customer_Section/metalink.png';
+import Gemean from 'image/Customer_Section/Gemean.svg';
 
 import leftLine from 'image/BGlines/leftLine.svg';
 import leftLinePart from 'image/BGlines/leftLinePart.svg';
@@ -287,24 +291,33 @@ const Conference = () => {
             </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
               
-                <DivLen>
-                <a href='https://amnistreasury.com' >
+                <DivSlide>
+                <a className='first' target="_blank" href='https://amnistreasury.com' >
                   <Image src={Amnis} style={{margin:'0 auto'}} alt=" "/>
                   </a>
-                </DivLen>
+                <a className='second' target="_blank" href='https://lyonstahl.com/' >
+                  <Image src={Lyon} style={{margin:'0 auto'}} alt=" "/>
+                  </a>
+                </DivSlide>
               
               
-                <DivLen>
-                <a href='https://bestexresearch.com' >
+                <DivSlideB>
+                <a className='first' target="_blank" href='https://bestexresearch.com' >
                   <Image src={BestEx} style={{margin:'0 auto'}} alt=" "/>
                   </a>
-                </DivLen>
+                <a className='second' target="_blank" href='https://www.docstribute.com' >
+                  <Image src={Doc} style={{margin:'0 auto'}} alt=" "/>
+                  </a>
+                </DivSlideB>
 
-                <DivLen>
-                <a href='https://metalink.com' >
+                <DivSlideC>
+                <a className='first' target="_blank" href='https://metalink.com' >
                   <Image src={Metalink} style={{margin:'0 auto'}} alt=" "/>
                   </a>
-                </DivLen>
+                <a className='second' target="_blank" href='https://gemean.com/' >
+                  <Image src={Gemean} style={{margin:'0 auto'}} alt=" "/>
+                  </a>
+                </DivSlideC>
               
             </GlobalBox>
           </ConferenceItem>

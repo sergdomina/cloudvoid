@@ -15,7 +15,7 @@ export const Section = styled.section`
     padding: 180px 0px 40px;
   }
   ${({ theme }) => theme.device.default} {
-    padding: 180px 0px 180px;
+    padding: 180px 0px 100px;
   }
   ${({ theme }) => theme.device.desktop} {
     padding: 250px 0px 100px;
@@ -561,26 +561,29 @@ export const DivHalf = styled.div`
 
 
 export const DivLen = styled.div`
-    width: 169px;
+    position: relative;
+    width: 315px;
+    height: 100px;
     margin: 0 auto;
     &:first-child{
       margin-top:130px;
-    }
+    };
     &:not(:last-child){
-      margin-bottom: 52px; 
+      margin-bottom: 22px; 
     }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 30%;
   ${({ theme }) => theme.device.tablet} {
     &:first-child{
       margin-top: 0px;
-    }
-    &:not(:last-child){
-      margin-bottom: 52px; 
+    };
     }
   ${({ theme }) => theme.device.default} {
-   width: 253px;
-   &:not(:last-child){
-    margin-bottom: 82px; 
-  }
+   
+  
 }
   ${({ theme }) => theme.device.desktop} {
     

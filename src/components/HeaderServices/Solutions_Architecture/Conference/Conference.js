@@ -72,9 +72,18 @@ import Cloud from 'image/Solutions_Architecture/cloud.svg';
 
 import Evo from 'image/conference/Rectangle 177.svg';
 
+
+import Metalink from 'image/Customer_Section/metalink.png';
+import Bestex from 'image/Customer_Section/BestEx.png';
+import Ryther from 'image/Customer_Section/Ryther.png';
+import Israel from 'image/Customer_Section/Israel_electric_co.png';
+import USA from 'image/Customer_Section/USA.png';
 import McLane from 'image/Customer_Section/McLane.png';
 import Elementor from 'image/Customer_Section/Elementor.png';
 import Amnis from 'image/Customer_Section/Amnis.png';
+import Bavelle from 'image/Customer_Section/Bavelle.png';
+import Lyon from 'image/Customer_Section/Lyon.png';
+
 
 import Custom from 'image/conference/Group 291.svg';
 import CustomDef from 'image/conference/customDef.svg';
@@ -86,6 +95,7 @@ import centrLinePart from 'image/BGlines/centerLinePart.svg';
 
 import MediaQuery from 'components/MediaQuery';
 import Accordion, { AccordionHorizontal } from "../../../Accordion/Accordion";
+import { DivSlideTree, DivSlideFour, DivSlideTreeB } from 'components/HeaderServices/Slide.style';
 
 
 
@@ -340,25 +350,51 @@ const Conference = () => {
               </DivHalf>
             </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
-
-              <DivLen>
-                <a href='https://elementor.com/'>
+              <DivSlideFour>
+                <a  className='first' target="_blank"  href='https://elementor.com/'>
                 <Image  src={Elementor} style={{margin:'0 auto'}}  alt="evo"/>
                 </a>
-              </DivLen>
-              <DivLen>
-                <a href='https://amnistreasury.com'>
+                <a  className='second' target="_blank" href='https://metalink.com'>
+                <Image  src={Metalink} style={{margin:'0 auto'}}  alt="evo"/>
+                </a>
+                <a  className='third' target="_blank" href='https://bestexresearch.com'>
+                <Image  src={Bestex} style={{margin:'0 auto'}}  alt="evo"/>
+                </a>
+                
+                <a  className='four' target="_blank" href='https://www.ryther.org/'>
+                <Image  src={Ryther} style={{margin:'0 auto'}}  alt="evo"/>
+                </a>
+              </DivSlideFour>
+              <DivSlideTree>
+                <a className='first' target="_blank"  href='https://amnistreasury.com'>
                 <Image src={Amnis} style={{margin:'0 auto'}}  alt="evo"/>
                 </a>
-              </DivLen>
-              <DivLen>
-                <a href='https://mclaneintel.com/'>
+                <a className='second' target="_blank" href='https://english.tau.ac.il/'>
+                <Image src={Israel} style={{margin:'0 auto'}}  alt="evo"/>
+                </a>
+                <a className='third' target="_blank" href='http://www.unitedstatesseafoods.com/'>
+                <Image src={USA} style={{margin:'0 auto'}}  alt="evo"/>
+                </a>
+              </DivSlideTree>
+              <DivSlideTreeB>
+                <a className='first' target="_blank" href='https://mclaneintel.com/'>
                 <Image src={McLane} style={{margin:'0 auto'}}  alt="evo"/>
                 </a>
-              </DivLen>
+                <a className='second' target="_blank" href='https://www.bavelle.com/'>
+                <Image src={Bavelle} style={{margin:'0 auto'}}  alt="evo"/>
+                </a>
+                <a className='third' target="_blank" href='https://lyonstahl.com/'>
+                <Image src={Lyon} style={{margin:'0 auto'}}  alt="evo"/>
+                </a>
+              </DivSlideTreeB>
 
             </GlobalBox>
+
           </ConferenceItem>
+
+
+
+
 
           <ConferenceColumn>
             <SubTitle2 style={{marginBottom: '40px'}}>We Don't Just Architect it; <br/>We Also Build It.</SubTitle2>

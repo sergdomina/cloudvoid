@@ -1,4 +1,5 @@
 
+import { NavLink, Link } from "react-router-dom";
 import styled from 'styled-components';
 
 export const Section = styled.section`
@@ -22,7 +23,7 @@ export const Section = styled.section`
     }
 ` 
 
-export const ReadyLink = styled.a`
+export const ReadyLink = styled(Link)`
   font-family: ${({ theme }) => theme.fonts.title.bold};
   padding: 14px 33px;
   width: 147px; 
@@ -33,6 +34,7 @@ export const ReadyLink = styled.a`
   text-align: center;
   
   ${({ theme }) => theme.device.tablet} {
+    width: 175px; 
     text-align: center;
     margin: 0 auto;
   }

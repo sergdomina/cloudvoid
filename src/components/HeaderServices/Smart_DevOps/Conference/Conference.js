@@ -40,7 +40,7 @@ import {
   LinkCustom,
   Arrow  
 } from './Conference.styled';
-
+import { DivSlide, DivSlideB, DivSlideC } from 'components/HeaderServices/Slide.style';
 import { Image} from '@chakra-ui/react';
 import Container from '../../../Container';
 import GlobalBox from '../../../GlobalBox';
@@ -278,21 +278,30 @@ const Conference = () => {
               </DivHalf>
             </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
-              <DivLen>
-                <a href='https://elementor.com/'>
+              <DivSlide>
+                <a className='first' target="_blank" href='https://elementor.com/'>
                 <Image  src={Elementor} style={{margin:'0 auto'}}  alt="evo"/>
                 </a>
-              </DivLen>
-              <DivLen>
-                <a href='https://amnistreasury.com'>
+                <a className='second' target="_blank" href='https://bestexresearch.com'>
+                <Image  src={Bestex} style={{margin:'0 auto'}}  alt="evo"/>
+                </a>
+              </DivSlide>
+              <DivSlideB>
+                <a className='first' target="_blank" href='https://amnistreasury.com'>
                 <Image src={Amnis} style={{margin:'0 auto'}}  alt="evo"/>
                 </a>
-              </DivLen>
-              <DivLen>
-                <a href='https://metalink.com'>
+                <a className='second' target="_blank" href='https://www.docstribute.com'>
+                <Image src={Doc} style={{margin:'0 auto'}}  alt="evo"/>
+                </a>
+              </DivSlideB>
+              <DivSlideC>
+                <a className='first' target="_blank" href='https://metalink.com'>
                 <Image src={Metalink} style={{margin:'0 auto'}}  alt="evo"/>
                 </a>
-              </DivLen>
+                <a className='second' target="_blank" href='https://www.insfocus.com'>
+                <Image src={Insfocus} style={{margin:'0 auto'}}  alt="evo"/>
+                </a>
+              </DivSlideC>
             </GlobalBox>
           </ConferenceItem>
  

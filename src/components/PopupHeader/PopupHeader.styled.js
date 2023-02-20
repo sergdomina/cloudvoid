@@ -10,9 +10,14 @@ export const PopupBox = styled.div`
   justify-content: space-around;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(12.5px);
+ 
   ${({ theme }) => theme.device.tablet} {
-    box-shadow: 0px 4px 20px rgba(206, 23, 0, 0.25);
+    box-shadow: 0px 4px 20px rgba(96, 96, 96, 0.18);
     width: 280px;
+  }
+  ${({ theme }) => theme.device.default} {
+
+    
   }
 `;
 

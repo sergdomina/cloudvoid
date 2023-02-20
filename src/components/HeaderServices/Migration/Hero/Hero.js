@@ -22,9 +22,7 @@ const Hero = () => {
           <HeroDiscription>
           Transform your business by moving your infrastructure and apps to the cloud. Our proven migration approach ensures faster time-to-cloud with improved accessibility, business operations, and high availability.
           </HeroDiscription>
-          <HeroLink>
-            Contact Us
-          </HeroLink>
+         
         </GlobalBox>
       <MediaQuery device={'mobile'}>
         <Spline style={{position:"absolute", 

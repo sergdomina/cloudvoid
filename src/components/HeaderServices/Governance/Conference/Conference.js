@@ -24,7 +24,6 @@ import {
   LenTitle,
   LenDis,
   DivEvo,
-  DivLen,
   DivHalf,
   DivBecome,
   CentralDiv,
@@ -37,6 +36,7 @@ import {
   Arrow  
 } from './Conference.styled';
 
+import { DivLen } from 'components/HeaderServices/Slide.style';
 import { Image} from '@chakra-ui/react';
 import Container from '../../../Container';
 import GlobalBox from '../../../GlobalBox';
@@ -295,17 +295,17 @@ const Conference = () => {
             <MediaQuery device={'mobile'}>
               <GlobalBox style={{position: 'relative', paddingTop: '100px'}}>
                 <DivLen>
-                  <a href='https://www.insfocus.com'>
+                  <a target="_blank" href='https://www.insfocus.com'>
                   <Image src={Insfocus} alt="evo"/>
                   </a>
                 </DivLen>
                 <DivLen>
-                  <a href='https://bestexresearch.com'>
+                  <a target="_blank" href='https://bestexresearch.com'>
                   <Image src={Bestex} alt="evo"/>
                   </a>
                 </DivLen>
                 <DivLen>
-                  <a href='https://www.docstribute.com'>
+                  <a target="_blank" href='https://www.docstribute.com'>
                   <Image src={Doc} alt="evo"/>
                   </a>
                 </DivLen>

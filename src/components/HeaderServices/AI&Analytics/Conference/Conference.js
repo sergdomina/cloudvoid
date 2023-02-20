@@ -269,12 +269,12 @@ const Conference = () => {
             <GlobalBox style={{position: 'relative'}}>
 
               <DivLen>
-                <a href='https://mclaneintel.com/'>
+                <a target="_blank" href='https://mclaneintel.com/'>
                 <Image src={McLane} style={{margin:'0 auto'}}  alt="evo"/>
                 </a>
               </DivLen>
               <DivLen>
-                <a href='https://gemean.com/'>
+                <a target="_blank" href='https://gemean.com/'>
                 <Image src={Gemean} style={{margin:'0 auto'}}  alt="evo"/>
                 </a>
               </DivLen>
