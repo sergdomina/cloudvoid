@@ -6,7 +6,7 @@ export const Box = styled.div`
   text-align: left;
   padding-right: 8px;
   padding-left: 8px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   
   ${({ theme }) => theme.device.tablet} {
     display: block;

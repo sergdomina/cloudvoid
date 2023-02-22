@@ -6,7 +6,7 @@ export const AccordionItemStyled = styled.li`
   align-items: stretch;
   padding: 20px;
   cursor: pointer;
-  transition: all .5s ease;
+  transition: all .2s ease;
   border-right: 1px solid black;
   position: relative;
   overflow: hidden;
@@ -86,7 +86,16 @@ export const AccordionItemStyled = styled.li`
       transform-origin: left center;
       width: 300px;
       text-align: left;
-      margin-bottom: 24px;
+      margin-bottom: 0px;
+      ${({ theme }) => theme.device.tablet} {
+       
+      }
+        ${({ theme }) => theme.device.default} {
+          
+      }
+        ${({ theme }) => theme.device.desktop} {
+          
+      };
     }
   }
 
@@ -216,7 +225,7 @@ export const AccordionStyled = styled.ul`
   padding: 0;
   overflow: hidden;
   list-style-type: none;
-  height: 800px;
+  height: 600px;
   
   h2{
     font-family: ${({ theme }) => theme.fonts.title.bold};
@@ -234,6 +243,7 @@ export const AccordionStyled = styled.ul`
     };
   }
   p{
+    margin-top: 12px;
     font-size: 12px;
     ${({ theme }) => theme.device.tablet} {
      
@@ -370,7 +380,7 @@ export const AccordionHorizontalStyled = styled.ul`
       position: absolute;
       right: 0;
       top: 0;
-      padding: 30px 60px;
+      padding: 30px 30px;
       height: 100%;
       width: 60%;
       .accordion__number{

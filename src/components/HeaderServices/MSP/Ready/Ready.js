@@ -40,13 +40,13 @@ const Ready = () => {
                       <ReadyM src={readyM} alt="build" />
                     </MediaQuery>
                     <Title>
-                    Accelerate Product Development With Smart DevOps
+                    Maximize Your Growth With Master MSP
                     </Title>
                     <DiscriptionCenter>
-                    Talk to our Smart DevOps experts and find out how our services and solutions give you a competitive edge through high-velocity and minimum-risk software development.
+                    Book an appointment with our consultants and discover how Cloudvoid’s Master MSP solution will help you gain a competitive edge for your IT business.
                     </DiscriptionCenter>
                     <ReadyLink to='/contact'>
-                    Book Consultation
+                    Get in Touch
                     </ReadyLink>
                     
                 </Bg>

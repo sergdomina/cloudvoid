@@ -26,7 +26,7 @@ export const Section = styled.section`
 export const ReadyLink = styled(Link)`
   font-family: ${({ theme }) => theme.fonts.title.bold};
   padding: 14px 33px;
-  width: 147px; 
+  width: 205px; 
   font-size: 14px;
   line-height: 1.3;
   background-color: white;
@@ -34,7 +34,7 @@ export const ReadyLink = styled(Link)`
   text-align: center;
   
   ${({ theme }) => theme.device.tablet} {
-    width: 175px; 
+    
     text-align: center;
     margin: 0 auto;
   }
@@ -215,7 +215,7 @@ export const ReadyM =styled.img`
   position: absolute;
   z-index: 0;
   bottom: 0;
-  right: 20px;
+  right: 10px;
   ${({ theme }) => theme.device.tablet} {
     display: none;
   }

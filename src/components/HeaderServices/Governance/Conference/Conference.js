@@ -233,14 +233,14 @@ const Conference = () => {
 
 
 {/*ACCORDION*/}
+          
           <MediaQuery device={'mobile'}>
-          <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
-            <Title> Cloudvoid's Governance Approach</Title>
-           
+          <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0", marginBottom: '200px'}}>
+            <Title> Cloudvoid's Governance Approach</Title>        
             <Accordion items={accordionItems} />
           </ConferenceItemCenter>
           </MediaQuery>
-
+{/*ACCORDION*/}
 
 
           <ContainerTwo style={{position:'relative'}}>

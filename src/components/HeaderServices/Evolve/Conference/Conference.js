@@ -185,7 +185,7 @@ const Conference = () => {
               </GlobalBox>
             </MediaQuery>
           </ConferenceItem>
-          <MediaQuery device={'tabletUp'}>
+          <MediaQuery device={'desktop'}>
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
             <Title> The Cloud Evolve Suite </Title>
             <DiscriptionCenter>
@@ -200,7 +200,7 @@ const Conference = () => {
 
 
 {/*ACCORDION*/}
-          <MediaQuery device={'mobile'}>
+          <MediaQuery device={'mobileDefault'}>
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
             <Title style={{ marginLeft: '10%'}}> The Cloud Evolve Suite </Title>
             <DiscriptionCenter>

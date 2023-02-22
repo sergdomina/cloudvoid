@@ -12,10 +12,10 @@ export const Section = styled.section`
     padding: 80px 0px 40px;
   }
   ${({ theme }) => theme.device.default} {
-    padding: 180px 0px 180px;
+    padding: 180px 0px 50px;
   }
   ${({ theme }) => theme.device.desktop} {
-    padding: 130px 0px 240px;
+    padding: 130px 0px 100px;
   }
 `;
 
@@ -298,9 +298,8 @@ export const DiscriptionWithMargin = styled(Discription)`
 export const ConferenceItem = styled.li`
   align-items: center;
   padding: 0 32px;
-  &:not(:last-child) {
-    margin-bottom: 80px;
-  }
+
+    margin-bottom: 100px;
   ${({ theme }) => theme.device.tablet} {
     display: flex;
     flex-direction: row;
@@ -310,14 +309,12 @@ export const ConferenceItem = styled.li`
     &:nth-child(1n + 2) {
       flex-direction: row-reverse;
     }
-    &:not(:last-child) {
+
       margin-bottom: 60px;
-    }
+    
   }
   ${({ theme }) => theme.device.default} {
-    &:not(:last-child) {
       margin-bottom: 104px;
-    }
    
   }
   }
@@ -641,7 +638,7 @@ export const BackEvoM = styled.img`
   width: 375px;
   position: absolute;
   z-index: -1;
-  top: 1160px;
+  top: 1200px;
   right: 0;
   left: 0;
   margin: 0 auto;

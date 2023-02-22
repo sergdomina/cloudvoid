@@ -1,5 +1,6 @@
 
 
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import gradient from '../../../../image/conference/gradient.svg'
 
@@ -146,35 +147,36 @@ export const ConferenceItemCenter = styled.li`
 `;
 
 export const RowBox = styled.div`
-  width: auto;
-  text-align: left;
-  padding-right: 8px;
-  padding-left: 8px;
+    width: auto;
+    text-align: left;
+    padding-right: 8px;
+    padding-left: 8px;
 
 
-  table{
-    table-layout: fixed;
-  width: 420px;
-  border-collapse: collapse;
-  border: 1px solid  ${({ theme }) => theme.colors.dark_grey};
-  ${({ theme }) => theme.device.tablet} {
-    width: 100%;
-  }
-  };
-  td{
-    border: 1px solid  ${({ theme }) => theme.colors.dark_grey}; 
-  };
-  ${({ theme }) => theme.device.tablet} {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-  }
-  ${({ theme }) => theme.device.default} {
-
-
-  }
-  ${({ theme }) => theme.device.desktop} {
+    table{
+      table-layout: fixed;
+    width: 420px;
+    border-collapse: collapse;
+    border: 1px solid  ${({ theme }) => theme.colors.dark_grey};
     
+    ${({ theme }) => theme.device.tablet} {
+      width: 100%;
+    }
+    };
+    td{
+      border: 1px solid  ${({ theme }) => theme.colors.dark_grey}; 
+    };
+    ${({ theme }) => theme.device.tablet} {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+    }
+    ${({ theme }) => theme.device.default} {
+
+
+    }
+    ${({ theme }) => theme.device.desktop} {
+      
   } ;
 `;
 export const RowBoxLogo = styled.div`
@@ -229,19 +231,20 @@ export const SubTitle = styled.h3`
   font-size: 22px;
   line-height: 1.2;
   text-align: left;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   color: ${({ theme }) => theme.colors.black_btn};
   ${({ theme }) => theme.device.tablet} {
+    text-align: center;
     font-size: 22px;
     padding-bottom: 0;
   }
   ${({ theme }) => theme.device.default} {
    
-    font-size: 22px;
+    font-size: 28px;
     
   }
   ${({ theme }) => theme.device.desktop} {
-    font-size: 28px;
+
  
   }
 `;
@@ -257,20 +260,40 @@ export const SubTitle2 = styled.h3`
 
   color: ${({ theme }) => theme.colors.black_btn};
   ${({ theme }) => theme.device.tablet} {
-    width: 262px;
-    font-size: 16px;
+    width: 400px;
+    font-size: 22px;
   }
   ${({ theme }) => theme.device.default} {
-    width: 331px;
-    font-size: 22px;
-    
-  }
-  ${({ theme }) => theme.device.desktop} {
     width: 519px;
     font-size: 28px;
- 
+  }
+  ${({ theme }) => theme.device.desktop} {
+
   }
 `;
+
+export const SubTitleSolo = styled.h3`
+  font-family: ${({ theme }) => theme.fonts.title.bold};
+  font-size: 22px;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 60px;
+  color: ${({ theme }) => theme.colors.dark_grey};
+  ${({ theme }) => theme.device.tablet} {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 22px;
+  }
+  ${({ theme }) => theme.device.default} {
+
+    font-size: 22px;
+
+  }
+  ${({ theme }) => theme.device.desktop} {
+    font-size: 28px;
+  }
+`;
+
 
 export const LenTitle = styled.h3`
   font-family: ${({ theme }) => theme.fonts.title.bold};
@@ -292,39 +315,14 @@ export const LenTitle = styled.h3`
   }
 `;
 
-export const SubTitleSolo = styled.h3`
-  font-family: ${({ theme }) => theme.fonts.title.bold};
-  font-size: 22px;
-  line-height: 1.2;
-  text-align: left;
-  padding-bottom: 60px;
-  color: ${({ theme }) => theme.colors.dark_grey};
-  ${({ theme }) => theme.device.tablet} {
-    text-align: center;
-    font-size: 22px;
-    padding-bottom: 30px;
-    margin-left: 55px;
-  }
-  ${({ theme }) => theme.device.default} {
-    padding-bottom: 50px;
-    margin-left: 40px;
-    font-size: 22px;
-
-  }
-  ${({ theme }) => theme.device.desktop} {
-    font-size: 28px;
-    padding-bottom: 30px;
-    margin-left: 70px;
-  }
-`;
 
 
 export const TitleDes = styled.h3`
   font-family: ${({ theme }) => theme.fonts.title.bold};
   font-size: 14px;
   line-height: 1.2;
-  margin-bottom: 32px;
-  margin-top: 32px;
+  margin-bottom: 16px;
+  margin-top: 24px;
   text-align: left;
   color: ${({ theme }) => theme.colors.dark_grey};
   ${({ theme }) => theme.device.tablet} {
@@ -334,7 +332,6 @@ export const TitleDes = styled.h3`
   ${({ theme }) => theme.device.default} {
    
     font-size: 16px;
-    margin-bottom: 32px;
 
   }
   ${({ theme }) => theme.device.desktop} {
@@ -347,7 +344,7 @@ export const Title = styled.h1`
   font-family: ${({ theme }) => theme.fonts.title.bold};
   font-size: 22px;
   line-height: 1.2;
-  margin-bottom: 52px;
+  margin-bottom: 16px;
   margin-left: 10%;
   text-align: left;
   color: ${({ theme }) => theme.colors.dark_grey};
@@ -628,10 +625,12 @@ export const DivBecome = styled.div`
 export const CentralDiv = styled.div`
 width: 204px;
 margin: 0 auto;
-  margin-bottom: 52px;
+&:not(:last-child){
+  margin-bottom: 32px; 
+}
   ${({ theme }) => theme.device.tablet} {
-    width: 150px;
-
+    margin-bottom: 0;
+    width: 180px;
 }
   ${({ theme }) => theme.device.default} {
     width: 200px;
@@ -711,7 +710,7 @@ width: 16px;
      
   };
 `
-export const LinkWeDo = styled.a`
+export const LinkWeDo = styled(Link)`
 display: flex;
 width: 320px;
 align-items: center;
@@ -872,7 +871,7 @@ export const CentrLine=styled.img`
      left: -18px;
   }
     ${({ theme }) => theme.device.desktop} {
-      height: 599px;
+      height: 498px;
      top: -370px;
      left: -20px;
   };

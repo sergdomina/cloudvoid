@@ -1,13 +1,8 @@
 import styled from 'styled-components';
-import gradient from '../../../image/conference/gradient.svg'
 
 export const Section = styled.section`
   padding: 100px 0px 100px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-position: top;
-  background-image: url(${gradient});
+
   ${({ theme }) => theme.device.tablet} {
     padding: 80px 0px 40px;
   }

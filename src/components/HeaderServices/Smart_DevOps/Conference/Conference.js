@@ -155,10 +155,13 @@ const Conference = () => {
             </GlobalBox> 
           </ConferenceItem>
 
-          <MediaQuery device={'tabletUp'}>
+          <MediaQuery device={'desktop'}>
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
             <Title> Cloudvoid's Governance Approach </Title>
             <Accordion items={accordionItems} />
+            <DiscriptionCenter>
+            Our End-to-end Smart DevOps services help you adopt exemplary practices, cultural philosophies, and tools required to deliver applications and services at high-speed.
+            </DiscriptionCenter>
           </ConferenceItemCenter>
           </MediaQuery>
       </Container>
@@ -167,10 +170,30 @@ const Conference = () => {
 
 
 {/*ACCORDION*/}
+          <MediaQuery device={'defaultOnly'}>
+          <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
+            <Title> Cloudvoid's Governance Approach</Title>
+            <DiscriptionCenter>
+            Our End-to-end Smart DevOps services help you adopt exemplary practices, cultural philosophies, and tools required to deliver applications and services at high-speed.
+            </DiscriptionCenter>
+            <Accordion items={accordionItems} />
+          </ConferenceItemCenter>
+          </MediaQuery>
+          <MediaQuery device={'tablet'}>
+          <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
+            <Title> Cloudvoid's Governance Approach</Title>
+            <DiscriptionCenter>
+            Our End-to-end Smart DevOps services help you adopt exemplary practices, cultural philosophies, and tools required to deliver applications and services at high-speed.
+            </DiscriptionCenter>
+            <Accordion items={accordionItems} />
+          </ConferenceItemCenter>
+          </MediaQuery>
           <MediaQuery device={'mobile'}>
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
             <Title> Cloudvoid's Governance Approach</Title>
-           
+            <DiscriptionCenter>
+            Our End-to-end Smart DevOps services help you adopt exemplary practices, cultural philosophies, and tools required to deliver applications and services at high-speed.
+            </DiscriptionCenter>
             <Accordion items={accordionItems} />
           </ConferenceItemCenter>
           </MediaQuery>

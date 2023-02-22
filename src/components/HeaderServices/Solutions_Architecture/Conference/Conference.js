@@ -68,7 +68,7 @@ import Paper from 'image/Smart_Infrastructure/papers.svg';
 import Partner from 'image/Smart_Infrastructure/partner_Smart.svg';
 import Server from 'image/Smart_Infrastructure/server.svg';
 import Clock from 'image/Smart_Infrastructure/clock_Smart.svg';
-import Cloud from 'image/Solutions_Architecture/cloud.svg';
+import Cloud from 'image/Solutions_Architecture/cloud_red.svg';
 
 import Evo from 'image/conference/Rectangle 177.svg';
 
@@ -167,18 +167,18 @@ const Conference = () => {
             <GlobalBox>
               <DivBecome>
               <Discription style={{position: 'relative'}}>
-              <CentrLine preserveAspectRatio="none" src={centrLine} alt="build" />
-              <CentrLinePart preserveAspectRatio="none" src={centrLinePart} alt="build" />
-              These expectations are difficult for business owners without access to experienced in-house IT teams or low budgets to fulfill. We help businesses offload IT Infrastructure Operations and Management to teams of seasoned experts on demand.
+              <CentrLine preserveAspectRatio="none" src={centrLine} alt="line" />
+              <CentrLinePart preserveAspectRatio="none" src={centrLinePart} alt="line" />
+              At Cloudvoid, we provide a clear vision and expert guidance to help your business evolve and thrive in the cloud. With our help, you can utilize the cloud's scalability, flexibility, and cost-effectiveness to transform your operations and drive growth.
               </Discription>
               <Discription>            
-              We act as your partner, guiding you through every step of the process. We are your on-demand team of experienced IT experts taking care of your infrastructure while you focus on your vital business tasks.
+              Partner with us and discover the potential of cloud-based solutions for your business. Let us help you navigate this exciting new world and unlock the power of the cloud.
               </Discription>
               </DivBecome>
             </GlobalBox> 
           </ConferenceItem>
 
-          <MediaQuery device={'tabletUp'}>
+          <MediaQuery device={'desktop'}>
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
             <Title> Our Capabilities</Title>
             <DiscriptionCenter>
@@ -193,6 +193,24 @@ const Conference = () => {
 
 
 {/*ACCORDION*/}
+          <MediaQuery device={'defaultOnly'}>
+          <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
+            <Title> Our Capabilities</Title>
+            <DiscriptionCenter>
+            Cloudvoid provides enterprise-grade cloud architecture solutions that help you realize the value of your investments while minimizing business disruption. Our experts develop tailored solutions to meet your needs.
+            </DiscriptionCenter>
+            <Accordion items={accordionItems} />
+          </ConferenceItemCenter>
+          </MediaQuery>
+          <MediaQuery device={'tablet'}>
+          <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
+            <Title> Our Capabilities</Title>
+            <DiscriptionCenter>
+            Cloudvoid provides enterprise-grade cloud architecture solutions that help you realize the value of your investments while minimizing business disruption. Our experts develop tailored solutions to meet your needs.
+            </DiscriptionCenter>
+            <Accordion items={accordionItems} />
+          </ConferenceItemCenter>
+          </MediaQuery>
           <MediaQuery device={'mobile'}>
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
             <Title> Our Capabilities</Title>
@@ -208,7 +226,7 @@ const Conference = () => {
     <ContainerTwo style={{position:'relative'}}>        
           
           <ConferenceColumn>
-            <SubTitleSolo>Smart DevOps Benefits</SubTitleSolo>
+            <SubTitleSolo>Solutions Architecture Benefits</SubTitleSolo>
             <RowBox>
               <CentralDiv>
               <Image src={Future} style={{}} alt="quad" />
@@ -240,10 +258,12 @@ const Conference = () => {
             </RowBox>
           </ConferenceColumn>
 
+
+
           <ConferenceColumn>
-            <SubTitleSolo>Companies That Entrust Us With Their DevOps</SubTitleSolo>
+            <SubTitle>Companies That Entrust Us With Their DevOps</SubTitle>
             <DiscriptionCenter>
-            Cloudvoid provides enterprise-grade cloud architecture solutions that help you realize the value of your investments while minimizing business disruption. Our experts develop tailored solutions to meet your needs.
+            Our veteran cloud solutions architects have diverse certifications and rare skillsets across significant cloud vendors, including;
             </DiscriptionCenter>
             <RowBoxLogo>
               <CentralDivLogo>
@@ -280,25 +300,27 @@ const Conference = () => {
           </ConferenceColumn>
 
 
+
+
           <ConferenceColumn>
             <SubTitle2 style={{marginBottom: '40px'}}>Cloud Solutions Architecture: Unique Advantage</SubTitle2>
             <RowBox>
               <CentralDiv>
               <Adv src={Paper}  alt="evo"/>
                 <DiscriptionWithMargin style={{ textAlign:'center'}}>
-                Our subject matter experts have a wide array of industry certifications from Microsoft, VMWare, The Linux Foundation, Red Hat, Cisco, and other leading business technology providers.
+                We are the established and undisputed Subject Matter Experts in our field, providing unparalleled talent, experience, and expertise.
                 </DiscriptionWithMargin>
               </CentralDiv>
               <CentralDiv>
               <Adv src={Partner}  alt="evo"/>
                 <DiscriptionWithMargin style={{ textAlign:'center'}}>
-                Robust partner ecosystem (Microsoft, Cisco, and RedHat) to ensure no solution is out of bounds.
+                Robust partner ecosystem (Microsoft Azure, AWS, GCP, and IBM Cloud) to ensure no solution is out of bounds.
                 </DiscriptionWithMargin>
               </CentralDiv>
               <CentralDiv>
               <Adv src={Server}  alt="evo"/>
                 <DiscriptionWithMargin style={{ textAlign:'center'}}>
-                We have a proven track record of delivering robust, scalable, and secure infrastructures for businesses across many industries.
+                We have a proven track record of delivering predictable, robust, and secure cloud solutions architecture.
                 </DiscriptionWithMargin>
               </CentralDiv>
             </RowBox>
@@ -306,13 +328,13 @@ const Conference = () => {
               <CentralDiv>
               <Adv src={Clock}  alt="evo"/>
                 <DiscriptionWithMargin style={{ textAlign:'center'}}>
-                Our experienced and dedicated support teams are available in any timezone, 24/7/365.
+                Experienced and dedicated support teams, available in any timezone, 24/7/365.
                 </DiscriptionWithMargin>
               </CentralDiv>
               <CentralDiv>
               <Adv src={Cloud}  alt="evo"/>
                 <DiscriptionWithMargin style={{ textAlign:'center'}}>
-                We are infrastructure SMEs, providing unparalleled enterprise experience and expertise.
+                A single partner that offers a diverse range of cloud solutions.
                 </DiscriptionWithMargin>
               </CentralDiv>
             </RowBox>
@@ -449,12 +471,12 @@ const Conference = () => {
                 <tbody>
                   <tr>
                     <td>
-                      <LinkWeDo style={{ }}>
+                      <LinkWeDo to='/cloud-evolve' style={{ }}>
                       <TitleWeDo style={{padding: '0'}}>Cloud Evolve</TitleWeDo>
                       <Arrow2  src={arrow} alt='arrow'/>
                       </LinkWeDo>
                     </td>
-                    <td> <LinkWeDo style={{ }}>
+                    <td> <LinkWeDo to='/smart-devops' style={{ }}>
                       <TitleWeDo style={{padding: '0'}}>Smart DevOps</TitleWeDo>
                       <Arrow2  src={arrow} alt='arrow'/>
                       </LinkWeDo>
@@ -462,12 +484,12 @@ const Conference = () => {
                     </tr>
                     <tr>
                     <td> 
-                      <LinkWeDo style={{ }}>
+                      <LinkWeDo to='/cloud-ai-and-analytics' style={{ }}>
                       <TitleWeDo style={{padding: '0'}}>Cloud AI & Analytics</TitleWeDo>
                       <Arrow2  src={arrow} alt='arrow'/>
                       </LinkWeDo>
                     </td>
-                    <td><LinkWeDo style={{ }}>
+                    <td><LinkWeDo to='/cloud-migration' style={{ }}>
                         <TitleWeDo style={{padding: '0'}}>Cloud Migration</TitleWeDo>
                         <Arrow2  src={arrow} alt='arrow'/>
                         </LinkWeDo></td>

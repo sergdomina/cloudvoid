@@ -151,10 +151,12 @@ const Conference = () => {
             </GlobalBox>
           </ConferenceItem>
 
+
+
           <div>
           <Title>What is the Connection between the Cloud, Big data, and AI?</Title>
           <ConferenceItemAlignTop>
-            <GlobalBox>
+            <GlobalBox >
                 <Discription style={{position: 'relative'}}>
                 <LeftLine preserveAspectRatio="none" src={leftLine} style={{zIndex:'-2'}} alt="build" />
                 <LeftLinePart preserveAspectRatio="none" src={leftLinePart} alt="build" />
@@ -174,6 +176,8 @@ const Conference = () => {
           </ConferenceItemAlignTop>
           </div>
 
+
+
           <MediaQuery device={'tabletUp'}>
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
             <Title> Cloud Analytics & AI Services </Title>
@@ -190,7 +194,6 @@ const Conference = () => {
           <MediaQuery device={'mobile'}>
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
             <Title> Cloud Analytics & AI Services</Title>
-           
             <Accordion items={accordionItems} />
           </ConferenceItemCenter>
           </MediaQuery>

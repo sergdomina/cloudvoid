@@ -32,11 +32,11 @@ const Conference = () => {
           <Tabl >
             <TabDiv >
               <label>Name</label>
-              <Input name=' ' placeholder='Helen'/>
+              <Input name=' ' placeholder='Name'/>
               <label>Email</label>
-              <Input name=' ' placeholder='Helen.domina@cloudvoid.com'/>
+              <Input name=' ' placeholder='email'/>
               <label>Service</label>
-              <Input name=' ' placeholder='Cloud Governance'/>
+              <Input name=' ' placeholder='service'/>
             </TabDiv>
             <TabDiv2>
               <label>Message</label>

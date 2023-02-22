@@ -108,7 +108,8 @@ export const ConferenceItemAlignTop = styled.li`
   align-items: center;
   padding: 0 32px;
     margin-bottom: 100px;
-  
+    display: flex;
+    flex-direction: column-reverse;
   ${({ theme }) => theme.device.tablet} {
     display: flex;
     flex-direction: row;
@@ -266,7 +267,7 @@ export const SubTitle = styled.h3`
 `;
 export const SubTitle2 = styled.h3`
   font-family: ${({ theme }) => theme.fonts.title.bold};
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.2;
   text-align: left;
   padding-bottom: 16px;
@@ -275,7 +276,7 @@ export const SubTitle2 = styled.h3`
   color: ${({ theme }) => theme.colors.black_btn};
   ${({ theme }) => theme.device.tablet} {
     width: 262px;
-    font-size: 16px;
+   
   }
   ${({ theme }) => theme.device.default} {
     width: 331px;
@@ -731,7 +732,7 @@ export const BackEvoM = styled.img`
   width: 375px;
   position: absolute;
   z-index: 0;
-  top: 640px;
+  top: 610px;
   right: 0;
   left: 0;
   margin: 0 auto;

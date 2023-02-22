@@ -167,24 +167,22 @@ export const TitleDes = styled.h3`
   font-family: ${({ theme }) => theme.fonts.title.bold};
   font-size: 14px;
   line-height: 1.2;
-  margin-bottom: 32px;
-  margin-top: 32px;
+  margin-bottom: 16px;
+  margin-top: 24px;
   text-align: left;
   color: ${({ theme }) => theme.colors.dark_grey};
   ${({ theme }) => theme.device.tablet} {
     font-size: 16px;
-    
   }
   ${({ theme }) => theme.device.default} {
-   
     font-size: 16px;
-    margin-bottom: 32px;
-
   }
   ${({ theme }) => theme.device.desktop} {
     font-size: 18px;
   }
 `;
+
+
 export const Title = styled.h3`
   font-family: ${({ theme }) => theme.fonts.title.bold};
   font-size: 22px;
@@ -672,14 +670,14 @@ export const BackEvo = styled.img`
     margin-left: -30px;
 }
   ${({ theme }) => theme.device.default} {
-    width: 408px;
+    width: 450px;
     margin-top: -45px;
     margin-left: -50px;
 }
   ${({ theme }) => theme.device.desktop} {
    width: 652px;
-   margin-top: -45px;
-   margin-left: -50px;
+   margin-top: -35px;
+   margin-left: -60px;
 };
 `
 export const BackEvoM = styled.img`

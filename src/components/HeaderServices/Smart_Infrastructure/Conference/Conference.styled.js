@@ -245,22 +245,22 @@ export const SubTitleSolo = styled.h3`
   font-size: 22px;
   line-height: 1.2;
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   color: ${({ theme }) => theme.colors.dark_grey};
   ${({ theme }) => theme.device.tablet} {
     font-size: 22px;
-    padding-bottom: 50px;
+   
     margin-left: 55px;
   }
   ${({ theme }) => theme.device.default} {
-    padding-bottom: 50px;
+  
     margin-left: 40px;
     font-size: 22px;
 
   }
   ${({ theme }) => theme.device.desktop} {
     font-size: 28px;
-    padding-bottom: 80px;
+
     margin-left: 80px;
   }
 `;
@@ -302,7 +302,7 @@ export const Title = styled.h3`
   ${({ theme }) => theme.device.default} {
 
     font-size: 28px;
-    margin-bottom: 32px;
+    margin-bottom: 52px;
 
   }
   ${({ theme }) => theme.device.desktop} {

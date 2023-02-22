@@ -14,18 +14,15 @@ const Hero = () => {
   return (
     <HeroSection>
        
-      <HeroContainer style={{position:"relative"}}>
+      <HeroContainer style={{position:'relative'}}>
+        
       <GlobalBox style={{zIndex:"1"}}>
           <HeroTitle>
-          Robust Cloud Solutions for Businesses Ready <br/><span style={{ color: "#CE1700"}}>To Grow Fast</span>
+          IT Solutions. Built On Trust, <br/> Driven By Innovation
           </HeroTitle>
           <HeroDiscription>
-          Experience unparalleled business value with Cloud Evolve.
-We offer end-to-end IT solutions to grow your business from Migration services, IaaS, PaaS, and SaaS to security.
+          We could say we build IT business solutions, bringing value through our experienced, talented global team with vast industrial experience, but we're more than that. We become a valuable part of your team, tackling challenges and tasks with enthusiasm and determination.
           </HeroDiscription>
-          <HeroLink>
-            Contact Us
-          </HeroLink>
         </GlobalBox>
       <MediaQuery device={'mobile'}>
         <Spline style={{position:"absolute", 
@@ -33,28 +30,28 @@ We offer end-to-end IT solutions to grow your business from Migration services, 
         top: "0",
         left: '20%',
         right: "0",}}
-        scene="https://prod.spline.design/sg4VOs698eINp0UO/scene.splinecode"  />
+        scene="https://prod.spline.design/ufPVSUomT7C2tPeo/scene.splinecode"  />
       </MediaQuery>
       <MediaQuery device={'tablet'}>
         <Spline style={{position:"absolute", 
         margin:"0",
         top: "0",
         right: "0",}}
-        scene="https://prod.spline.design/yTttbAhLNMjD9c3s/scene.splinecode"  />
+        scene="https://prod.spline.design/ufPVSUomT7C2tPeo/scene.splinecode"  />
       </MediaQuery>
       <MediaQuery device={'defaultOnly'}>
         <Spline style={{position:"absolute", 
         margin:"0",
         top: "0",
         right: "0",}} 
-        scene="https://prod.spline.design/lWL3kQRvl2jrLTTW/scene.splinecode" />
+        scene="https://prod.spline.design/ufPVSUomT7C2tPeo/scene.splinecode" />
       </MediaQuery>
       <MediaQuery device={'desktop'}>
       <Spline style={{position:"absolute", 
         margin:"0",
         top: "0",
         right: "0",
-       }}  scene="https://prod.spline.design/I9YR96HNIXKQm7h8/scene.splinecode" />
+       }}  scene="https://prod.spline.design/ufPVSUomT7C2tPeo/scene.splinecode" />
        </MediaQuery>
         
       </HeroContainer>

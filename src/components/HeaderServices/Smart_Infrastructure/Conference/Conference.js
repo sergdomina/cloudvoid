@@ -188,12 +188,9 @@ const Conference = () => {
           </ConferenceItem>
 
 
-          <MediaQuery device={'tabletUp'}>
+          <MediaQuery device={'desktop'}>
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
-            <Title> The Cloud Evolve Suite </Title>
-            <DiscriptionCenter>
-              Whether you are just starting your cloud journey or already have a mature IT environment, Cloud Evolve guides you on increasing your ROI and getting faster business results.
-            </DiscriptionCenter>
+            <Title> Smart Infrastructure Capabilities </Title>
             <Accordion items={accordionItems} />
           </ConferenceItemCenter>
           </MediaQuery>
@@ -204,12 +201,25 @@ const Conference = () => {
 
 
 {/*ACCORDION*/}
+          <MediaQuery device={'defaultOnly'}>
+          <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
+            <Title> Smart Infrastructure Capabilities </Title>
+            <Accordion items={accordionItems} />
+          </ConferenceItemCenter>
+          </MediaQuery>
+{/*ACCORDION*/}
+{/*ACCORDION*/}
+          <MediaQuery device={'tablet'}>
+          <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
+            <Title> Smart Infrastructure Capabilities </Title>
+            <Accordion items={accordionItems} />
+          </ConferenceItemCenter>
+          </MediaQuery>
+{/*ACCORDION*/}
+{/*ACCORDION*/}
           <MediaQuery device={'mobile'}>
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
-            <Title> The Cloud Evolve Suite </Title>
-            <DiscriptionCenter>
-              Whether you are just starting your cloud journey or already have a mature IT environment, Cloud Evolve guides you on increasing your ROI and getting faster business results.
-            </DiscriptionCenter>
+            <Title> Smart Infrastructure Capabilities </Title>
             <Accordion items={accordionItems} />
           </ConferenceItemCenter>
           </MediaQuery>

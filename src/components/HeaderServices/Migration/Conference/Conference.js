@@ -86,33 +86,34 @@ const Conference = () => {
     {
       title: 'Application Migration & Modernization',
       number: '02',
-      content: 'Minimize on-premise hardware presence, remove the need for pesky maintenance contracts and costly equipment. Start a worry-free practice by leaving all of that responsibility to the cloud.'
+      content: 'Gain a competitive advantage by migrating your applications and adopting best-in-class services. Whether it`s just shifting your applications to the cloud or adopting a SaaS solution, we`ve got you covered!'
     },
     {
       title: 'Data Migration',
       number: '03',
-      content: 'Minimize on-premise hardware presence, remove the need for pesky maintenance contracts and costly equipment. Start a worry-free practice by leaving all of that responsibility to the cloud.'
+      content: 'From file servers to SharePoint, databases, and big data solutions, we will help ensure you benefit from the integrity, availability, accessibility, and security of the cloud.'
     },
     {
       title: 'Enterprise Platform Migration',
       number: '04',
-      content: 'Minimize on-premise hardware presence, remove the need for pesky maintenance contracts and costly equipment. Start a worry-free practice by leaving all of that responsibility to the cloud.'
+      content: 'Shift your legacy platform portfolio to modern solutions with improved resiliency, always-on availability, built-in continuity, scalability, and agility. We`re your partner of Subject Matter Experts in asset management, identity management, operations, financial platforms, and more.'
     },
     {
       title: 'Cloud Monitoring & Reporting',
       number: '05',
-      content: 'Minimize on-premise hardware presence, remove the need for pesky maintenance contracts and costly equipment. Start a worry-free practice by leaving all of that responsibility to the cloud.'
+      content: 'Avert downtime and identify issues before they affect your production environment by having complete visibility, advanced analytics, automation, and monitoring capabilities natively in the cloud, where being proactive is seamless.'
     }
   ];
 
-  return (
+  return (<>
     <Section >
       <BackEvoM src={Evo}  alt="evo"/>
       <Container style={{position:'relative'}}>
         <ul>
           <ConferenceItem>
             <GlobalImage>
-            <Image src={Realize} style={{marginLeft:'10%', width: '80%'}} alt="build" />
+              <MediaQuery device={'mobile'}><Image src={Realize} style={{marginBottom:'50px', width: '80%'}} alt="build" /></MediaQuery >
+              <MediaQuery device={'tabletUp'}><Image src={Realize} style={{marginLeft:'10%', width: '80%'}} alt="build" /></MediaQuery >
             </GlobalImage>
             <GlobalBox>
               <div style={{display: 'block', margin:'0 auto'}}>
@@ -175,17 +176,34 @@ const Conference = () => {
             </MediaQuery>
           </ConferenceItem>
 
+
+          <MediaQuery device={'desktop'}>
+            <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
+              <Title> Cloud Migration Services </Title>
+              <DiscriptionCenter>
+              Our End-To-End cloud migration services ensure a seamless experience. Our proven approach guides you in every phase of your journey.
+              </DiscriptionCenter>
+              <Accordion items={accordionItems} />
+            </ConferenceItemCenter>
+          </MediaQuery >
+          </ul>
+          </Container>
+
+
 {/*ACCORDION*/}
-          <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
-            <Title> Cloud Migration Services </Title>
-            <DiscriptionCenter>
-            Our End-To-End cloud migration services ensure a seamless experience. Our proven approach guides you in every phase of your journey.
-            </DiscriptionCenter>
-            <Accordion items={accordionItems} />
-          </ConferenceItemCenter>
+          <MediaQuery device={'mobileDefault'}>
+            <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
+              <Title> Cloud Migration Services </Title>
+              <DiscriptionCenter>
+              Our End-To-End cloud migration services ensure a seamless experience. Our proven approach guides you in every phase of your journey.
+              </DiscriptionCenter>
+              <Accordion items={accordionItems} />
+            </ConferenceItemCenter>
+          </MediaQuery >
 
 
-
+          <Container>
+            <ul>
           <ConferenceColumn>
             <SubTitleSolo>The Cloudvoid Advantage</SubTitleSolo>
             <RowBox>
@@ -271,10 +289,12 @@ const Conference = () => {
               </DivLen>
             </GlobalBox>
           </ConferenceItem>
+          </ul>
+          </Container>
 
-        </ul>
-      </Container>
+  
+      
     </Section>
-  )
+    </>)
 };
 export default Conference;
