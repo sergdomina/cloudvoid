@@ -199,7 +199,7 @@ const Conference = () => {
             <DiscriptionCenter>
             Cloudvoid provides enterprise-grade cloud architecture solutions that help you realize the value of your investments while minimizing business disruption. Our experts develop tailored solutions to meet your needs.
             </DiscriptionCenter>
-            <Accordion items={accordionItems} />
+            <AccordionHorizontal items={accordionItems} />
           </ConferenceItemCenter>
           </MediaQuery>
           <MediaQuery device={'tablet'}>
@@ -220,7 +220,7 @@ const Conference = () => {
             <Accordion items={accordionItems} />
           </ConferenceItemCenter>
           </MediaQuery>
-
+{/*ACCORDION*/}
 
 
     <ContainerTwo style={{position:'relative'}}>        

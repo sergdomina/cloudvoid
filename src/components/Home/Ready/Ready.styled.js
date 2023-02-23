@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Section = styled.section`
@@ -16,7 +17,7 @@ export const Section = styled.section`
     }
 ` 
 
-export const ReadyLink = styled.a`
+export const ReadyLink = styled(Link)`
   font-family: ${({ theme }) => theme.fonts.title.bold};
   padding: 14px 33px;
   width: 147px; 
@@ -89,7 +90,7 @@ export const Title = styled.h3`
   font-family: ${({ theme }) => theme.fonts.title.bold};
   font-size: 25px;
   line-height: 1.2;
-  margin-bottom: 16px;
+  margin-bottom: 44px;
   text-align: left;
   color: ${({ theme }) => theme.colors.black_btn};
   ${({ theme }) => theme.device.tablet} {

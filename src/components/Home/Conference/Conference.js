@@ -1,283 +1,272 @@
 import {
   Section,
-  HiddenTitle,
   SubTitle,
   SubTitle2,
-  SubTitleSolo,
   Discription,
   DiscriptionCenter,
   DiscriptionWithMargin,
   ConferenceItem,
-  DiscriptionBold,
   Title,
-  TitleDes,
   ConferenceItemCenter,
-  ConferenceItemSolo,
   ConferenceColumn,
   RowBox,
+  RowBoxLogo,
   BackEvo,
-  BackCustom,
-  BackCustomDef,
-  Len,
-  LenTitle,
-  LenDis,
-  DivEvo,
-  DivLen,
+  LogoPartners,
   DivBecome,
   CentralDiv,
-  GlobalBoxTwo,
-  LeftLine,
-  CentrLine,
-  LeftHow,
-  RightHow,
-  LinkCustom,
-  Arrow  
+  CentralDivLogo,
+  Adv
 } from './Conference.styled';
 
 import { Image} from '@chakra-ui/react';
 import Container from '../../Container';
 import GlobalBox from '../../GlobalBox';
-import GlobalImage from '../../GlobalImage';
-import Build from 'image/conference/build.svg';
-import arrow from 'image/conference/arrow.svg';
 import Evo from 'image/conference/Rectangle 177.svg';
-import Custom from 'image/conference/Group 291.svg';
-import CustomDef from 'image/conference/customDef.svg';
-import Lenovo from 'image/conference/lenovo.svg';
-import leftLine from 'image/BGlines/leftLine.svg';
-import centrLine from 'image/BGlines/centrLine.svg';
-import leftHow from 'image/BGlines/leftHow.svg';
-import rightHow from 'image/BGlines/rightHow.svg';
 import MediaQuery from 'components/MediaQuery';
 import Accordion from "../../Accordion/Accordion";
 
+import Google from 'image/Solutions_Architecture/google.png';
+import Aws from 'image/Solutions_Architecture/AWS.png';
+import Azure1 from 'image/Solutions_Architecture/Azure.png';
+import Azure2 from 'image/Solutions_Architecture/Microsoft.png';
+import IBM from 'image/Solutions_Architecture/IBM.png';
+import MCSE from 'image/Solutions_Architecture/MCSE.png';
 
+import Paper from 'image/Smart_Infrastructure/papers.svg';
+import Partner from 'image/Smart_Infrastructure/partner_Smart.svg';
+import Server from 'image/Smart_Infrastructure/server.svg';
+import Build from 'image/Smart_Infrastructure/build.svg';
+import Cloud from 'image/Solutions_Architecture/cloud_red.svg';
+
+import Microsoft from 'image/Home/Microsoft.png';
+import AWS from 'image/Home/AWS.png';
+import GoogleCloud from 'image/Home/google-cloud.png';
+import IBMlogo from 'image/Home/IBM.png';
+import RedHat from 'image/Home/RedHat.png';
 
 
 const Conference = () => {
 
   const accordionItems = [
     {
-      title: 'Cloud Ops',
+      title: 'Cloud Evolve',
       number: '01',
-      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+      content: 'Derive unparalleled value with a full-cycle cloud solution, from IaaS, PaaS, and SaaS to security.'
     },
     {
-      title: 'SecOps',
+      title: 'Cloud AI & Analytics',
       number: '02',
-      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
-    },
-    {
-      title: 'FinOps',
-      number: '03',
-      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+      content: 'Harness your competitive edge with next-gen AI and business intelligence solutions. '
     },
     {
       title: 'Smart DevOps',
-      number: '04',
-      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+      number: '03',
+      content: 'Accelerate app development with continuous integration and delivery.'
     },
     {
       title: 'Cloud Solutions Architecture',
-      number: '05',
-      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+      number: '04',
+      content: 'Elevate app development and infrastructure performance with cloud-native architectures.'
     },
     {
-      title: 'SysOps',
+      title: 'Cloud Migration',
+      number: '05',
+      content: 'Move your infrastructure, apps, and digital assets to the cloud. '
+    },
+    {
+      title: 'Cloud Governance ',
       number: '06',
-      content: 'Cloudvoid takes care of your day-day cloud operations so you can focus on running your business. We manage your workloads and IT services in the cloud to deliver on-demand scalability, security, resiliency, and accelerated automation.'
+      content: 'Take back complete control of your cloud spending.'
+    },
+    {
+      title: 'Smart Infrastructure ',
+      number: '07',
+      content: 'Focus on what makes your business matter; We take care of your entire IT infrastructure.'
+    },
+    {
+      title: 'Master MSP',
+      number: '08',
+      content: 'We are your Subject Matter Experts on-demand.'
     }
   ];
 
   return (
     <Section >
-      <Container style={{position:'relative'}}>
 
-        
+      <>
+      <Container style={{position:'relative'}}>
         <ul>
           <ConferenceItem>
-            <GlobalImage>
-            <Image src={Build} style={{marginLeft:'10%', width: '80%'}} alt="build" />
-            </GlobalImage>
-            <GlobalBox>
-              <div style={{display: 'block', margin:'0 auto'}}>
-              <SubTitle> Build an Ever-Ready Cloud </SubTitle>
-              <Discription>
-              The Cloud offers immense potential, 
-              but only a few businesses get value from it. 
-              Some key reasons for this include the increasing complexity of modern IT systems, 
-              security and compliance risks, and the Misalignment between IT and business. 
-              Technology also changes by the second, and companies can barely keep up.
-              </Discription>
-              <DiscriptionBold>
-              That is why we built Cloud Evolve.
-              </DiscriptionBold>
-              </div>
-            </GlobalBox>
-          </ConferenceItem>
-
-
-          <ConferenceItem>
-            <MediaQuery device={'mobile'}>
+           
                 <GlobalBox>
                     <BackEvo src={Evo}  alt="evo"></BackEvo>
-                    <DivEvo>
-                    <SubTitle2>What is Cloud Evolve?</SubTitle2>
-                    <Discription style={{width:'75%'}}>
-                    It's a spectrum of services, solutions, 
-                    frameworks, principles, and technologies crafted to help 
-                    businesses derive value from the cloud. We guide you through the entire cloud journey.
-                    </Discription>
-                    </DivEvo>
+                    
                   </GlobalBox>
-            </MediaQuery>
+         
             <GlobalBox>
               <DivBecome>
-              <SubTitle></SubTitle>
+              <SubTitle2>We Are Cloudvoid</SubTitle2>
               <Discription style={{position: 'relative'}}>
-              <CentrLine src={centrLine} alt="build" />
-              Cloudvoid becomes an extension of your team. Prefer to use chat? That is how we engage. Have your own Project Management software? We integrate with that. 
+              Cloudvoid is people. We are experts, a team of thinkers and doers with smarter and quicker enterprise-level experience, bringing solutions to your business on a whole new level.
               </Discription>
               <Discription>
-              We become your trusted advisor guiding every step of your cloud journey. Our most significant value is that we understand what drives your company. That is what guides us when we manage your cloud environment. Your critical moments are our critical moments too.
+              We are masters of our domain, we like to think out of the norm, and we love to approach every challenge in a whole new way that's right for your business.
               </Discription>
               </DivBecome>
             </GlobalBox>
-            <MediaQuery device={'tablet'}>
-              <GlobalBox>
-                <BackEvo src={Evo}  alt="evo"></BackEvo>
-                <DivEvo>
-                <SubTitle2>What is Cloud Evolve?</SubTitle2>
-                <Discription style={{width:'75%'}}>
-                It's a spectrum of services, solutions, 
-                frameworks, principles, and technologies crafted to help 
-                businesses derive value from the cloud. We guide you through the entire cloud journey.
-                </Discription>
-                </DivEvo>
-              </GlobalBox>
-            </MediaQuery>
-            <MediaQuery device={'default'}>
-              <GlobalBox>
-                <BackEvo src={Evo}  alt="evo"></BackEvo>
-                <DivEvo>
-                <SubTitle2  style={{position:'relative'}}>
-                <LeftLine src={leftLine} alt="build" />
-                  What is Cloud Evolve?
-                  </SubTitle2>
-                <Discription style={{width:'75%'}}>
-                  
-                It's a spectrum of services, solutions, 
-                frameworks, principles, and technologies crafted to help 
-                businesses derive value from the cloud. We guide you through the entire cloud journey.
-                </Discription>
-                </DivEvo>
-              </GlobalBox>
-            </MediaQuery>
           </ConferenceItem>
 
+          <MediaQuery device={'desktop'}>
+            <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
+              <Title> IT Solutions To Re-Invent Your Future, Today. </Title>
+              <DiscriptionCenter>
+                Whether you are just starting your cloud journey or already have a mature IT environment, Cloud Evolve guides you on increasing your ROI and getting faster business results.
+              </DiscriptionCenter>
+ {/*ACCORDION*/}  <Accordion items={accordionItems} />
+            </ConferenceItemCenter>
+          </MediaQuery >
+          </ul>
+          </Container>
+
+
 {/*ACCORDION*/}
-          <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
+          <MediaQuery device={'mobileDefault'}>
+            <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
+              <Title> IT Solutions To Re-Invent Your Future, Today.</Title>
+              <DiscriptionCenter>
+              Whether you already have a mature IT ecosystem or are getting started on your cloud journey, our unique portfolio of technology solutions empowers you to achieve what makes your business matter.
+              </DiscriptionCenter>
+              <Accordion items={accordionItems} />
+            </ConferenceItemCenter>
+          </MediaQuery >
+{/*ACCORDION*/}
 
-            <Title> The Cloud Evolve Suite </Title>
-            <DiscriptionCenter>
-              Whether you are just starting your cloud journey or already have a mature IT environment, Cloud Evolve guides you on increasing your ROI and getting faster business results.
-            </DiscriptionCenter>
-            <Accordion items={accordionItems} />
-          </ConferenceItemCenter>
-
-
+          <Container style={{position:'relative'}}>
+          <ul>
 
           <ConferenceColumn>
-            <SubTitleSolo>How Do We Make Cloud <br/> Evolve Possible?</SubTitleSolo>
+            <SubTitle style={{ }}>
+            Unmatched Industrial Experience
+              </SubTitle>
             <RowBox>
               <CentralDiv>
-                <TitleDes style={{position: 'relative'}}>
-                <LeftHow src={leftHow} alt="build" /> 
-                  Experienced & Dedicated Teams
-                  </TitleDes>
-                <DiscriptionWithMargin>
-                  Our team draws years of industry experience, a rare combination of skill sets, and a burning passion for technology.
+              <Adv src={Cloud}  alt="evo"/>
+                <DiscriptionWithMargin style={{ textAlign:'center'}}>
+                With over 15 years of experience, our team has deep domain expertise in cloud-led transformation.
                 </DiscriptionWithMargin>
               </CentralDiv>
               <CentralDiv>
-                <TitleDes style={{position: 'relative'}}>
-                <RightHow src={rightHow} alt="build" />
-                  Diverse Technology Stack
-                  </TitleDes>
-                <DiscriptionWithMargin>
-                  Cloud Evolve covers all cloud technologies, services, and solutions. We utilize industry best practices to ensure your business operations run efficiently.
+              <Adv src={Build}  alt="evo"/>
+                <DiscriptionWithMargin style={{ textAlign:'center'}}>
+                Worked with clients in many verticals, including finance, critical infrastructure, manufacturing, and telecom.
                 </DiscriptionWithMargin>
-              </CentralDiv>
-            </RowBox>
-            <RowBox>
-              <CentralDiv >
-              <TitleDes>
-                 Powerful Ecosystem Partners
-                 </TitleDes>
-              <DiscriptionWithMargin>
-              Partnering with the world's most innovative leaders, such as Microsoft, Google, and Amazon, enables us to find solutions for the toughest challenges.
-              </DiscriptionWithMargin>
-              </CentralDiv>
-              <CentralDiv>
-              <TitleDes>Proven Track Record</TitleDes>
-              <DiscriptionWithMargin>
-              We have collaborated with numerous businesses across all industries, which validates our standing as subject matter experts.
-              </DiscriptionWithMargin>
               </CentralDiv>
             </RowBox>
           </ConferenceColumn>
 
+          <ConferenceColumn>
+            <SubTitle style={{ }}>
+            The Cloudvoid Advantage
+            </SubTitle>
+            <RowBox>
+              <CentralDiv>
+              <Adv src={Paper}  alt="evo"/>
+                <DiscriptionWithMargin style={{ textAlign:'center'}}>
+                We have a history of successfully delivering projects to our clients, with over 600 successful projects under our belt.
+                </DiscriptionWithMargin>
+              </CentralDiv>
+              <CentralDiv>
+              <Adv src={Partner}  alt="evo"/>
+                <DiscriptionWithMargin style={{ textAlign:'center'}}>
+                Our solution portfolio is like no other in the market, covering all stages of digital transformation.
+                </DiscriptionWithMargin>
+              </CentralDiv>
+              <CentralDiv>
+              <Adv src={Server}  alt="evo"/>
+                <DiscriptionWithMargin style={{ textAlign:'center'}}>
+                We prioritize security and quality in everything we do.
+                </DiscriptionWithMargin>
+              </CentralDiv>
+            </RowBox>
+          </ConferenceColumn>
 
-          <ConferenceItem>
-            <GlobalBoxTwo style={{alignItems: 'center'}}>
-              <div>
-              <SubTitle>Customer Success Stories And Case Studies</SubTitle>
-              <Discription style={{ width:'auto'}}>
-              See how Cloudvoid is helping businesses solve real-world problems in the advent of Industry 4.0.
-              </Discription>
-              <LinkCustom style={{display: 'flex', alignItem: 'baseline'}} >
-                <DiscriptionBold >
-                  Read Cases
-                </DiscriptionBold>
-                <Arrow  src={arrow} alt='arrow'/>
-              </LinkCustom>
-              </div>
-            </GlobalBoxTwo>
-            <GlobalBox>
-              <MediaQuery device={'desktop'}>
-              <BackCustom src={Custom} alt="evo"></BackCustom>
-              </MediaQuery>
-              
-              <BackCustomDef src={CustomDef} alt="evo"></BackCustomDef>
-              
-              
+          <ConferenceColumn>
+            <SubTitle>We Are Certified</SubTitle>
+            <RowBoxLogo>
+              <CentralDivLogo>
+                <a >
+                  <LogoPartners src={Google} style={{}} alt="quad" />
+                </a>
+              </CentralDivLogo>
+              <CentralDivLogo>
+                <a>
+                  <LogoPartners src={Aws} style={{}} alt="quad" />
+                </a>
+              </CentralDivLogo>
+              <CentralDivLogo>
+                <a  >
+                  <LogoPartners src={Azure1} style={{}} alt="quad" />
+                </a>
+              </CentralDivLogo>
+              <CentralDivLogo>
+                <a>
+                  <LogoPartners src={Azure2} style={{}} alt="quad" />
+                </a>
+              </CentralDivLogo>
+              <CentralDivLogo>
+                <a >
+                  <LogoPartners src={IBM} style={{}} alt="quad" />
+                </a>
+              </CentralDivLogo>
+              <CentralDivLogo>
+                <a >
+                  <LogoPartners src={MCSE} style={{}} alt="quad" />
+                </a>
+              </CentralDivLogo>
+            </RowBoxLogo>
+          </ConferenceColumn>
 
-{/*PARNERS*/}
-              <DivLen>
-              <Len src={Lenovo} alt="evo"></Len>
-              <div style={{display:'flex'}}>
-                <div style={{marginRight:'10%'}}>
-                <LenTitle >+12%</LenTitle>
-                <LenDis>
-                Lorem ipsum stat to show
-                </LenDis>
-                </div>
-                <div>
-                <LenTitle>X2</LenTitle>
-                <LenDis>
-                Lorem ipsum stat to show
-                </LenDis>
-                </div>
-              </div>
-              <DiscriptionWithMargin style={{margin:'0'}}>
-              Our team draws years of industry experience, a rare combination of skill sets, and a burning passion for technology.
-              </DiscriptionWithMargin>
-              </DivLen>
-            </GlobalBox>
-          </ConferenceItem>
+          <ConferenceColumn>
+            <SubTitle>
+            Featured Technology Partners
+           </SubTitle>
+            <RowBoxLogo>
+              <CentralDivLogo>
+                <a href='https://www.insfocus.com'>
+                  <LogoPartners src={Microsoft} style={{}} alt="quad" />
+                </a>
+              </CentralDivLogo>
+              <CentralDivLogo>
+                <a href='metalink'>
+                  <LogoPartners src={AWS} style={{}} alt="quad" />
+                </a>
+              </CentralDivLogo>
+              <CentralDivLogo>
+                <a href='https://amnistreasury.com'>
+                  <LogoPartners src={GoogleCloud} style={{}} alt="quad" />
+                </a>
+              </CentralDivLogo>
+              <CentralDivLogo>
+                <a href='https://bestexresearch.com'>
+                  <LogoPartners src={IBMlogo} style={{}} alt="quad" />
+                </a>
+              </CentralDivLogo>
+              <CentralDivLogo>
+                <a href='https://www.docstribute.com'>
+                  <LogoPartners src={RedHat} style={{}} alt="quad" />
+                </a>
+              </CentralDivLogo>
+            </RowBoxLogo>
+          </ConferenceColumn>
+
+
+
+
 
         </ul>
       </Container>
+      </>
     </Section>
   )
 };
