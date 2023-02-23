@@ -29,7 +29,7 @@ align-items: center;
     width: 100%;
 
   ${({ theme }) => theme.device.tablet} {
-    width: 100%;
+
   }
   ${({ theme }) => theme.device.default} {
  
@@ -40,9 +40,15 @@ align-items: center;
   }
 `;
 
+export const HeroBox = styled.div`
+  text-align: center;
+  ${({ theme }) => theme.device.desktop} {
+    width: 475px;
+    text-align: left;
+  }
+`;
 export const GlobalBox = styled.div`
-margin: 0 auto;
-width: 340px;
+  
   padding-right: 8px;
   padding-left: 8px;
   text-align: left;
@@ -50,7 +56,7 @@ width: 340px;
     text-align: center;
     padding-right: 0px;
     padding-left: 0px;
-    width: 340px;
+    width: 313px;
     margin: 0 auto;
 
   }
@@ -74,7 +80,6 @@ export const HeroTitle = styled.h1`
   font-size: 22px;
   line-height: 1.3;
   margin-bottom: 32px;
-  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.95);
   color: ${({ theme }) => theme.colors.white};
   ${({ theme }) => theme.device.tablet} {
     font-size: 22px;
@@ -94,7 +99,6 @@ export const HeroDiscription = styled.p`
   line-height: 1.4;
   color: ${({ theme }) => theme.colors.white};
   margin-bottom: 32px;
-  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.95);
   ${({ theme }) => theme.device.tablet} {
     font-size: 12px;
   }

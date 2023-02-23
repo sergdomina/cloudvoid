@@ -25,22 +25,32 @@ const Hero = () => {
           </HeroDiscription>
         </GlobalBox>
       <MediaQuery device={'mobile'}>
-        <Spline style={{position:"absolute" 
-       }}
+        <Spline style={{position:"absolute", 
+        margin:"0",
+        top: "0",
+        left: '20%',
+        right: "0",}}
         scene="https://prod.spline.design/ufPVSUomT7C2tPeo/scene.splinecode"  />
       </MediaQuery>
       <MediaQuery device={'tablet'}>
-        <Spline style={{position:"absolute" 
-        }}
+        <Spline style={{position:"absolute", 
+        margin:"0",
+        top: "0",
+        right: "0",}}
         scene="https://prod.spline.design/ufPVSUomT7C2tPeo/scene.splinecode"  />
       </MediaQuery>
       <MediaQuery device={'defaultOnly'}>
-        <Spline style={{position:"absolute"
-       }} 
+        <Spline style={{position:"absolute", 
+        margin:"0",
+        top: "0",
+        right: "0",}} 
         scene="https://prod.spline.design/ufPVSUomT7C2tPeo/scene.splinecode" />
       </MediaQuery>
       <MediaQuery device={'desktop'}>
-      <Spline style={{position:"absolute"
+      <Spline style={{position:"absolute", 
+        margin:"0",
+        top: "0",
+        right: "0",
        }}  scene="https://prod.spline.design/ufPVSUomT7C2tPeo/scene.splinecode" />
        </MediaQuery>
         
