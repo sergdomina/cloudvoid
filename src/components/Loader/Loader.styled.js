@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Title = styled.span`
     display: block;
     font-family: ${({ theme }) => theme.fonts.title.bold};
-    font-size: 22px;
     font-style: normal;
     font-weight: 700;
     font-size: 106px;
@@ -61,7 +60,7 @@ export const DivLoad= styled.div`
     .title:before{
         content: '';
         position: absolute;
-        left: 0%;
+        left: 0;
         width: 120%;
         height: 100%;
         background: linear-gradient(90deg, transparent 0%, #fff 10%, #fff 100%);
