@@ -40,13 +40,13 @@ const Ready = () => {
                       <ReadyM src={readyM} alt="build" />
                     </MediaQuery>
                     <Title>
-                    Make Your IT Infrastructure Smarter
+                    Start Your Path To A Robust, Secure, and Open Cloud Architecture.
                     </Title>
                     <DiscriptionCenter>
-                    Talk to our SMEs and find out how our smart infrastructure services help you transform your business to drive growth, improve operational efficiency, and improve resiliency.
+                    Book an appointment with our Cloud Solutions Experts and discover how our services will help you save costs, improve operational efficiency, secure your IT assets, and scale your business.
                     </DiscriptionCenter>
                     <ReadyLink to='/contact'>
-                    Talk To Us
+                    Get Started
                     </ReadyLink>
                 </Bg>
                 

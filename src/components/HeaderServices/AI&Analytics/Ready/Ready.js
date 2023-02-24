@@ -40,13 +40,13 @@ const Ready = () => {
                       <ReadyM src={readyM} alt="build" />
                     </MediaQuery>
                     <Title>
-                    Accelerate Product Development With Smart DevOps
+                    Make Your Data Work For You
                     </Title>
                     <DiscriptionCenter>
-                    Talk to our Smart DevOps experts and find out how our services and solutions give you a competitive edge through high-velocity and minimum-risk software development.
+                    Talk to our Cloud AI and Analytics experts and find out how we can help you be competitive and resilient by unlocking critical insights from your cloud data.
                     </DiscriptionCenter>
                     <ReadyLink to='/contact'>
-                    Book Consultation
+                    Talk To Us
                     </ReadyLink>
                     
                 </Bg>

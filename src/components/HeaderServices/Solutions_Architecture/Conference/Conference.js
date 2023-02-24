@@ -261,7 +261,7 @@ const Conference = () => {
 
 
           <ConferenceColumn>
-            <SubTitle>Companies That Entrust Us With Their DevOps</SubTitle>
+            <SubTitle>Qualifications and Certifications</SubTitle>
             <DiscriptionCenter>
             Our veteran cloud solutions architects have diverse certifications and rare skillsets across significant cloud vendors, including;
             </DiscriptionCenter>

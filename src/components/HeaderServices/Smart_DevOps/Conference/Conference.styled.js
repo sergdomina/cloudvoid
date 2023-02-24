@@ -324,23 +324,19 @@ export const Title = styled.h3`
   font-family: ${({ theme }) => theme.fonts.title.bold};
   font-size: 22px;
   line-height: 1.2;
-  margin-bottom: 52px;
+  margin-bottom: 22px;
   margin-left: 10%;
   text-align: left;
   color: ${({ theme }) => theme.colors.dark_grey};
   ${({ theme }) => theme.device.tablet} {
     text-align: center;
     margin-left: 0;
-
   }
   ${({ theme }) => theme.device.default} {
-
     font-size: 28px;
-    margin-bottom: 82px;
 
   }
   ${({ theme }) => theme.device.desktop} {
-    font-size: 28px;
 
   }
 `;

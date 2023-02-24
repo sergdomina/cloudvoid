@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c3d5249d.css",
-    "main.js": "/static/js/main.93b8cd2e.js",
+    "main.js": "/static/js/main.c937b690.js",
     "static/js/227.f6d42006.chunk.js": "/static/js/227.f6d42006.chunk.js",
     "static/js/526.28027829.chunk.js": "/static/js/526.28027829.chunk.js",
     "static/js/232.0a864325.chunk.js": "/static/js/232.0a864325.chunk.js",
@@ -77,8 +77,6 @@
     "static/media/arrow.svg": "/static/media/arrow.478e7f899f6d4b772f12117a4fbda960.svg",
     "static/media/Group 291.svg": "/static/media/Group 291.5a72391dd63f25b8e2b92268dd19a114.svg",
     "static/media/customDef.svg": "/static/media/customDef.3910f2154d2a91bd4f1f1c45bfd5030d.svg",
-    "static/media/rightHow.svg": "/static/media/rightHow.5ffb15b0562dc1b8ec09a879e118d6ca.svg",
-    "static/media/leftHow.svg": "/static/media/leftHow.83e8a081c934ab860f4b3b272ecb438a.svg",
     "static/media/CustomMobile.svg": "/static/media/CustomMobile.ec49de9d7e1b1a8340c4685fd1f1e8f0.svg",
     "static/media/clock.svg": "/static/media/clock.6bf8d242f2a5189a08602b76cdddb4e8.svg",
     "static/media/clock_Smart.svg": "/static/media/clock_Smart.1b3a3a597855c70a561d65178b76ead2.svg",
@@ -101,7 +99,7 @@
     "static/media/Rectangle 177.svg": "/static/media/Rectangle 177.e0b3f50a4221eebc7be20ff4ab0acf5f.svg",
     "static/media/RedQuad.svg": "/static/media/RedQuad.81572515aed08895d905131e4251efb8.svg",
     "main.c3d5249d.css.map": "/static/css/main.c3d5249d.css.map",
-    "main.93b8cd2e.js.map": "/static/js/main.93b8cd2e.js.map",
+    "main.c937b690.js.map": "/static/js/main.c937b690.js.map",
     "227.f6d42006.chunk.js.map": "/static/js/227.f6d42006.chunk.js.map",
     "526.28027829.chunk.js.map": "/static/js/526.28027829.chunk.js.map",
     "232.0a864325.chunk.js.map": "/static/js/232.0a864325.chunk.js.map",
@@ -109,6 +107,6 @@
   },
   "entrypoints": [
     "static/css/main.c3d5249d.css",
-    "static/js/main.93b8cd2e.js"
+    "static/js/main.c937b690.js"
   ]
 }
