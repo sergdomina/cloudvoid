@@ -8,9 +8,10 @@ import {
   LogoImg,
   NavItem,
   NavList,
+  NavSubList,
   HeaderBox,
   LogoLink,
-  HeaderContainer,
+  HeaderContainer, ArrowButton, ButtonNavSubList,
   // DownHeadDiv,
 } from './AppBar.styled';
 // import { Container } from '../Container/Container.styled';
@@ -27,6 +28,9 @@ import PopupHeader from '../PopupHeader';
 
 const AppBar = () => {
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
+  const [isOpenSubList, setIsOpenSubList] = useState({
+    service: false
+  });
   const toggleMenu = () => {
     setIsOpenMobileMenu(!isOpenMobileMenu);
   };
@@ -52,11 +56,13 @@ const AppBar = () => {
                 type="button"
               />
             </MediaQuery>
+
             <MediaQuery device={'mobile'}>
               <LogoLink onClick={() => setIsOpenMobileMenu(false)} to="/">
                 <LogoImg src={LogoMobile} alt={'Cloudvoid'} />
               </LogoLink>
             </MediaQuery>
+
             <MediaQuery device={'tabletUp'}>
               <LogoLink onClick={() => setIsOpenMobileMenu(false)} to="/">
                 <LogoImg src={Logo} alt={'Cloudvoid'} />
@@ -72,17 +78,78 @@ const AppBar = () => {
               </NavItem>
 
               <NavItem>
-                <PopupHeader /> 
+                <ButtonNavSubList
+                  direction={'right'}
+                  onClick={() => {
+                  setIsOpenSubList((state) => {
+                    return {
+                      ...state,
+                      service: true
+                    }
+                  })
+                }}>
+                  Services
+                  <ArrowButton direction={'right'}/>
+                </ButtonNavSubList>
+
+                <NavSubList className={isOpenSubList.service && 'active'}>
+                  <MediaQuery device={'mobile'}>
+                    <NavItem>
+                      <ButtonNavSubList
+                        direction={'left'}
+                        onClick={() => {
+                        setIsOpenSubList((state) => {
+                          return {
+                            ...state,
+                            service: false
+                          }
+                        })
+                      }}>
+                        <ArrowButton direction={'left'}/>
+                        Back
+                      </ButtonNavSubList>
+                    </NavItem>
+                  </MediaQuery>
+
+                  <NavItem>
+                    <Link to="/cloud-evolve"><p>Cloud Evolve</p></Link>
+                  </NavItem>
+                  <NavItem>
+                    <Link to="/cloud-governance"><p>Cloud Governance</p></Link>
+                  </NavItem>
+                  <NavItem>
+                    <Link to="/cloud-migration"><p>Cloud Migration</p></Link>
+                  </NavItem>
+                  <NavItem>
+                    <Link to="/cloud-solutions-architecture"><p>Cloud Solutions Architecture</p></Link>
+                  </NavItem>
+                  <NavItem>
+                    <Link to="/cloud-ai-and-analytics"><p>Cloud AI & Analytics</p></Link>
+                  </NavItem>
+                  <NavItem>
+                    <Link to="/smart-devops"><p>Smart DevOps</p></Link>
+                  </NavItem>
+                  <NavItem>
+                    <Link to="/smart-infractructure"><p>Smart Infrastructure</p></Link>
+                  </NavItem>
+                  <NavItem>
+                    <Link to="/master-msp"><p>Master MSP</p></Link>
+                  </NavItem>
+                </NavSubList>
+
+                <PopupHeader />
               </NavItem>
+
               <NavItem>
-              <Link to="/about" onClick={toggleMenu}>
+                <Link to="/about" onClick={toggleMenu}>
                   About
-                  </Link>
+                </Link>
               </NavItem>
+
               <NavItem>
-              <Link to="/contact" onClick={toggleMenu}>
+                <Link to="/contact" onClick={toggleMenu}>
                   Contact
-                  </Link>
+                </Link>
               </NavItem>
             </NavList>
           </Nav>
@@ -93,4 +160,5 @@ const AppBar = () => {
     </>
   );
 };
+
 export default AppBar;
