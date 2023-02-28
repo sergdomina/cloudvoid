@@ -34,7 +34,9 @@ const Ready = () => {
                       <Ready5 src={ready5} alt="build" />
                       <Ready6 src={ready6} alt="build" />
                    </MediaQuery >
-                    <MediaQuery device={'mobile'} ><ReadyM src={readyM} alt="build" /></MediaQuery >
+                    <MediaQuery device={'mobile'} >
+                      <ReadyM src={readyM} alt="build" />
+                    </MediaQuery >
                     <Title style={{marginBottom: '44px'}}>
                     Ready To Experience Unmatched IT Excellence?
                     </Title>
