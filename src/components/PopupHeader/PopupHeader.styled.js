@@ -6,11 +6,14 @@ import { NavLink } from 'react-router-dom';
 export const PopupBox = styled.div`
   max-width: 760px;
   display: flex;
+
   flex-direction: column;
   justify-content: space-around;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(12.5px);
- 
+  ${({ theme }) => theme.device.mobileMax} {
+    width: 100%;
+  }
   ${({ theme }) => theme.device.tablet} {
     box-shadow: 0px 4px 20px rgba(96, 96, 96, 0.18);
     width: 280px;
@@ -54,23 +57,25 @@ export const Link = styled(NavLink)`
   }
 `;
 
+export const SubMenu = styled.button`
+`
+
 export const PopButton = styled.button`
   font-family: ${({ theme }) => theme.fonts.descr.regular};
   color: ${({ theme }) => theme.colors.dark};
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 14px;
   line-height: 1.5;
-  margin-left: 32px;
   border: none;
-  &.hover {
-    background: ${({ theme }) => theme.colors.grey_1};
-    position: relative;
-    &:after {
-
-    }
+  padding: 15px 32px;
+  text-align: left;
+  width: 100%;
+  ${({ theme }) => theme.device.mobileMax} {
+    display: none;
   }
   ${({ theme }) => theme.device.tablet} {
-    margin-left: 0px;
-
+    margin-left: 0;
   }
 `;
-
