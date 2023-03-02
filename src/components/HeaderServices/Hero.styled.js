@@ -7,7 +7,7 @@ export const HeroSection = styled.section`
   background-color: #F2F3F6;
   height: 578px;
   ${({ theme }) => theme.device.tablet} {
-    height: 424px;
+    height: 468px;
   }
   ${({ theme }) => theme.device.default} {
     height: 498px;
@@ -18,37 +18,30 @@ export const HeroSection = styled.section`
   }
 `;
 
-export const HeroImg = styled.img`
-
-`
 
 export const HeroContainer = styled(Container)`
-display: block;
-    align-items: center;
+display: flex;
+align-items: center;
+    height: 100%;
+    width: 100%;
 
+
+    .Grad{
+      z-index: 1;
+      background: linear-gradient(360deg, #FFFFFF 0%, rgba(217, 217, 217, 0) 100%);
+    }
   ${({ theme }) => theme.device.tablet} {
-    width: 768px;
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
-    flex-direction: row-reverse;
-  }
+ 
   ${({ theme }) => theme.device.default} {
-    width: 960px;
+
     
   }
   ${({ theme }) => theme.device.desktop} {
-    width: 1440px;
+
   }
 `;
 
-export const HeroBox = styled.div`
-  text-align: center;
-  ${({ theme }) => theme.device.desktop} {
-    width: 475px;
-    text-align: left;
-  }
-`;
+
 export const GlobalBox = styled.div`
   position: absolute;
   padding-right: 8px;
@@ -69,12 +62,12 @@ export const GlobalBox = styled.div`
   ${({ theme }) => theme.device.default} {
     width: 395px;
     padding-right: 10px;
-    left: 81px;
+    left: 181px;
     top:159px;
   }
   ${({ theme }) => theme.device.desktop} {
     width: 471px;
-    left: 92px;
+    left: 270px;
     top:269px;
   } ;
 

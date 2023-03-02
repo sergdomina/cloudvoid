@@ -40,13 +40,6 @@ align-items: center;
   }
 `;
 
-export const HeroBox = styled.div`
-  text-align: center;
-  ${({ theme }) => theme.device.desktop} {
-    width: 475px;
-    text-align: left;
-  }
-`;
 export const GlobalBox = styled.div`
   
   padding-right: 8px;
@@ -61,7 +54,7 @@ export const GlobalBox = styled.div`
 
   }
   ${({ theme }) => theme.device.default} {
-    width: 720px;
+    width: 600px;
  
  
   }
@@ -70,8 +63,6 @@ export const GlobalBox = styled.div`
     width: 659px;
 
   } ;
-
-
 `;
 
 

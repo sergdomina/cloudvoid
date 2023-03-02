@@ -129,7 +129,7 @@ const Conference = () => {
         <ul>
         <Container style={{position:'relative'}}>
 
-          <ConferenceItem>
+          <ConferenceItem style={{marginTop:'100px'}}>
             <MediaQuery device={'mobile'}>
                 <GlobalBox>
                     <DivEvo>
@@ -161,6 +161,9 @@ const Conference = () => {
             </MediaQuery>
             <GlobalBox>
               <DivBecome>
+              <Discription style={{marginBottom:'30px'}}>
+            
+              </Discription>
               <Discription style={{position: 'relative'}}>
               <CentrLine preserveAspectRatio="none" src={centrLine} alt="build" />
               <CentrLinePart preserveAspectRatio="none" src={centrLinePart} alt="build" />

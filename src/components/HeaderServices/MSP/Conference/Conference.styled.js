@@ -1,24 +1,19 @@
 
 import styled from 'styled-components';
-import gradient from '../../../../image/conference/gradient.svg'
+
 
 export const Section = styled.section`
   padding: 200px 0px 100px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-position: top;
-  background-image: url(${gradient});
   
   ${({ theme }) => theme.device.tablet} {
     margin-bottom: 0px;
     padding: 180px 0px 120px;
   }
   ${({ theme }) => theme.device.default} {
-    padding: 250px 0px 180px;
+    padding: 200px 0px 180px;
   }
   ${({ theme }) => theme.device.desktop} {
-    padding: 250px 0px 100px;
+    padding: 200px 0px 100px;
   }
 `;
 
@@ -491,7 +486,7 @@ export const BackCustom = styled.img`
   ${({ theme }) => theme.device.default} {
     width: 420px;
    margin-left: -50px;
-   margin-top: -90px;
+   margin-top: -120px;
 }
   ${({ theme }) => theme.device.desktop} {
    width: 670px;
@@ -673,9 +668,9 @@ export const BackEvo = styled.img`
     margin-left: -30px;
 }
   ${({ theme }) => theme.device.default} {
-    width: 408px;
+    width: 460px;
     margin-top: -45px;
-    margin-left: -50px;
+    margin-left: -60px;
 }
   ${({ theme }) => theme.device.desktop} {
    width: 652px;
@@ -686,7 +681,7 @@ export const BackEvo = styled.img`
 export const BackEvoM = styled.img`
   width: 375px;
   position: absolute;
-  top: 740px;
+  top: 820px;
   right: 0;
   left: 0;
   margin: 0 auto;

@@ -9,15 +9,14 @@ export const Header = styled.header`
   margin: 0 auto; 
   z-index: 5;
   width: 100%;
-  background: transporant;
+  background: transparent;
   backdrop-filter: blur(8px);
   ${({ theme }) => theme.device.default} {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    top: 0;
-    width: 100%;
+
+
   }
   ${({ theme }) => theme.device.desktop} {
+
   }
 `;
 

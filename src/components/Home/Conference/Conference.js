@@ -11,12 +11,15 @@ import {
   ConferenceColumn,
   RowBox,
   RowBoxLogo,
+  RowBoxCarusel,
   BackEvo,
   LogoPartners,
   DivBecome,
   CentralDiv,
   CentralDivLogo,
-  Adv
+  Adv,
+  CentralDivCarusel,
+  CentralDivCaruselMin
 } from './Conference.styled';
 
 import { Image} from '@chakra-ui/react';
@@ -25,6 +28,18 @@ import GlobalBox from '../../GlobalBox';
 import Evo from 'image/conference/Rectangle 177.svg';
 import MediaQuery from 'components/MediaQuery';
 import Accordion from "../../Accordion/Accordion";
+
+import Acteno from 'image/Customer_Section/acteno.png';
+import Amnis from 'image/Customer_Section/Amnis.png';
+import Ingram from 'image/Customer_Section/ingram.svg';
+import Lenovo from 'image/Customer_Section/Lenovo.png';
+import Insfocus from 'image/Customer_Section/insfocus.svg';
+import TelAviv from 'image/Customer_Section/Telaviv.png';
+import Metalink from 'image/Customer_Section/metalink.png';
+import Israel from 'image/Customer_Section/Israel_electric_co.png';
+import Bavelle from 'image/Customer_Section/Bavelle.png';
+import Ryther from 'image/Customer_Section/Ryther.png';
+
 
 import Google from 'image/Solutions_Architecture/google.png';
 import Aws from 'image/Solutions_Architecture/AWS.png';
@@ -44,6 +59,8 @@ import AWS from 'image/Home/AWS.png';
 import GoogleCloud from 'image/Home/google-cloud.png';
 import IBMlogo from 'image/Home/IBM.png';
 import RedHat from 'image/Home/RedHat.png';
+
+
 
 
 const Conference = () => {
@@ -75,12 +92,12 @@ const Conference = () => {
       content: 'Move your infrastructure, apps, and digital assets to the cloud. '
     },
     {
-      title: 'Cloud Governance ',
+      title: 'Cloud Governance',
       number: '06',
       content: 'Take back complete control of your cloud spending.'
     },
     {
-      title: 'Smart Infrastructure ',
+      title: 'Smart Infrastructure',
       number: '07',
       content: 'Focus on what makes your business matter; We take care of your entire IT infrastructure.'
     },
@@ -97,6 +114,63 @@ const Conference = () => {
       <>
       <Container style={{position:'relative'}}>
         <ul>
+
+        <ConferenceColumn class="splide">
+            <RowBoxCarusel>
+              <CentralDivCarusel>
+                <a href='https://www.insfocus.com'>
+                  <LogoPartners src={Acteno} style={{}} alt="quad" />
+                </a>
+              </CentralDivCarusel>
+              <CentralDivCarusel>
+                <a href='metalink'>
+                  <LogoPartners src={Amnis} style={{}} alt="quad" />
+                </a>
+              </CentralDivCarusel>
+              <CentralDivCarusel>
+                <a href='https://amnistreasury.com'>
+                  <LogoPartners src={Ingram} style={{}} alt="quad" />
+                </a>
+              </CentralDivCarusel>
+              <CentralDivCarusel>
+                <a href='https://bestexresearch.com'>
+                  <LogoPartners src={Lenovo} style={{}} alt="quad" />
+                </a>
+              </CentralDivCarusel>
+              <CentralDivCarusel>
+                <a href='https://www.docstribute.com'>
+                  <LogoPartners src={Insfocus} style={{}} alt="quad" />
+                </a>
+              </CentralDivCarusel>
+              <CentralDivCarusel>
+                <a href='https://www.insfocus.com'>
+                  <LogoPartners src={TelAviv} style={{}} alt="quad" />
+                </a>
+              </CentralDivCarusel>
+              <CentralDivCaruselMin>
+                <a href='metalink'>
+                  <LogoPartners src={Metalink} style={{}} alt="quad" />
+                </a>
+              </CentralDivCaruselMin>
+              <CentralDivCaruselMin>
+                <a href='https://amnistreasury.com'>
+                  <LogoPartners src={Israel} style={{}} alt="quad" />
+                </a>
+              </CentralDivCaruselMin>
+              <CentralDivCarusel>
+                <a href='https://bestexresearch.com'>
+                  <LogoPartners src={Bavelle} style={{}} alt="quad" />
+                </a>
+              </CentralDivCarusel>
+              <CentralDivCarusel>
+                <a href='https://www.docstribute.com'>
+                  <LogoPartners src={Ryther} style={{}} alt="quad" />
+                </a>
+              </CentralDivCarusel>
+            </RowBoxCarusel>
+          </ConferenceColumn>
+
+
           <ConferenceItem>
            
                 <GlobalBox>
@@ -233,28 +307,28 @@ const Conference = () => {
            </SubTitle>
             <RowBoxLogo>
               <CentralDivLogo>
-                <a href='https://www.insfocus.com'>
-                  <LogoPartners src={Microsoft} style={{}} alt="quad" />
+                <a >
+                  <LogoPartners src={Microsoft} style={{}} alt="Microsoft" />
                 </a>
               </CentralDivLogo>
               <CentralDivLogo>
                 <a href='metalink'>
-                  <LogoPartners src={AWS} style={{}} alt="quad" />
+                  <LogoPartners src={AWS} style={{}} alt="AWS" />
                 </a>
               </CentralDivLogo>
               <CentralDivLogo>
-                <a href='https://amnistreasury.com'>
-                  <LogoPartners src={GoogleCloud} style={{}} alt="quad" />
+                <a >
+                  <LogoPartners src={GoogleCloud} style={{}} alt="GoogleCloud" />
                 </a>
               </CentralDivLogo>
               <CentralDivLogo>
-                <a href='https://bestexresearch.com'>
-                  <LogoPartners src={IBMlogo} style={{}} alt="quad" />
+                <a >
+                  <LogoPartners src={IBMlogo} style={{}} alt="IBMlogo" />
                 </a>
               </CentralDivLogo>
               <CentralDivLogo>
-                <a href='https://www.docstribute.com'>
-                  <LogoPartners src={RedHat} style={{}} alt="quad" />
+                <a >
+                  <LogoPartners src={RedHat} style={{}} alt="RedHat" />
                 </a>
               </CentralDivLogo>
             </RowBoxLogo>

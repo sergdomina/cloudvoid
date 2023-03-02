@@ -15,7 +15,9 @@ const Hero = () => {
     <HeroSection>
        
       <HeroContainer style={{position:"relative"}}>
-      <GlobalBox style={{zIndex:"1"}}>
+      <GlobalBox style={{zIndex:"1",
+        backgroundColor: 'transparent'
+        }}>
           <HeroTitle>
           Unlock Your Next Strategic Insight With Cloud AI & Analytics
           </HeroTitle>
@@ -24,35 +26,11 @@ const Hero = () => {
           </HeroDiscription>
           
         </GlobalBox>
-      <MediaQuery device={'mobile'}>
-        <Spline style={{position:"absolute", 
-        margin:"0 auto",
-        top: "0",
-        
-        right: "0",}}
-        scene="https://prod.spline.design/sg4VOs698eINp0UO/scene.splinecode"  />
-      </MediaQuery>
-      <MediaQuery device={'tablet'}>
-        <Spline style={{position:"absolute", 
-        margin:"0",
-        top: "0",
-        right: "0",}}
-        scene="https://prod.spline.design/yTttbAhLNMjD9c3s/scene.splinecode"  />
-      </MediaQuery>
-      <MediaQuery device={'defaultOnly'}>
-        <Spline style={{position:"absolute", 
-        margin:"0",
-        top: "0",
-        right: "0",}} 
-        scene="https://prod.spline.design/lWL3kQRvl2jrLTTW/scene.splinecode" />
-      </MediaQuery>
-      <MediaQuery device={'desktop'}>
-      <Spline style={{position:"absolute", 
-        margin:"0",
-        top: "0",
-        right: "0",
-       }}  scene="https://prod.spline.design/I9YR96HNIXKQm7h8/scene.splinecode" />
-       </MediaQuery>
+   
+        <Spline style={{position:"absolute", }}
+       scene="https://prod.spline.design/ZRrXk8Lf9LemIbND/scene.splinecode" />
+
+     
         
       </HeroContainer>
     </HeroSection>

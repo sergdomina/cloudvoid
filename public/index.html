@@ -36,7 +36,7 @@
         z-index: 10;
         opacity: 1;
         justify-content: center;
-        animation: out 4s;
+        animation: out 3s;
       }
       .preloader__title{
         position: relative;
@@ -57,7 +57,7 @@
         width: 120%;
         height: 100%;
         background: linear-gradient(90deg, transparent 0%, #fff 10%, #fff 100%);
-        animation: animate 3.5s .5s linear forwards;
+        animation: animate 2.5s .3s linear forwards;
       }
       @keyframes out{
         0% {
@@ -72,7 +72,7 @@
       }
       @keyframes animate{
         0%{
-          left: -10%;
+          left: -30%;
         }
         100%{
           left: 110%;
@@ -84,8 +84,9 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <noscript><style>.preloader{display:none}</style></noscript>
     <script>
-      let removePreload=function(){let e=document.querySelector(".preloader"),o=document.querySelector("#root").innerHTML;null==o||""==o?setTimeout(removePreload,100):e.remove()};setTimeout(removePreload,4000);
+      let removePreload=function(){let e=document.querySelector(".preloader"),o=document.querySelector("#root").innerHTML;null==o||""==o?setTimeout(removePreload,100):e.remove()};setTimeout(removePreload,3000);
     </script>
+
     <div class='preloader'>
       <span class='preloader__title'>HELLO.</span>
     </div>

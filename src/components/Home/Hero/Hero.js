@@ -15,7 +15,7 @@ const Hero = () => {
     <HeroSection>
        
       <HeroContainer style={{position:'relative'}}>
-        <div style={{position:'absolute',
+        <div className='gradient' style={{position:'absolute',
          backgroundColor: '#000',
           zIndex: '1',
            width:'100%',
@@ -29,25 +29,11 @@ const Hero = () => {
           We could say we build IT business solutions, bringing value through our experienced, talented global team with vast industrial experience, but we're more than that. We become a valuable part of your team, tackling challenges and tasks with enthusiasm and determination.
           </HeroDiscription>
         </GlobalBox>
-      <MediaQuery device={'mobile'}>
-        <Spline style={{position:"absolute" 
-       }}
+     
+        <Spline style={{position:"absolute" }}
         scene="https://prod.spline.design/ufPVSUomT7C2tPeo/scene.splinecode"  />
-      </MediaQuery>
-      <MediaQuery device={'tablet'}>
-        <Spline style={{position:"absolute" 
-        }}
-        scene="https://prod.spline.design/ufPVSUomT7C2tPeo/scene.splinecode"  />
-      </MediaQuery>
-      <MediaQuery device={'defaultOnly'}>
-        <Spline style={{position:"absolute"
-       }} 
-        scene="https://prod.spline.design/ufPVSUomT7C2tPeo/scene.splinecode" />
-      </MediaQuery>
-      <MediaQuery device={'desktop'}>
-      <Spline style={{position:"absolute"
-       }}  scene="https://prod.spline.design/ufPVSUomT7C2tPeo/scene.splinecode" />
-       </MediaQuery>
+    
+      
         
       </HeroContainer>
     </HeroSection>

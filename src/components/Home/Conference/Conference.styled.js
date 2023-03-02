@@ -4,17 +4,17 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  padding: 100px 0px 100px;
+  padding: 50px 0px 100px;
   
   ${({ theme }) => theme.device.tablet} {
     margin-bottom: 0px;
-    padding: 180px 0px 40px;
+    padding: 70px 0px 40px;
   }
   ${({ theme }) => theme.device.default} {
-    padding: 180px 0px 180px;
+    padding: 80px 0px 180px;
   }
   ${({ theme }) => theme.device.desktop} {
-    padding: 250px 0px 100px;
+    padding: 100px 0px 100px;
   }
 `;
 
@@ -176,7 +176,7 @@ export const RowBox = styled.div`
 export const RowBoxLogo = styled.div`
   width: auto;
   text-align: left;
-
+  
   padding-right: 8px;
   padding-left: 8px;
 
@@ -192,6 +192,28 @@ export const RowBoxLogo = styled.div`
   }
   ${({ theme }) => theme.device.desktop} {
     
+  } ;
+`;
+export const RowBoxCarusel = styled.div`
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 1047px;
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-left: 0;
+ 
+  ${({ theme }) => theme.device.tablet} {
+  
+  }
+  ${({ theme }) => theme.device.default} {
+    width: 1466px;
+
+  }
+  ${({ theme }) => theme.device.desktop} {
+    margin-left: 0;
+
+    width: 2200px;
   } ;
 `;
 
@@ -631,6 +653,42 @@ margin: 0 auto;
   ${({ theme }) => theme.device.desktop} {
     
     width: 290px;
+};
+`
+export const CentralDivCarusel = styled.div`
+width: 97px;
+margin: 0 auto;
+&:not(:last-child){
+  margin-right: 32px;
+}
+  ${({ theme }) => theme.device.tablet} {
+    width: 97px;
+
+}
+  ${({ theme }) => theme.device.default} {
+    width: 135px;
+}
+  ${({ theme }) => theme.device.desktop} {
+    
+    width: 194px;
+};
+`
+export const CentralDivCaruselMin = styled.div`
+width: 72px;
+margin: 0 auto;
+&:not(:last-child){
+  margin-right: 32px;
+}
+  ${({ theme }) => theme.device.tablet} {
+    width: 72px;
+
+}
+  ${({ theme }) => theme.device.default} {
+    width: 100px;
+}
+  ${({ theme }) => theme.device.desktop} {
+    
+    width: 140px;
 };
 `
 export const CentralDivLogo = styled.div`

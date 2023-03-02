@@ -5,7 +5,7 @@ const Container = styled.div`
   padding: 0 15px;
   margin: 0 auto;
   width: 100%;
-
+  overflow: hidden;
   ${device.mobile} {
     /* width: 343px; */
     padding: 0;
@@ -19,7 +19,7 @@ const Container = styled.div`
 
   ${device.default} {
     padding: 0;
-    width: 880px;
+    width: 930px;
   }
   ${device.desktop} {
     width: 1320px;
