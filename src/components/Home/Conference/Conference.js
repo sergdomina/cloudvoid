@@ -60,10 +60,26 @@ import GoogleCloud from 'image/Home/google-cloud.png';
 import IBMlogo from 'image/Home/IBM.png';
 import RedHat from 'image/Home/RedHat.png';
 
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
+
+const splide = new Splide( '.splide', {
+  type   : 'loop',
+  drag   : 'free',
+  focus  : 'center',
+  perPage: 3,
+  autoScroll: {
+    speed: 2,
+  },
+} );
+
+
+
 
 
 
 const Conference = () => {
+
 
   const accordionItems = [
     {
@@ -111,11 +127,44 @@ const Conference = () => {
   return (
     <Section >
 
+
       <>
       <Container style={{position:'relative'}}>
-        <ul>
+        <ul>  
+        <Splide class='splide' >
+          <div style={{display: 'flex'}}>
+            <SplideSlide>
+              <CentralDivCarusel>
+                  <a href='https://www.insfocus.com'>
+                    <LogoPartners src={Acteno} style={{}} alt="quad" />
+                  </a>
+                </CentralDivCarusel>
+            </SplideSlide>
+            <SplideSlide>
+              <CentralDivCarusel>
+                  <a href='https://amnistreasury.com'>
+                    <LogoPartners src={Ingram} style={{}} alt="quad" />
+                  </a>
+                </CentralDivCarusel>
+            </SplideSlide>
+            <SplideSlide>
+              <CentralDivCarusel>
+                  <a href='https://amnistreasury.com'>
+                    <LogoPartners src={Ingram} style={{}} alt="quad" />
+                  </a>
+                </CentralDivCarusel>
+            </SplideSlide>
+            <SplideSlide>
+              <CentralDivCarusel>
+                  <a href='https://amnistreasury.com'>
+                    <LogoPartners src={Ingram} style={{}} alt="quad" />
+                  </a>
+                </CentralDivCarusel>
+            </SplideSlide>
+          </div>
+        </Splide>
 
-        <ConferenceColumn class="splide">
+        <ConferenceColumn>
             <RowBoxCarusel>
               <CentralDivCarusel>
                 <a href='https://www.insfocus.com'>
@@ -171,14 +220,8 @@ const Conference = () => {
           </ConferenceColumn>
 
 
-          <ConferenceItem>
-           
-                <GlobalBox>
-                    <BackEvo src={Evo}  alt="evo"></BackEvo>
-                    
-                  </GlobalBox>
-         
-            <GlobalBox>
+        <ConferenceItem>
+          <GlobalBox>
               <DivBecome>
               <SubTitle2>We Are Cloudvoid</SubTitle2>
               <Discription style={{position: 'relative'}}>
@@ -189,6 +232,11 @@ const Conference = () => {
               </Discription>
               </DivBecome>
             </GlobalBox>
+
+            <GlobalBox>
+                    <BackEvo src={Evo}  alt="evo"></BackEvo>
+                    
+            </GlobalBox>       
           </ConferenceItem>
 
           <MediaQuery device={'desktop'}>
