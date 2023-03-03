@@ -60,8 +60,10 @@ import GoogleCloud from 'image/Home/google-cloud.png';
 import IBMlogo from 'image/Home/IBM.png';
 import RedHat from 'image/Home/RedHat.png';
 
-import { Splide, SplideSlide } from '@splidejs/react-splide';
+import { Splide, SplideSlide, SplideTrack, autoScroll } from '@splidejs/react-splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
+import '@splidejs/react-splide/css';
+import '@splidejs/react-splide/css/core';
 
 const splide = new Splide( '.splide', {
   type   : 'loop',
@@ -69,17 +71,12 @@ const splide = new Splide( '.splide', {
   focus  : 'center',
   perPage: 3,
   autoScroll: {
-    speed: 2,
+    speed: -1,
   },
 } );
 
 
-
-
-
-
 const Conference = () => {
-
 
   const accordionItems = [
     {
@@ -126,42 +123,140 @@ const Conference = () => {
 
   return (
     <Section >
-
-
       <>
       <Container style={{position:'relative'}}>
-        <ul>  
-        <Splide class='splide' >
-          <div style={{display: 'flex'}}>
-            <SplideSlide>
-              <CentralDivCarusel>
-                  <a href='https://www.insfocus.com'>
-                    <LogoPartners src={Acteno} style={{}} alt="quad" />
-                  </a>
-                </CentralDivCarusel>
-            </SplideSlide>
-            <SplideSlide>
-              <CentralDivCarusel>
-                  <a href='https://amnistreasury.com'>
-                    <LogoPartners src={Ingram} style={{}} alt="quad" />
-                  </a>
-                </CentralDivCarusel>
-            </SplideSlide>
-            <SplideSlide>
-              <CentralDivCarusel>
-                  <a href='https://amnistreasury.com'>
-                    <LogoPartners src={Ingram} style={{}} alt="quad" />
-                  </a>
-                </CentralDivCarusel>
-            </SplideSlide>
-            <SplideSlide>
-              <CentralDivCarusel>
-                  <a href='https://amnistreasury.com'>
-                    <LogoPartners src={Ingram} style={{}} alt="quad" />
-                  </a>
-                </CentralDivCarusel>
-            </SplideSlide>
-          </div>
+        <ul> 
+        
+        <Splide
+        options={ {
+          type   : 'loop',
+          drag   : 'free',
+          focus  : 'center',
+          perPage: 3,
+          fixedWidth: '300px',
+          autoScroll:{
+            speed: 2,
+          }
+        } } 
+        aria-label="Basic Structure Example"
+        class='splide'
+        >
+  
+              <SplideTrack>
+                      <SplideSlide>
+                        <CentralDivCarusel>
+                            <a href='https://amnistreasury.com'>
+                              <LogoPartners src={Ingram} style={{}} alt="quad" />
+                            </a>
+                          </CentralDivCarusel>
+                      </SplideSlide>
+          
+        
+                    <SplideSlide>
+                        <CentralDivCarusel>
+                            <a href='https://amnistreasury.com'>
+                              <LogoPartners src={Ingram} style={{}} alt="quad" />
+                            </a>
+                          </CentralDivCarusel>
+                    </SplideSlide>
+          
+        
+                      <SplideSlide>
+                        <CentralDivCarusel>
+                            <a href='https://amnistreasury.com'>
+                              <LogoPartners src={Ingram} style={{}} alt="quad" />
+                            </a>
+                          </CentralDivCarusel>
+                      </SplideSlide>
+          
+        
+                      <SplideSlide>
+                        <CentralDivCarusel>
+                            <a href='https://amnistreasury.com'>
+                              <LogoPartners src={Ingram} style={{}} alt="quad" />
+                            </a>
+                          </CentralDivCarusel>
+                      </SplideSlide> 
+              </SplideTrack>
+    
+        </Splide>
+        <Splide
+        options={ {
+          rewind: true,
+          width : 800,
+          gap   : '4rem',
+          type   : 'loop',
+          drag   : 'free',
+          focus  : 'center',
+          perPage: 3,
+          autoScroll:{
+            speed: 2,
+          }
+        } }
+        class='splide' >
+              <SplideSlide>
+                <CentralDivCarusel>
+                    <a href='https://amnistreasury.com'>
+                      <LogoPartners src={Ingram} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+              </SplideSlide>
+              <SplideSlide>
+                <CentralDivCarusel>
+                    <a href='https://amnistreasury.com'>
+                      <LogoPartners src={Ingram} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+              </SplideSlide>
+              <SplideSlide>
+                <CentralDivCarusel>
+                    <a href='https://amnistreasury.com'>
+                      <LogoPartners src={Ingram} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+              </SplideSlide>
+              <SplideSlide>
+                <CentralDivCarusel>
+                    <a href='https://amnistreasury.com'>
+                      <LogoPartners src={Ingram} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+              </SplideSlide>
+              <SplideSlide>
+                <CentralDivCarusel>
+                    <a href='https://amnistreasury.com'>
+                      <LogoPartners src={Ingram} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+              </SplideSlide>
+              <SplideSlide>
+                <CentralDivCarusel>
+                    <a href='https://amnistreasury.com'>
+                      <LogoPartners src={Ingram} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+              </SplideSlide>
+              <SplideSlide>
+                <CentralDivCarusel>
+                    <a href='https://amnistreasury.com'>
+                      <LogoPartners src={Ingram} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+              </SplideSlide>
+              <SplideSlide>
+                <CentralDivCarusel>
+                    <a href='https://amnistreasury.com'>
+                      <LogoPartners src={Ingram} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+              </SplideSlide>
+              <SplideSlide>
+                <CentralDivCarusel>
+                    <a href='https://amnistreasury.com'>
+                      <LogoPartners src={Ingram} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+              </SplideSlide>
         </Splide>
 
         <ConferenceColumn>
