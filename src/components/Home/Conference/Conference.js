@@ -60,7 +60,7 @@ import GoogleCloud from 'image/Home/google-cloud.png';
 import IBMlogo from 'image/Home/IBM.png';
 import RedHat from 'image/Home/RedHat.png';
 
-import { Splide, SplideSlide, SplideTrack, autoScroll } from '@splidejs/react-splide';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 import '@splidejs/react-splide/css';
 import '@splidejs/react-splide/css/core';
@@ -125,241 +125,189 @@ const Conference = () => {
     <Section >
       <>
       <Container style={{position:'relative'}}>
-        <ul> 
-        
-        <Splide
-        options={ {
-          type   : 'loop',
-          drag   : 'free',
-          focus  : 'center',
-          perPage: 3,
-          fixedWidth: '300px',
-          autoScroll:{
-            speed: 2,
-          }
-        } } 
-        aria-label="Basic Structure Example"
-        class='splide'
-        >
-  
-              <SplideTrack>
-                      <SplideSlide>
-                        <CentralDivCarusel>
-                            <a href='https://amnistreasury.com'>
-                              <LogoPartners src={Ingram} style={{}} alt="quad" />
-                            </a>
-                          </CentralDivCarusel>
-                      </SplideSlide>
-          
-        
-                    <SplideSlide>
-                        <CentralDivCarusel>
-                            <a href='https://amnistreasury.com'>
-                              <LogoPartners src={Ingram} style={{}} alt="quad" />
-                            </a>
-                          </CentralDivCarusel>
-                    </SplideSlide>
-          
-        
-                      <SplideSlide>
-                        <CentralDivCarusel>
-                            <a href='https://amnistreasury.com'>
-                              <LogoPartners src={Ingram} style={{}} alt="quad" />
-                            </a>
-                          </CentralDivCarusel>
-                      </SplideSlide>
-          
-        
-                      <SplideSlide>
-                        <CentralDivCarusel>
-                            <a href='https://amnistreasury.com'>
-                              <LogoPartners src={Ingram} style={{}} alt="quad" />
-                            </a>
-                          </CentralDivCarusel>
-                      </SplideSlide> 
-              </SplideTrack>
-    
-        </Splide>
-        <Splide
-        options={ {
-          rewind: true,
-          width : 800,
-          gap   : '4rem',
-          type   : 'loop',
-          drag   : 'free',
-          focus  : 'center',
-          perPage: 3,
-          autoScroll:{
-            speed: 2,
-          }
-        } }
-        class='splide' >
+        <ul>
+          <li>
+            <Splide
+                options={{
+                  rewind: true,
+                  width : 800,
+                  gap   : '4rem',
+                  type   : 'loop',
+                  drag   : 'free',
+                  focus  : 'center',
+                  perPage: 3,
+                  // autoplay: true,
+                  autoScroll:{
+                    rewind: false,
+                    pauseOnHover: false,
+                    pauseOnFocus: false,
+                    speed: 2,
+                  }
+                }}
+                extensions={{ AutoScroll }}
+                class='splide'
+            >
               <SplideSlide>
                 <CentralDivCarusel>
-                    <a href='https://amnistreasury.com'>
-                      <LogoPartners src={Ingram} style={{}} alt="quad" />
-                    </a>
-                  </CentralDivCarusel>
+                  <a href='https://amnistreasury.com'>
+                    <LogoPartners src={Ingram} style={{}} alt="quad" />
+                  </a>
+                </CentralDivCarusel>
               </SplideSlide>
               <SplideSlide>
                 <CentralDivCarusel>
-                    <a href='https://amnistreasury.com'>
-                      <LogoPartners src={Ingram} style={{}} alt="quad" />
-                    </a>
-                  </CentralDivCarusel>
+                  <a href='https://amnistreasury.com'>
+                    <LogoPartners src={Ingram} style={{}} alt="quad" />
+                  </a>
+                </CentralDivCarusel>
               </SplideSlide>
               <SplideSlide>
                 <CentralDivCarusel>
-                    <a href='https://amnistreasury.com'>
-                      <LogoPartners src={Ingram} style={{}} alt="quad" />
-                    </a>
-                  </CentralDivCarusel>
+                  <a href='https://amnistreasury.com'>
+                    <LogoPartners src={Ingram} style={{}} alt="quad" />
+                  </a>
+                </CentralDivCarusel>
               </SplideSlide>
               <SplideSlide>
                 <CentralDivCarusel>
-                    <a href='https://amnistreasury.com'>
-                      <LogoPartners src={Ingram} style={{}} alt="quad" />
-                    </a>
-                  </CentralDivCarusel>
+                  <a href='https://amnistreasury.com'>
+                    <LogoPartners src={Ingram} style={{}} alt="quad" />
+                  </a>
+                </CentralDivCarusel>
               </SplideSlide>
               <SplideSlide>
                 <CentralDivCarusel>
-                    <a href='https://amnistreasury.com'>
-                      <LogoPartners src={Ingram} style={{}} alt="quad" />
-                    </a>
-                  </CentralDivCarusel>
+                  <a href='https://amnistreasury.com'>
+                    <LogoPartners src={Ingram} style={{}} alt="quad" />
+                  </a>
+                </CentralDivCarusel>
               </SplideSlide>
               <SplideSlide>
                 <CentralDivCarusel>
-                    <a href='https://amnistreasury.com'>
-                      <LogoPartners src={Ingram} style={{}} alt="quad" />
-                    </a>
-                  </CentralDivCarusel>
+                  <a href='https://amnistreasury.com'>
+                    <LogoPartners src={Ingram} style={{}} alt="quad" />
+                  </a>
+                </CentralDivCarusel>
               </SplideSlide>
               <SplideSlide>
                 <CentralDivCarusel>
-                    <a href='https://amnistreasury.com'>
-                      <LogoPartners src={Ingram} style={{}} alt="quad" />
-                    </a>
-                  </CentralDivCarusel>
+                  <a href='https://amnistreasury.com'>
+                    <LogoPartners src={Ingram} style={{}} alt="quad" />
+                  </a>
+                </CentralDivCarusel>
               </SplideSlide>
               <SplideSlide>
                 <CentralDivCarusel>
-                    <a href='https://amnistreasury.com'>
-                      <LogoPartners src={Ingram} style={{}} alt="quad" />
-                    </a>
-                  </CentralDivCarusel>
+                  <a href='https://amnistreasury.com'>
+                    <LogoPartners src={Ingram} style={{}} alt="quad" />
+                  </a>
+                </CentralDivCarusel>
               </SplideSlide>
               <SplideSlide>
                 <CentralDivCarusel>
-                    <a href='https://amnistreasury.com'>
-                      <LogoPartners src={Ingram} style={{}} alt="quad" />
-                    </a>
-                  </CentralDivCarusel>
+                  <a href='https://amnistreasury.com'>
+                    <LogoPartners src={Ingram} style={{}} alt="quad" />
+                  </a>
+                </CentralDivCarusel>
               </SplideSlide>
-        </Splide>
-
-        <ConferenceColumn>
-            <RowBoxCarusel>
-              <CentralDivCarusel>
-                <a href='https://www.insfocus.com'>
-                  <LogoPartners src={Acteno} style={{}} alt="quad" />
-                </a>
-              </CentralDivCarusel>
-              <CentralDivCarusel>
-                <a href='metalink'>
-                  <LogoPartners src={Amnis} style={{}} alt="quad" />
-                </a>
-              </CentralDivCarusel>
-              <CentralDivCarusel>
-                <a href='https://amnistreasury.com'>
-                  <LogoPartners src={Ingram} style={{}} alt="quad" />
-                </a>
-              </CentralDivCarusel>
-              <CentralDivCarusel>
-                <a href='https://bestexresearch.com'>
-                  <LogoPartners src={Lenovo} style={{}} alt="quad" />
-                </a>
-              </CentralDivCarusel>
-              <CentralDivCarusel>
-                <a href='https://www.docstribute.com'>
-                  <LogoPartners src={Insfocus} style={{}} alt="quad" />
-                </a>
-              </CentralDivCarusel>
-              <CentralDivCarusel>
-                <a href='https://www.insfocus.com'>
-                  <LogoPartners src={TelAviv} style={{}} alt="quad" />
-                </a>
-              </CentralDivCarusel>
-              <CentralDivCaruselMin>
-                <a href='metalink'>
-                  <LogoPartners src={Metalink} style={{}} alt="quad" />
-                </a>
-              </CentralDivCaruselMin>
-              <CentralDivCaruselMin>
-                <a href='https://amnistreasury.com'>
-                  <LogoPartners src={Israel} style={{}} alt="quad" />
-                </a>
-              </CentralDivCaruselMin>
-              <CentralDivCarusel>
-                <a href='https://bestexresearch.com'>
-                  <LogoPartners src={Bavelle} style={{}} alt="quad" />
-                </a>
-              </CentralDivCarusel>
-              <CentralDivCarusel>
-                <a href='https://www.docstribute.com'>
-                  <LogoPartners src={Ryther} style={{}} alt="quad" />
-                </a>
-              </CentralDivCarusel>
-            </RowBoxCarusel>
-          </ConferenceColumn>
-
-
-        <ConferenceItem>
-          <GlobalBox>
-              <DivBecome>
-              <SubTitle2>We Are Cloudvoid</SubTitle2>
-              <Discription style={{position: 'relative'}}>
-              Cloudvoid is people. We are experts, a team of thinkers and doers with smarter and quicker enterprise-level experience, bringing solutions to your business on a whole new level.
-              </Discription>
-              <Discription>
-              We are masters of our domain, we like to think out of the norm, and we love to approach every challenge in a whole new way that's right for your business.
-              </Discription>
-              </DivBecome>
-            </GlobalBox>
-
+            </Splide>
+          </li>
+          {/*<ConferenceColumn>*/}
+          {/*    <RowBoxCarusel>*/}
+          {/*      <CentralDivCarusel>*/}
+          {/*        <a href='https://www.insfocus.com'>*/}
+          {/*          <LogoPartners src={Acteno} style={{}} alt="quad" />*/}
+          {/*        </a>*/}
+          {/*      </CentralDivCarusel>*/}
+          {/*      <CentralDivCarusel>*/}
+          {/*        <a href='metalink'>*/}
+          {/*          <LogoPartners src={Amnis} style={{}} alt="quad" />*/}
+          {/*        </a>*/}
+          {/*      </CentralDivCarusel>*/}
+          {/*      <CentralDivCarusel>*/}
+          {/*        <a href='https://amnistreasury.com'>*/}
+          {/*          <LogoPartners src={Ingram} style={{}} alt="quad" />*/}
+          {/*        </a>*/}
+          {/*      </CentralDivCarusel>*/}
+          {/*      <CentralDivCarusel>*/}
+          {/*        <a href='https://bestexresearch.com'>*/}
+          {/*          <LogoPartners src={Lenovo} style={{}} alt="quad" />*/}
+          {/*        </a>*/}
+          {/*      </CentralDivCarusel>*/}
+          {/*      <CentralDivCarusel>*/}
+          {/*        <a href='https://www.docstribute.com'>*/}
+          {/*          <LogoPartners src={Insfocus} style={{}} alt="quad" />*/}
+          {/*        </a>*/}
+          {/*      </CentralDivCarusel>*/}
+          {/*      <CentralDivCarusel>*/}
+          {/*        <a href='https://www.insfocus.com'>*/}
+          {/*          <LogoPartners src={TelAviv} style={{}} alt="quad" />*/}
+          {/*        </a>*/}
+          {/*      </CentralDivCarusel>*/}
+          {/*      <CentralDivCaruselMin>*/}
+          {/*        <a href='metalink'>*/}
+          {/*          <LogoPartners src={Metalink} style={{}} alt="quad" />*/}
+          {/*        </a>*/}
+          {/*      </CentralDivCaruselMin>*/}
+          {/*      <CentralDivCaruselMin>*/}
+          {/*        <a href='https://amnistreasury.com'>*/}
+          {/*          <LogoPartners src={Israel} style={{}} alt="quad" />*/}
+          {/*        </a>*/}
+          {/*      </CentralDivCaruselMin>*/}
+          {/*      <CentralDivCarusel>*/}
+          {/*        <a href='https://bestexresearch.com'>*/}
+          {/*          <LogoPartners src={Bavelle} style={{}} alt="quad" />*/}
+          {/*        </a>*/}
+          {/*      </CentralDivCarusel>*/}
+          {/*      <CentralDivCarusel>*/}
+          {/*        <a href='https://www.docstribute.com'>*/}
+          {/*          <LogoPartners src={Ryther} style={{}} alt="quad" />*/}
+          {/*        </a>*/}
+          {/*      </CentralDivCarusel>*/}
+          {/*    </RowBoxCarusel>*/}
+          {/*  </ConferenceColumn>*/}
+          <ConferenceItem>
             <GlobalBox>
-                    <BackEvo src={Evo}  alt="evo"></BackEvo>
-                    
-            </GlobalBox>       
-          </ConferenceItem>
+                <DivBecome>
+                <SubTitle2>We Are Cloudvoid</SubTitle2>
+                <Discription style={{position: 'relative'}}>
+                Cloudvoid is people. We are experts, a team of thinkers and doers with smarter and quicker enterprise-level experience, bringing solutions to your business on a whole new level.
+                </Discription>
+                <Discription>
+                We are masters of our domain, we like to think out of the norm, and we love to approach every challenge in a whole new way that's right for your business.
+                </Discription>
+                </DivBecome>
+              </GlobalBox>
 
+              <GlobalBox>
+                      <BackEvo src={Evo}  alt="evo"></BackEvo>
+
+              </GlobalBox>
+            </ConferenceItem>
           <MediaQuery device={'desktop'}>
             <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
               <Title> IT Solutions To Re-Invent Your Future, Today. </Title>
               <DiscriptionCenter>
                 Whether you are just starting your cloud journey or already have a mature IT environment, Cloud Evolve guides you on increasing your ROI and getting faster business results.
               </DiscriptionCenter>
- {/*ACCORDION*/}  <Accordion items={accordionItems} />
-            </ConferenceItemCenter>
-          </MediaQuery >
-          </ul>
-          </Container>
-
-
-{/*ACCORDION*/}
-          <MediaQuery device={'mobileDefault'}>
-            <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
-              <Title> IT Solutions To Re-Invent Your Future, Today.</Title>
-              <DiscriptionCenter>
-              Whether you already have a mature IT ecosystem or are getting started on your cloud journey, our unique portfolio of technology solutions empowers you to achieve what makes your business matter.
-              </DiscriptionCenter>
+              {/*ACCORDION*/}
               <Accordion items={accordionItems} />
             </ConferenceItemCenter>
           </MediaQuery >
-{/*ACCORDION*/}
-
-          <Container style={{position:'relative'}}>
+        </ul>
+      </Container>
+      {/*ACCORDION*/}
+      <MediaQuery device={'mobileDefault'}>
+        <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
+          <Title> IT Solutions To Re-Invent Your Future, Today.</Title>
+          <DiscriptionCenter>
+          Whether you already have a mature IT ecosystem or are getting started on your cloud journey, our unique portfolio of technology solutions empowers you to achieve what makes your business matter.
+          </DiscriptionCenter>
+          <Accordion items={accordionItems} />
+        </ConferenceItemCenter>
+      </MediaQuery >
+      {/*ACCORDION*/}
+      <Container style={{position:'relative'}}>
           <ul>
 
           <ConferenceColumn>
