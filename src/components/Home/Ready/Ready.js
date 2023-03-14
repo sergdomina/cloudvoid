@@ -19,31 +19,34 @@ import ready5 from 'image/BGlines/ready5.svg';
 import ready6 from 'image/BGlines/ready6.svg';
 import readyM from 'image/BGlines/readyMob.svg';
 import MediaQuery from 'components/MediaQuery';
+import { Flex } from '@chakra-ui/react';
 
 const Ready = () => {
     return (
       <Section>
-        <Container >
+        <Container>
 
-                <Bg style={{position:'relative'}}>
-                   <MediaQuery device={'tabletUp'}>
-                      <Ready1 src={ready1} alt="build" />
-                      <Ready2 src={ready2} alt="build" />
-                      <Ready3 src={ready3} alt="build" />
-                      <Ready4 src={ready4} alt="build" />
-                      <Ready5 src={ready5} alt="build" />
-                      <Ready6 src={ready6} alt="build" />
-                   </MediaQuery >
-                    <MediaQuery device={'mobile'} >
-                      <ReadyM src={readyM} alt="build" />
-                    </MediaQuery >
-                    <Title style={{marginBottom: '44px'}}>
-                    Ready To Experience Unmatched IT Excellence?
-                    </Title>
-                    
-                    <ReadyLink to='/contact'>
-                    Contact Us
-                    </ReadyLink>
+                <Bg style={{position:'relative', display: 'flex', alignItems:'center'}} >
+                 <div>
+                     <MediaQuery device={'tabletUp'}>
+                        <Ready1 src={ready1} alt="build" />
+                        <Ready2 src={ready2} alt="build" />
+                        <Ready3 src={ready3} alt="build" />
+                        <Ready4 src={ready4} alt="build" />
+                        <Ready5 src={ready5} alt="build" />
+                        <Ready6 src={ready6} alt="build" />
+                     </MediaQuery >
+                      <MediaQuery device={'mobile'} >
+                        <ReadyM src={readyM} alt="build" />
+                      </MediaQuery >
+                      <Title style={{marginBottom: '44px'}}>
+                      Ready To Experience Unmatched IT Excellence?
+                      </Title>
+                      
+                      <ReadyLink to='/contact'>
+                      Contact Us
+                      </ReadyLink>
+                 </div>
                 </Bg>
                 
         </Container>

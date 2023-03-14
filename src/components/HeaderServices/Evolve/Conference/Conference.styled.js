@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import gradient from '../../../../image/conference/gradient.svg'
 
 export const Section = styled.section`
-  padding: 100px 0px 100px;
+  padding: 100px 0px 50px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -11,13 +11,13 @@ export const Section = styled.section`
   background-image: url(${gradient});
   ${({ theme }) => theme.device.tablet} {
     margin-bottom: 0px;
-    padding: 80px 0px 40px;
+    padding: 80px 0px 0px;
   }
   ${({ theme }) => theme.device.default} {
-    padding: 180px 0px 180px;
+    padding: 180px 0px 50px;
   }
   ${({ theme }) => theme.device.desktop} {
-    padding: 130px 0px 100px;
+
   }
 `;
 

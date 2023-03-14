@@ -9,7 +9,6 @@ export const Box = styled.div`
   margin-bottom: 40px;
   
   ${({ theme }) => theme.device.tablet} {
-    display: block;
     align-items: center;
     justify-content: center;
     margin: 0 auto;

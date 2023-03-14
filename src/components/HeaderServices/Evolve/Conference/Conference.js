@@ -137,7 +137,7 @@ const Conference = () => {
           </ConferenceItem>
 
 
-          <ConferenceItem>
+          <ConferenceItem style={{position:'relative'}}>
             <MediaQuery device={'mobile'}>
                 <GlobalBox>
                     <DivEvo>

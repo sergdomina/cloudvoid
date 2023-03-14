@@ -42,14 +42,12 @@ align-items: center;
 
 export const GlobalBox = styled.div`
   
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-right: 10px;
+  padding-left: 10px;
   text-align: left;
   ${({ theme }) => theme.device.tablet} {
     text-align: center;
-    padding-right: 0px;
-    padding-left: 0px;
-    width: 313px;
+    width: 450px;
     margin: 0 auto;
 
   }

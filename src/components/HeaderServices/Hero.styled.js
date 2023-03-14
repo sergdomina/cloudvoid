@@ -44,12 +44,11 @@ align-items: center;
 
 export const GlobalBox = styled.div`
   position: absolute;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-right: 15%;
+  padding-left: 15%;
   text-align: left;
-  width: 290px;
-  right: 50%;
-  left: 10%;
+  left: auto;
+  right: auto;
   top: 271px;
   ${({ theme }) => theme.device.tablet} {
     padding-right: 0px;

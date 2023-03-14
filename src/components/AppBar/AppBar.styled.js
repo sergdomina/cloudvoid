@@ -11,6 +11,7 @@ export const Header = styled.header`
   width: 100%;
   background: transparent;
   backdrop-filter: blur(8px);
+
   ${({ theme }) => theme.device.default} {
 
 
@@ -23,6 +24,7 @@ export const Header = styled.header`
 export const Nav = styled.nav`
   font-size: 18px;
   line-height: 1.5;
+ 
   ${({ theme }) => theme.device.mobileMax} {
     
     position: absolute;
@@ -48,6 +50,7 @@ export const Nav = styled.nav`
   }
   ${({ theme }) => theme.device.tablet} {
     margin-right: 0;
+    
   }
 `;
 
@@ -107,6 +110,7 @@ export const Link = styled(NavLink)`
   padding: 15px 32px;
   width: 100%;
   display: block;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
   &.active {
     
     position: relative;
@@ -123,18 +127,22 @@ export const Link = styled(NavLink)`
       position: relative;
       &:after {
         display: block;
-        ${({ theme }) => theme.device.desktop} {
-        }
+        
       }
+    }
+    &:after{
+
     }
   }
   ${({ theme }) => theme.device.default} {
-    
+   
   }
   ${({ theme }) => theme.device.desktop} {
     
   }
 `;
+
+
 export const LinkDown = styled(NavLink)``;
 
 export const LogoLink = styled(NavLink)`

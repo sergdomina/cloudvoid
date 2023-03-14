@@ -19,7 +19,8 @@ import {
   CentralDivLogo,
   Adv,
   CentralDivCarusel,
-  CentralDivCaruselMin
+  CentralDivCaruselMin,
+  DivSplineLogo
 } from './Conference.styled';
 
 import { Image} from '@chakra-ui/react';
@@ -29,16 +30,16 @@ import Evo from 'image/conference/Rectangle 177.svg';
 import MediaQuery from 'components/MediaQuery';
 import Accordion from "../../Accordion/Accordion";
 
-import Acteno from 'image/Customer_Section/acteno.png';
-import Amnis from 'image/Customer_Section/Amnis.png';
-import Ingram from 'image/Customer_Section/ingram.svg';
-import Lenovo from 'image/Customer_Section/Lenovo.png';
+import Acteno from 'image/Customer_Section/ActenoCarusel.png';
+import Amnis from 'image/Customer_Section/AmnisCarusel.png';
+import Ingram from 'image/Customer_Section/IngramCarusel.png';
+import Lenovo from 'image/Customer_Section//LenovoCarusel.png';
 import Insfocus from 'image/Customer_Section/insfocus.svg';
-import TelAviv from 'image/Customer_Section/Telaviv.png';
-import Metalink from 'image/Customer_Section/metalink.png';
-import Israel from 'image/Customer_Section/Israel_electric_co.png';
-import Bavelle from 'image/Customer_Section/Bavelle.png';
-import Ryther from 'image/Customer_Section/Ryther.png';
+import TelAviv from 'image/Customer_Section/TelavivCarusel.png';
+import Metalink from 'image/Customer_Section/MetalinkCarusel.png';
+import Israel from 'image/Customer_Section/IsraelCarusel.png';
+import Bavelle from 'image/Customer_Section/BavelleCarusel.png';
+import Ryther from 'image/Customer_Section/RytherCarusel.png';
 
 
 import Google from 'image/Solutions_Architecture/google.png';
@@ -63,7 +64,9 @@ import RedHat from 'image/Home/RedHat.png';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 import '@splidejs/react-splide/css';
-import '@splidejs/react-splide/css/core';
+import { CLASS_ARROWS } from '@splidejs/splide';
+import Spline from '@splinetool/react-spline';
+import styled from './Cofrence.css';
 
 const splide = new Splide( '.splide', {
   type   : 'loop',
@@ -126,147 +129,299 @@ const Conference = () => {
       <>
       <Container style={{position:'relative'}}>
         <ul>
-          <li>
-            <Splide
-                options={{
-                  rewind: true,
-                  width : 800,
-                  gap   : '4rem',
-                  type   : 'loop',
-                  drag   : 'free',
-                  focus  : 'center',
-                  perPage: 3,
-                  // autoplay: true,
-                  autoScroll:{
-                    rewind: false,
-                    pauseOnHover: false,
-                    pauseOnFocus: false,
-                    speed: 2,
-                  }
-                }}
-                extensions={{ AutoScroll }}
-                class='splide'
-            >
-              <SplideSlide>
-                <CentralDivCarusel>
-                  <a href='https://amnistreasury.com'>
-                    <LogoPartners src={Ingram} style={{}} alt="quad" />
-                  </a>
-                </CentralDivCarusel>
-              </SplideSlide>
-              <SplideSlide>
-                <CentralDivCarusel>
-                  <a href='https://amnistreasury.com'>
-                    <LogoPartners src={Ingram} style={{}} alt="quad" />
-                  </a>
-                </CentralDivCarusel>
-              </SplideSlide>
-              <SplideSlide>
-                <CentralDivCarusel>
-                  <a href='https://amnistreasury.com'>
-                    <LogoPartners src={Ingram} style={{}} alt="quad" />
-                  </a>
-                </CentralDivCarusel>
-              </SplideSlide>
-              <SplideSlide>
-                <CentralDivCarusel>
-                  <a href='https://amnistreasury.com'>
-                    <LogoPartners src={Ingram} style={{}} alt="quad" />
-                  </a>
-                </CentralDivCarusel>
-              </SplideSlide>
-              <SplideSlide>
-                <CentralDivCarusel>
-                  <a href='https://amnistreasury.com'>
-                    <LogoPartners src={Ingram} style={{}} alt="quad" />
-                  </a>
-                </CentralDivCarusel>
-              </SplideSlide>
-              <SplideSlide>
-                <CentralDivCarusel>
-                  <a href='https://amnistreasury.com'>
-                    <LogoPartners src={Ingram} style={{}} alt="quad" />
-                  </a>
-                </CentralDivCarusel>
-              </SplideSlide>
-              <SplideSlide>
-                <CentralDivCarusel>
-                  <a href='https://amnistreasury.com'>
-                    <LogoPartners src={Ingram} style={{}} alt="quad" />
-                  </a>
-                </CentralDivCarusel>
-              </SplideSlide>
-              <SplideSlide>
-                <CentralDivCarusel>
-                  <a href='https://amnistreasury.com'>
-                    <LogoPartners src={Ingram} style={{}} alt="quad" />
-                  </a>
-                </CentralDivCarusel>
-              </SplideSlide>
-              <SplideSlide>
-                <CentralDivCarusel>
-                  <a href='https://amnistreasury.com'>
-                    <LogoPartners src={Ingram} style={{}} alt="quad" />
-                  </a>
-                </CentralDivCarusel>
-              </SplideSlide>
-            </Splide>
-          </li>
-          {/*<ConferenceColumn>*/}
-          {/*    <RowBoxCarusel>*/}
-          {/*      <CentralDivCarusel>*/}
-          {/*        <a href='https://www.insfocus.com'>*/}
-          {/*          <LogoPartners src={Acteno} style={{}} alt="quad" />*/}
-          {/*        </a>*/}
-          {/*      </CentralDivCarusel>*/}
-          {/*      <CentralDivCarusel>*/}
-          {/*        <a href='metalink'>*/}
-          {/*          <LogoPartners src={Amnis} style={{}} alt="quad" />*/}
-          {/*        </a>*/}
-          {/*      </CentralDivCarusel>*/}
-          {/*      <CentralDivCarusel>*/}
-          {/*        <a href='https://amnistreasury.com'>*/}
-          {/*          <LogoPartners src={Ingram} style={{}} alt="quad" />*/}
-          {/*        </a>*/}
-          {/*      </CentralDivCarusel>*/}
-          {/*      <CentralDivCarusel>*/}
-          {/*        <a href='https://bestexresearch.com'>*/}
-          {/*          <LogoPartners src={Lenovo} style={{}} alt="quad" />*/}
-          {/*        </a>*/}
-          {/*      </CentralDivCarusel>*/}
-          {/*      <CentralDivCarusel>*/}
-          {/*        <a href='https://www.docstribute.com'>*/}
-          {/*          <LogoPartners src={Insfocus} style={{}} alt="quad" />*/}
-          {/*        </a>*/}
-          {/*      </CentralDivCarusel>*/}
-          {/*      <CentralDivCarusel>*/}
-          {/*        <a href='https://www.insfocus.com'>*/}
-          {/*          <LogoPartners src={TelAviv} style={{}} alt="quad" />*/}
-          {/*        </a>*/}
-          {/*      </CentralDivCarusel>*/}
-          {/*      <CentralDivCaruselMin>*/}
-          {/*        <a href='metalink'>*/}
-          {/*          <LogoPartners src={Metalink} style={{}} alt="quad" />*/}
-          {/*        </a>*/}
-          {/*      </CentralDivCaruselMin>*/}
-          {/*      <CentralDivCaruselMin>*/}
-          {/*        <a href='https://amnistreasury.com'>*/}
-          {/*          <LogoPartners src={Israel} style={{}} alt="quad" />*/}
-          {/*        </a>*/}
-          {/*      </CentralDivCaruselMin>*/}
-          {/*      <CentralDivCarusel>*/}
-          {/*        <a href='https://bestexresearch.com'>*/}
-          {/*          <LogoPartners src={Bavelle} style={{}} alt="quad" />*/}
-          {/*        </a>*/}
-          {/*      </CentralDivCarusel>*/}
-          {/*      <CentralDivCarusel>*/}
-          {/*        <a href='https://www.docstribute.com'>*/}
-          {/*          <LogoPartners src={Ryther} style={{}} alt="quad" />*/}
-          {/*        </a>*/}
-          {/*      </CentralDivCarusel>*/}
-          {/*    </RowBoxCarusel>*/}
-          {/*  </ConferenceColumn>*/}
-          <ConferenceItem>
+         <MediaQuery device={'mobile'}>
+            <ConferenceItem>
+              <Splide
+                  options={{
+                    rewind: true,
+                    width : "100%",
+                    gap   : '1rem',
+                    type   : 'loop',
+                    drag   : 'free',
+                    focus  : 'center',
+                    perPage: 3,
+                    pagination: false,
+                    arrows: false,
+                    // autoplay: true,
+                    autoScroll:{
+                      rewind: false,
+                      pauseOnHover: false,
+                      pauseOnFocus: false,
+                      speed: 2,
+                    }
+                  }}
+                  extensions={{ AutoScroll }}
+         
+              >
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://www.acteno.de/ecms/de/' target="_blank">
+                      <LogoPartners src={Acteno} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://amnistreasury.com'>
+                      <LogoPartners src={Amnis} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://corp.ingrammicro.com/' target="_blank">
+                      <LogoPartners src={Ingram} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://www.lenovo.com' target="_blank">
+                      <LogoPartners src={Lenovo} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://www.insfocus.com' target="_blank">
+                      <LogoPartners src={Insfocus} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://english.tau.ac.il/' target="_blank">
+                      <LogoPartners src={TelAviv} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCaruselMin>
+                    <a href='https://metalink.com' target="_blank">
+                      <LogoPartners src={Metalink} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCaruselMin>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCaruselMin>
+                    <a href='https://www.iec.co.il/en/home' target="_blank">
+                      <LogoPartners src={Israel} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCaruselMin>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://www.bavelle.com/' target="_blank">
+                      <LogoPartners src={Bavelle} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://www.ryther.org/' target="_blank">
+                      <LogoPartners src={Ryther} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+              </Splide>
+          </ConferenceItem>
+         </MediaQuery >
+         <MediaQuery device={'tablet'}>
+            <ConferenceItem>
+              <Splide
+                  options={{
+                    rewind: true,
+                    width : "100%",
+                    gap   : '3rem',
+                    type   : 'loop',
+                    drag   : 'free',
+                    focus  : 'center',
+                    perPage: 4,
+                    pagination: false,
+                    arrows: false,
+                    // autoplay: true,
+                    autoScroll:{
+                      rewind: false,
+                      pauseOnHover: false,
+                      pauseOnFocus: false,
+                      speed: 2,
+                    }
+                  }}
+                  extensions={{ AutoScroll }}
+         
+              >
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://www.acteno.de/ecms/de/' target="_blank">
+                      <LogoPartners src={Acteno} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://amnistreasury.com'>
+                      <LogoPartners src={Amnis} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://corp.ingrammicro.com/' target="_blank">
+                      <LogoPartners src={Ingram} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://www.lenovo.com' target="_blank">
+                      <LogoPartners src={Lenovo} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://www.insfocus.com' target="_blank">
+                      <LogoPartners src={Insfocus} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://english.tau.ac.il/' target="_blank">
+                      <LogoPartners src={TelAviv} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCaruselMin>
+                    <a href='https://metalink.com' target="_blank">
+                      <LogoPartners src={Metalink} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCaruselMin>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCaruselMin>
+                    <a href='https://www.iec.co.il/en/home' target="_blank">
+                      <LogoPartners src={Israel} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCaruselMin>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://www.bavelle.com/' target="_blank">
+                      <LogoPartners src={Bavelle} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://www.ryther.org/' target="_blank">
+                      <LogoPartners src={Ryther} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+              </Splide>
+          </ConferenceItem>
+         </MediaQuery >
+         <MediaQuery device={'default'}>
+            <ConferenceItem>
+              <Splide
+                  options={{
+                    rewind: true,
+                    width : "100%",
+                    gap   : '3rem',
+                    type   : 'loop',
+                    drag   : 'free',
+                    focus  : 'center',
+                    perPage: 6,
+                    pagination: false,
+                    arrows: false,
+                    // autoplay: true,
+                    autoScroll:{
+                      rewind: false,
+                      pauseOnHover: false,
+                      pauseOnFocus: false,
+                      speed: 2,
+                    }
+                  }}
+                  extensions={{ AutoScroll }}
+         
+              >
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://www.acteno.de/ecms/de/' target="_blank">
+                      <LogoPartners src={Acteno} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://amnistreasury.com'>
+                      <LogoPartners src={Amnis} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://corp.ingrammicro.com/' target="_blank">
+                      <LogoPartners src={Ingram} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://www.lenovo.com' target="_blank">
+                      <LogoPartners src={Lenovo} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://www.insfocus.com' target="_blank">
+                      <LogoPartners src={Insfocus} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://english.tau.ac.il/' target="_blank">
+                      <LogoPartners src={TelAviv} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCaruselMin>
+                    <a href='https://metalink.com' target="_blank">
+                      <LogoPartners src={Metalink} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCaruselMin>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCaruselMin>
+                    <a href='https://www.iec.co.il/en/home' target="_blank">
+                      <LogoPartners src={Israel} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCaruselMin>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://www.bavelle.com/' target="_blank">
+                      <LogoPartners src={Bavelle} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+                <SplideSlide  style={{display:'flex', alignItems:'center', justifyContent: 'center'}}   >
+                  <CentralDivCarusel>
+                    <a href='https://www.ryther.org/' target="_blank">
+                      <LogoPartners src={Ryther} style={{}} alt="quad" />
+                    </a>
+                  </CentralDivCarusel>
+                </SplideSlide>
+              </Splide>
+          </ConferenceItem>
+         </MediaQuery >
+          
+        <ConferenceItem style={{position: 'relative'}}>
             <GlobalBox>
                 <DivBecome>
                 <SubTitle2>We Are Cloudvoid</SubTitle2>
@@ -278,12 +433,15 @@ const Conference = () => {
                 </Discription>
                 </DivBecome>
               </GlobalBox>
+            <GlobalBox>
+                     <DivSplineLogo style={{ position: "relative" }}>
+                       {/* <BackEvo src={Evo}  alt="evo" /> */}
+                        <Spline className='logo' scene="https://prod.spline.design/YuNIqE4yFTnct5LI/scene.splinecode" />
+                        </DivSplineLogo>
+            </GlobalBox>
+        </ConferenceItem>
 
-              <GlobalBox>
-                      <BackEvo src={Evo}  alt="evo"></BackEvo>
 
-              </GlobalBox>
-            </ConferenceItem>
           <MediaQuery device={'desktop'}>
             <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
               <Title> IT Solutions To Re-Invent Your Future, Today. </Title>
@@ -296,6 +454,8 @@ const Conference = () => {
           </MediaQuery >
         </ul>
       </Container>
+
+
       {/*ACCORDION*/}
       <MediaQuery device={'mobileDefault'}>
         <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>

@@ -27,10 +27,7 @@ We offer end-to-end IT solutions to grow your business from Migration services, 
         </GlobalBox>
       <MediaQuery device={'mobile'}>
         <Spline style={{position:"absolute", 
-        margin:"0 auto",
-        top: "0",
-        
-        right: "0",}}
+        width:'100%'}}
         scene="https://prod.spline.design/sg4VOs698eINp0UO/scene.splinecode"  />
       </MediaQuery>
       <MediaQuery device={'tablet'}>

@@ -112,28 +112,28 @@ const AppBar = () => {
                   </MediaQuery>
 
                   <NavItem>
-                    <Link to="/cloud-evolve"><p>Cloud Evolve</p></Link>
+                    <Link to="/cloud-evolve">Cloud Evolve</Link>
                   </NavItem>
                   <NavItem>
-                    <Link to="/cloud-governance"><p>Cloud Governance</p></Link>
+                    <Link to="/cloud-governance">Cloud Governance</Link>
                   </NavItem>
                   <NavItem>
-                    <Link to="/cloud-migration"><p>Cloud Migration</p></Link>
+                    <Link to="/cloud-migration">Cloud Migration</Link>
                   </NavItem>
                   <NavItem>
-                    <Link to="/cloud-solutions-architecture"><p>Cloud Solutions Architecture</p></Link>
+                    <Link to="/cloud-solutions-architecture">Cloud Solutions Architecture</Link>
                   </NavItem>
                   <NavItem>
-                    <Link to="/cloud-ai-and-analytics"><p>Cloud AI & Analytics</p></Link>
+                    <Link to="/cloud-ai-and-analytics">Cloud AI & Analytics</Link>
                   </NavItem>
                   <NavItem>
-                    <Link to="/smart-devops"><p>Smart DevOps</p></Link>
+                    <Link to="/smart-devops">Smart DevOps</Link>
                   </NavItem>
                   <NavItem>
-                    <Link to="/smart-infractructure"><p>Smart Infrastructure</p></Link>
+                    <Link to="/smart-infractructure">Smart Infrastructure</Link>
                   </NavItem>
                   <NavItem>
-                    <Link to="/master-msp"><p>Master MSP</p></Link>
+                    <Link to="/master-msp">Master MSP</Link>
                   </NavItem>
                 </NavSubList>
 

@@ -23,35 +23,11 @@ const Hero = () => {
           Keep up with fast-paced customer demands and shorten Time-To-Market by simplifying and automating software development with continuous integration and delivery.
           </HeroDiscription>
         </GlobalBox>
-      <MediaQuery device={'mobile'}>
-        <Spline style={{position:"absolute", 
-        margin:"0 auto",
-        top: "0",
-        
-        right: "0",}}
-        scene="https://prod.spline.design/sg4VOs698eINp0UO/scene.splinecode"  />
-      </MediaQuery>
-      <MediaQuery device={'tablet'}>
-        <Spline style={{position:"absolute", 
-        margin:"0",
-        top: "0",
-        right: "0",}}
-        scene="https://prod.spline.design/yTttbAhLNMjD9c3s/scene.splinecode"  />
-      </MediaQuery>
-      <MediaQuery device={'defaultOnly'}>
-        <Spline style={{position:"absolute", 
-        margin:"0",
-        top: "0",
-        right: "0",}} 
-        scene="https://prod.spline.design/lWL3kQRvl2jrLTTW/scene.splinecode" />
-      </MediaQuery>
-      <MediaQuery device={'desktop'}>
-      <Spline style={{position:"absolute", 
-        margin:"0",
-        top: "0",
-        right: "0",
-       }}  scene="https://prod.spline.design/I9YR96HNIXKQm7h8/scene.splinecode" />
-       </MediaQuery>
+
+        <Spline style={{position:"absolute",}}
+        scene="https://prod.spline.design/Dt3DT4JHPigfJcOd/scene.splinecode"  />
+
+
         
       </HeroContainer>
     </HeroSection>

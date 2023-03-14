@@ -28,7 +28,7 @@ const Hero = () => {
         </GlobalBox>
    
         <Spline style={{position:"absolute", }}
-       scene="https://prod.spline.design/ZRrXk8Lf9LemIbND/scene.splinecode" />
+       scene="https://prod.spline.design/6cDA1LfJAzHCLMGx/scene.splinecode" />
 
      
         

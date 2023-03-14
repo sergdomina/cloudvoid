@@ -8,10 +8,10 @@ export const Section = styled.section`
   
   ${({ theme }) => theme.device.tablet} {
     margin-bottom: 0px;
-    padding: 70px 0px 40px;
+    padding: 80px 0px 40px;
   }
   ${({ theme }) => theme.device.default} {
-    padding: 80px 0px 180px;
+    padding: 80px 0px 70px;
   }
   ${({ theme }) => theme.device.desktop} {
     padding: 100px 0px 100px;
@@ -42,6 +42,9 @@ export const ContainerTwo = styled.div`
     width: 1320px;
   }
 `;
+
+
+
 
 export const GlobalBoxTwo = styled.div`
 
@@ -522,6 +525,21 @@ export const BoxBeforEnd = styled.div`
 `;
 
 
+export const DivSplineLogo = styled.div`
+  height: 230px;
+  margin: auto;
+  ${({ theme }) => theme.device.tablet} {
+
+  }
+  ${({ theme }) => theme.device.default} {
+
+  }
+  ${({ theme }) => theme.device.desktop} {
+    height: 368px;
+  }
+`;
+
+
 export const BackCustom = styled.img`
   position: absolute;
   z-index: -2;
@@ -631,8 +649,7 @@ export const DivBecome = styled.div`
  
 }
   ${({ theme }) => theme.device.desktop} {
-    margin-left: 50px;
-    margin-top: 140px;
+
 };
 `
 
@@ -658,9 +675,6 @@ margin: 0 auto;
 export const CentralDivCarusel = styled.div`
 width: 97px;
 margin: 0 auto;
-&:not(:last-child){
-  margin-right: 32px;
-}
   ${({ theme }) => theme.device.tablet} {
     width: 97px;
 
@@ -676,9 +690,7 @@ margin: 0 auto;
 export const CentralDivCaruselMin = styled.div`
 width: 72px;
 margin: 0 auto;
-&:not(:last-child){
-  margin-right: 32px;
-}
+
   ${({ theme }) => theme.device.tablet} {
     width: 72px;
 
