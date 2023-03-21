@@ -176,6 +176,39 @@ export const Input = styled.input`
       height: 57px;
   }
 `
+export const Select = styled.select`
+  diaplay: block;
+  align-items: center;
+  justify-content: space-between;  
+  width: 320px;
+    height: 47px;
+  border: 1px solid #3E3D4A;
+    margin-bottom: 18px;
+  padding-left: 15px;
+
+  p{
+    margin-bottom: 110px;
+  }
+
+
+  ${({ theme }) => theme.device.tablet} {
+
+    width: 100%;
+    height: 47px;
+  }
+  ${({ theme }) => theme.device.default} {
+    padding-left: 33px;
+    width: 320px;
+    height: 50px;
+  }
+  ${({ theme }) => theme.device.desktop} {
+      width: 400px;
+      height: 57px;
+  }
+`
+
+
+
 export const Area = styled.textarea`
   diaplay: block;
   align-items: center;

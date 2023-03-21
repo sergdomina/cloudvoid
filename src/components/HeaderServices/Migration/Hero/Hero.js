@@ -8,6 +8,7 @@ import {
 } from '../../Hero.styled';
 import Spline from '@splinetool/react-spline';
 import MediaQuery from 'components/MediaQuery';
+import Container from 'components/Container';
 
 
 const Hero = () => {
@@ -15,15 +16,17 @@ const Hero = () => {
     <HeroSection>
        
       <HeroContainer style={{position:"relative"}}>
-      <GlobalBox style={{zIndex:"1"}}>
-          <HeroTitle>
-          Cloud Migration Services 
-          </HeroTitle>
-          <HeroDiscription>
-          Transform your business by moving your infrastructure and apps to the cloud. Our proven migration approach ensures faster time-to-cloud with improved accessibility, business operations, and high availability.
-          </HeroDiscription>
-         
-        </GlobalBox>
+      <Container style={{position:"relative", height: '100%'}}>
+        <GlobalBox style={{zIndex:"1"}}>
+            <HeroTitle>
+            Cloud Migration Services 
+            </HeroTitle>
+            <HeroDiscription>
+            Transform your business by moving your infrastructure and apps to the cloud. Our proven migration approach ensures faster time-to-cloud with improved accessibility, business operations, and high availability.
+            </HeroDiscription>
+           
+          </GlobalBox>
+      </Container>
         <MediaQuery device={'mobile'}>
         <Spline style={{position:"absolute", 
         margin:"0 auto",

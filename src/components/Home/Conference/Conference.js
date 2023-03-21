@@ -145,7 +145,7 @@ const Conference = () => {
                     // autoplay: true,
                     autoScroll:{
                       rewind: false,
-                      pauseOnHover: false,
+                      pauseOnHover: true,
                       pauseOnFocus: false,
                       speed: 2,
                     }
@@ -242,7 +242,7 @@ const Conference = () => {
                     // autoplay: true,
                     autoScroll:{
                       rewind: false,
-                      pauseOnHover: false,
+                      pauseOnHover: true,
                       pauseOnFocus: false,
                       speed: 2,
                     }
@@ -339,7 +339,7 @@ const Conference = () => {
                     // autoplay: true,
                     autoScroll:{
                       rewind: false,
-                      pauseOnHover: false,
+                      pauseOnHover: true,
                       pauseOnFocus: false,
                       speed: 2,
                     }
@@ -456,17 +456,19 @@ const Conference = () => {
       </Container>
 
 
-      {/*ACCORDION*/}
-      <MediaQuery device={'mobileDefault'}>
-        <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
-          <Title> IT Solutions To Re-Invent Your Future, Today.</Title>
-          <DiscriptionCenter>
-          Whether you already have a mature IT ecosystem or are getting started on your cloud journey, our unique portfolio of technology solutions empowers you to achieve what makes your business matter.
-          </DiscriptionCenter>
-          <Accordion items={accordionItems} />
-        </ConferenceItemCenter>
-      </MediaQuery >
-      {/*ACCORDION*/}
+        {/*ACCORDION*/}
+        <MediaQuery device={'mobileDefault'}>
+          <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
+            <Title> IT Solutions To Re-Invent Your Future, Today.</Title>
+            <DiscriptionCenter>
+            Whether you already have a mature IT ecosystem or are getting started on your cloud journey, our unique portfolio of technology solutions empowers you to achieve what makes your business matter.
+            </DiscriptionCenter>
+            <Accordion items={accordionItems} />
+          </ConferenceItemCenter>
+        </MediaQuery >
+        {/*ACCORDION*/}
+
+
       <Container style={{position:'relative'}}>
           <ul>
 
@@ -563,7 +565,7 @@ const Conference = () => {
                 </a>
               </CentralDivLogo>
               <CentralDivLogo>
-                <a href='metalink'>
+                <a >
                   <LogoPartners src={AWS} style={{}} alt="AWS" />
                 </a>
               </CentralDivLogo>

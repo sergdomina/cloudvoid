@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import gradient from '../../../../image/Migration/Migration_gradient.svg'
 
 export const Section = styled.section`
-  padding: 100px 0px 100px;
+  padding: 100px 0px 50px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -12,13 +12,13 @@ export const Section = styled.section`
   
   ${({ theme }) => theme.device.tablet} {
     margin-bottom: 0px;
-    padding: 180px 0px 40px;
+    padding: 180px 0px 0px;
   }
   ${({ theme }) => theme.device.default} {
-    padding: 180px 0px 100px;
+    padding: 180px 0px 0px;
   }
   ${({ theme }) => theme.device.desktop} {
-    padding: 250px 0px 100px;
+    padding: 150px 0px 0px;
   }
 `;
 
@@ -95,14 +95,15 @@ export const SubTitle = styled.h3`
 `;
 export const SubTitle2 = styled.h3`
   font-family: ${({ theme }) => theme.fonts.title.bold};
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.2;
   text-align: left;
-  padding-bottom: 16px;
+  padding-bottom: 40px;
   width: 305px;
 
   color: ${({ theme }) => theme.colors.black_btn};
   ${({ theme }) => theme.device.tablet} {
+    padding-bottom: 16px;
     width: 262px;
     font-size: 16px;
   }
@@ -684,7 +685,7 @@ export const BackEvoM = styled.img`
   width: 375px;
   position: absolute;
   z-index: -1;
-  top: 650px;
+  top: 640px;
   right: 0;
   left: 0;
   margin: 0 auto;

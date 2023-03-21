@@ -1,6 +1,6 @@
-import Hero from 'components/HeaderServices/Evolve/Hero/Hero';
-import Conference from 'components/HeaderServices/Evolve/Conference/Conference';
-import Ready from 'components/HeaderServices/Evolve/Ready';
+import Hero from 'components/HeaderAbout/Hero';
+import Conference from 'components/HeaderAbout/Conference/Conference';
+import Ready from 'components/HeaderAbout/Ready/Ready';
 import Footer from 'components/Footer'
 import { ScrollToTop } from 'hooks/ScrollToTop';
 

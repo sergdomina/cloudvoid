@@ -1,7 +1,10 @@
 
 import { NavLink, Link } from "react-router-dom";
 import styled from 'styled-components';
-
+import GlobMobil from 'image/About/AboutReadyMobile.svg';
+import GlobTab from 'image/About/AboutReadyTablet.svg';
+import GlobDef from 'image/About/AboutReadyDefault.svg';
+import GlobDes from 'image/About/AboutReadyDesktop.svg';
 export const Section = styled.section`
 
       padding: 0px 0;
@@ -69,6 +72,49 @@ export const Bg = styled.div`
        padding: 85px 390px;
       }
 `;
+export const BgTwo = styled.div`
+    margin: 0 auto;
+    color: #CE1700;
+    height: 317px;
+    width: auto;
+    background-color: #EFEFF0;
+    padding: 10%  20%;
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position: top;
+    background-image: url(${GlobMobil});
+    ${({ theme }) => theme.device.tablet} {
+        height: 383px;
+        width: 638px;
+        padding: 119px 130px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-position: top;
+        background-image: url(${GlobTab});
+      }
+      ${({ theme }) => theme.device.default} {
+        height: 383px;
+        width: 798px;
+       padding: 95px 135px;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+       background-position: top;
+       background-image: url(${GlobDef});
+      }
+      ${({ theme }) => theme.device.desktop} {
+        height: 383px;
+        width: 1320px;
+       padding: 100px 247px;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+       background-position: top;
+       background-image: url(${GlobDes});
+      }
+`;
 
 export const DiscriptionCenter = styled.p`
 font-family: ${({ theme }) => theme.fonts.descr.regular};
@@ -114,6 +160,28 @@ export const Title = styled.h3`
     font-size: 28px;
   }
 `;
+
+export const SubTitle = styled.h3`
+  font-family: ${({ theme }) => theme.fonts.title.bold};
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  text-align: left;
+  color: ${({ theme }) => theme.colors.black_btn};
+  ${({ theme }) => theme.device.tablet} {
+    text-align: center;
+  } 
+  ${({ theme }) => theme.device.default} {
+   
+    font-size: 22px;
+ 
+
+  }
+  ${({ theme }) => theme.device.desktop} {
+    font-size: 24px;
+  }
+`;
+
 
 export const Ready1 =styled.img`
   position: absolute;
@@ -226,3 +294,4 @@ export const ReadyM =styled.img`
 
   };
 `
+

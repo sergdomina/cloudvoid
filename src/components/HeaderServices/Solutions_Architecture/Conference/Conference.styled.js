@@ -14,10 +14,10 @@ export const Section = styled.section`
   
   ${({ theme }) => theme.device.tablet} {
     margin-bottom: 0px;
-    padding: 180px 0px 40px;
+    padding: 180px 0px 90px;
   }
   ${({ theme }) => theme.device.default} {
-    padding: 180px 0px 180px;
+    padding: 180px 0px 50px;
   }
   ${({ theme }) => theme.device.desktop} {
     padding: 250px 0px 100px;
@@ -74,10 +74,13 @@ export const GlobalBoxTwo = styled.div`
 `;
 
 export const ConferenceItem = styled.li`
+  &:first-child{
+    margin-top: 50px;
+  }
   align-items: center;
   padding: 0 32px;
-    margin-bottom: 150px;
-  z-index: 2;
+    margin-bottom: 100px;
+  z-index: ;
   ${({ theme }) => theme.device.tablet} {
     display: flex;
     flex-direction: row;
@@ -87,22 +90,18 @@ export const ConferenceItem = styled.li`
     &:nth-child(1n + 2) {
       flex-direction: row-reverse;
     }
-    &:not(:last-child) {
-      margin-bottom: 80px;
-    }
+      margin-bottom: 100px;
+    
   }
   ${({ theme }) => theme.device.default} {
-    &:not(:last-child) {
+
       margin-bottom: 150px;
-    }
+
    
   }
   }
   ${({ theme }) => theme.device.desktop} {
-    &:not(:last-child) {
       margin-bottom: 170px;
-    }
-
   }
 `;
 
@@ -770,7 +769,7 @@ export const BackEvo = styled.img`
   ${({ theme }) => theme.device.default} {
     width: 425px;
     margin-top: -45px;
-    margin-left: -50px;
+    margin-left: -35px;
 }
   ${({ theme }) => theme.device.desktop} {
    width: 652px;

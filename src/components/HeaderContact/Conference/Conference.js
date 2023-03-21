@@ -7,7 +7,8 @@ import {
   Area,
   TabDiv,
   TabDiv2,
-  Button
+  Button,
+  Select
 } from './Conference.styled';
 
 import { Image} from '@chakra-ui/react';
@@ -36,12 +37,21 @@ const Conference = () => {
               <label>Email</label>
               <Input name=' ' placeholder='email'/>
               <label>Service</label>
-              <Input name=' ' placeholder='service'/>
+              <Select name='service'>
+                <option><p>Cloude Evolve</p></option>
+                <option>Cloude Governance</option>
+                <option>Cloude Migration</option>
+                <option>Cloude Solutions Architecture</option>
+                <option>Cloude AI&Analytics</option>
+                <option>Smart DevOps</option>
+                <option>Smart Infrastructure</option>
+                <option>Master MSP</option>
+              </Select>
             </TabDiv>
             <TabDiv2>
               <label>Message</label>
               <Area name=' ' placeholder='Type in your message'/>
-              <Button>Send Request</Button>
+              <Button type='submit'>Send Request</Button>
             </TabDiv2>
 
           </Tabl>

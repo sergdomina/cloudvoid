@@ -369,7 +369,7 @@ export const DivSlideTreeB = styled.div`
         height: auto;
         z-index:1;
       opacity: 0;
-      animation: 15s slide 5s infinite;
+      animation: 15s slide 6s infinite;
     };
 
     .second{
@@ -378,7 +378,7 @@ export const DivSlideTreeB = styled.div`
         height: auto;
         z-index:1;
       opacity: 0;
-      animation: 15s slide  10s infinite;
+      animation: 15s slide  11s infinite;
     }
     .third{
         position: absolute;
@@ -386,7 +386,7 @@ export const DivSlideTreeB = styled.div`
         height: auto;
         z-index:1;
       opacity: 0;
-      animation: slide 15s infinite;
+      animation: slide 16s infinite;
     }
   
     @keyframes slide {

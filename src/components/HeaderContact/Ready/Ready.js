@@ -47,9 +47,17 @@ const Ready = () => {
                     <DiscriptionCenter>
                     Select the date and time from our Calendly
                     </DiscriptionCenter>
-                    <MediaQuery device={'tabletUp'}><Image style={{margin: '0 auto', marginBottom:'5%'}} src={Calendly}/></MediaQuery>
-                    <MediaQuery device={'mobile'}><Image style={{ marginBottom:'7%'}} src={Calendly}/></MediaQuery>
-                    <ReadyLink>
+                    <MediaQuery device={'tabletUp'}>
+                      <a href='https://calendly.com/cloudvoid-consult/15min?month=2023-02' target="_blank">
+                      <Image style={{margin: '0 auto', marginBottom:'5%'}} src={Calendly}/>
+                      </a>
+                    </MediaQuery>
+                    <MediaQuery device={'mobile'}>
+                      <a href='https://calendly.com/cloudvoid-consult/15min?month=2023-02' target="_blank">
+                      <Image style={{ marginBottom:'7%'}} src={Calendly}/>
+                      </a>
+                    </MediaQuery>
+                    <ReadyLink href='https://calendly.com/cloudvoid-consult/15min?month=2023-02' target='_blank'>
                     Book a call
                     </ReadyLink>
                 </Bg>

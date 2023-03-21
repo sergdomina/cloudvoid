@@ -8,6 +8,7 @@ import {
 } from '../../Hero.styled';
 import Spline from '@splinetool/react-spline';
 import MediaQuery from 'components/MediaQuery';
+import Container from 'components/Container';
 
 
 const Hero = () => {
@@ -15,6 +16,7 @@ const Hero = () => {
     <HeroSection>
        
       <HeroContainer style={{position:"relative"}}>
+      <Container style={{position:"relative", height: '100%'}}>
       <GlobalBox style={{zIndex:"1"}}>
           <HeroTitle>
           Cloud Governance <br/> Services
@@ -24,7 +26,7 @@ const Hero = () => {
           </HeroDiscription>
   
         </GlobalBox>
-
+        </Container>
         <Spline style={{position:"absolute",}}
         scene="https://prod.spline.design/Mx8sqrfYcOngtZku/scene.splinecode"  />
 

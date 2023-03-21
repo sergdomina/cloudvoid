@@ -55,18 +55,18 @@ export const GlobalBox = styled.div`
     padding-left: 0px;
     width: 313px;
     margin: 0 auto;
-    left: 30px;
-    top: 100px;
+    left: 50px;
+    top: 150px;
   }
   ${({ theme }) => theme.device.default} {
     width: 395px;
     padding-right: 10px;
-    left: 181px;
+    left: 50px;
     top:159px;
   }
   ${({ theme }) => theme.device.desktop} {
     width: 471px;
-    left: 270px;
+    left: 60px;
     top:269px;
   } ;
 

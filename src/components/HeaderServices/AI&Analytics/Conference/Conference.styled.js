@@ -270,11 +270,12 @@ export const SubTitle2 = styled.h3`
   font-size: 18px;
   line-height: 1.2;
   text-align: left;
-  padding-bottom: 16px;
+  padding-bottom: 50px;
   width: 305px;
 
   color: ${({ theme }) => theme.colors.black_btn};
   ${({ theme }) => theme.device.tablet} {
+    padding-bottom: 16px;
     width: 262px;
    
   }

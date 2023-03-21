@@ -195,7 +195,7 @@ const Conference = () => {
                 </a>
               </CentralDivLogo>
               <CentralDivLogo>
-                <a href='metalink'>
+                <a href='https://metalink.com'>
                   <LogoPartners src={Metalink} style={{}} alt="quad" />
                 </a>
               </CentralDivLogo>
@@ -253,7 +253,7 @@ const Conference = () => {
 
 
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
-                <Title> Smart Infrastructure Products We Support</Title>
+                <Title> DevOps Tools, Technologies, and Frameworks</Title>
                 <Products src={Tools} alt="smart" />
           </ConferenceItemCenter>
 

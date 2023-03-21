@@ -97,6 +97,8 @@ import MediaQuery from 'components/MediaQuery';
 import Accordion, { AccordionHorizontal } from "../../../Accordion/Accordion";
 import { DivSlideTree, DivSlideFour, DivSlideTreeB } from 'components/HeaderServices/Slide.style';
 
+import styled from './Conference.css';
+
 
 
 
@@ -428,7 +430,7 @@ const Conference = () => {
               <table>
                 <tbody>
                   <tr>
-                    <td>
+                    <td className=''>
                       <LinkWeDo style={{ }}>
                       <TitleWeDo style={{padding: '0'}}>Cloud Evolve</TitleWeDo>
                       <Arrow2  src={arrow} alt='arrow'/>
@@ -470,26 +472,26 @@ const Conference = () => {
               <table>
                 <tbody>
                   <tr>
-                    <td>
+                    <td className='firstarh'>
                       <LinkWeDo to='/cloud-evolve' style={{ }}>
                       <TitleWeDo style={{padding: '0'}}>Cloud Evolve</TitleWeDo>
                       <Arrow2  src={arrow} alt='arrow'/>
                       </LinkWeDo>
                     </td>
-                    <td> <LinkWeDo to='/smart-devops' style={{ }}>
+                    <td className='secondarh'> <LinkWeDo to='/smart-devops' style={{ }}>
                       <TitleWeDo style={{padding: '0'}}>Smart DevOps</TitleWeDo>
                       <Arrow2  src={arrow} alt='arrow'/>
                       </LinkWeDo>
                     </td>
                     </tr>
                     <tr>
-                    <td> 
+                    <td className='thirdarh'> 
                       <LinkWeDo to='/cloud-ai-and-analytics' style={{ }}>
                       <TitleWeDo style={{padding: '0'}}>Cloud AI & Analytics</TitleWeDo>
                       <Arrow2  src={arrow} alt='arrow'/>
                       </LinkWeDo>
                     </td>
-                    <td><LinkWeDo to='/cloud-migration' style={{ }}>
+                    <td className='fourarh'><LinkWeDo to='/cloud-migration' style={{ }}>
                         <TitleWeDo style={{padding: '0'}}>Cloud Migration</TitleWeDo>
                         <Arrow2  src={arrow} alt='arrow'/>
                         </LinkWeDo></td>

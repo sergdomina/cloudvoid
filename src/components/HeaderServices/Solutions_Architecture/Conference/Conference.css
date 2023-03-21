@@ -1,0 +1,77 @@
+
+
+
+.firstarh{ 
+
+       
+}
+
+.firstarh:hover{
+        background-image: url('/src/image/Solutions_Architecture/first_evolve.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        background-position: center;
+        animation: mymove 0.1s ease-out;
+        -webkit-animation: mymove 0.1s ease-out;
+}
+    
+
+
+
+.secondarh{ 
+
+       
+}
+
+.secondarh:hover{
+        background-image: url('/src/image/Solutions_Architecture/devops.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        background-position: center;
+        animation: mymove 0.1s ease-out;
+        -webkit-animation: mymove 0.1s ease-out;
+}
+    
+
+
+
+
+.thirdarh{ 
+
+       
+}
+
+.thirdarh:hover{
+        background-image: url('/src/image/Solutions_Architecture/AI.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        background-position: center;
+        animation: mymove 0.1s ease-out;
+        -webkit-animation: mymove 0.1s ease-out;
+}
+    
+ 
+
+
+.fourarh{ 
+
+       
+}
+
+.fourarh:hover{
+        background-image: url('/src/image/Solutions_Architecture/migration.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        background-position: center;
+        animation: mymove 0.1s ease-out;
+        -webkit-animation: mymove 0.1s ease-out;
+}
+    
+    @keyframes mymove {
+      0% {background-size: 0 0;}
+      100% {background-size: 100% 100%;}
+};
