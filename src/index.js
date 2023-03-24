@@ -13,7 +13,7 @@ const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 root.render(
-    <React.Fragment>
+    <React.StrictMode>
         <BrowserRouter>
             <ScrollToTop />
             <ThemeProvider theme={theme}>
@@ -23,5 +23,5 @@ root.render(
                 </ChakraProvider>
             </ThemeProvider>
         </BrowserRouter>
-    </React.Fragment>
+    </React.StrictMode>
 );
