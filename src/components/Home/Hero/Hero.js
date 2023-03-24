@@ -1,3 +1,4 @@
+import { useContext, useEffect, useRef } from 'react';
 import {
   HeroSection,
   HeroTitle,
@@ -8,11 +9,25 @@ import {
 } from './Hero.styled';
 import Spline from '@splinetool/react-spline';
 import MediaQuery from 'components/MediaQuery';
-
+import {useInView} from "react-intersection-observer";
+import {Context} from "../../App/context";
 
 const Hero = () => {
+    const {setOnSlider} = useContext(Context)
+    const {ref, inView} = useInView({
+        threshold: 0.1
+    })
+
+    useEffect(() => {
+        setOnSlider(inView);
+        console.log(inView);
+        return () => {
+            setOnSlider(false);
+        }
+    }, [inView])
+
   return (
-    <HeroSection>
+    <HeroSection >
        
       <HeroContainer style={{position:'relative'}}>
         <div className='gradient' style={{position:'absolute',
@@ -21,7 +36,7 @@ const Hero = () => {
            width:'100%',
             height:'100%', 
             opacity:'70%'}} ></div>
-      <GlobalBox style={{zIndex:"1"}}>
+        <GlobalBox style={{zIndex:"1"}}>
           <HeroTitle>
           IT Solutions. Built On Trust, <br/> Driven By Innovation
           </HeroTitle>
@@ -30,11 +45,9 @@ const Hero = () => {
           </HeroDiscription>
         </GlobalBox>
      
-        <Spline style={{position:"absolute" }}
+        <Spline ref={ref} style={{position:"absolute" }}
         scene="https://prod.spline.design/ufPVSUomT7C2tPeo/scene.splinecode"  />
-    
-      
-        
+
       </HeroContainer>
     </HeroSection>
   );
