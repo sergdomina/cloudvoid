@@ -1,8 +1,7 @@
-
-
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import gradient from '../../../../image/Migration/Migration_gradient.svg'
+import arrow from 'image/conference/arrow.svg';
 
 export const Section = styled.section`
   padding: 100px 0px 50px;
@@ -675,10 +674,10 @@ export const LinkCustom = styled.a`
   };
 `
 export const Arrow = styled.img`
-color: #3E3D4A;
-& :hover{
-  color: #CE1700;
-}
+  color: #3E3D4A;
+  & :hover{
+    color: #CE1700;
+  }
 
   ${({ theme }) => theme.device.tablet} {
       
@@ -690,12 +689,19 @@ color: #3E3D4A;
      
   };
 `
-export const Arrow2 = styled.img`
-color: #3E3D4A;
-& :hover{
-  color: #CE1700;
-}
-width: 16px;
+export const Arrow2 = styled.div`
+  // background-image: url(${arrow});
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 27px;
+  width: 27px;
+  fill: currentColor;
+  transition: all 0.3s linear;
+  & svg {
+    fill: currentColor;
+    height: 100%;
+    width: 100%;
+  }
 
   ${({ theme }) => theme.device.tablet} {
       width: 16px;
@@ -715,6 +721,9 @@ width: 320px;
 align-items: center;
 justify-content: space-between; 
 padding: 22px 27px;
+  &:hover{
+    color: #CE1700;
+  }
 
 ${({ theme }) => theme.device.tablet} {
   width: 320px;
@@ -724,7 +733,8 @@ ${({ theme }) => theme.device.default} {
   padding: 27px 36px;
 }
 ${({ theme }) => theme.device.desktop} {
- width: 547px;
+ //width: 547px;
+  width: 100%;
  padding: 39px 48px;
 };
 `
@@ -734,7 +744,8 @@ export const TitleWeDo = styled.h3`
   font-size: 14px;
   line-height: 1.2;
   text-align: left;
-  color: ${({ theme }) => theme.colors.black_btn};
+  // color: ${({ theme }) => theme.colors.black_btn};
+  transition: all 0.3s linear;
   ${({ theme }) => theme.device.tablet} {
     font-size: 14px;
     padding-bottom: 0;
