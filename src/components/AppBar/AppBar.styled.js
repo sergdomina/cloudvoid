@@ -11,7 +11,12 @@ export const Header = styled.header`
   width: 100%;
   background: transparent;
   backdrop-filter: blur(8px);
-
+  transition: all 0.3s linear;
+  color: ${({ theme, isOnSlider }) =>
+      isOnSlider ? theme.colors.white : theme.colors.dark_grey};
+  ${({ theme }) => theme.device.mobileMax} {
+    color: ${({ theme }) => theme.colors.dark};
+  }
   ${({ theme }) => theme.device.default} {
 
 
@@ -85,7 +90,6 @@ export const NavList = styled.ul`
 export const NavSubList = styled(NavList)`
   ${({ theme }) => theme.device.mobileMax} {
     position: absolute;
-    //display: none;
     width: 100%;
     top: 0;
     z-index: 1;
@@ -93,7 +97,6 @@ export const NavSubList = styled(NavList)`
     transition: transform 0.3s ease-out, opacity 0.3s ease-out,
     visibility 0.3s ease-out;
     &.active{
-      //display: block;
       transform: translateX(0);
     }
   }
@@ -104,15 +107,12 @@ export const NavSubList = styled(NavList)`
 
 export const Link = styled(NavLink)`
   font-family: ${({ theme }) => theme.fonts.descr.regular};
-  color: ${({ theme }) => theme.colors.text};
   font-size: 14px;
   line-height: 1.5;
   padding: 15px 32px;
   width: 100%;
   display: block;
-  text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
   &.active {
-    
     position: relative;
     &:after {
       display: block;
@@ -257,7 +257,6 @@ export const ArrowButton = styled.span`
 
 export const ButtonNavSubList = styled.button`
   font-family: ${({ theme }) => theme.fonts.descr.regular};
-  color: ${({ theme }) => theme.colors.text};
   display: flex;
   align-items: center;
   justify-content: ${({ direction }) => direction === 'right' ? 'space-between' : 'flex-start'};;

@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useContext } from 'react';
 import { useLocation } from 'react-router-dom';
 import { GlobalStyle } from '../GlobalStyle';
 import {
@@ -18,6 +18,7 @@ import {
 import Burger from '../Burger';
 import LogoMobile from '../../image/Cloudvoid_LO_FF-03.svg';
 import Logo from '../../image/Cloudvoid_LO_FF-03.svg';
+import LogoWhite from '../../image/Cloudvoid_LO_FF-03-white.svg';
 import { useOnClickOutside } from '../../hooks/OnClickOutside';
 import MediaQuery from '../MediaQuery';
 // import DownloadLink from '../DownloadLink';
@@ -25,6 +26,7 @@ import MediaQuery from '../MediaQuery';
 import PopupHeader from '../PopupHeader';
 // import DownloadMobileFooter from '../DownloadMobileFooter';
 // import styles from './style.modules.css';
+import {Context} from "../App/context";
 
 const AppBar = () => {
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
@@ -42,10 +44,13 @@ const AppBar = () => {
   // const toggleModal = () => setShowModal(!showModal);
   const { pathname } = useLocation();
   const isDownloadPage = pathname !== '/downloads';
+
+  const {isOnSlider} = useContext(Context)
+
   return (
     <>
       <GlobalStyle isDownloadPage={!isDownloadPage} />
-      <Header ref={node}>
+      <Header isOnSlider={isOnSlider}>
         <HeaderContainer>
           <HeaderBox>
             <MediaQuery device={'mobile'}>
@@ -59,13 +64,13 @@ const AppBar = () => {
 
             <MediaQuery device={'mobile'}>
               <LogoLink onClick={() => setIsOpenMobileMenu(false)} to="/">
-                <LogoImg src={LogoMobile} alt={'Cloudvoid'} />
+                <LogoImg src={isOnSlider ? LogoWhite : LogoMobile} alt={'Cloudvoid'} />
               </LogoLink>
             </MediaQuery>
 
             <MediaQuery device={'tabletUp'}>
               <LogoLink onClick={() => setIsOpenMobileMenu(false)} to="/">
-                <LogoImg src={Logo} alt={'Cloudvoid'} />
+                <LogoImg src={isOnSlider ? LogoWhite : Logo} alt={'Cloudvoid'} />
               </LogoLink>
             </MediaQuery>
           </HeaderBox>

@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { bool, func } from 'prop-types';
 import { StyledBurger } from './Burger.styled';
+import {Context} from "../App/context";
 
 const Burger = ({ open, setOpen, ...props }) => {
   const isExpanded = open ? true : false;
+  const {isOnSlider} = useContext(Context)
 
   return (
     <StyledBurger
@@ -11,6 +13,7 @@ const Burger = ({ open, setOpen, ...props }) => {
       aria-expanded={isExpanded}
       open={open}
       onClick={() => setOpen(!open)}
+      isOnSlider={isOnSlider}
       {...props}
     >
       <span />

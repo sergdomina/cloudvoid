@@ -5,7 +5,7 @@ import Footer from 'components/Footer';
 import { ScrollToTop } from 'hooks/ScrollToTop';
 
 const AI = () => {
-  window.scrollTo( 0, 0);
+  // window.scrollTo( 0, 0);
   return (
     <>
       <main>

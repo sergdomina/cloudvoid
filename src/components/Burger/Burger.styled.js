@@ -15,18 +15,14 @@ export const StyledBurger = styled.button`
   span {
     width: 100%;
     height: 1px;
-    background: ${({ theme, open }) =>
-      open ? theme.colors.black : theme.colors.dark_grey};
+    background-color: ${({ theme, isOnSlider }) =>
+        isOnSlider ? theme.colors.white : theme.colors.dark_grey};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
     transform-origin: left;
     :first-child {
       transform: ${({ open }) => (open ? 'rotate(27deg)' : 'rotate(0)')};
-      // for straight cross
-      // transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
-      // left: ${({ open }) => (open ? '4px' : '0')};
-      // top: ${({ open }) => (open ? '-4px' : '0')};
     }
     :nth-child(2) {
       opacity: ${({ open }) => (open ? '0' : '1')};
@@ -34,10 +30,6 @@ export const StyledBurger = styled.button`
     }
     :nth-child(3) {
       transform: ${({ open }) => (open ? 'rotate(-27deg)' : 'rotate(0)')};
-      // for straight cross
-      // transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')};
-      // left: ${({ open }) => (open ? '4px' : '0')};
-      // bottom: ${({ open }) => (open ? '-4px' : '0')};
     }
   }
 `;
