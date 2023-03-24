@@ -30,12 +30,12 @@ const Hero = () => {
     <HeroSection >
        
       <HeroContainer style={{position:'relative'}}>
-        <div className='gradient' style={{position:'absolute',
+        {/* <div className='gradient' style={{position:'absolute',
          backgroundColor: '#000',
           zIndex: '1',
            width:'100%',
             height:'100%', 
-            opacity:'70%'}} ></div>
+            opacity:'70%'}} ></div> */}
         <GlobalBox style={{zIndex:"1"}}>
           <HeroTitle>
           IT Solutions. Built On Trust, <br/> Driven By Innovation

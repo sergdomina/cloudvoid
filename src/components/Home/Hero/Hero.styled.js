@@ -70,6 +70,7 @@ export const HeroTitle = styled.h1`
   line-height: 1.3;
   margin-bottom: 32px;
   color: ${({ theme }) => theme.colors.white};
+  text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.45);
   ${({ theme }) => theme.device.tablet} {
     font-size: 22px;
   }
@@ -88,6 +89,7 @@ export const HeroDiscription = styled.p`
   line-height: 1.4;
   color: ${({ theme }) => theme.colors.white};
   margin-bottom: 32px;
+  text-shadow: 0px 2px 30px rgba(0, 0, 0, 0.55);
   ${({ theme }) => theme.device.tablet} {
     font-size: 12px;
   }
