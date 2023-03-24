@@ -189,10 +189,10 @@ const Conference = () => {
 
 
           <MediaQuery device={'desktop'}>
-          <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
-            <Title> Smart Infrastructure Capabilities </Title>
-            <Accordion items={accordionItems} />
-          </ConferenceItemCenter>
+            <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
+              <Title> Smart Infrastructure Capabilities </Title>
+              <Accordion items={accordionItems} />
+            </ConferenceItemCenter>
           </MediaQuery>
 
       </Container>

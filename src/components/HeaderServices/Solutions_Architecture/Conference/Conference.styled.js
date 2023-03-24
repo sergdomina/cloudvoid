@@ -2,10 +2,10 @@
 
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import gradient from '../../../../image/conference/gradient.svg'
+import gradient from '../../../../image/Migration/Migration_gradient.svg'
 
 export const Section = styled.section`
-  padding: 100px 0px 100px;
+  padding: 100px 0px 50px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -14,13 +14,13 @@ export const Section = styled.section`
   
   ${({ theme }) => theme.device.tablet} {
     margin-bottom: 0px;
-    padding: 180px 0px 90px;
+    padding: 180px 0px 0px;
   }
   ${({ theme }) => theme.device.default} {
-    padding: 180px 0px 50px;
+    padding: 180px 0px 0px;
   }
   ${({ theme }) => theme.device.desktop} {
-    padding: 250px 0px 100px;
+    padding: 150px 0px 0px;
   }
 `;
 

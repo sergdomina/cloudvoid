@@ -12,13 +12,13 @@ export const Section = styled.section`
   
   ${({ theme }) => theme.device.tablet} {
     margin-bottom: 0px;
-    padding: 180px 0px 40px;
+    padding: 100px 0px 40px;
   }
   ${({ theme }) => theme.device.default} {
-    padding: 180px 0px 180px;
+    padding: 140px 0px 180px;
   }
   ${({ theme }) => theme.device.desktop} {
-    padding: 250px 0px 100px;
+    padding: 160px 0px 100px;
   }
 `;
 

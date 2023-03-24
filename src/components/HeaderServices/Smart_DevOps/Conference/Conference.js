@@ -258,7 +258,7 @@ const Conference = () => {
           </ConferenceItemCenter>
 
 {/*PARNERS*/}
-            <ConferenceItem style={{position: 'relative', zIndex: '-1'}}>
+            <ConferenceItem style={{position: 'relative'}}>
             <GlobalBox style={{alignItems: 'center', position: 'relative'}}>
               <DivHalf style={{}}>
               <MediaQuery device={'desktop'}>
