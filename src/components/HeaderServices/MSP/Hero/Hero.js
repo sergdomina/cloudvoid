@@ -30,7 +30,7 @@ const Hero = () => {
           </GlobalBox>
       </Container>
         <Spline style={{position:"absolute"}}
-        scene="https://prod.spline.design/pf-fFnr4uk3K3viB/scene.splinecode" />
+        scene="https://prod.spline.design/AUcoL3B9L6ASn-dr/scene.splinecode" />
 
 
         

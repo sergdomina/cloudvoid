@@ -29,30 +29,12 @@ const Hero = () => {
           </GlobalBox>
       </Container>
       <MediaQuery device={'mobile'}>
-        <Spline style={{position:"absolute", 
-        width:'100%'}}
-        scene="https://prod.spline.design/sg4VOs698eINp0UO/scene.splinecode"  />
-      </MediaQuery>
-      <MediaQuery device={'tablet'}>
-        <Spline style={{position:"absolute", 
-        margin:"0",
-        top: "0",
-        right: "0",}}
-        scene="https://prod.spline.design/yTttbAhLNMjD9c3s/scene.splinecode"  />
-      </MediaQuery>
-      <MediaQuery device={'defaultOnly'}>
-        <Spline style={{position:"absolute", 
-        margin:"0",
-        top: "0",
-        right: "0",}} 
-        scene="https://prod.spline.design/lWL3kQRvl2jrLTTW/scene.splinecode" />
-      </MediaQuery>
-      <MediaQuery device={'desktop'}>
-      <Spline style={{position:"absolute", 
-        margin:"0",
-        top: "0",
-        right: "0",
-       }}  scene="https://prod.spline.design/I9YR96HNIXKQm7h8/scene.splinecode" />
+          <Spline style={{position:"absolute", }}
+         scene="https://prod.spline.design/B53WBcj3xxpFgcPE/scene.splinecode" />
+       </MediaQuery>
+       <MediaQuery device={'tabletUp'}>
+          <Spline style={{position:"absolute", }}
+         scene="https://prod.spline.design/6hIIatqsIK0YTXUF/scene.splinecode" />
        </MediaQuery>
         
       </HeroContainer>
