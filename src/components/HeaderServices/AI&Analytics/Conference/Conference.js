@@ -242,7 +242,7 @@ const Conference = () => {
           </ConferenceItemCenter>
 
 {/*PARNERS*/}
-          <ConferenceItem style={{position: 'relative', zIndex: '-1'}}>
+          <ConferenceItem style={{position: 'relative'}}>
             <GlobalBox style={{alignItems: 'center', position: 'relative'}}>
               <DivHalf style={{}}>
               <MediaQuery device={'desktop'}>
@@ -272,12 +272,12 @@ const Conference = () => {
             <GlobalBox style={{position: 'relative'}}>
 
               <DivLen>
-                <a target="_blank" href='https://mclaneintel.com/'>
+                <a  href='https://mclaneintel.com/' target="_blank" >
                 <Image src={McLane} style={{margin:'0 auto'}}  alt="evo"/>
                 </a>
               </DivLen>
               <DivLen>
-                <a target="_blank" href='https://gemean.com/'>
+                <a  href='https://gemean.com/' target="_blank" >
                 <Image src={Gemean} style={{margin:'0 auto'}}  alt="evo"/>
                 </a>
               </DivLen>

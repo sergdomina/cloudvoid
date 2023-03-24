@@ -1,19 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.c78674ed.css",
-    "main.js": "/static/js/main.b8e86dde.js",
+    "main.js": "/static/js/main.06060408.js",
     "static/js/227.3294d1f4.chunk.js": "/static/js/227.3294d1f4.chunk.js",
     "static/js/526.28027829.chunk.js": "/static/js/526.28027829.chunk.js",
     "static/js/232.0a864325.chunk.js": "/static/js/232.0a864325.chunk.js",
     "static/js/237.28c9ce3f.chunk.js": "/static/js/237.28c9ce3f.chunk.js",
+    "static/media/AboutHero.png": "/static/media/AboutHero.5d4c17003130c6e4ee63.png",
     "static/media/tech.svg": "/static/media/tech.63b73a05f7db848979e07542de5baf47.svg",
     "static/media/ProductMobile.svg": "/static/media/ProductMobile.b19cd0e38f27e568d74f088d5ac97dfc.svg",
     "static/media/Product.svg": "/static/media/Product.2d902b9abbe638bbdd64cd97706084c0.svg",
     "static/media/DevOpsTools.svg": "/static/media/DevOpsTools.ae2bc24b2184c622b5bef0382c0a13ca.svg",
+    "static/media/AboutHeroMobile.png": "/static/media/AboutHeroMobile.ff76732c7ea0266ced8f.png",
     "static/media/Virtual.svg": "/static/media/Virtual.558d9281fb88a8e1f7aacb33dcba0852.svg",
+    "static/media/AboutHeroDef.png": "/static/media/AboutHeroDef.0f1d94afc8a9a6c98106.png",
     "static/media/Network.svg": "/static/media/Network.0182ce2ebc6ca7aac9d6d3a81d726088.svg",
     "static/media/BI_and_Analytics.svg": "/static/media/BI_and_Analytics.c593b92e8cb19887e0efcb19ae61561c.svg",
     "static/media/MSP.svg": "/static/media/MSP.05c1b35648dcc978ed8ae6161fcb7c67.svg",
+    "static/media/AboutHeroTab.png": "/static/media/AboutHeroTab.1876fc2121c4c0aa5490.png",
     "static/media/Cloud_Technologies.svg": "/static/media/Cloud_Technologies.05aa50b794e4a56b475b94e5a7444049.svg",
     "static/media/Montserrat-Bold.woff": "/static/media/Montserrat-Bold.180ba33d8de7dcfe80a0.woff",
     "static/media/Montserrat-SemiBold.woff": "/static/media/Montserrat-SemiBold.197213592de7a2a62e06.woff",
@@ -58,12 +62,16 @@
     "static/media/insfocus.svg": "/static/media/insfocus.7d6c0a944033ccc4f0b8b5413df0b778.svg",
     "static/media/realize.svg": "/static/media/realize.eb34a02e7dab7ef1f87a90e10fe3300c.svg",
     "static/media/build.svg": "/static/media/build.ec6cf2c881d4f6c70e7e9f3ca72653a7.svg",
+    "static/media/AboutReadyDefault.svg": "/static/media/AboutReadyDefault.9ca2330c4276cc2a094ea64a99a02e29.svg",
+    "static/media/AboutReadyTablet.svg": "/static/media/AboutReadyTablet.c09da3d7e19324ac13297c642d2c66fc.svg",
+    "static/media/AboutReadyDesktop.svg": "/static/media/AboutReadyDesktop.78c294d7c17e76b7f27df2b9eadea077.svg",
     "static/media/lenovo.svg": "/static/media/lenovo.44c93664c336b12d547d57298cd13e5d.svg",
     "index.html": "/index.html",
     "static/media/linkedin.svg": "/static/media/linkedin.a22778921844fa0f537e3a622239e34a.svg",
     "static/media/partner.svg": "/static/media/partner.3cf1bf90bb78b4e9b5bd8ce0d9943eac.svg",
     "static/media/config.svg": "/static/media/config.5371714ad94d04c36c281f7384a4b801.svg",
     "static/media/partner_Smart.svg": "/static/media/partner_Smart.6a344942694e5fca18af7d4844030171.svg",
+    "static/media/AboutReadyMobile.svg": "/static/media/AboutReadyMobile.e3231e9ad540d95a78d296b746bb7c9e.svg",
     "static/media/cloud_red.svg": "/static/media/cloud_red.6ffaca000714cb47ba515d6029a30b6a.svg",
     "static/media/cloud.svg": "/static/media/cloud.8af914d88204a94c8fd31cc2d8786d41.svg",
     "static/media/papers.svg": "/static/media/papers.6035d2fdf680e5c1d2faa83ff81f5065.svg",
@@ -104,7 +112,7 @@
     "static/media/Rectangle 177.svg": "/static/media/Rectangle 177.43083c535d2fec78906cc8b6eab2ad52.svg",
     "static/media/RedQuad.svg": "/static/media/RedQuad.768f899e4350ade502cb42ed5f2f549c.svg",
     "main.c78674ed.css.map": "/static/css/main.c78674ed.css.map",
-    "main.b8e86dde.js.map": "/static/js/main.b8e86dde.js.map",
+    "main.06060408.js.map": "/static/js/main.06060408.js.map",
     "227.3294d1f4.chunk.js.map": "/static/js/227.3294d1f4.chunk.js.map",
     "526.28027829.chunk.js.map": "/static/js/526.28027829.chunk.js.map",
     "232.0a864325.chunk.js.map": "/static/js/232.0a864325.chunk.js.map",
@@ -112,6 +120,6 @@
   },
   "entrypoints": [
     "static/css/main.c78674ed.css",
-    "static/js/main.b8e86dde.js"
+    "static/js/main.06060408.js"
   ]
 }

@@ -436,8 +436,8 @@ const Conference = () => {
             <GlobalBox>
                      <DivSplineLogo style={{ position: "relative" }}>
                        {/* <BackEvo src={Evo}  alt="evo" /> */}
-                        <Spline className='logo' scene="https://prod.spline.design/YuNIqE4yFTnct5LI/scene.splinecode" />
-                        </DivSplineLogo>
+                        <Spline className='logo' scene="https://prod.spline.design/DupPbGr1pRztYw6E/scene.splinecode" />
+                      </DivSplineLogo>
             </GlobalBox>
         </ConferenceItem>
 

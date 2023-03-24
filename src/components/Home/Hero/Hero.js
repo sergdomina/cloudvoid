@@ -46,8 +46,7 @@ const Hero = () => {
         </GlobalBox>
      
         <Spline ref={ref} style={{position:"absolute" }}
-        scene="https://prod.spline.design/ufPVSUomT7C2tPeo/scene.splinecode"  />
-
+        scene="https://prod.spline.design/YK0BY9nj07KH88xJ/scene.splinecode"  />
       </HeroContainer>
     </HeroSection>
   );

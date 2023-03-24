@@ -488,13 +488,15 @@ const Conference = () => {
                     <td className='thirdarh'> 
                       <LinkWeDo to='/cloud-ai-and-analytics' style={{ }}>
                       <TitleWeDo style={{padding: '0'}}>Cloud AI & Analytics</TitleWeDo>
-                      <Arrow2  src={arrow} alt='arrow'/>
+                        <Arrow2  src={arrow} alt='arrow'/>
                       </LinkWeDo>
                     </td>
-                    <td className='fourarh'><LinkWeDo to='/cloud-migration' style={{ }}>
-                        <TitleWeDo style={{padding: '0'}}>Cloud Migration</TitleWeDo>
-                        <Arrow2  src={arrow} alt='arrow'/>
-                        </LinkWeDo></td>
+                    <td className='fourarh'>
+                      <LinkWeDo to='/cloud-migration' style={{ }}>
+                         <TitleWeDo style={{padding: '0'}}>Cloud Migration</TitleWeDo>
+                          <Arrow2  src={arrow} alt='arrow'/>
+                      </LinkWeDo>
+                      </td>
                   </tr>
                 </tbody>
               </table>

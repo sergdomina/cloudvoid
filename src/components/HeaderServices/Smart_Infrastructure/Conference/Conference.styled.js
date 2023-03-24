@@ -52,12 +52,14 @@ position: relative;
   align-items: center;
   padding: 0 32px;
     margin-bottom: 100px;
-  z-index: 2;
   ${({ theme }) => theme.device.tablet} {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    &:first-child{
+      margin-top: 50px;
+    }
 
     &:nth-child(1n + 2) {
       flex-direction: row-reverse;
@@ -70,12 +72,15 @@ position: relative;
     &:not(:last-child) {
       margin-bottom: 150px;
     }
-   
+
   }
   }
   ${({ theme }) => theme.device.desktop} {
     &:not(:last-child) {
       margin-bottom: 170px;
+    }
+    &:first-child{
+      margin-top: 0px;
     }
 
   }

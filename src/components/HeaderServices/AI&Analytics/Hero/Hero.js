@@ -30,8 +30,14 @@ const Hero = () => {
           </GlobalBox>
       </Container>
    
-        <Spline style={{position:"absolute", }}
-       scene="https://prod.spline.design/6cDA1LfJAzHCLMGx/scene.splinecode" />
+       <MediaQuery device={'mobile'}>
+          <Spline style={{position:"absolute", }}
+         scene="https://prod.spline.design/ymgBuIkU18mstICV/scene.splinecode" />
+       </MediaQuery>
+       <MediaQuery device={'tabletUp'}>
+          <Spline style={{position:"absolute", }}
+         scene="https://prod.spline.design/Cw3Ju0HidS5WFQh1/scene.splinecode" />
+       </MediaQuery>
 
      
         

@@ -3,17 +3,17 @@ import styled from 'styled-components';
 
 
 export const Section = styled.section`
-  padding: 200px 0px 100px;
+  padding: 100px 0px 50px;
   
   ${({ theme }) => theme.device.tablet} {
     margin-bottom: 0px;
-    padding: 180px 0px 120px;
+    padding: 100px 0px 120px;
   }
   ${({ theme }) => theme.device.default} {
-    padding: 200px 0px 180px;
+    padding: 140px 0px 180px;
   }
   ${({ theme }) => theme.device.desktop} {
-    padding: 200px 0px 100px;
+    padding: 160px 0px 100px;
   }
 `;
 
@@ -681,7 +681,7 @@ export const BackEvo = styled.img`
 export const BackEvoM = styled.img`
   width: 375px;
   position: absolute;
-  top: 820px;
+  top: 720px;
   right: 0;
   left: 0;
   margin: 0 auto;
