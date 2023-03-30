@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.5.1",
+    "@emailjs/browser": "^3.10.0",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@splidejs/react-splide": "^0.7.12",
@@ -46,6 +47,11 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
   },
   "browserslist": {
     "production": [
