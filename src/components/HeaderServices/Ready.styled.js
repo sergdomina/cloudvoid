@@ -7,7 +7,7 @@ import GlobDef from 'image/About/AboutReadyDefault.svg';
 import GlobDes from 'image/About/AboutReadyDesktop.svg';
 export const Section = styled.section`
 
-      padding: 0px 0;
+      padding: 0px 0 0px;
       margin-bottom: 80px;
       background: ${({ theme }) => theme.colors.grey_1};
       z-index: -1;
@@ -52,7 +52,7 @@ export const ReadyLink = styled(Link)`
 export const Bg = styled.div`
     margin: 0 auto;
     color: #CE1700;
-    height: 317px;
+    height: auto;;
     width: auto;
     background-color: #EFEFF0;
     padding: 10% 10%;
@@ -283,7 +283,7 @@ export const ReadyM =styled.img`
   position: absolute;
   z-index: 0;
   bottom: 0;
-  right: 10px;
+  right: 0px;
   ${({ theme }) => theme.device.tablet} {
     display: none;
   }
