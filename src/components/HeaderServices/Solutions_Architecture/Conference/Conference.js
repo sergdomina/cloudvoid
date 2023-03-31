@@ -41,7 +41,6 @@ import {
   LeftHow,
   RightHow,
   LinkCustom,
-  Arrow,
   Arrow2,
   LinkWeDo,
   TitleWeDo
@@ -344,7 +343,11 @@ const Conference = () => {
                     <DiscriptionBold >
                       Read Cases
                     </DiscriptionBold>
-                    <Arrow  src={arrow} alt='arrow'/>
+                    <Arrow2 className='arrow'>
+                            <svg width="18" height="18" viewBox="0 0 18 18"  xmlns="http://www.w3.org/2000/svg">
+                              <path  clip-rule="evenodd" d="M1.06066 14.6287L0 15.6893L2.12132 17.8107L3.18198 16.75L14.8285 5.10346L14.8285 13.1895L17.8285 13.1895L17.8285 1.68948L17.8285 0.189472H16.3285L16.142 0.189472C16.1282 0.189284 16.1144 0.189284 16.1007 0.189472L4.32852 0.189472V3.18947H12.4999L1.06066 14.6287Z" />
+                            </svg>
+                          </Arrow2>
                   </LinkCustom>
                 </DivHalf>
               </GlobalBox>
@@ -400,7 +403,11 @@ const Conference = () => {
                       <td>
                         <LinkWeDo to='/cloud-evolve'>
                           <TitleWeDo style={{padding: '0'}}>Cloud Evolve</TitleWeDo>
-                          <Arrow2  src={arrow} alt='arrow'/>
+                          <Arrow2 className='arrow'>
+                            <svg width="18" height="18" viewBox="0 0 18 18"  xmlns="http://www.w3.org/2000/svg">
+                              <path  clip-rule="evenodd" d="M1.06066 14.6287L0 15.6893L2.12132 17.8107L3.18198 16.75L14.8285 5.10346L14.8285 13.1895L17.8285 13.1895L17.8285 1.68948L17.8285 0.189472H16.3285L16.142 0.189472C16.1282 0.189284 16.1144 0.189284 16.1007 0.189472L4.32852 0.189472V3.18947H12.4999L1.06066 14.6287Z" />
+                            </svg>
+                          </Arrow2>
                         </LinkWeDo>
                       </td>
                     </tr>
@@ -408,7 +415,11 @@ const Conference = () => {
                       <td>
                         <LinkWeDo to='/smart-devops'>
                           <TitleWeDo style={{padding: '0'}}>Smart DevOps</TitleWeDo>
-                          <Arrow2  src={arrow} alt='arrow'/>
+                          <Arrow2 className='arrow'>
+                            <svg width="18" height="18" viewBox="0 0 18 18"  xmlns="http://www.w3.org/2000/svg">
+                              <path  clip-rule="evenodd" d="M1.06066 14.6287L0 15.6893L2.12132 17.8107L3.18198 16.75L14.8285 5.10346L14.8285 13.1895L17.8285 13.1895L17.8285 1.68948L17.8285 0.189472H16.3285L16.142 0.189472C16.1282 0.189284 16.1144 0.189284 16.1007 0.189472L4.32852 0.189472V3.18947H12.4999L1.06066 14.6287Z" />
+                            </svg>
+                          </Arrow2>
                         </LinkWeDo>
                       </td>
                     </tr>
@@ -416,7 +427,11 @@ const Conference = () => {
                       <td>
                         <LinkWeDo to='/cloud-ai-and-analytics'>
                           <TitleWeDo style={{padding: '0'}}>Cloud AI & Analytics</TitleWeDo>
-                          <Arrow2  src={arrow} alt='arrow'/>
+                          <Arrow2 className='arrow'>
+                            <svg width="18" height="18" viewBox="0 0 18 18"  xmlns="http://www.w3.org/2000/svg">
+                              <path  clip-rule="evenodd" d="M1.06066 14.6287L0 15.6893L2.12132 17.8107L3.18198 16.75L14.8285 5.10346L14.8285 13.1895L17.8285 13.1895L17.8285 1.68948L17.8285 0.189472H16.3285L16.142 0.189472C16.1282 0.189284 16.1144 0.189284 16.1007 0.189472L4.32852 0.189472V3.18947H12.4999L1.06066 14.6287Z" />
+                            </svg>
+                          </Arrow2>
                         </LinkWeDo>
                       </td>
                     </tr>
@@ -424,7 +439,11 @@ const Conference = () => {
                       <td>
                         <LinkWeDo to='/cloud-migration' >
                           <TitleWeDo style={{padding: '0'}}>Cloud Migration</TitleWeDo>
-                          <Arrow2  src={arrow} alt='arrow'/>
+                          <Arrow2 className='arrow'>
+                            <svg width="18" height="18" viewBox="0 0 18 18"  xmlns="http://www.w3.org/2000/svg">
+                              <path  clip-rule="evenodd" d="M1.06066 14.6287L0 15.6893L2.12132 17.8107L3.18198 16.75L14.8285 5.10346L14.8285 13.1895L17.8285 13.1895L17.8285 1.68948L17.8285 0.189472H16.3285L16.142 0.189472C16.1282 0.189284 16.1144 0.189284 16.1007 0.189472L4.32852 0.189472V3.18947H12.4999L1.06066 14.6287Z" />
+                            </svg>
+                          </Arrow2>
                         </LinkWeDo>
                       </td>
                     </tr>

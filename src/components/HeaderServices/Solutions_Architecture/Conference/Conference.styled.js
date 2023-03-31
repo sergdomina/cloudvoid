@@ -673,28 +673,13 @@ export const LinkCustom = styled.a`
      
   };
 `
-export const Arrow = styled.img`
-  color: #3E3D4A;
-  & :hover{
-    color: #CE1700;
-  }
 
-  ${({ theme }) => theme.device.tablet} {
-      
-  }
-    ${({ theme }) => theme.device.default} {
-
-  }
-    ${({ theme }) => theme.device.desktop} {
-     
-  };
-`
 export const Arrow2 = styled.div`
   // background-image: url(${arrow});
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 27px;
-  width: 27px;
+  
+  width: auto;
   fill: currentColor;
   transition: all 0.3s linear;
   & svg {
@@ -715,6 +700,8 @@ export const Arrow2 = styled.div`
      
   };
 `
+
+
 export const LinkWeDo = styled(Link)`
 display: flex;
 width: 320px;
