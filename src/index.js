@@ -12,6 +12,12 @@ import {ScrollToTop} from "./hooks/ScrollToTop";
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
+if (process.env.NODE_ENV !== "development") {
+    console.log = () => {};
+    console.warn = () => {};
+    console.error = () => {};
+}
+
 root.render(
     <React.StrictMode>
         <BrowserRouter>
