@@ -20,7 +20,6 @@ const Hero = () => {
 
     useEffect(() => {
         setOnSlider(inView);
-        console.log(inView);
         return () => {
             setOnSlider(false);
         }
