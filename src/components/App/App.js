@@ -13,6 +13,7 @@ import About from '../../pages/About/About';
 import Migration from 'pages/Cloud-migration/Migration';
 import Contact from 'pages/Contact/Contact';
 import {Context} from "./context";
+import Clients from 'pages/Clients/Clients';
 
 function App() {
   const [isOnSlider, setOnSlider] = useState(false)
@@ -33,6 +34,7 @@ function App() {
             <Route path="cloud-ai-and-analytics" element={<AI />} />
             <Route path="master-msp" element={<MSP />} />
             <Route path="about" element={<About />} />
+            <Route path="clients" element={<Clients />} />
             <Route path="contact" element={<Contact />} />
           </Route>
           <Route path="*" element={<h1>NotFound</h1>} />

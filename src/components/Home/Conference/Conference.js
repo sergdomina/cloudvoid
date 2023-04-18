@@ -64,9 +64,7 @@ import RedHat from 'image/Home/RedHat.png';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 import '@splidejs/react-splide/css';
-import { CLASS_ARROWS } from '@splidejs/splide';
 import Spline from '@splinetool/react-spline';
-import styled from './Cofrence.css';
 
 const splide = new Splide( '.splide', {
   type   : 'loop',
@@ -77,6 +75,7 @@ const splide = new Splide( '.splide', {
     speed: -1,
   },
 } );
+
 
 
 const Conference = () => {

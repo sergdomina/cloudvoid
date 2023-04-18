@@ -28,7 +28,7 @@ import { Image } from 'semantic-ui-react';
 
 const Footer =() =>{
     return(
-        <Section>
+        <Section >
             <DivOne style={{backgroundColor:'#EFEFF0'}}>
                 <Container style={{position:'relative'}}>
                     <MediaQuery device={'default'}>

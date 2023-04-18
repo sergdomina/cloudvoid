@@ -146,6 +146,11 @@ const AppBar = () => {
               </NavItem>
 
               <NavItem>
+                <Link to="/clients" onClick={toggleMenu}>
+                  Clients
+                </Link>
+              </NavItem>
+              <NavItem>
                 <Link to="/about" onClick={toggleMenu}>
                   About
                 </Link>

@@ -47,11 +47,11 @@ const Conference = () => {
             <Input name='user_email' placeholder='email'/>
             <label>Service</label>
             <Select name='service'>
-              <option><p>Cloude Evolve</p></option>
-              <option>Cloude Governance</option>
-              <option>Cloude Migration</option>
-              <option>Cloude Solutions Architecture</option>
-              <option>Cloude AI&Analytics</option>
+              <option><p>Cloud Evolve</p></option>
+              <option>Cloud Governance</option>
+              <option>Cloud Migration</option>
+              <option>Cloud Solutions Architecture</option>
+              <option>Cloud AI&Analytics</option>
               <option>Smart DevOps</option>
               <option>Smart Infrastructure</option>
               <option>Master MSP</option>
