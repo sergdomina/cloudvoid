@@ -199,6 +199,32 @@ export const RegionAsia = styled.a`
      
   };
 `
+export const RegionAfrica = styled.a`
+
+  
+  width: auto;
+  fill: currentColor;
+  transition: all 0.3s linear;
+  & svg {
+    fill: currentColor;
+    height: 100%;
+    width: 100%;
+  }
+
+  ${({ theme }) => theme.device.tablet} {
+    position: absolute; 
+
+  }
+    ${({ theme }) => theme.device.default} {
+   
+     
+  }
+    ${({ theme }) => theme.device.desktop} {
+    left: 586px;
+    top: 440px;
+     
+  };
+`
 export const RegionAu = styled.a`
 
   
@@ -220,7 +246,8 @@ export const RegionAu = styled.a`
      
   }
     ${({ theme }) => theme.device.desktop} {
-   
+   left: 1100px;
+   top: 563px;
      
   };
 `

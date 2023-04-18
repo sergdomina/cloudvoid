@@ -8,7 +8,9 @@ import {
   RegionSA,
   RegionE,
   RegionAsia,
-  RegionME
+  RegionME,
+  RegionAfrica,
+  RegionAu
 } from './Conference.styled';
 import { Image} from '@chakra-ui/react';
 import NorthAmerica from '../Map/NorthAmerica/NorthAmerica';
@@ -16,6 +18,8 @@ import SouthAmerica from 'components/Map/SouthAmerica/SouthAmerica';
 import Europe from 'components/Map/Europe/Europe';
 import Asia from 'components/Map/Asia/Asia';
 import MiddleEast from 'components/Map/MiddleEaste/MiddleEast';
+import Africa from 'components/Map/Africa/Africa';
+import Australia from 'components/Map/Australia/Australia';
 
 
 
@@ -45,6 +49,12 @@ const Conference = () => {
           <RegionME>
              <MiddleEast/>
           </RegionME>
+          <RegionAfrica>
+             <Africa/>
+          </RegionAfrica>
+          <RegionAu>
+             <Australia/>
+          </RegionAu>
        </div>
 
       </Container>
