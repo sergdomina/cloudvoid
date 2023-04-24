@@ -3,11 +3,11 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
   body{
     height: 100vh;
-    /* padding-bottom: 97px; */
-    padding-bottom: ${({ isDownloadPage }) => (isDownloadPage ? 0 : '97px')};
+    /* padding-bottom: 0px; */
+    padding-bottom: ${({ isDownloadPage }) => (isDownloadPage ? 0 : '0px')};
      ${({ theme }) => theme.device.tablet} {
-      /* padding-bottom: 90px; */
-       padding-bottom: ${({ isDownloadPage }) => (isDownloadPage ? 0 : '90px')};
+      /* padding-bottom: 0px; */
+       padding-bottom: ${({ isDownloadPage }) => (isDownloadPage ? 0 : '0px')};
   }
      ${({ theme }) => theme.device.default} {
       padding-bottom: 0px;

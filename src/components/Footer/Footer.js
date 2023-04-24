@@ -43,7 +43,7 @@ const Footer =() =>{
                                     <LogoImg src={Logo} alt={'Logo'} />
                                 </Items>
                                 <Items >
-                                    <a  style={{display: 'flex', alignItems: 'center'}}>
+                                    <a href='mailto:info@cloudvoid.com'  style={{display: 'flex', alignItems: 'center'}}>
                                         <div style={{width: '17px', marginRight: '13px'}}>
                                             <Image src={mail} />
                                         </div>
@@ -59,7 +59,7 @@ const Footer =() =>{
                                     </a>
                                 </Items>
                                 <Items>
-                                    <a style={{display: 'flex', alignItems: 'center'}}>
+                                    <a href='https://www.linkedin.com/company/cloudvoid/' style={{display: 'flex', alignItems: 'center'}}>
                                         <div style={{width: '17px', marginRight: '13px'}}>
                                             <Image src={linkedin} />
                                         </div>

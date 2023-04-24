@@ -8,7 +8,8 @@ import {
   TabDiv,
   TabDiv2,
   Button,
-  Select
+  Select,
+  Label
 } from './Conference.styled';
 import { Image} from '@chakra-ui/react';
 import Container from '../../Container/Container.styled';
@@ -41,13 +42,13 @@ const Conference = () => {
 
         <Tabl onSubmit={sendEmail} ref={form}>
           <TabDiv >
-            <label>Name</label>
+            <Label>Name</Label>
             <Input name='user_name' placeholder='Name'/>
-            <label>Email</label>
-            <Input name='user_email' placeholder='email'/>
-            <label>Service</label>
+            <Label>Email</Label>
+            <Input name='user_email' placeholder='Email'/>
+            <Label>Service</Label>
             <Select name='service'>
-              <option><p>Cloud Evolve</p></option>
+              <option>Cloud Evolve</option>
               <option>Cloud Governance</option>
               <option>Cloud Migration</option>
               <option>Cloud Solutions Architecture</option>

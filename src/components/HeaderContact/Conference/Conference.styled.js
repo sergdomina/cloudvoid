@@ -153,6 +153,16 @@ export const Input = styled.input`
     margin-bottom: 18px;
 
   padding-left: 15px;
+  ::placeholder{
+      font-family: ${({ theme }) => theme.fonts.descr.regular};
+      color: ${({ theme }) => theme.colors.text};
+      font-size: 12px;
+      opacity: .5;
+        ${({ theme }) => theme.device.default} {
+          font-size: 14px;
+      }
+    
+  }
   ${({ theme }) => theme.device.tablet} {
     &:not(:last-child){
       margin-bottom: 18px;
@@ -176,6 +186,8 @@ export const Input = styled.input`
       height: 57px;
   }
 `
+
+
 export const Select = styled.select`
   diaplay: block;
   align-items: center;
@@ -185,12 +197,7 @@ export const Select = styled.select`
   border: 1px solid #3E3D4A;
     margin-bottom: 18px;
   padding-left: 15px;
-
-  p{
-    margin-bottom: 110px;
-  }
-
-
+ 
   ${({ theme }) => theme.device.tablet} {
 
     width: 100%;
@@ -207,10 +214,24 @@ export const Select = styled.select`
   }
 `
 
+export const Label = styled.label`
 
+font-family: ${({ theme }) => theme.fonts.descr.regular};
+color: ${({ theme }) => theme.colors.text};
+font-size: 12px;
+${({ theme }) => theme.device.tablet} {
+ 
+}
+  ${({ theme }) => theme.device.default} {
+    font-size: 14px;
+}
+  ${({ theme }) => theme.device.desktop} {
+   
+};
+`
 
 export const Area = styled.textarea`
-  diaplay: block;
+  display: block;
   align-items: center;
   justify-content: space-between; 
 
@@ -219,6 +240,18 @@ export const Area = styled.textarea`
   border: 1px solid #3E3D4A;
   padding: 10px 10px 10px 15px;
   margin-bottom: 35px;
+
+  ::placeholder{
+    font-family: ${({ theme }) => theme.fonts.descr.regular};
+    color: ${({ theme }) => theme.colors.text};
+    font-size: 12px;
+    opacity: .5;
+      ${({ theme }) => theme.device.default} {
+        font-size: 14px;
+    }
+  
+}
+
   ${({ theme }) => theme.device.tablet} {
     
   }

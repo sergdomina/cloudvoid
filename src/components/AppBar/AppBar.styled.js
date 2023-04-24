@@ -163,17 +163,17 @@ export const NavItem = styled.li`
   ${({ theme }) => theme.device.tablet} {
     padding: 0;
     &:not(:last-child) {
-      margin-right: 24px;
+      margin-right: 10px;
     }
   }
   ${({ theme }) => theme.device.default} {
     &:not(:last-child) {
-      margin-right: 35px;
+      margin-right: 25px;
     }
   }
   ${({ theme }) => theme.device.desktop} {
     &:not(:last-child) {
-      margin-right: 55px;
+      margin-right: 45px;
     }
   }
 `;
@@ -233,12 +233,10 @@ export const HeaderBox = styled.div`
     margin-right: auto;
   }
   /* ${({ theme }) => theme.device.default} {
-    display: flex;
-    align-items: center;
+ 
   } */
   ${({ theme }) => theme.device.desktop} {
-    display: flex;
-    align-items: center;
+    
   }
 `;
 
