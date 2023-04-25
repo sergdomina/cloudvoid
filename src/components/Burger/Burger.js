@@ -7,6 +7,19 @@ const Burger = ({ open, setOpen, ...props }) => {
   const isExpanded = open ? true : false;
   const {isOnSlider} = useContext(Context)
 
+  var resizeTimeout;
+
+  window.addEventListener('resize', function(event) {
+    if ( !resizeTimeout ) {
+      resizeTimeout = setTimeout(function() {
+        resizeTimeout = null;
+        if (window.innerWidth > 768) {
+          setOpen(false)
+        }
+      }, 100);
+    }
+  }, false);
+
   return (
     <StyledBurger
       aria-label="Toggle menu"

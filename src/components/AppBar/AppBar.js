@@ -33,8 +33,8 @@ const AppBar = () => {
   const [isOpenSubList, setIsOpenSubList] = useState({
     service: false
   });
-  const toggleMenu = () => {
-    setIsOpenMobileMenu(!isOpenMobileMenu);
+  const toggleMenu = (isOpen) => {
+    setIsOpenMobileMenu(isOpen);
   };
   const node = useRef();
 
