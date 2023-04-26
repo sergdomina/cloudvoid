@@ -107,7 +107,7 @@ export const NavSubList = styled(NavList)`
 
 export const Link = styled(NavLink)`
   font-family: ${({ theme }) => theme.fonts.descr.regular};
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5;
   padding: 15px 32px;
   width: 100%;
@@ -135,7 +135,7 @@ export const Link = styled(NavLink)`
     }
   }
   ${({ theme }) => theme.device.default} {
-   
+    font-size: 14px;
   }
   ${({ theme }) => theme.device.desktop} {
     

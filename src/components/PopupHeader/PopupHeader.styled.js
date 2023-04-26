@@ -72,16 +72,22 @@ export const PopButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5;
   border: none;
-  padding: 15px 32px;
+  padding: 10px 15px;
   text-align: left;
   width: 100%;
   ${({ theme }) => theme.device.mobileMax} {
     display: none;
   }
   ${({ theme }) => theme.device.tablet} {
+    
     margin-left: 0;
+  }
+  ${({ theme }) => theme.device.default} {
+    font-size: 14px;
+    padding: 15px 32px;
+    
   }
 `;
