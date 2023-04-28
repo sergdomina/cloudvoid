@@ -96,6 +96,23 @@ ${({ theme }) => theme.device.desktop} {
 }
 `;
 
+export const DivListMobile =styled.div`
+li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #3E3D4A;
+  height: 48px;
+  padding: 5px;
+}
+
+div{
+ &:not(:last-child){
+  margin-bottom: 80px;
+ }
+}
+`
+
 
 export const RegionNA = styled.a`
   width: auto;

@@ -157,7 +157,7 @@ const AppBar = () => {
               </NavItem>
 
               <NavItem>
-                <Link to="/MSA" onClick={toggleMenu}>
+                <Link to="/contact" onClick={toggleMenu}>
                   Contact
                 </Link>
               </NavItem>

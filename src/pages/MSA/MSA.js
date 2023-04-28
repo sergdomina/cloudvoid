@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 
 const MSA =()=>{
     return (
-            <div style={{width:'100hv', height:'100hv'}}>
+            <div style={{paddingTop:'80px', width:'100vw', height:'100vh'}}>
                 <iframe
           src={MSA_PDF}
           width="100%"
-          height="600px"
+          height="100%"
           title="PDF Viewer"
         />
             </div>

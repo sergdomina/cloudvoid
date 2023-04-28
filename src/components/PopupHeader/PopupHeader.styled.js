@@ -87,7 +87,7 @@ export const PopButton = styled.button`
   }
   ${({ theme }) => theme.device.default} {
     font-size: 14px;
-    padding: 15px 32px;
+    padding: 15px 22px;
     
   }
 `;
