@@ -60,6 +60,8 @@ export const PopupBox = styled.div`
     gap: 40px;
   }
 
+
+  
   li{
     align_items: center;
     height: 30px;
