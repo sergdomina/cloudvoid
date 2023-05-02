@@ -257,7 +257,7 @@ export const ButtonNavSubList = styled.button`
   font-family: ${({ theme }) => theme.fonts.descr.regular};
   display: flex;
   align-items: center;
-  justify-content: ${({ direction }) => direction === 'right' ? 'space-between' : 'flex-start'};;
+  justify-content: ${({ direction }) => direction === 'right' ? 'space-between' : 'flex-start'};
   font-size: 14px;
   line-height: 1.5;
   border: none;
