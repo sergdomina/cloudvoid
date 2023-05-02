@@ -43,28 +43,41 @@ export const PopupBox = styled.div`
 
   ${({ theme }) => theme.device.tablet} {
     width: 100vw;
-  height: 220px;
-  background: #fff;
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 30px;
-  
-  ul{
+    height: 220px;
+    background: #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    gap: 40px;
-  }
-
-
-  
-  li{
-    align_items: center;
-    height: 30px;
-  }
+    padding: 30px;
+    
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      gap: 40px;
+    }
+    
+    li{
+      align_items: center;
+      height: 30px;
+    }
   }
 `;
+
+export const PopupBoxContinent = styled(PopupBox)`
+  overflow: hidden;
+  max-height: 0;
+  padding: 0;
+  width: 100%;
+  transition: all .5s;
+  height: auto;
+  ${({ theme }) => theme.device.tablet} {
+    box-shadow: ${({ inView }) => inView ? 'none' : '0 6px 15px rgba(0, 0, 0, 0.15)'};
+  }
+  & > div{
+    padding: 30px;
+  }
+`

@@ -1,19 +1,17 @@
 import styled from 'styled-components';
 import { device, size } from '../../constants/mediaSize';
 
-
 export const Section = styled.section`
-  padding: 100px 0px 100px;
+  padding: 100px 0 100px;
 
   ${({ theme }) => theme.device.tablet} {
-
-    padding: 180px 0px 140px;
+    //padding: 180px 0 140px;
   }
   ${({ theme }) => theme.device.default} {
-    padding: 200px 0px 100px;
+    //padding: 200px 0 100px;
   }
   ${({ theme }) => theme.device.desktop} {
-    padding: 230px 0px 100px;
+    //padding: 230px 0 100px;
   }
 `;
 
@@ -21,29 +19,28 @@ export const Container = styled.div`
   padding: 0 10px;
   margin: 0 auto;
   width: 100%;
-  overflow: hidden;
+  //overflow: hidden;
+  
   ${device.mobile} {
     /* width: 343px; */
     padding: 0;
     width: 375px;
-
   }
-
 
   ${device.tablet} {
     padding: 0 0px;
     width: 768px;
-    height: 700px;
+    //height: 700px;
   }
 
   ${device.default} {
     padding: 0;
     width: 960px;
-    height: 800px;
+    //height: 800px;
   }
   ${device.desktop} {
     width: 1440px;
-    height: 1000px;
+    //height: 1000px;
   }
 `;
 
@@ -68,7 +65,6 @@ export const Title = styled.h1`
 
   }
 `;
-
 
 export const DiscriptionCenter = styled.p`
 font-family: ${({ theme }) => theme.fonts.descr.regular};
@@ -113,21 +109,48 @@ div{
 }
 `
 
+export const WorldMapContainer = styled.div`
+  position: relative;
+  margin: 0 auto;
+  padding: 0 15px;
+  g{
+    transition: fill .3s;
+    position: relative;
+  }
+  
+  g path{
+    stroke: transparent;
+    stroke-width: 14px;
+  }
+  
+  g:hover{
+    cursor: pointer;
+    fill: ${({theme}) => theme.colors.red }
+  }
+`
 
-export const RegionNA = styled.a`
-  width: auto;
+const mapLink = styled.a`
   fill: currentColor;
   transition: all 0.3s linear;
+  
   & svg {
     fill: currentColor;
     height: 100%;
     width: 100%;
+    transition: fill .3s;
   }
+
+  &:hover svg{
+    fill: ${({theme}) => theme.colors.red }
+  }
+`
+
+export const RegionNA = styled(mapLink)`
   height: 216px;
   width: 310px;
-
+  
   ${({ theme }) => theme.device.tablet} {
-    position: absolute; 
+    position: relative; 
     height: 221px;
     width: 318px;
     top: 50px;
@@ -140,19 +163,12 @@ export const RegionNA = styled.a`
     ${({ theme }) => theme.device.desktop} {
       height: 413px;
       width: 595px;
-     top: 40px;
+      top: 0;
   };
 `
-export const RegionSA = styled.a`
-  width: auto;
-  fill: currentColor;
-  transition: all 0.3s linear;
-  & svg {
-    fill: currentColor;
-    height: 100%;
-    width: 100%;
-  }
+export const RegionSA = styled(mapLink)`
   display: none;
+  width: auto;
 
   ${({ theme }) => theme.device.tablet} {
     display: block;
@@ -173,21 +189,12 @@ export const RegionSA = styled.a`
       top: 440px;
       height: 283px;
       width: 178px;
-     
   };
 `
-export const RegionE = styled.a`
-
-  
-  width: auto;
-  fill: currentColor;
-  transition: all 0.3s linear;
-  & svg {
-    fill: currentColor;
-    height: 100%;
-    width: 100%;
-  }
+export const RegionE = styled(mapLink)`
   display: none;
+  width: auto;
+  
   ${({ theme }) => theme.device.tablet} {
     display: block;
     position: absolute; 
@@ -209,18 +216,10 @@ export const RegionE = styled.a`
      width: 320px;
   };
 `
-
-
-export const RegionAsia = styled.a`  
+export const RegionAsia = styled(mapLink)`  
   width: auto;
-  fill: currentColor;
-  transition: all 0.3s linear;
-  & svg {
-    fill: currentColor;
-    height: 100%;
-    width: 100%;
-  }
   display: none;
+  
   ${({ theme }) => theme.device.tablet} {
     display: block;
     position: absolute; 
@@ -242,18 +241,10 @@ export const RegionAsia = styled.a`
     width: 534px;
   };
 `
-
-
-export const RegionAfrica = styled.a`
-  width: auto;
-  fill: currentColor;
-  transition: all 0.3s linear;
-  & svg {
-    fill: currentColor;
-    height: 100%;
-    width: 100%;
-  }
+export const RegionAfrica = styled(mapLink)`
   display: none;
+  width: auto;
+  
   ${({ theme }) => theme.device.tablet} {
     display: block;
     position: absolute; 
@@ -275,18 +266,10 @@ export const RegionAfrica = styled.a`
     width: 257px;
   };
 `
-
-
-export const RegionAu = styled.a`
-  width: auto;
-  fill: currentColor;
-  transition: all 0.3s linear;
-  & svg {
-    fill: currentColor;
-    height: 100%;
-    width: 100%;
-  }
+export const RegionAu = styled(mapLink)`
   display: none;
+  width: auto;
+  
   ${({ theme }) => theme.device.tablet} {
     display: block;
     position: absolute; 
@@ -308,18 +291,9 @@ export const RegionAu = styled.a`
    width: 248px;
   };
 `
-export const RegionME = styled.a`
-
-  
-  width: auto;
-  fill: currentColor;
-  transition: all 0.3s linear;
-  & svg {
-    fill: currentColor;
-    height: 100%;
-    width: 100%;
-  }
+export const RegionME = styled(mapLink)`
   display: none;
+  width: auto;
   ${({ theme }) => theme.device.tablet} {
     display: block;
     position: absolute; 
@@ -340,4 +314,16 @@ export const RegionME = styled.a`
    height: 92px;
    width: 100px;
   };
+`
+export const ContinentInfo = styled.div`
+`
+
+export const ContinentInfoInner = styled.div`
+  position: ${({ inView }) => inView ? 'relative' : 'fixed'};
+  max-width: 1440px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  bottom: ${({ inView }) => inView ? '0px' : '30px'};
+  z-index: 3;
 `
