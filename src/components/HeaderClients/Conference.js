@@ -2,15 +2,7 @@ import {
   Section,
   Title,
   DiscriptionCenter,
-  Region,
   Container,
-  RegionNA,
-  RegionSA,
-  RegionE,
-  RegionAsia,
-  RegionME,
-  RegionAfrica,
-  RegionAu,
   DivListMobile,
     WorldMapContainer,
     ContinentInfo,
@@ -19,16 +11,7 @@ import {
 import { InView, useInView } from "react-intersection-observer";
 import ResizeObserver from 'resize-observer-polyfill';
 
-import NorthAmerica from '../Map/NorthAmerica/NorthAmerica';
-import SouthAmerica from 'components/Map/SouthAmerica/SouthAmerica';
-import Europe from 'components/Map/Europe/Europe';
-import Asia from 'components/Map/Asia/Asia';
-import MiddleEast from 'components/Map/MiddleEaste/MiddleEast';
-import Africa from 'components/Map/Africa/Africa';
-import Australia from 'components/Map/Australia/Australia';
 import MediaQuery from 'components/MediaQuery/MediaQuery';
-
-import PopupNA from 'components/Map/NorthAmerica/PopUpNA/PopUpNA';
 
 import Acteno from 'image/Customer_Section/ActenoCarusel.png';
 import Amnis from 'image/Customer_Section/AmnisCarusel.png';
@@ -86,17 +69,26 @@ const Conference = () => {
         setSize({ width, height });
     };
 
+    const handleClickOutsidePopup = (event) => {
+        if (continentInfoInnerRef.current && !continentInfoInnerRef.current.contains(event.target)) {
+            setActiveContinent(continents);
+        }
+    };
+
     useEffect(() => {
         const observer = new ResizeObserver(handleResize);
+
         if (continentInfoInnerRef.current) {
             observer.observe(continentInfoInnerRef.current);
+            document.addEventListener('mousedown', handleClickOutsidePopup);
         }
+
         return () => {
             observer.disconnect();
+            document.removeEventListener('mousedown', handleClickOutsidePopup);
         };
     }, []);
 
-console.log(inView);
   return (
     <Section >
       <Container >
@@ -332,27 +324,6 @@ console.log(inView);
                   </ContinentInfoInner>
               </ContinentInfo>
 
-             {/* <RegionNA>*/}
-             {/*   <PopupNA/>*/}
-             {/*</RegionNA>*/}
-             {/*<RegionSA>*/}
-             {/*   <SouthAmerica/>*/}
-             {/*</RegionSA>*/}
-             {/*<RegionE>*/}
-             {/*   <Europe/>*/}
-             {/*</RegionE>*/}
-             {/*<RegionAsia>*/}
-             {/*   <Asia/>*/}
-             {/*</RegionAsia>*/}
-             {/*<RegionME>*/}
-             {/*   <MiddleEast/>*/}
-             {/*</RegionME>*/}
-             {/*<RegionAfrica>*/}
-             {/*   <Africa/>*/}
-             {/*</RegionAfrica>*/}
-             {/*<RegionAu>*/}
-             {/*   <Australia/>*/}
-             {/*</RegionAu>*/}
           </WorldMapContainer>
        </MediaQuery>
       </Container>
