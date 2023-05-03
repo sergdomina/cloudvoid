@@ -74,7 +74,15 @@ export const PopupBoxContinent = styled(PopupBox)`
   width: 100%;
   transition: all .5s;
   height: auto;
+
   ${({ theme }) => theme.device.tablet} {
+    ul{
+        display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
     box-shadow: ${({ inView }) => inView ? 'none' : '0 6px 15px rgba(0, 0, 0, 0.15)'};
   }
   & > div{
