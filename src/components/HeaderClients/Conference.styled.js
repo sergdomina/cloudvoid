@@ -113,19 +113,38 @@ export const WorldMapContainer = styled.div`
   position: relative;
   margin: 0 auto;
   padding: 0 15px;
+  svg{
+    fill: #3F3E49;
+  }
+  svg .continent__icon .logo{
+    transition: fill .3s;
+    fill: #ffffff;
+  }
+  svg .continent__icon .circle{
+    transition: all .3s;
+    fill: #3F3E49;
+    stroke: #3F3E49;
+    stroke-width: 2px;
+  }
   g{
     transition: fill .3s;
     position: relative;
   }
-  
   g path{
     stroke: transparent;
     stroke-width: 14px;
   }
-  
   g:hover{
     cursor: pointer;
-    fill: ${({theme}) => theme.colors.red }
+    fill: ${({theme}) => theme.colors.red };
+  }
+  g:hover .continent__icon .logo{
+    fill: ${({theme}) => theme.colors.red };
+  }
+  g:hover .continent__icon .circle{
+    fill: #fff;
+    stroke: ${({theme}) => theme.colors.red };
+    stroke-width: 2px;
   }
 `
 
@@ -134,7 +153,7 @@ const mapLink = styled.a`
   transition: all 0.3s linear;
   
   & svg {
-    fill: currentColor;
+    fill: #3F3E49;
     height: 100%;
     width: 100%;
     transition: fill .3s;
