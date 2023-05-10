@@ -117,31 +117,33 @@ export const WorldMapContainer = styled.div`
     fill: #3F3E49;
   }
   svg .continent__icon .logo{
-    transition: fill .3s;
+    transition: fill .2s;
     fill: #ffffff;
   }
   svg .continent__icon .circle{
-    transition: all .3s;
+    transition: all .2s;
     fill: #3F3E49;
     stroke: #3F3E49;
     stroke-width: 2px;
   }
   g{
-    transition: fill .3s;
+    transition: fill .2s;
     position: relative;
   }
   g path{
     stroke: transparent;
     stroke-width: 14px;
   }
-  g:hover{
+  .continent :hover{
     cursor: pointer;
     fill: ${({theme}) => theme.colors.red };
   }
   g:hover .continent__icon .logo{
     fill: ${({theme}) => theme.colors.red };
   }
-  g:hover .continent__icon .circle{
+
+  g: 
+  hover .continent__icon .circle{
     fill: #fff;
     stroke: ${({theme}) => theme.colors.red };
     stroke-width: 2px;
@@ -150,13 +152,13 @@ export const WorldMapContainer = styled.div`
 
 const mapLink = styled.a`
   fill: currentColor;
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
   
   & svg {
     fill: #3F3E49;
     height: 100%;
     width: 100%;
-    transition: fill .3s;
+    transition: fill .2s;
   }
 
   &:hover svg{
