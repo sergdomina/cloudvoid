@@ -15,6 +15,8 @@ import { Image} from '@chakra-ui/react';
 import Container from '../../Container/Container.styled';
 import emailjs from '@emailjs/browser';
 import {useRef} from "react";
+import ReCAPTCHA from 'react-google-recaptcha';
+import React from 'react';
 
 const Conference = () => {
   const form = useRef();
@@ -29,6 +31,17 @@ const Conference = () => {
           console.log(error.text);
         });
   };
+
+
+
+  function handleOnChange(value) {
+    this.state= { items:[], text: '', isVerified: false};
+    this.handleChance = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleOnChance= this.handleOnChange.bind(this)
+    console.log("Captcha value:", value);
+    this.setState({isVerified: true})
+  }
 
   return (
     <Section >
@@ -60,8 +73,14 @@ const Conference = () => {
           </TabDiv>
           <TabDiv2>
             <label>Message</label>
+            
             <Area name='message' placeholder='Type in your message'/>
-            <Button type='submit'>Send Request</Button>
+            
+            <ReCAPTCHA
+              sitekey="6LcvSg8mAAAAAGK3SXkSdvxkv6Iq4IEEUQsa0FWl"
+              onChange={handleOnChange}
+            />
+            <Button disabled={!this.state.isVerified} type='submit'>Send Request</Button>
           </TabDiv2>
         </Tabl>
       </Container>
