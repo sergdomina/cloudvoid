@@ -36,7 +36,7 @@ import {
   Arrow  
 } from './Conference.styled';
 
-import { DivLen } from 'components/HeaderServices/Slide.style';
+import {DivLen, DivSlide, DivSlideA, DivSlideB, DivSlideC} from 'components/HeaderServices/Slide.style';
 import { Image} from '@chakra-ui/react';
 import Container from '../../../Container';
 import GlobalBox from '../../../GlobalBox';
@@ -61,6 +61,8 @@ import leftLine from 'image/BGlines/leftLine.svg';
 import leftLinePart from 'image/BGlines/leftLinePart.svg';
 import MediaQuery from 'components/MediaQuery';
 import Accordion, { AccordionHorizontal } from "../../../Accordion/Accordion";
+import {useEffect, useState} from "react";
+import axios from "axios";
 
 
 
@@ -89,6 +91,119 @@ const Conference = () => {
       content: 'We monitor and optimize the implemented cloud governance framework to ensure that everyone in your organization is empowered to succeed.'
     },
   ];
+  const API_CLIENT = 'http://cloudvoid.com.loc/api/clients?case=Governance'
+
+  const [clients, setClients] = useState([]);
+  useEffect(() => {
+    const fetchClients = async () => {
+      try {
+        const response = await axios.get(API_CLIENT)
+        const animationDelay = 5;
+        let splitClients = splitArray(response.data)
+        let clientsData = []
+
+        if (typeof splitClients[0] !== 'undefined') {
+          let arrayLength = splitClients[0].length
+          let animationTime = arrayLength * animationDelay
+          let clientsRowData = []
+
+          for (var i = 0; i < arrayLength; i++) {
+            let client = splitClients[0][i];
+            let delay = animationDelay * i + 1
+            let clientLogo
+
+            let isAnimate = arrayLength >= 2
+            let percentage = (100 / arrayLength).toFixed(2)
+
+            clientLogo = createClientComponent(client, isAnimate, animationTime, delay, percentage)
+
+            clientsRowData.push(clientLogo);
+          }
+
+          clientsData.push(clientsRowData);
+        }
+        if (typeof splitClients[1] !== 'undefined') {
+          let arrayLength = splitClients[1].length
+          let animationTime = arrayLength * animationDelay
+          let clientsRowData = []
+
+          for (var i = 0; i < arrayLength; i++) {
+            let client = splitClients[1][i];
+            let delay = animationDelay * i + 2
+            let clientLogo
+
+            let isAnimate = arrayLength >= 2
+            let percentage = (100 / arrayLength).toFixed(2)
+
+            clientLogo = createClientComponent(client, isAnimate, animationTime, delay, percentage)
+
+            clientsRowData.push(clientLogo);
+          }
+
+          clientsData.push(clientsRowData);
+        }
+        if (typeof splitClients[2] !== 'undefined') {
+          let arrayLength = splitClients[2].length
+          let animationTime = arrayLength * animationDelay
+          let clientsRowData = []
+
+          for (var i = 0; i < arrayLength; i++) {
+            let client = splitClients[2][i];
+            let delay = animationDelay * i + 3
+            let clientLogo
+
+            let isAnimate = arrayLength >= 2
+            let percentage = (100 / arrayLength).toFixed(2)
+
+            clientLogo = createClientComponent(client, isAnimate, animationTime, delay, percentage)
+
+            clientsRowData.push(clientLogo);
+          }
+
+          clientsData.push(clientsRowData);
+        }
+
+        console.log(clientsData)
+
+        setClients(clientsData);
+      } catch (error) {
+        console.error('Error fetching books:', error);
+      }
+    };
+
+    fetchClients();
+  }, []);
+
+  function createClientComponent(client, isAnimate = true, animationTime = 0, delay = 0, percentage = 0) {
+    let clientComponent
+
+    if (isAnimate) {
+      clientComponent = (
+          <DivSlideA key={client.id} percentage={percentage} className='client_logo' style={{ animationDuration: `${animationTime}s`, animationDelay: `${delay}s`}} target="_blank" href={client.link}>
+            <Image src={client.images.product} style={{ margin:'0 auto'}} alt={client.title} />
+          </DivSlideA>
+      );
+    } else {
+      clientComponent = (
+          <a key={client.id} target="_blank" href={client.link}>
+            <Image src={client.images.product} style={{ margin:'0 auto'}} alt={client.title} />
+          </a>
+      );
+    }
+    return clientComponent;
+  }
+
+  function splitArray(array) {
+    var arrayLength = array.length;
+    var chunkSize = Math.ceil(arrayLength / 3); // Округлюємо розмір частини до більшого цілого числа
+
+    var chunks = [];
+    for (var i = 0; i < arrayLength; i += chunkSize) {
+      chunks.push(array.slice(i, i + chunkSize)); // Додаємо частину масиву до списку частин
+    }
+
+    return chunks;
+  }
 
   return (
     <Section >
@@ -98,7 +213,6 @@ const Conference = () => {
         
         <ul>
         <Container style={{position:'relative'}}>
-
           <ConferenceItem>
             <MediaQuery device={'mobile'}>
                 <GlobalBox>
@@ -140,8 +254,6 @@ const Conference = () => {
               </DivBecome>
             </GlobalBox> 
           </ConferenceItem>
-
-
           <ConferenceItem>
             <GlobalImage>
             <Image src={Gain} style={{}} alt="gain" />
@@ -184,8 +296,6 @@ const Conference = () => {
               </div>
             </GlobalBox>
           </ConferenceItem>
-
-
           <ConferenceColumn>
             <SubTitleSolo>Cloud Governance Services</SubTitleSolo>
             <RowBox>
@@ -219,8 +329,6 @@ const Conference = () => {
             </RowBox>
           </ConferenceColumn>
 
-
-
           <MediaQuery device={'tabletUp'}>
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
             <Title> Cloudvoid's Governance Approach </Title>
@@ -229,11 +337,7 @@ const Conference = () => {
           </MediaQuery>
       </Container>
 
-
-
-
 {/*ACCORDION*/}
-          
           <MediaQuery device={'mobile'}>
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0", marginBottom: '200px'}}>
             <Title> Cloudvoid's Governance Approach</Title>        
@@ -249,21 +353,21 @@ const Conference = () => {
           <ConferenceItem style={{position: 'relative'}}>  
             <MediaQuery device={'tabletUp'}>
               <GlobalBox style={{position: 'relative'}}>
-                <DivLen>
-                  <a href='https://www.insfocus.com'>
-                  <Image src={Insfocus} alt="evo"/>
-                  </a>
-                </DivLen>
-                <DivLen>
-                  <a href='https://bestexresearch.com'>
-                  <Image src={Bestex} alt="evo"/>
-                  </a>
-                </DivLen>
-                <DivLen>
-                  <a href='https://www.docstribute.com'>
-                  <Image src={Doc} alt="evo"/>
-                  </a>
-                </DivLen>
+                <DivSlide>
+                  {clients[0] !== undefined && clients[0].map((client) => (
+                      client
+                  ))}
+                </DivSlide>
+                <DivSlideB>
+                  {clients[1] !== undefined && clients[1].map((client) => (
+                      client
+                  ))}
+                </DivSlideB>
+                <DivSlideC>
+                  {clients[2] !== undefined && clients[2].map((client) => (
+                      client
+                  ))}
+                </DivSlideC>
               </GlobalBox>
             </MediaQuery >
             <GlobalBox style={{alignItems: 'center', position: 'relative'}}>
@@ -294,21 +398,21 @@ const Conference = () => {
             </GlobalBox>
             <MediaQuery device={'mobile'}>
               <GlobalBox style={{position: 'relative', paddingTop: '100px'}}>
-                <DivLen>
-                  <a target="_blank" href='https://www.insfocus.com'>
-                  <Image src={Insfocus} alt="evo"/>
-                  </a>
-                </DivLen>
-                <DivLen>
-                  <a target="_blank" href='https://bestexresearch.com'>
-                  <Image src={Bestex} alt="evo"/>
-                  </a>
-                </DivLen>
-                <DivLen>
-                  <a target="_blank" href='https://www.docstribute.com'>
-                  <Image src={Doc} alt="evo"/>
-                  </a>
-                </DivLen>
+                <DivSlide>
+                  {clients[0] !== undefined && clients[0].map((client) => (
+                      client
+                  ))}
+                </DivSlide>
+                <DivSlideB>
+                  {clients[1] !== undefined && clients[1].map((client) => (
+                      client
+                  ))}
+                </DivSlideB>
+                <DivSlideC>
+                  {clients[2] !== undefined && clients[2].map((client) => (
+                      client
+                  ))}
+                </DivSlideC>
               </GlobalBox>
             </MediaQuery >
           </ConferenceItem>
