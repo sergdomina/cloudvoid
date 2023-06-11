@@ -10,19 +10,9 @@ const Governance = () => {
     <>
       <main>
         <Hero />
-        {/* <MediaQuery device={'mobile'}>
-          <FeaturesAccordion />
-        </MediaQuery>
-        <MediaQuery device={'tablet'}>
-          <FeaturesTabs />
-        </MediaQuery> */}
-
         <Conference/>
         <Ready/>
         <Footer/>
-        {/* <MediaQuery device={'mobile'}>
-          <DownloadMobileFooter />
-        </MediaQuery> */}
       </main>
     </>
   );

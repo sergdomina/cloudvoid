@@ -1,4 +1,3 @@
-
 import {
   Section,
   ContainerTwo,
@@ -83,16 +82,20 @@ import SCS from 'image/Customer_Section/SCS.png';
 import Tech from 'image/Customer_Section/TechNet.png';
 import McLane from 'image/AI&Analytics/McLane.png';
 import AKBN from 'image/Customer_Section/AKBN.png';
-import { DivSlideTree, DivSlide, DivSlideTreeB } from 'components/HeaderServices/Slide.style';
-
-
-
-
-
+import {
+    DivSlideTree,
+    DivSlide,
+    DivSlideTreeB,
+    DivSlideB,
+    DivSlideC,
+    DivSlideA
+} from 'components/HeaderServices/Slide.style';
+import {useEffect, useState} from "react";
+import axios from "axios";
 
 const Conference = () => {
 
-  const accordionItems = [
+    const accordionItems = [
     {
       title: 'Pipelines',
       number: '01',
@@ -119,13 +122,126 @@ const Conference = () => {
       content: 'Our experienced SMEs become your most trusted partners, advising you on how to navigate your DevOps journey. From the feasibility study and strategy to design & implementation, we help you adopt DevOps for accelerated product development.'
     },
   ];
+    const searchTerm = 'MSP'
+    const encodedSearchTerm = encodeURIComponent(searchTerm)
+    const API_CLIENT = `http://cloudvoid.com.loc/api/clients?case=${encodedSearchTerm}`
+
+    const [clients, setClients] = useState([]);
+
+    useEffect(() => {
+        const fetchClients = async () => {
+            try {
+                const response = await axios.get(API_CLIENT)
+                const animationDelay = 5;
+                let splitClients = splitArray(response.data)
+                let clientsData = []
+
+                if (typeof splitClients[0] !== 'undefined') {
+                    let arrayLength = splitClients[0].length
+                    let animationTime = arrayLength * animationDelay
+                    let clientsRowData = []
+
+                    for (var i = 0; i < arrayLength; i++) {
+                        let client = splitClients[0][i];
+                        let delay = animationDelay * i + 1
+                        let clientLogo
+
+                        let isAnimate = arrayLength >= 2
+                        let percentage = (100 / arrayLength).toFixed(2)
+
+                        clientLogo = createClientComponent(client, isAnimate, animationTime, delay, percentage)
+
+                        clientsRowData.push(clientLogo);
+                    }
+
+                    clientsData.push(clientsRowData);
+                }
+                if (typeof splitClients[1] !== 'undefined') {
+                    let arrayLength = splitClients[1].length
+                    let animationTime = arrayLength * animationDelay
+                    let clientsRowData = []
+
+                    for (var i = 0; i < arrayLength; i++) {
+                        let client = splitClients[1][i];
+                        let delay = animationDelay * i + 2
+                        let clientLogo
+
+                        let isAnimate = arrayLength >= 2
+                        let percentage = (100 / arrayLength).toFixed(2)
+
+                        clientLogo = createClientComponent(client, isAnimate, animationTime, delay, percentage)
+
+                        clientsRowData.push(clientLogo);
+                    }
+
+                    clientsData.push(clientsRowData);
+                }
+                if (typeof splitClients[2] !== 'undefined') {
+                    let arrayLength = splitClients[2].length
+                    let animationTime = arrayLength * animationDelay
+                    let clientsRowData = []
+
+                    for (var i = 0; i < arrayLength; i++) {
+                        let client = splitClients[2][i];
+                        let delay = animationDelay * i + 3
+                        let clientLogo
+
+                        let isAnimate = arrayLength >= 2
+                        let percentage = (100 / arrayLength).toFixed(2)
+
+                        clientLogo = createClientComponent(client, isAnimate, animationTime, delay, percentage)
+
+                        clientsRowData.push(clientLogo);
+                    }
+
+                    clientsData.push(clientsRowData);
+                }
+
+                console.log(clientsData)
+
+                setClients(clientsData);
+            } catch (error) {
+                console.error('Error fetching books:', error);
+            }
+        };
+
+        fetchClients();
+    }, []);
+
+    function createClientComponent(client, isAnimate = true, animationTime = 0, delay = 0, percentage = 0) {
+        let clientComponent
+
+        if (isAnimate) {
+            clientComponent = (
+                <DivSlideA key={client.id} percentage={percentage} className='client_logo' style={{ animationDuration: `${animationTime}s`, animationDelay: `${delay}s`}} target="_blank" href={client.link}>
+                    <Image src={client.images.product} style={{ margin:'0 auto'}} alt={client.title} />
+                </DivSlideA>
+            );
+        } else {
+            clientComponent = (
+                <a key={client.id} target="_blank" href={client.link}>
+                    <Image src={client.images.product} style={{ margin:'0 auto'}} alt={client.title} />
+                </a>
+            );
+        }
+        return clientComponent;
+    }
+
+    function splitArray(array) {
+        var arrayLength = array.length;
+        var chunkSize = Math.ceil(arrayLength / 3); // Округлюємо розмір частини до більшого цілого числа
+
+        var chunks = [];
+        for (var i = 0; i < arrayLength; i += chunkSize) {
+            chunks.push(array.slice(i, i + chunkSize)); // Додаємо частину масиву до списку частин
+        }
+
+        return chunks;
+    }
 
   return (
     <Section >
       <BackEvoM src={Evo}  alt="evo" />
-      
-
-        
         <ul>
         <Container style={{position:'relative'}}>
 
@@ -175,10 +291,6 @@ const Conference = () => {
               </DivBecome>
             </GlobalBox> 
           </ConferenceItem>
- 
-
-
-         
           <ConferenceColumn>
             <SubTitleSolo>Our Technology Stack</SubTitleSolo>
             <DiscriptionCenter>
@@ -289,36 +401,23 @@ const Conference = () => {
               </DivHalf>
             </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
-              <DivSlideTree>
-              <a className='first' target="_blank" href='https://www.lenovo.com'>
-                <Image src={Lenovo} style={{ width: '50%', margin:'0 auto'}}  alt="evo"/>
-                </a>
-              <a className='second' target="_blank" href='https://www.csquarednetworks.com/'>
-                <Image src={Squared} style={{ width: '50%', margin:'0 auto'}}  alt="evo"/>
-                </a>
-              <a className='third' target="_blank" href='https://aspiris.com/'>
-                <Image src={Aspiris} style={{ width: '50%', margin:'0 auto'}}  alt="evo"/>
-                </a>
-              </DivSlideTree>
-              <DivSlideTreeB>
-             <a className='first' target="_blank" href='https://www.lernersolutions.com/'> 
-             <Image src={Lerner} style={{ margin:'0 auto'}} alt="evo"/>
-             </a>
-             <a className='second' target="_blank" href='https://www.considerscs.com/'> 
-             <Image src={SCS} style={{ margin:'0 auto'}} alt="evo"/>
-             </a>
-             <a className='third' target="_blank" href='https://technet.co.im/'> 
-             <Image src={Tech} style={{ margin:'0 auto'}} alt="evo"/>
-             </a>
-              </DivSlideTreeB>
               <DivSlide>
-              <a className='first' target="_blank" href='https://mclaneintel.com/'>
-                <Image src={McLane} style={{ margin:'0 auto'}} alt="evo"/>
-                </a>
-              <a className='second' target="_blank" href=' '>
-                <Image src={AKBN} style={{ margin:'0 auto'}} alt="evo"/>
-                </a>
+                  {clients[0] !== undefined && clients[0].map((client) => (
+                      client
+                  ))}
               </DivSlide>
+
+              <DivSlideB>
+                  {clients[1] !== undefined && clients[1].map((client) => (
+                      client
+                  ))}
+              </DivSlideB>
+
+              <DivSlideC>
+                  {clients[2] !== undefined && clients[2].map((client) => (
+                      client
+                  ))}
+              </DivSlideC>
             </GlobalBox>
           </ConferenceItem>
  

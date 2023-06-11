@@ -39,7 +39,7 @@ import {
   Arrow  
 } from './Conference.styled';
 
-import { DivSlide, DivSlideC, DivSlideB } from 'components/HeaderServices/Slide.style';
+import {DivSlide, DivSlideC, DivSlideB, DivSlideA} from 'components/HeaderServices/Slide.style';
 import { Image} from '@chakra-ui/react';
 import Container from '../../../Container';
 import GlobalBox from '../../../GlobalBox';
@@ -67,9 +67,10 @@ import leftHow from 'image/BGlines/leftLineHow.svg';
 import rightHow from 'image/BGlines/rightLineHow.svg';
 import MediaQuery from 'components/MediaQuery';
 import Accordion from "../../../Accordion/Accordion";
-
-
-
+import {useEffect, useState} from "react";
+import axios from "axios";
+import {SplideSlide} from "@splidejs/react-splide";
+import {CentralDivCarusel, LogoPartners} from "../../../Home/Conference/Conference.styled";
 
 const Conference = () => {
 
@@ -105,13 +106,126 @@ const Conference = () => {
       content: 'Cloudvoid`s professionals help you adopt hybrid solutions to improve infrastructure efficiency and resiliency. We are experts at administering classic server environments based on UNIX/Linux and Microsoft Server Technologies.'
     }
   ];
+  const searchTerm = 'Evolve'
+  const encodedSearchTerm = encodeURIComponent(searchTerm)
+  const API_CLIENT = `http://cloudvoid.com.loc/api/clients?case=${encodedSearchTerm}`
+
+  const [clients, setClients] = useState([]);
+
+  useEffect(() => {
+    const fetchClients = async () => {
+      try {
+        const response = await axios.get(API_CLIENT)
+        const animationDelay = 5;
+        let splitClients = splitArray(response.data)
+        let clientsData = []
+
+        if (typeof splitClients[0] !== 'undefined') {
+          let arrayLength = splitClients[0].length
+          let animationTime = arrayLength * animationDelay
+          let clientsRowData = []
+
+          for (var i = 0; i < arrayLength; i++) {
+            let client = splitClients[0][i];
+            let delay = animationDelay * i + 1
+            let clientLogo
+
+            let isAnimate = arrayLength >= 2
+            let percentage = (100 / arrayLength).toFixed(2)
+
+            clientLogo = createClientComponent(client, isAnimate, animationTime, delay, percentage)
+
+            clientsRowData.push(clientLogo);
+          }
+
+          clientsData.push(clientsRowData);
+        }
+        if (typeof splitClients[1] !== 'undefined') {
+          let arrayLength = splitClients[1].length
+          let animationTime = arrayLength * animationDelay
+          let clientsRowData = []
+
+          for (var i = 0; i < arrayLength; i++) {
+            let client = splitClients[1][i];
+            let delay = animationDelay * i + 2
+            let clientLogo
+
+            let isAnimate = arrayLength >= 2
+            let percentage = (100 / arrayLength).toFixed(2)
+
+            clientLogo = createClientComponent(client, isAnimate, animationTime, delay, percentage)
+
+            clientsRowData.push(clientLogo);
+          }
+
+          clientsData.push(clientsRowData);
+        }
+        if (typeof splitClients[2] !== 'undefined') {
+          let arrayLength = splitClients[2].length
+          let animationTime = arrayLength * animationDelay
+          let clientsRowData = []
+
+          for (var i = 0; i < arrayLength; i++) {
+            let client = splitClients[2][i];
+            let delay = animationDelay * i + 3
+            let clientLogo
+
+            let isAnimate = arrayLength >= 2
+            let percentage = (100 / arrayLength).toFixed(2)
+
+            clientLogo = createClientComponent(client, isAnimate, animationTime, delay, percentage)
+
+            clientsRowData.push(clientLogo);
+          }
+
+          clientsData.push(clientsRowData);
+        }
+
+        console.log(clientsData)
+
+        setClients(clientsData);
+      } catch (error) {
+        console.error('Error fetching books:', error);
+      }
+    };
+
+    fetchClients();
+  }, []);
+
+  function createClientComponent(client, isAnimate = true, animationTime = 0, delay = 0, percentage = 0) {
+    let clientComponent
+
+    if (isAnimate) {
+      clientComponent = (
+          <DivSlideA key={client.id} percentage={percentage} className='client_logo' style={{ animationDuration: `${animationTime}s`, animationDelay: `${delay}s`}} target="_blank" href={client.link}>
+            <Image src={client.images.product} style={{ margin:'0 auto'}} alt={client.title} />
+          </DivSlideA>
+      );
+    } else {
+      clientComponent = (
+          <a key={client.id} target="_blank" href={client.link}>
+            <Image src={client.images.product} style={{ margin:'0 auto'}} alt={client.title} />
+          </a>
+      );
+    }
+    return clientComponent;
+  }
+
+  function splitArray(array) {
+    var arrayLength = array.length;
+    var chunkSize = Math.ceil(arrayLength / 3); // Округлюємо розмір частини до більшого цілого числа
+
+    var chunks = [];
+    for (var i = 0; i < arrayLength; i += chunkSize) {
+      chunks.push(array.slice(i, i + chunkSize)); // Додаємо частину масиву до списку частин
+    }
+
+    return chunks;
+  }
 
   return (
     <Section >
       <BackEvoM src={Evo}  alt="evo" />
-      
-
-        
         <ul>
         <Container style={{position:'relative'}}>
           <ConferenceItem>
@@ -194,12 +308,9 @@ const Conference = () => {
             <Accordion items={accordionItems} />
           </ConferenceItemCenter>
           </MediaQuery>
-      </Container>
+        </Container>
 
-
-
-
-{/*ACCORDION*/}
+        {/*ACCORDION*/}
           <MediaQuery device={'mobileDefault'}>
           <ConferenceItemCenter style={{ backgroundColor: "#EFEFF0"}}>
             <Title style={{ marginLeft: '10%'}}> The Cloud Evolve Suite </Title>
@@ -209,7 +320,7 @@ const Conference = () => {
             <Accordion items={accordionItems} />
           </ConferenceItemCenter>
           </MediaQuery>
-{/*ACCORDION*/}
+        {/*ACCORDION*/}
 
 
 
@@ -290,35 +401,23 @@ const Conference = () => {
               </DivHalf>
             </GlobalBox>
             <GlobalBox style={{position: 'relative'}}>
-              
                 <DivSlide>
-                <a className='first' target="_blank" href='https://amnistreasury.com' >
-                  <Image src={Amnis} style={{margin:'0 auto'}} alt=" "/>
-                  </a>
-                <a className='second' target="_blank" href='https://lyonstahl.com/' >
-                  <Image src={Lyon} style={{margin:'0 auto'}} alt=" "/>
-                  </a>
+                  {clients[0] !== undefined && clients[0].map((client) => (
+                      client
+                  ))}
                 </DivSlide>
-              
-              
+
                 <DivSlideB>
-                <a className='first' target="_blank" href='https://bestexresearch.com' >
-                  <Image src={BestEx} style={{margin:'0 auto'}} alt=" "/>
-                  </a>
-                <a className='second' target="_blank" href='https://www.docstribute.com' >
-                  <Image src={Doc} style={{margin:'0 auto'}} alt=" "/>
-                  </a>
+                  {clients[1] !== undefined && clients[1].map((client) => (
+                      client
+                  ))}
                 </DivSlideB>
 
                 <DivSlideC>
-                <a className='first' target="_blank" href='https://metalink.com' >
-                  <Image src={Metalink} style={{margin:'0 auto'}} alt=" "/>
-                  </a>
-                <a className='second' target="_blank" href='https://gemean.com/' >
-                  <Image src={Gemean} style={{margin:'0 auto'}} alt=" "/>
-                  </a>
+                  {clients[2] !== undefined && clients[2].map((client) => (
+                      client
+                  ))}
                 </DivSlideC>
-              
             </GlobalBox>
           </ConferenceItem>
 

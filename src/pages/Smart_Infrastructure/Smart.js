@@ -5,24 +5,13 @@ import Footer from 'components/Footer'
 import { ScrollToTop } from 'hooks/ScrollToTop';
 
 const Smart = () => {
-  // window.scrollTo( 0, 0);
   return (
     <>
       <main>
         <Hero />
-        {/* <MediaQuery device={'mobile'}>
-          <FeaturesAccordion />
-        </MediaQuery>
-        <MediaQuery device={'tablet'}>
-          <FeaturesTabs />
-        </MediaQuery> */}
-
         <Conference/>
         <Ready/>
         <Footer/>
-        {/* <MediaQuery device={'mobile'}>
-          <DownloadMobileFooter />
-        </MediaQuery> */}
       </main>
     </>
   );
