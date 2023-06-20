@@ -14,7 +14,7 @@ import {
 import { Image} from '@chakra-ui/react';
 import Container from '../../Container/Container.styled';
 import emailjs from '@emailjs/browser';
-import {useRef} from "react";
+import {useRef, useState} from "react";
 import ReCAPTCHA from 'react-google-recaptcha';
 import React from 'react';
 
@@ -32,15 +32,15 @@ const Conference = () => {
         });
   };
 
-
+  const [isVerified, setIsVerified] = useState(false);
 
   function handleOnChange(value) {
-    this.state= { items:[], text: '', isVerified: false};
-    this.handleChance = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleOnChance= this.handleOnChange.bind(this)
-    console.log("Captcha value:", value);
-    this.setState({isVerified: true})
+    // this.state= { items:[], text: '', isVerified: false};
+    // this.handleChance = this.handleChange.bind(this);
+    // this.handleSubmit = this.handleSubmit.bind(this);
+    // this.handleOnChance= this.handleOnChange.bind(this)
+
+    setIsVerified(true)
   }
 
   return (
@@ -80,7 +80,7 @@ const Conference = () => {
               sitekey="6LcvSg8mAAAAAGK3SXkSdvxkv6Iq4IEEUQsa0FWl"
               onChange={handleOnChange}
             />
-            <Button disabled={!this.state.isVerified} type='submit'>Send Request</Button>
+            <Button disabled={!isVerified} type='submit'>Send Request</Button>
           </TabDiv2>
         </Tabl>
       </Container>
